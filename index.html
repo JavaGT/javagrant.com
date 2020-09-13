@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Grant</title>
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body class="grid">
+    <input type="radio" id="all" name="categories" value="all" checked />
+    <input
+      type="radio"
+      id="illustration"
+      name="categories"
+      value="illustration"
+    />
+    <input type="radio" id="blog" name="categories" value="blog" />
+    <div class="grid">
+      <div class="grid c item w100">
+        <div class="item">
+          <h1 class="item">Java's Site</h1>
+          <h4>
+            <a href="/">home</a>
+            <a href="/pages/photography">photography</a>
+          </h4>
+        </div>
+        <div class="item">
+          <p>This is Java's little website</p>
+          <span>Filter content: </span>
+          <label for="all">All</label>
+          <label for="illustration">Illustration</label>
+          <label for="blog">Blog</label>
+        </div>
+      </div>
+      <div class="grid v item" category="illustration">
+        <!-- <div class="item h grid"> -->
+        <img src="/icon/EvilTower.jpg" class="item" alt="" />
+        <!-- </div> -->
+        <div class="item">
+          <a href="/img/EvilTower.jpg">Evil Tower</a>
+        </div>
+      </div>
+      <div class="grid v item" category="illustration">
+        <img src="/icon/Space.jpg" class="item" alt="" />
+        <div class="item">
+          <a href="/img/Space.jpg">Space</a>
+        </div>
+      </div>
+      <div class="grid v item" category="illustration">
+        <!-- <div class="item h grid"> -->
+        <img src="/icon/HomeSweetHome.jpg" class="item" alt="" />
+        <!-- </div> -->
+        <div class="item">
+          <a href="/img/HomeSweetHome.jpg">Home Sweet Home</a>
+        </div>
+      </div>
+      <div class="grid v item" category="illustration">
+        <!-- <div class="item h grid"> -->
+        <img src="/icon/Kakapo.jpg" class="item" alt="" />
+        <!-- </div> -->
+        <div class="item">
+          <a href="/img/Kakapo.jpg">Kakapo</a>
+        </div>
+      </div>
+      <div class="grid v item" category="illustration">
+        <!-- <div class="item h grid"> -->
+        <img src="/icon/Kereru.jpg" class="item" alt="" />
+        <!-- </div> -->
+        <div class="item">
+          <a href="/img/Kereru.jpg">Kereru</a>
+        </div>
+      </div>
+      <div class="grid v item" category="blog">
+        <!-- <div class="item h grid"> -->
+        <img src="/icon/DecisionMakingAndAI.jpg" class="item" alt="" />
+        <!-- </div> -->
+        <div class="item">
+          <a
+            href="https://artsscholars.blogs.auckland.ac.nz/2020/05/11/decision-making-and-subjectivity/"
+            >Decision Making and AI</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
