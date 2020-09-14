@@ -23,6 +23,7 @@ body > .grid {
   flex-wrap: wrap;
   align-items: center;
   justify-content: stretch;
+  justify-content: center;
 }
 .grid.h {
   flex-direction: row;
@@ -93,4 +94,7 @@ label {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   /* width: 100%; */
+}
+img.item {
+  min-height: 15rem;
 }
