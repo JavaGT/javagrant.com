@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: serif;
+  color: #222;
+  background-color: #EFEFEF;
+  margin: 1rem;
+  font-size: 1.05em; }
+  body > input {
+    display: none; }
+
+.item {
+  padding: 1rem;
+  flex-grow: 10;
+  margin: 0;
+  overflow: hidden;
+  flex-basis: content; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: stretch;
+  justify-content: center; }
+
+.grid.h {
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.grid.v {
+  flex-direction: column; }
+
+.grid.c {
+  align-items: center; }
+
+img.item {
+  max-width: 60vw;
+  max-height: 30vh;
+  min-height: 15rem; }
+
+img {
+  object-fit: scale-down; }
+
+.w100 {
+  min-width: 100%; }
+
+[category="illustration"] > *:last-child::after {
+  content: "an illustration";
+  display: block;
+  margin-top: 0; }
+
+[category="blog"] > *:last-child::after {
+  content: "a blog post";
+  display: block;
+  margin-top: 0; }
+
+label {
+  color: blue;
+  text-decoration: underline; }
+
+#all:checked ~ * label[for="all"] {
+  text-decoration: none;
+  color: black; }
+
+#illustration:checked ~ * label[for="illustration"] {
+  text-decoration: none;
+  color: black; }
+
+#blog:checked ~ * label[for="blog"] {
+  text-decoration: none;
+  color: black; }
+
+[value="blog"]:checked ~ * .item[category]:not([category~="blog"]) {
+  display: none; }
+
+[value="illustration"]:checked ~ * .item[category]:not([category~="illustration"]) {
+  display: none; }
+
+[value="all"]:checked ~ .item[category] {
+  display: block; }
+
+.line > * {
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.banner {
+  width: 100%;
+  text-align: center; }
+  .banner a {
+    margin: 1rem; }
+
+.content {
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: fit-content;
+  max-width: 100%; }
+
+#tableofcontents {
+  position: fixed;
+  top: 0;
+  right: 0; }

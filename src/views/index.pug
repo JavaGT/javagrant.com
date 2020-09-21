@@ -1,0 +1,12 @@
+extends ./components/template.pug
+block head
+  title Java Grant - home
+
+block content
+  .content
+    h3 Welcome to my site!
+    p This is a place where I record things that might be useful for other people to see, or useful for me to have other people to see, such as my blog posts, art, and resume.
+    h1 Blog posts!
+    for item in postDirectoryTree.children
+      div
+        a(href=item.path.replace('src/', '/').replace('.md', ''))=item.name.replace('.md', '').replace(/\-/g, ' ')

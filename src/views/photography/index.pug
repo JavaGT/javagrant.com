@@ -1,0 +1,18 @@
+extends ../components/template.pug
+
+mixin layer(data)
+  if (data.type === "directory")
+      for child in data.children
+        +layer(child)
+  else if (data.type === "file")
+    a(href='/'+data.path.replace('docs/', '').replace('icon', 'image'))
+      img.item(src='/'+data.path.replace('docs/', ''))
+
+block head
+  title Java Grant - photography
+  
+block content
+  .grid.line
+    for item in photographyDirectoryTree.children
+      .grid.h.item
+        +layer(item)
