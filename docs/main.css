@@ -4,7 +4,7 @@
 body {
   font-family: serif;
   color: #222;
-  background-color: #EFEFEF;
+  background-color: #fefefe;
   margin: 1rem;
   font-size: 1.05em; }
   body > input {
@@ -93,7 +93,8 @@ label {
   margin: 0 auto;
   padding: 0 2rem;
   width: fit-content;
-  max-width: 100%; }
+  max-width: 100%;
+  font-family: sans-serif; }
 
 #tableofcontents {
   position: fixed;

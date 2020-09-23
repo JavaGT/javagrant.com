@@ -6,42 +6,41 @@
 
 ## Education
 
-- Kerikeri High School, Kerikeri — NCEA Level 3 Endorsed with Excellence
+Kerikeri High School, Kerikeri — NCEA Level 3 Endorsed with Excellence
 
-  Completion of NCEA Level 3 with positions of school prefect, endorsement with excellence, university entrance and NCEA scholarship in Photography.
+- Completion of NCEA Level 3 with positions of school prefect, endorsement with excellence, university entrance and NCEA scholarship in Photography.
+- Consistent placement within the top five students in the year level for achievement in mathematics.
+- Representing Kerikeri High School in the Russell McVey Debating tournament in years 9, 10, 11.
+- Placing second in Northland for the Russell McVey Debating tournament in year 10.
+- I have received WAKA awards every year they have been offered at Kerikeri High School for excellence in attitude across multiple subjects.
 
-  - Academic Achievements
-    - Consistent placement within the top five students in the year level for achievement in mathematics.
-    - Representing Kerikeri High School in the Russell McVey Debating tournament in years 9, 10, 11.
-    - Placing second in Northland for the Russell McVey Debating tournament in year 10.
-    - I have received WAKA awards every year they have been offered at Kerikeri High School for excellence in attitude across multiple subjects.
+The University of Auckland, Auckland
 
-- The University of Auckland, Auckland
-  - Currently completing a Bachelor of Arts in Sociology and Communications
-    - Modules in Coding and Logic, and Arts Scholars
-  - First in Family at university
+- Currently completing a Bachelor of Arts in Sociology and Communications
+- Modules in Coding and Logic, and Arts Scholars
+- First in Family at university
 
 ## Career
 
-- Part-time, Ben and Jerry's Commercial Bay - Duty Manager
+Part-time, Ben and Jerry's Commercial Bay - Duty Manager
 
-  - MARCH 2020 - PRESENT
-  - Working part-time whilst studying at The University of Auckland. Leadership & key holder position.
+- MARCH 2020 - PRESENT
+- Working part-time whilst studying at The University of Auckland. Leadership & key holder position.
 
-- Full-time, Briscoes Group - Department/Duty Manager
+Full-time, Briscoes Group - Department/Duty Manager
 
-  - OCTOBER 2017 - NOVEMBER 2018 & NOVEMBER 2019 - FEBRUARY 2020
-  - Department and duty manager for Briscoes and Rebel Sport Kerikeri (Single entity). Trusted key holder.
+- OCTOBER 2017 - NOVEMBER 2018 & NOVEMBER 2019 - FEBRUARY 2020
+- Department and duty manager for Briscoes and Rebel Sport Kerikeri (Single entity). Trusted key holder.
 
-- After-school, New World
+After-school, New World
 
-  - MARCH 2016 - MAY 2017
-  - Worked as a delicatessen assistant in an after-school and weekend position.
+- MARCH 2016 - MAY 2017
+- Worked as a delicatessen assistant in an after-school and weekend position.
 
-- After-school, Law North
+After-school, Law North
 
-  - EARLY 2015 - LATE 2015
-  - Afterschool role 3.5h a week, cleaning and general assistant.
+- EARLY 2015 - LATE 2015
+- After-school role 3.5h a week, cleaning and general assistant.
 
 ## Student Representation
 
