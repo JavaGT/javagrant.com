@@ -12,7 +12,12 @@ const execp = util.promisify(child_process.exec);
 const { watch, src, dest, series, parallel } = gulp;
 
 function clean() {
-  return del(["./docs/**/*", "!./docs/static", "!./docs/static/**/*"]);
+  return del([
+    "./docs/**/*",
+    "!./docs/static",
+    "!./docs/CNAME",
+    "!./docs/static/**/*",
+  ]);
 }
 
 const renderBlogPost = pugEngine.compileFile(
