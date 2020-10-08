@@ -6,7 +6,7 @@ mixin layer(data)
         +layer(child)
   else if (data.type === "file")
     a(href='/'+data.path.replace('docs/', '').replace('icon', 'image'))
-      img.item(src='/'+data.path.replace('docs/', ''))
+      img.item(loading="lazy" src='/'+data.path.replace('docs/', ''))
 
 block head
   title Java Grant - photography

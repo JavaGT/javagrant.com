@@ -3,6 +3,8 @@ html(lang="en")
   head
     link(rel="stylesheet", href="/main.css")
     link(rel="stylesheet", href="/markdown.css")
+    meta(name="viewport" content="width=device-width initial-scale=1.0")
+
     block head
       title Java Grant - #{title}
     //- block scripts
@@ -11,9 +13,9 @@ html(lang="en")
     .grid.banner
       .gradient
       .item
-        h1
+        h2
           a(href="/") Java Grant
-        h3 Kia Ora.
+        strong Kia Ora.
       .item
         div
           a(href="/") blog
