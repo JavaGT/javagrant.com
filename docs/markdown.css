@@ -2,7 +2,8 @@
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   font-size: 16px;
   line-height: 1.5;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  width: 50rem; }
 
 .markdown-body kbd {
   display: inline-block;

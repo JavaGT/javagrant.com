@@ -124,7 +124,7 @@ function flattenDirectoryStructure(structure) {
   return allFiles;
 }
 
-const build = series(clean, photos, parallel(views, styles, createBlogPosts));
+const build = series(clean, parallel(views, styles, createBlogPosts));
 
-export { watcher as watch, build };
+export { watcher as watch, build, photos };
 export default series(clean, parallel(views, styles, createBlogPosts));
