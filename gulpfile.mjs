@@ -175,9 +175,9 @@ async function processArt() {
 
 async function photographyStructure() {
   return await folderStructure({
-    in_glob: "./docs/photos/small/**/*.(jpg|png|JPG|PNG)",
-    base_dir: "./docs/photos/small/",
-    replace_base: "/photos/small",
+    in_glob: "./docs/photography/small/**/*.(jpg|png|JPG|PNG)",
+    base_dir: "./docs/photography/small/",
+    replace_base: "/photography/small",
   });
 }
 
@@ -226,6 +226,7 @@ async function imagegridPage({ structure, title, description, output_name }) {
 
 async function photographyPage() {
   const structure = await photographyStructure();
+  console.log(structure);
   return await imagegridPage({
     structure,
     title: "Java Grant - Photography",
@@ -254,4 +255,4 @@ async function watcher() {
   watch("./templates/**/*", artPage);
 }
 export { photos, art, watcher as watch };
-export default parallel(blogs, index, styles, cname);
+export default parallel(blogs, index, styles, cname, photographyPage, artPage);
