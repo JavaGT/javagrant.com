@@ -1,0 +1,15 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title=(config.title||'Java Grant')
+  meta(name='description' content=config.description)
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='/static/style.css')
+body
+  header
+      include header.pug
+  main
+    if config.tableofcontents
+      a#toc(href="#table-of-contents") Back to index ⬆️
+    block content
+  //- script(src='static/script.js')
