@@ -1,0 +1,15 @@
+extends ./main.pug
+
+mixin layer(data)
+  if (typeof(data) == 'string')
+    a(href=data.replace('small', 'large'))
+      img.item(loading="lazy" src=data)
+  if (typeof(data) == 'object')
+      for child in data
+        +layer(child)
+  
+block content
+  .grid.line
+    for item in structure
+      .grid.h.item
+        +layer(item)

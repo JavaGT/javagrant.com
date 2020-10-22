@@ -1,0 +1,7 @@
+extends ./main.pug
+block content
+  h1 Welcome.
+  for blog in blogs
+    a(href='/blog/'+blog.config.slug)
+      h1=blog.config.title||blog.config.slug
+

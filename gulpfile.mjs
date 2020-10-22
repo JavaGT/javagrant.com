@@ -1,35 +1,66 @@
-import dirTree from "directory-tree";
-import del from "del";
+import MarkdownIt from "markdown-it";
 import gulp from "gulp";
-import markdown from "gulp-markdown";
-import pug from "gulp-pug";
-import pugEngine from "pug";
-import through2 from "through2";
-import sass from "gulp-sass";
-import child_process from "child_process";
+import mkdirp from "mkdirp";
+import fs from "fs";
+import pug from "pug";
+import path from "path";
 import util from "util";
+import sass from "gulp-sass";
+import yaml from "yaml";
+import opts from "./options.mjs";
+import headinganchor from "markdown-it-headinganchor";
+import glob from "fast-glob";
+import child_process from "child_process";
 const execp = util.promisify(child_process.exec);
-const { watch, src, dest, series, parallel } = gulp;
 
-function clean() {
-  return del([
-    "./docs/**/*",
-    "!./docs/static",
-    "!./docs/CNAME",
-    "!./docs/static/**/*",
-  ]);
+const fsp = fs.promises;
+const { series, watch, parallel, src, dest } = gulp;
+const markdown = new MarkdownIt({ html: true });
+markdown.use(headinganchor, {
+  anchorClass: "",
+  addHeadingAnchor: false,
+  slugify: function (str, md) {
+    return str.replace(/\s+/g, "-").toLowerCase();
+  },
+});
+
+async function clearBlogs(out_path) {
+  await mkdirp(out_path);
+  const filenames = (await fsp.readdir(out_path)).filter((x) =>
+    x.includes(".html")
+  );
+  return Promise.all(
+    filenames.map((filename) => {
+      const file_path = path.join(out_path, filename);
+      return fsp.unlink(file_path);
+    })
+  );
 }
 
-const renderBlogPost = pugEngine.compileFile(
-  "./src/views/components/blog_post.pug"
-);
+async function readBlogs(directory) {
+  const filenames = (await fsp.readdir(directory)).filter((x) =>
+    x.includes(".md")
+  );
+  const blogs = Promise.all(
+    filenames.map(async (filename) => {
+      const file_path = path.join(directory, filename);
+      const file_contents = (await fsp.readFile(file_path)).toString();
+      return { file_path, file_contents };
+    })
+  );
+  return blogs;
+}
 
-function createBlogPosts() {
-  return src("./src/blog/**/*.md", { root: "." })
-    .pipe(
-      through2.obj((file, _, cb) => {
-        let fileAsString = file.contents.toString();
-        const matches = fileAsString.match(/^(#+).(.+)/gm);
+async function parseBlogs(blogs) {
+  return Promise.all(
+    blogs.map(({ file_contents, file_path }) => {
+      const fragments = file_contents.split("---").filter((x) => x);
+      const config = yaml.parse(fragments[0]);
+
+      let content = fragments.slice(1).join("---");
+      const matches = content.match(/^(#+).(.+)/gm);
+
+      if (matches) {
         const toc = matches
           .map((entry, index) => {
             const indent =
@@ -49,87 +80,178 @@ function createBlogPosts() {
               .toLowerCase()})`;
           })
           .join("\n");
+        content = content.replace(/(#+ Table of Contents)/i, "$1\n" + toc);
+        if (content.includes("# Table of Contents"))
+          config.tableofcontents = true;
+      }
 
-        fileAsString = fileAsString.replace(
-          /(#+ Table of Contents)/i,
-          "$1\n" + toc
-        );
-
-        file.contents = Buffer.from(fileAsString);
-        cb(null, file);
-      })
-    )
-    .pipe(markdown())
-    .pipe(
-      through2.obj((file, _, cb) => {
-        file.extname = ".html";
-        const post = file.contents.toString();
-        const title = file.relative.replace(file.extname, "");
-        file.contents = Buffer.from(renderBlogPost({ post, title }));
-        cb(null, file);
-      })
-    )
-    .pipe(dest("./docs/blog"));
+      const rendered = markdown.render(content);
+      config.file_path = file_path;
+      return { config, rendered };
+    })
+  );
 }
 
-function views() {
-  const data = {
-    photographyDirectoryTree: dirTree("./docs/static/photography/icon", {
-      extensions: /\.(jpg|jpeg|png|webp)$/,
-    }),
-    postDirectoryTree: dirTree("./src/blog", {
-      extensions: /\.(md)$/,
-    }),
-  };
-  return src(["./src/views/**/*.pug", "!./src/views/components/*.pug"], {
-    root: ".",
-  })
-    .pipe(
-      pug({
-        data,
-      })
-    )
-    .pipe(dest("./docs"));
+async function blogs() {
+  const blogTemplate = pug.compileFile(opts.blog_template);
+  await clearBlogs(opts.rendered_blogs_path);
+  const blogs = await readBlogs(opts.blogs_path);
+  const parsedBlogs = await parseBlogs(blogs);
+  return Promise.all(
+    parsedBlogs.map((blog) => {
+      const rendered = blogTemplate({
+        content: blog.rendered,
+        config: blog.config,
+      });
+      const out_path = path.join(
+        opts.rendered_blogs_path,
+        blog.config.slug + ".html"
+      );
+      return fsp.writeFile(out_path, rendered);
+    })
+  );
+}
+
+async function index() {
+  const blogs = await readBlogs(opts.blogs_path);
+  const parsedBlogs = await parseBlogs(blogs);
+  const indexTemplate = pug.compileFile(opts.index_template);
+  const rendered = indexTemplate({
+    config: {
+      title: "Java Grant",
+      description: "A blog, resume and art by Java Grant",
+    },
+    blogs: parsedBlogs,
+  });
+  const out_path = path.join(opts.root_output, "index.html");
+  return await fsp.writeFile(out_path, rendered);
 }
 
 function styles() {
-  return src("./src/styles/**/*.scss").pipe(sass()).pipe(dest("./docs"));
+  return src("./styles/**/*.scss").pipe(sass()).pipe(dest("./docs/static"));
 }
 
-function watcher() {
-  watch("./src/styles/**/*", styles);
-  watch("./src/views/**/*", views);
-  watch("./src/blog/**/*", views);
-  watch("./src/blog/**/*", createBlogPosts);
+async function cname() {
+  return fsp.writeFile(opts.cname_location, opts.cname);
 }
 
-function photos() {
-  const files = flattenDirectoryStructure(
-    dirTree("./_photography", {
-      extensions: /\.(jpg|jpeg|png|webp)$/,
-    })
-  ).filter((file) => file.path);
-  return Promise.all(files.map(imageConvertCommand).map((a) => execp(a)));
+async function processImages({ glob_in, out_path }) {
+  const input_files = await glob(glob_in);
+  return input_files.reduce(async (previous, file_path) => {
+    await previous;
+    const output_path = file_path.split(path.sep).slice(2).join(path.sep);
+    const route = output_path.split(path.sep).slice(0, -1).join(path.sep);
+    await mkdirp(path.join("./", out_path, "small", route));
+    await mkdirp(path.join("./", out_path, "large", route));
+    const small_cmd = `convert -define jpeg:extent=256kb -resize 900x "${file_path}" "${path.join(
+      "./",
+      out_path,
+      "small",
+      output_path
+    )}"`;
+    const large_cmd = `convert -define jpeg:extent=3Mb "${file_path}" "${path.join(
+      "./",
+      out_path,
+      "large",
+      output_path
+    )}"`;
+    await execp(small_cmd);
+    return await execp(large_cmd);
+  });
 }
 
-function imageConvertCommand(file) {
-  const dirPath = `./docs/static/${file.path
-    .replace(file.name, "")
-    .replace("_", "")}`;
-  const iconPath = dirPath.replace("photography", "photography/icon");
-  const imagePath = dirPath.replace("photography", "photography/image");
-  return `mkdir -p "${iconPath}" && convert -define jpeg:extent=256kb -resize 900x "./${file.path}" "${iconPath}/${file.name}" && mkdir -p "${imagePath}" && convert -define jpeg:extent=3Mb "./${file.path}" "${imagePath}/${file.name}"`;
+async function processPhotos() {
+  await processImages({
+    glob_in: "./_photography/**/*.(jpg|png|JPG|PNG)",
+    out_path: opts.photo_folder,
+  });
+}
+async function processArt() {
+  await processImages({
+    glob_in: "./_art/**/*.(jpg|png|JPG|PNG)",
+    out_path: opts.art_folder,
+  });
 }
 
-function flattenDirectoryStructure(structure) {
-  const directories = structure.children.filter((x) => x.type === "directory");
-  const files = structure.children.filter((x) => x.type === "file");
-  const dirFiles = directories.map((dir) => flattenDirectoryStructure(dir));
-  const allFiles = [...files, ...dirFiles].flat();
-  return allFiles;
+async function photographyStructure() {
+  return await folderStructure({
+    in_glob: "./docs/photos/small/**/*.(jpg|png|JPG|PNG)",
+    base_dir: "./docs/photos/small/",
+    replace_base: "/photos/small",
+  });
 }
 
-const build = series(clean, parallel(views, styles, createBlogPosts));
+async function artStructure() {
+  return await folderStructure({
+    in_glob: "./docs/art/small/**/*.(jpg|png|JPG|PNG)",
+    base_dir: "./docs/art/small/",
+    replace_base: "/art/small",
+  });
+}
 
-export { watcher as watch, build, photos };
-export default series(clean, parallel(views, styles, createBlogPosts));
+async function folderStructure({ in_glob, base_dir, replace_base }) {
+  const build = {};
+  const files = (await glob(in_glob))
+    .map((file) =>
+      file
+        .replace(base_dir, "")
+        .split(path.sep)
+        .filter((x) => x)
+    )
+    .forEach((route) => {
+      const filename = route.pop();
+      let pos = build;
+      route.forEach((step) => {
+        if (!pos[step]) pos[step] = {};
+        pos = pos[step];
+      });
+      if (!pos[filename])
+        pos[filename] = [replace_base, ...route, filename].join("/");
+    });
+  return build;
+}
+
+async function imagegridPage({ structure, title, description, output_name }) {
+  const imagegridTemplate = pug.compileFile(opts.imagegrid_template);
+  const rendered = imagegridTemplate({
+    config: {
+      title,
+      description,
+    },
+    structure,
+  });
+  const out_path = output_name;
+  return await fsp.writeFile(out_path, rendered);
+}
+
+async function photographyPage() {
+  const structure = await photographyStructure();
+  return await imagegridPage({
+    structure,
+    title: "Java Grant - Photography",
+    description: "Photography by Java Grant",
+    output_name: path.join(opts.photo_folder, "index.html"),
+  });
+}
+async function artPage() {
+  const structure = await artStructure();
+  return await imagegridPage({
+    structure,
+    title: "Java Grant - Art",
+    description: "Art by Java Grant",
+    output_name: path.join(opts.art_folder, "index.html"),
+  });
+}
+
+const photos = series(processPhotos, photographyPage);
+const art = series(processArt, artPage);
+
+async function watcher() {
+  watch("./styles/**/*", styles);
+  watch(["./blogs/**/*", "./templates/**/*"], blogs);
+  watch("./templates/**/*", index);
+  watch("./templates/**/*", photographyPage);
+  watch("./templates/**/*", artPage);
+}
+export { photos, art, watcher as watch };
+export default parallel(blogs, index, styles, cname);
