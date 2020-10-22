@@ -168,7 +168,7 @@ async function processPhotos() {
 }
 async function processArt() {
   await processImages({
-    glob_in: "./_art/**/*.(jpg|png|JPG|PNG)",
+    glob_in: "./_art/**/*.(jpg|png|JPG|PNG|gif|GIF)",
     out_path: opts.art_folder,
   });
 }
@@ -183,7 +183,7 @@ async function photographyStructure() {
 
 async function artStructure() {
   return await folderStructure({
-    in_glob: "./docs/art/small/**/*.(jpg|png|JPG|PNG)",
+    in_glob: "./docs/art/small/**/*.(jpg|png|JPG|PNG|gif|GIF)",
     base_dir: "./docs/art/small/",
     replace_base: "/art/small",
   });
