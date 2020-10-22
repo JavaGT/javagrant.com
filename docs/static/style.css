@@ -45,7 +45,7 @@ nav {
     text-align: center;
     flex-grow: 1; }
   nav ul {
-    text-align: right; }
+    right: 0; }
   nav .title {
     flex-grow: 0;
     position: relative; }
