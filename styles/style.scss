@@ -23,12 +23,13 @@ html {
   background-attachment: fixed;
 }
 $top-margin: 1rem;
+$bottom-margin: 0.5rem;
 body {
-  margin: $top-margin 0.2rem 0 0.2rem;
+  margin-top: $top-margin;
   top: 0;
   left: 0;
   right: 0;
-  min-height: calc(100% - #{$top-margin});
+  min-height: calc(100% - #{$top-margin + $bottom-margin});
   background: white;
   display: block;
   position: absolute;
@@ -55,15 +56,14 @@ nav {
       display: inline-block;
     }
     div {
-      margin-left: 3rem;
-      float: right;
+      margin: 0 1rem;
     }
     #java {
-      float: left;
       max-height: 6rem;
       border-radius: 50%;
       box-shadow: #00aeff 0.3rem 0.3rem 0px;
-      // max-width: 6rem;
+      max-width: 6rem;
+      margin: 0 2rem;
     }
   }
   a {

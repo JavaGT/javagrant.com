@@ -22,11 +22,11 @@ html {
   background-attachment: fixed; }
 
 body {
-  margin: 1rem 0.2rem 0 0.2rem;
+  margin-top: 1rem;
   top: 0;
   left: 0;
   right: 0;
-  min-height: calc(100% - 1rem);
+  min-height: calc(100% - 1.5rem);
   background: white;
   display: block;
   position: absolute;
@@ -44,21 +44,19 @@ nav {
     display: inline-block;
     text-align: center;
     flex-grow: 1; }
-  nav ul {
-    right: 0; }
   nav .title {
     flex-grow: 0;
     position: relative; }
     nav .title > * {
       display: inline-block; }
     nav .title div {
-      margin-left: 3rem;
-      float: right; }
+      margin: 0 1rem; }
     nav .title #java {
-      float: left;
       max-height: 6rem;
       border-radius: 50%;
-      box-shadow: #00aeff 0.3rem 0.3rem 0px; }
+      box-shadow: #00aeff 0.3rem 0.3rem 0px;
+      max-width: 6rem;
+      margin: 0 2rem; }
   nav a {
     color: black;
     text-decoration: underline;
