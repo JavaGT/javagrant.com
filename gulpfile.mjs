@@ -3,6 +3,7 @@ import gulp from "gulp";
 import mkdirp from "mkdirp";
 import fs from "fs";
 import pug from "pug";
+import del from "del";
 import path from "path";
 import util from "util";
 import sass from "gulp-sass";
@@ -244,8 +245,16 @@ async function artPage() {
   });
 }
 
-const photos = series(processPhotos, photographyPage);
-const art = series(processArt, artPage);
+async function delPhotos() {
+  return del(["./docs/photography/**/*", "!./docs/photography/index.html"]);
+}
+
+async function delArt() {
+  return del(["./docs/art/**/*", "!./docs/art/index.html"]);
+}
+
+const photos = series(delPhotos, processPhotos, photographyPage);
+const art = series(delArt, processArt, artPage);
 
 async function watcher() {
   watch("./styles/**/*", styles);
