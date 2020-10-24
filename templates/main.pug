@@ -5,6 +5,13 @@ head
   meta(name='description' content=config.description)
   meta(name='viewport' content='width=device-width, initial-scale=1')
   link(rel='stylesheet' href='/static/style.css')
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-BJMGN2YH5Z')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BJMGN2YH5Z');
+
 body
   header
       include header.pug
