@@ -227,7 +227,6 @@ async function imagegridPage({ structure, title, description, output_name }) {
 
 async function photographyPage() {
   const structure = await photographyStructure();
-  console.log(structure);
   return await imagegridPage({
     structure,
     title: "Java Grant - Photography",
