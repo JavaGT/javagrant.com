@@ -1,15 +1,18 @@
 extends ./main.pug
 
-mixin layer(data)
+mixin layer(data, name)
   if (typeof(data) == 'string')
     a(href=data.replace('small', 'large'))
       img.item(loading="lazy" src=data)
   if (typeof(data) == 'object')
-      for child in data
-        +layer(child)
+    if name
+      h3.block
+        a(href=name)=name
+    for child, key in data
+      +layer(child, key)
   
 block content
   .grid.line
-    for item in structure
+    for item, key in structure
       .grid.h.item
-        +layer(item)
+        +layer(item, key)
