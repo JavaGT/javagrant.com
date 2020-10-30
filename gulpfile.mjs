@@ -227,6 +227,12 @@ async function imagegridPage({ structure, title, description, output_name }) {
 
 async function photographyPage() {
   const structure = await photographyStructure();
+  console.log(structure);
+  Object.entries(structure).map(([key, value]) => {
+    if (typeof value == "object") {
+      return;
+    }
+  });
   return await imagegridPage({
     structure,
     title: "Java Grant - Photography",

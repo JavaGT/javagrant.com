@@ -120,3 +120,8 @@ img {
   transition: 0.2s; }
   #toc:hover {
     opacity: 1; }
+
+.block {
+  display: block;
+  width: 100%;
+  text-align: center; }
