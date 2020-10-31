@@ -236,7 +236,7 @@ async function photographyPage() {
   return await imagegridPage({
     structure,
     title: "Java Grant - Photography",
-    description: "Photography by Java Grant",
+    description: "Photography by Java Grant", 
     output_name: path.join(opts.photo_folder, "index.html"),
   });
 }
