@@ -156,9 +156,10 @@ async function processImages({ glob_in, out_path }) {
       "large",
       output_path
     )}"`;
+    console.log(small_cmd)
     await execp(small_cmd);
     return await execp(large_cmd);
-  });
+  }, Promise.resolve());
 }
 
 async function processPhotos() {
@@ -227,7 +228,6 @@ async function imagegridPage({ structure, title, description, output_name }) {
 
 async function photographyPage() {
   const structure = await photographyStructure();
-  console.log(structure);
   Object.entries(structure).map(([key, value]) => {
     if (typeof value == "object") {
       return;
@@ -242,6 +242,7 @@ async function photographyPage() {
 }
 async function artPage() {
   const structure = await artStructure();
+  console.log(structure);
   return await imagegridPage({
     structure,
     title: "Java Grant - Art",
@@ -264,7 +265,7 @@ const art = series(delArt, processArt, artPage);
 async function watcher() {
   watch("./styles/**/*", styles);
   watch(["./blogs/**/*", "./templates/**/*"], blogs);
-  watch("./templates/**/*", index);
+  watch(["./blogs/**/*", "./templates/**/*"], index);
   watch("./templates/**/*", photographyPage);
   watch("./templates/**/*", artPage);
 }
