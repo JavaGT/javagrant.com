@@ -156,7 +156,6 @@ async function processImages({ glob_in, out_path }) {
       "large",
       output_path
     )}"`;
-    console.log(small_cmd)
     await execp(small_cmd);
     return await execp(large_cmd);
   }, Promise.resolve());
