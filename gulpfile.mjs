@@ -12,6 +12,7 @@ import opts from "./options.mjs";
 import headinganchor from "markdown-it-headinganchor";
 import glob from "fast-glob";
 import child_process from "child_process";
+import photos from './build_scripts/photography.mjs'
 const execp = util.promisify(child_process.exec);
 
 const fsp = fs.promises;
@@ -136,59 +137,59 @@ async function cname() {
   return fsp.writeFile(opts.cname_location, opts.cname);
 }
 
-async function processImages({ glob_in, out_path }) {
-  const input_files = await glob(glob_in);
-  return input_files.reduce(async (previous, file_path) => {
-    await previous;
-    const output_path = file_path.split(path.sep).slice(2).join(path.sep);
-    const route = output_path.split(path.sep).slice(0, -1).join(path.sep);
-    await mkdirp(path.join("./", out_path, "small", route));
-    await mkdirp(path.join("./", out_path, "large", route));
-    const small_cmd = `convert -define jpeg:extent=256kb -resize 900x "${file_path}" "${path.join(
-      "./",
-      out_path,
-      "small",
-      output_path
-    )}"`;
-    const large_cmd = `convert -define jpeg:extent=3Mb "${file_path}" "${path.join(
-      "./",
-      out_path,
-      "large",
-      output_path
-    )}"`;
-    await execp(small_cmd);
-    return await execp(large_cmd);
-  }, Promise.resolve());
-}
+// async function processImages({ glob_in, out_path }) {
+//   const input_files = await glob(glob_in);
+//   return input_files.reduce(async (previous, file_path) => {
+//     await previous;
+//     const output_path = file_path.split(path.sep).slice(2).join(path.sep);
+//     const route = output_path.split(path.sep).slice(0, -1).join(path.sep);
+//     await mkdirp(path.join("./", out_path, "small", route));
+//     await mkdirp(path.join("./", out_path, "large", route));
+//     const small_cmd = `convert -define jpeg:extent=256kb -resize 900x "${file_path}" "${path.join(
+//       "./",
+//       out_path,
+//       "small",
+//       output_path
+//     )}"`;
+//     const large_cmd = `convert -define jpeg:extent=3Mb "${file_path}" "${path.join(
+//       "./",
+//       out_path,
+//       "large",
+//       output_path
+//     )}"`;
+//     await execp(small_cmd);
+//     return await execp(large_cmd);
+//   }, Promise.resolve());
+// }
 
-async function processPhotos() {
-  await processImages({
-    glob_in: "./_photography/**/*.(jpg|png|JPG|PNG)",
-    out_path: opts.photo_folder,
-  });
-}
-async function processArt() {
-  await processImages({
-    glob_in: "./_art/**/*.(jpg|png|JPG|PNG|gif|GIF)",
-    out_path: opts.art_folder,
-  });
-}
+// async function processPhotos() {
+//   await processImages({
+//     glob_in: "./_photography/**/*.(jpg|png|JPG|PNG)",
+//     out_path: opts.photo_folder,
+//   });
+// }
+// async function processArt() {
+//   await processImages({
+//     glob_in: "./_art/**/*.(jpg|png|JPG|PNG|gif|GIF)",
+//     out_path: opts.art_folder,
+//   });
+// }
 
 async function photographyStructure() {
   return await folderStructure({
-    in_glob: "./docs/photography/small/**/*.(jpg|png|JPG|PNG)",
-    base_dir: "./docs/photography/small/",
-    replace_base: "/photography/small",
+    in_glob: "./docs/photography/preview/**/*.(jpg|png|JPG|PNG)",
+    base_dir: "./docs/photography/preview/",
+    replace_base: "/photography/preview",
   });
 }
 
-async function artStructure() {
-  return await folderStructure({
-    in_glob: "./docs/art/small/**/*.(jpg|png|JPG|PNG|gif|GIF)",
-    base_dir: "./docs/art/small/",
-    replace_base: "/art/small",
-  });
-}
+// async function artStructure() {
+//   return await folderStructure({
+//     in_glob: "./docs/art/small/**/*.(jpg|png|JPG|PNG|gif|GIF)",
+//     base_dir: "./docs/art/small/",
+//     replace_base: "/art/small",
+//   });
+// }
 
 async function folderStructure({ in_glob, base_dir, replace_base }) {
   const build = {};
@@ -236,7 +237,7 @@ async function photographyPage() {
     structure,
     title: "Java Grant - Photography",
     description: "Photography by Java Grant", 
-    output_name: path.join(opts.photo_folder, "index.html"),
+    output_name: path.join(opts.photo_folder_out, "index.html"),
   });
 }
 async function artPage() {
@@ -250,23 +251,23 @@ async function artPage() {
   });
 }
 
-async function delPhotos() {
-  return del(["./docs/photography/**/*", "!./docs/photography/index.html"]);
-}
+// async function delPhotos() {
+//   return del(["./docs/photography/**/*", "!./docs/photography/index.html"]);
+// }
 
-async function delArt() {
-  return del(["./docs/art/**/*", "!./docs/art/index.html"]);
-}
+// async function delArt() {
+//   return del(["./docs/art/**/*", "!./docs/art/index.html"]);
+// }
 
-const photos = series(delPhotos, processPhotos, photographyPage);
-const art = series(delArt, processArt, artPage);
+const photosg = series(photos, photographyPage);
+// const art = series(delArt, processArt, artPage);
 
 async function watcher() {
   watch("./styles/**/*", styles);
   watch(["./blogs/**/*", "./templates/**/*"], blogs);
   watch(["./blogs/**/*", "./templates/**/*"], index);
   watch("./templates/**/*", photographyPage);
-  watch("./templates/**/*", artPage);
+  // watch("./templates/**/*", artPage);
 }
-export { photos, art, watcher as watch };
-export default parallel(blogs, index, styles, cname, photographyPage, artPage);
+export { watcher as watch };
+export default parallel(photosg, blogs, index, styles, cname, )//photographyPage, artPage);
