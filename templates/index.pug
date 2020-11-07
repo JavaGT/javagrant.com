@@ -1,7 +1,9 @@
 extends ./main.pug
 block content
   h1 Welcome.
+  p.
+    I am Java, these are my blogs!
   for blog in blogs
-    a(href='/blog/'+blog.config.slug)
-      h1=blog.config.title||blog.config.slug
+    h1
+      a(href='/blog/'+blog.config.slug)=blog.config.title||blog.config.slug
 
