@@ -2,7 +2,7 @@ extends ./main.pug
 
 mixin layer(data, name)
   if (typeof(data) == 'string')
-    a(href=data.replace('small', 'large'))
+    a(href=data.replace('preview', 'full'))
       img.item(loading="lazy" src=data)
   if (typeof(data) == 'object')
     if name
