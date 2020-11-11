@@ -3,7 +3,6 @@ import gulp from "gulp";
 import mkdirp from "mkdirp";
 import fs from "fs";
 import pug from "pug";
-import del from "del";
 import path from "path";
 import util from "util";
 import sass from "gulp-sass";
@@ -271,3 +270,4 @@ async function watcher() {
 }
 export { watcher as watch };
 export default parallel(photosg, blogs, index, styles, cname, )//photographyPage, artPage);
+photosg()
