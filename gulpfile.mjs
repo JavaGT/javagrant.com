@@ -1,3 +1,4 @@
+import processDirectory, {render as renderGrid, css as galleryCss} from './build_scripts/image_grid/index.mjs'
 import MarkdownIt from "markdown-it";
 import gulp from "gulp";
 import mkdirp from "mkdirp";
@@ -136,51 +137,13 @@ async function cname() {
   return fsp.writeFile(opts.cname_location, opts.cname);
 }
 
-// async function processImages({ glob_in, out_path }) {
-//   const input_files = await glob(glob_in);
-//   return input_files.reduce(async (previous, file_path) => {
-//     await previous;
-//     const output_path = file_path.split(path.sep).slice(2).join(path.sep);
-//     const route = output_path.split(path.sep).slice(0, -1).join(path.sep);
-//     await mkdirp(path.join("./", out_path, "small", route));
-//     await mkdirp(path.join("./", out_path, "large", route));
-//     const small_cmd = `convert -define jpeg:extent=256kb -resize 900x "${file_path}" "${path.join(
-//       "./",
-//       out_path,
-//       "small",
-//       output_path
-//     )}"`;
-//     const large_cmd = `convert -define jpeg:extent=3Mb "${file_path}" "${path.join(
-//       "./",
-//       out_path,
-//       "large",
-//       output_path
-//     )}"`;
-//     await execp(small_cmd);
-//     return await execp(large_cmd);
-//   }, Promise.resolve());
-// }
-
-// async function processPhotos() {
-//   await processImages({
-//     glob_in: "./_photography/**/*.(jpg|png|JPG|PNG)",
-//     out_path: opts.photo_folder,
+// async function photographyStructure() {
+//   return await folderStructure({
+//     in_glob: "./docs/photography/preview/**/*.(jpg|png|JPG|PNG)",
+//     base_dir: "./docs/photography/preview/",
+//     replace_base: "/photography/preview",
 //   });
 // }
-// async function processArt() {
-//   await processImages({
-//     glob_in: "./_art/**/*.(jpg|png|JPG|PNG|gif|GIF)",
-//     out_path: opts.art_folder,
-//   });
-// }
-
-async function photographyStructure() {
-  return await folderStructure({
-    in_glob: "./docs/photography/preview/**/*.(jpg|png|JPG|PNG)",
-    base_dir: "./docs/photography/preview/",
-    replace_base: "/photography/preview",
-  });
-}
 
 // async function artStructure() {
 //   return await folderStructure({
@@ -190,65 +153,65 @@ async function photographyStructure() {
 //   });
 // }
 
-async function folderStructure({ in_glob, base_dir, replace_base }) {
-  const build = {};
-  const files = (await glob(in_glob))
-    .map((file) =>
-      file
-        .replace(base_dir, "")
-        .split(path.sep)
-        .filter((x) => x)
-    )
-    .forEach((route) => {
-      const filename = route.pop();
-      let pos = build;
-      route.forEach((step) => {
-        if (!pos[step]) pos[step] = {};
-        pos = pos[step];
-      });
-      if (!pos[filename])
-        pos[filename] = [replace_base, ...route, filename].join("/");
-    });
-  return build;
-}
+// async function folderStructure({ in_glob, base_dir, replace_base }) {
+//   const build = {};
+//   const files = (await glob(in_glob))
+//     .map((file) =>
+//       file
+//         .replace(base_dir, "")
+//         .split(path.sep)
+//         .filter((x) => x)
+//     )
+//     .forEach((route) => {
+//       const filename = route.pop();
+//       let pos = build;
+//       route.forEach((step) => {
+//         if (!pos[step]) pos[step] = {};
+//         pos = pos[step];
+//       });
+//       if (!pos[filename])
+//         pos[filename] = [replace_base, ...route, filename].join("/");
+//     });
+//   return build;
+// }
 
-async function imagegridPage({ structure, title, description, output_name }) {
-  const imagegridTemplate = pug.compileFile(opts.imagegrid_template);
-  const rendered = imagegridTemplate({
-    config: {
-      title,
-      description,
-    },
-    structure,
-  });
-  const out_path = output_name;
-  return await fsp.writeFile(out_path, rendered);
-}
+// async function imagegridPage({ structure, title, description, output_name }) {
+//   const imagegridTemplate = pug.compileFile(opts.imagegrid_template);
+//   const rendered = imagegridTemplate({
+//     config: {
+//       title,
+//       description,
+//     },
+//     structure,
+//   });
+//   const out_path = output_name;
+//   return await fsp.writeFile(out_path, rendered);
+// }
 
-async function photographyPage() {
-  const structure = await photographyStructure();
-  Object.entries(structure).map(([key, value]) => {
-    if (typeof value == "object") {
-      return;
-    }
-  });
-  return await imagegridPage({
-    structure,
-    title: "Java Grant - Photography",
-    description: "Photography by Java Grant", 
-    output_name: path.join(opts.photo_folder_out, "index.html"),
-  });
-}
-async function artPage() {
-  const structure = await artStructure();
-  console.log(structure);
-  return await imagegridPage({
-    structure,
-    title: "Java Grant - Art",
-    description: "Art by Java Grant",
-    output_name: path.join(opts.art_folder, "index.html"),
-  });
-}
+// async function photographyPage() {
+//   const structure = await photographyStructure();
+//   Object.entries(structure).map(([key, value]) => {
+//     if (typeof value == "object") {
+//       return;
+//     }
+//   });
+//   return await imagegridPage({
+//     structure,
+//     title: "Java Grant - Photography",
+//     description: "Photography by Java Grant", 
+//     output_name: path.join(opts.photo_folder_out, "index.html"),
+//   });
+// }
+// async function artPage() {
+//   const structure = await artStructure();
+//   console.log(structure);
+//   return await imagegridPage({
+//     structure,
+//     title: "Java Grant - Art",
+//     description: "Art by Java Grant",
+//     output_name: path.join(opts.art_folder, "index.html"),
+//   });
+// }
 
 // async function delPhotos() {
 //   return del(["./docs/photography/**/*", "!./docs/photography/index.html"]);
@@ -258,16 +221,45 @@ async function artPage() {
 //   return del(["./docs/art/**/*", "!./docs/art/index.html"]);
 // }
 
-const photosg = series(photos, photographyPage);
+// const photosg = series(photos, photographyPage);
 // const art = series(delArt, processArt, artPage);
+
+
+// fs.writeFile(
+//   "index.html",
+//   render({
+//     images: structure,
+//     process: (route) => ({
+//       preview: path.join("_out", route),
+//       high_res: path.join("_out", route),
+//     }),
+//   })
+// );
+
+async function photographyGrid(){
+const { structure } = await processDirectory({
+  input_dir: "_photography",
+  output_dir: "docs/photography/preview",
+  width: 900,
+  target_filesize: "3MB",
+  timestamp_filename: "docs/photography/preview/lastrun.txt",
+});
+
+const content = renderGrid({images: structure,
+    process: (route) => ({
+      preview: path.join("preview", route),
+      high_res: path.join("full", route),
+    })})
+
+  const photographyTemplate = pug.compileFile(opts.imagegrid_template);
+
+  await fsp.writeFile('docs/photography/index.html', photographyTemplate({content, css: galleryCss, config: {title: 'Java Grant Photography'}}))
+}
 
 async function watcher() {
   watch("./styles/**/*", styles);
   watch(["./blogs/**/*", "./templates/**/*"], blogs);
   watch(["./blogs/**/*", "./templates/**/*"], index);
-  watch("./templates/**/*", photographyPage);
-  // watch("./templates/**/*", artPage);
 }
 export { watcher as watch };
-export default parallel(photosg, blogs, index, styles, cname, )//photographyPage, artPage);
-photosg()
+export default parallel(photographyGrid, blogs, index, styles, cname, )//photographyPage, artPage);

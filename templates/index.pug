@@ -4,6 +4,7 @@ block content
   p.
     I am Java, these are my blogs!
   for blog in blogs
-    h1
-      a(href='/blog/'+blog.config.slug)=blog.config.title||blog.config.slug
+    if (!blog.config.hidden)
+      h1
+        a(href='/blog/'+blog.config.slug)=blog.config.title||blog.config.slug
 

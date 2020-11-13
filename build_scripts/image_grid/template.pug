@@ -1,0 +1,22 @@
+mixin layer(images, name)
+  - let gridname = images['.']?.title || name
+  .gallery-grid
+    if (gridname)
+      h3.gallery-subtitle(id=gridname)=gridname
+    for entry in Object.entries(images)
+      if (typeof entry[1] == 'string')
+        a(href=process(entry[1]).high_res)
+          img(src=process(entry[1]).preview loading='lazy')
+      else
+        if (entry[0] != '.')
+          +layer(entry[1], entry[0])
+
+link(rel="stylesheet" href="gallery.css")
+#gallery
+  ul#gallery-links
+    li Jump to:
+    for key in Object.keys(images)
+      if (isNaN(parseInt(key)))
+        li
+          a(href='#'+key)=key
+  +layer(images)
