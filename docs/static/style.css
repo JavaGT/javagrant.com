@@ -1,38 +1,13 @@
-main > a[href="#table-of-contents"] {
-  background: white;
-  padding: 1rem;
-  top: 0;
-  float: right;
-  right: 1em;
-  display: inline-block;
-  position: -webkit-sticky;
-  position: sticky; }
-
 * {
-  font-family: Helvetica, sans-serif;
   box-sizing: border-box; }
 
 html {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  background: #c322c1;
-  background: linear-gradient(90deg, #00aeff 0%, #ff0077 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  font-family: Helvetica, sans-serif;
+  margin: 0 max(1rem, 10vw); }
 
-body {
-  margin-top: 1rem;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: calc(100% - 1.5rem);
-  background: white;
-  display: block;
-  position: absolute;
-  padding: 1rem 3rem 3rem 3rem;
-  border-radius: 0.4rem 0.4rem 0 0;
-  overflow: auto; }
+h1, h2, h3, h4, h5.h6 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace; }
 
 nav {
   user-select: none;
@@ -53,8 +28,9 @@ nav {
       margin: 0 1rem; }
     nav .title #java {
       max-height: 6rem;
-      border-radius: 50%;
-      box-shadow: #00aeff 0.3rem 0.3rem 0px;
+      border-radius: 20%;
+      box-shadow: #00aeff 0.3rem 0.3rem 0px, #ae00ff -0.3rem 0.1rem 0px, #ffae00 0.2rem -0.3rem 0;
+      border: 0.05rem solid #fff;
       max-width: 6rem;
       margin: 0 2rem; }
   nav a {
@@ -74,57 +50,6 @@ nav {
     nav ul li {
       display: inline-block;
       padding: 0.3rem 1rem; }
-
-.item {
-  flex-grow: 10;
-  margin: 0;
-  overflow: hidden;
-  flex-basis: content;
-  padding: 1em; }
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: stretch;
-  justify-content: center; }
-
-.grid.h {
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-.grid.v {
-  flex-direction: column; }
-
-.grid.c {
-  align-items: center; }
-
-img.item {
-  max-width: 60vw;
-  max-height: 30vh;
-  min-height: 15rem; }
-
-img {
-  object-fit: scale-down; }
-
-.line > * {
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  margin: 0.1rem; }
-
-#toc {
-  border-radius: 1rem;
-  border: solid rgba(0, 0, 0, 0.3) 1px;
-  padding: 0.5rem 1rem;
-  top: 3rem;
-  opacity: 0.3;
-  transition: 0.2s; }
-  #toc:hover {
-    opacity: 1; }
-
-.block {
-  display: block;
-  width: 100%;
-  text-align: center; }
 
 ::-webkit-scrollbar {
   width: 8px;
