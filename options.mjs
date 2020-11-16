@@ -1,20 +1,18 @@
-export default {
-  blogs_path: "./blogs",
-  rendered_blogs_path: "./docs/blog",
-  root_output: "./docs",
-  blog_template: "./templates/blog.pug",
-  index_template: "./templates/index.pug",
-  imagegrid_template: "./templates/imagegrid.pug",
+import path from 'path'
 
-  preview_image_folder: "preview",
-  full_image_folder: "full",
+const paths = {}
 
-  photo_folder_in: "./_photography",
-  photo_folder_out: "./docs/photography",
+paths.photography_images = path.join("docs", "static", "photography");
+paths.photography_thumbs = path.join(paths.photography_images, "small");
+paths.photography_fulls = path.join(paths.photography_images, "large");
 
-  art_folder_in: "./_art",
-  art_folder_out: "./docs/art",
+paths.art_images = path.join("docs", "static", "art");
+paths.art_thumbs = path.join(paths.art_images, "small");
+paths.art_fulls = path.join(paths.art_images, "large");
 
-  cname_location: "./docs/CNAME",
-  cname: "javagrant.com",
-};
+
+const cname = {}
+  cname.location= path.join('docs', 'cname')
+  cname.value= "javagrant.com"
+
+export default { paths, cname }

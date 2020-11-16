@@ -1,0 +1,6 @@
+extends ./main.pug
+block content
+  if (!config.hidden)
+    h1
+      a#blogs-link(href="/") Blogs
+  | !{content}
