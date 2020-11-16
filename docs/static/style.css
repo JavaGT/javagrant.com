@@ -1,3 +1,14 @@
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; }
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, #ffbacc 13%, #9ea9ff 100%); }
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 0px; }
+
 * {
   box-sizing: border-box; }
 
@@ -8,9 +19,13 @@ html {
   font-family: Helvetica, sans-serif;
   margin: 0 max(1rem, 10vw); }
 
-h1, h2, h3, h4, h5.h6 {
+h1,
+h2,
+h3,
+h4,
+h5.h6 {
   text-align: center;
-  font-family: 'Courier New', Courier, monospace; }
+  font-family: "Courier New", Courier, monospace; }
 
 nav {
   user-select: none;
@@ -22,20 +37,9 @@ nav {
     display: inline-block;
     text-align: center;
     flex-grow: 1; }
-  nav .title {
-    flex-grow: 0;
-    position: relative; }
-    nav .title > * {
-      display: inline-block; }
-    nav .title div {
-      margin: 0 1rem; }
-    nav .title #java {
-      max-height: 6rem;
-      border-radius: 20%;
-      box-shadow: #00aeff 0.3rem 0.3rem 0px, #ae00ff -0.3rem 0.1rem 0px, #ffae00 0.2rem -0.3rem 0;
-      border: 0.05rem solid #fff;
-      max-width: 6rem;
-      margin: 0 2rem; }
+  nav .title #java {
+    max-width: 6rem;
+    margin: 0 2rem; }
   nav a {
     color: black;
     text-decoration: underline;
@@ -44,23 +48,22 @@ nav {
       text-decoration-color: black; }
   nav h1 a:hover {
     text-decoration: dashed underline; }
-  nav h3 {
-    color: gray; }
   nav ul {
     list-style: none;
+    width: 100%;
     margin: 0;
     padding: 0; }
     nav ul li {
       display: inline-block;
       padding: 0.3rem 1rem; }
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px; }
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(0deg, #ffbacc 13%, #9ea9ff 100%); }
-
-::-webkit-scrollbar-track {
-  background: #ffffff;
-  border-radius: 0px; }
+  nav ul#social {
+    right: 0; }
+    nav ul#social li {
+      padding: 0.2rem; }
+      nav ul#social li a {
+        display: inline-block; }
+        nav ul#social li a img {
+          filter: grayscale(1);
+          width: 1em;
+          height: 1em;
+          display: inline-block; }

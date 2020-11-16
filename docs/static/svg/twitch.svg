@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-aria-label="Twitch" role="img"
-viewBox="0 0 512 512"><rect
-width="512" height="512"
-rx="15%"
-fill="#fff"/><path d="m115 101-22 56v228h78v42h44l41-42h63l85-85v-199zm260 185-48 48h-78l-42 42v-42h-65v-204h233zm-48-100v85h-30v-85zm-78 0v85h-29v-85z" fill="#6441a4"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M512,76.8C512,34.413 477.587,0 435.2,0L76.8,0C34.413,0 0,34.413 0,76.8L0,435.2C0,477.587 34.413,512 76.8,512L435.2,512C477.587,512 512,477.587 512,435.2L512,76.8Z" style="fill:rgb(100,65,164);"/>
+    <g transform="matrix(1,0,0,1,7.5,0)">
+        <path d="M115,101L93,157L93,385L171,385L171,427L215,427L256,385L319,385L404,300L404,101L115,101ZM375,286L327,334L249,334L207,376L207,334L142,334L142,130L375,130L375,286ZM327,186L327,271L297,271L297,186L327,186ZM249,186L249,271L220,271L220,186L249,186Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+</svg>
