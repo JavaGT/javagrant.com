@@ -78,9 +78,6 @@ function artPages() {
   });
 }
 
-const photos = parallel(processPhotos, photographyPages)
-const art = parallel(processArt, artPages);
-
 
 function styles() {
   return src("./styles/**/*.scss").pipe(sass()).pipe(dest("./docs/static"));
@@ -110,7 +107,14 @@ async function blogs(){
 
 async function watcher() {
   watch("./styles/**/*", styles);
+  watch("./build_tools/templates/**/*", parallel(blogs, photographyPages, artPages))
+  watch('./_photography/**/*', parallel(processPhotos, photographyPages));
+  watch("./_art/**/*", parallel(processArt, artPages))
+  watch("./blogs/**/*", blogs);
 }
+
+const photos = parallel(processPhotos, photographyPages);
+const art = parallel(processArt, artPages);
 
 export { watcher as watch };
 
