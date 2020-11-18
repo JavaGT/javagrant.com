@@ -10,7 +10,10 @@ body {
 }
 html {
   font-family: Helvetica, sans-serif;
-  margin: unquote("0 max(1rem, 10vw)");
+  max-width: 90em;
+  margin: 0 auto;
+  // margin: 1em;
+  // margin: unquote("0 max(1rem, 10vw)");
 }
 h1,
 h2,

@@ -110,11 +110,19 @@ async function watcher() {
   watch("./styles/**/*", styles);
   watch("./build_tools/templates/**/*", parallel(blogs, photographyPages, artPages))
   watch(
-    ["./_photography/**/*", "./build_tools/image_gallery/style.css"],
+    [
+      "./_photography/**/*",
+      "./build_tools/image_gallery/style.css",
+      "./build_tools/image_gallery/template.pug",
+    ],
     parallel(processPhotos, photographyPages)
   );
   watch(
-    ["./_art/**/*", "./build_tools/image_gallery/style.css"],
+    [
+      "./_art/**/*",
+      "./build_tools/image_gallery/style.css",
+      "./build_tools/image_gallery/template.pug",
+    ],
     parallel(processArt, artPages)
   );
   watch("./blogs/**/*", blogs);

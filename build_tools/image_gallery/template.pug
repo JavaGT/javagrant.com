@@ -22,9 +22,8 @@ style
     if (tree.children)
       - const sub_galleries = Object.values(tree.children).filter(x=>x.type == 'directory')
       if (sub_galleries.length)
-        li Jump to:
+        span Jump to:
         for entry in sub_galleries
-          li
-            a(href='#'+entry.name)=entry.name
-    +layer(tree, root, true)
+          a(href='#'+entry.name)=entry.name
+  +layer(tree, root, true)
 

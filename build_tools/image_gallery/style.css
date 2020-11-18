@@ -3,36 +3,33 @@
   list-style: none;
   padding: 0;
 }
-#gallery #gallery-links li {
+#gallery #gallery-links a {
   display: inline-block;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 #gallery .gallery-grid {
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   flex-grow: 1;
 }
 #gallery .gallery-grid .gallery-grid {
-  margin-top: 2rem;
-}
-#gallery .gallery-grid a,
-#gallery .gallery-grid .gallery-grid {
-  /* margin: 10em; */
+  margin-top: 1rem;
 }
 #gallery .gallery-grid img {
   flex-shrink: 0;
   flex-basis: content;
-  max-width: 80vw;
-  max-height: 35vh;
-  min-height: 12rem;
-  min-width: 12rem;
+  max-width: 90vw;
+  max-height: 22vh;
+  min-height: 4rem;
   object-fit: scale-down;
-  padding: 0.6rem;
+  margin: 0.5em;
 }
 #gallery .gallery-subtitle {
   margin-bottom: 0;
+  margin-top: 1rem;
   display: block;
   width: 100%;
   text-align: center;
