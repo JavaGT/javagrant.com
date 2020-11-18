@@ -26,7 +26,7 @@ export default async function(in_directory){
 
       const markdown_html = markdown.render(content)
 
-      return {markdown_html, route, data}
+      return {markdown_html, content, route, data}
     })
   );
   
