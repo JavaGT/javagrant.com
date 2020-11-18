@@ -1,5 +1,7 @@
 ---
 slug: empowerment
+title: Thoughts on Empowerment
+description: In development..
 ---
 
 # Empowerment - A work in progress.

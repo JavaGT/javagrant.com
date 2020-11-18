@@ -1,5 +1,6 @@
 ---
 slug: resume
+hidden: true
 ---
 
 ## Table of Contents

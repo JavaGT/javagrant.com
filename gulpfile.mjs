@@ -101,6 +101,7 @@ async function blogs(){
   }))
 
   const renderIndex = pug.compileFile('./build_tools/templates/index.pug')
+  console.log(entries.map(x=>x.data))
   const index_html = renderIndex({blogs: entries})
   await fs.writeFile(path.join('docs', "index.html"), index_html);
 }
@@ -108,8 +109,14 @@ async function blogs(){
 async function watcher() {
   watch("./styles/**/*", styles);
   watch("./build_tools/templates/**/*", parallel(blogs, photographyPages, artPages))
-  watch('./_photography/**/*', parallel(processPhotos, photographyPages));
-  watch("./_art/**/*", parallel(processArt, artPages))
+  watch(
+    ["./_photography/**/*", "./build_tools/image_gallery/style.css"],
+    parallel(processPhotos, photographyPages)
+  );
+  watch(
+    ["./_art/**/*", "./build_tools/image_gallery/style.css"],
+    parallel(processArt, artPages)
+  );
   watch("./blogs/**/*", blogs);
 }
 

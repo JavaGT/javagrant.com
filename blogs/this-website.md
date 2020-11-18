@@ -1,5 +1,7 @@
 ---
 slug: this-website
+title: This Website
+description: Little bit of information about this website. 
 ---
 
 # This website

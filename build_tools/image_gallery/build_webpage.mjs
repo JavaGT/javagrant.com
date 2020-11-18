@@ -6,12 +6,12 @@ import path from "path";
 const render = pug.compileFile(
   path.join(path.dirname(fileURLToPath(import.meta.url)), "template.pug")
 );
-const css = (await fs.readFile(
-  path.join(path.dirname(fileURLToPath(import.meta.url)), "style.css")
-)).toString()
 
 // const render = pug.compileFile('./template.pug')
-export default function generateHTML(tree, root) {
+export default async function generateHTML(tree, root) {
+    const css = (await fs.readFile(
+      path.join(path.dirname(fileURLToPath(import.meta.url)), "style.css")
+    )).toString()
   const html = render({root, tree, css});
   return html;
 }
