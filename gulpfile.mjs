@@ -41,6 +41,7 @@ function photographyPages() {
   );
   return renderGalleries("_photography", path.join("docs", "photography"), {
     root: "photography",
+    title: "Photography",
     renderGalleryPage,
     generateThumbRoute: (file) => [
       "static",
@@ -62,6 +63,7 @@ function artPages() {
   );
   return renderGalleries("_art", path.join("docs", "art"), {
     root: "art",
+    title: 'Art',
     renderGalleryPage,
     generateThumbRoute: (file) => [
       "static",
@@ -96,12 +98,32 @@ async function blogs(){
     const slug = entry.data.slug || entry.data.title || path.parse(entry.route).name
     const parent_dir = path.join(out_directory, slug);
     await fs.mkdir(parent_dir, {recursive: true})
-    const html = renderBlog({config: entry.data, content:entry.markdown_html})
+    const table_of_contents = (()=>{
+      if (entry.data.table_of_contents) {
+        const results = entry.content.match(/(#+) ([^\n]+)/g)
+        const split = results.map(string=>string.split('#'))
+        let str = '<div id="table-of-contents"><h2>Table of Contents</h2>'
+        const list = `${split.reduce((prev_depth, next)=>{
+          let inset = false
+          let outset = false
+          if (prev_depth < next.length) inset = true
+          if (prev_depth > next.length) outset = true
+          str += `${outset ? "</ul>" : ""}${
+            inset ? "<ul>" : ""
+          }<li><a href="#${next.join("").trim().toLowerCase().replace(/\s+/g, '-')}">${next
+            .join("")
+            .trim()}</a></li>`;
+          return next.length
+        }, 0)}`
+        return str + '</ul></div>'
+      }
+      return ``
+    })()
+    const html = renderBlog({config: entry.data, content:entry.markdown_html, table_of_contents})
     await fs.writeFile(path.join(parent_dir, 'index.html'), html)
   }))
 
   const renderIndex = pug.compileFile('./build_tools/templates/index.pug')
-  console.log(entries.map(x=>x.data))
   const index_html = renderIndex({blogs: entries})
   await fs.writeFile(path.join('docs', "index.html"), index_html);
 }

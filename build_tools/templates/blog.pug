@@ -3,4 +3,4 @@ block content
   if (!config.hidden)
     h1
       a#blogs-link(href="/") Blogs
-  | !{content}
+  | !{content.replace('!!!toc!!!', table_of_contents)}

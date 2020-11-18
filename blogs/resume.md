@@ -1,9 +1,20 @@
 ---
 slug: resume
+title: Resume
 hidden: true
+table_of_contents: true
 ---
 
-## Table of Contents
+<style>
+@media print {
+  nav {
+    display: none;
+  }
+}
+</style>
+# Java Grant - Resume
+
+!!!toc!!!
 
 ## Education
 

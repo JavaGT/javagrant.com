@@ -73,6 +73,10 @@ nav {
           height: 1em;
           display: inline-block; }
 
+main {
+  max-width: 60em;
+  margin: 0 auto; }
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -90,8 +94,11 @@ nav {
     transition: transform 0.2s, background 2s;
     position: relative;
     overflow: hidden; }
+    .grid .tile:visited, .grid .tile:hover, .grid .tile:focus, .grid .tile:hover, .grid .tile:active {
+      text-decoration: none;
+      color: inherit; }
     .grid .tile::after {
-      content: '→';
+      content: "→";
       bottom: 1rem;
       opacity: 0;
       position: absolute;
@@ -107,14 +114,6 @@ nav {
         transform: translateX(50%);
         opacity: 0.5; }
 
-a,
-a:visited,
-a:hover,
-a:focus,
-a:hover, a:active {
-  text-decoration: none;
-  color: inherit; }
-
 #email-list input {
   border: 1px solid grey;
   border-radius: 0;
@@ -126,3 +125,11 @@ a:hover, a:active {
     border: 1px solid black;
     border-radius: 0;
     outline: none; }
+
+#table-of-contents ul li a {
+  text-decoration: underline; }
+  #table-of-contents ul li a:hover {
+    text-decoration: none; }
+
+a {
+  color: inherit; }

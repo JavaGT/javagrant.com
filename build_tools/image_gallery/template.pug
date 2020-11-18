@@ -17,7 +17,8 @@ style
   | !{css}
 #gallery
   if (tree.parent)
-    a(href='/'+root) Return
+    a(href='/'+root) 
+      h3 Return
   ul#gallery-links
     if (tree.children)
       - const sub_galleries = Object.values(tree.children).filter(x=>x.type == 'directory')

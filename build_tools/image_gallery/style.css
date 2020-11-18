@@ -7,9 +7,17 @@
   display: inline-block;
   margin: 0.5rem;
 }
+
+#gallery #gallery-links a,
+#gallery #gallery-links a:visited,
+#gallery #gallery-links a:hover,
+#gallery #gallery-links a:focus,
+#gallery #gallery-links a:hover, 
+#gallery #gallery-links a:active { text-decoration: none; color:inherit }
+
 #gallery .gallery-grid {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
