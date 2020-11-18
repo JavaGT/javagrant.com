@@ -3,8 +3,10 @@ block content
   h1 Welcome.
   p.center.
     I am Java, these are my blogs!
-  for blog in blogs
-    if (!blog.data.hidden)
-      h1
-        a(href='/blog/'+blog.data.slug)=blog.data.title||blog.data.slug
+  .grid
+    for blog in blogs
+      if (!blog.data.hidden)
+        a.tile(href='/blog/'+blog.data.slug)
+          h1=(blog.data.title || blog.data.slug)
+          p=blog.data.description
 
