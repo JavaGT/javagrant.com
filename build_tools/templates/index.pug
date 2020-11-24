@@ -6,7 +6,9 @@ block content
   .grid
     for blog in blogs
       if (!blog.data.hidden)
-        a.tile(href='/blog/'+blog.data.slug)
+        a.blog.tile(href='/blog/'+blog.data.slug)
           h1=(blog.data.title || blog.data.slug)
           p=blog.data.description
+          if (blog.data.image)
+            img(src=blog.data.image)
 
