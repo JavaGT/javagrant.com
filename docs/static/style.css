@@ -94,6 +94,11 @@ main {
     transition: transform 0.2s, background 2s;
     position: relative;
     overflow: hidden; }
+    .grid .tile img {
+      max-height: 40%;
+      display: block;
+      margin: 0 auto;
+      filter: grayscale(0.5); }
     .grid .tile:visited, .grid .tile:hover, .grid .tile:focus, .grid .tile:hover, .grid .tile:active {
       text-decoration: none;
       color: inherit; }
