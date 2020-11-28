@@ -14,8 +14,6 @@ table_of_contents: true
 </style>
 # Java Grant - Resume
 
-!!!toc!!!
-
 ## Education
 
 Kerikeri High School, Kerikeri — NCEA Level 3 Endorsed with Excellence
