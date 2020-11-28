@@ -1,6 +1,8 @@
 extends ./main.pug
 block content
   if (!config.hidden)
-    h1
-      a#blogs-link(href="/") Blogs
-  | !{content.replace('!!!toc!!!', table_of_contents)}
+    h2
+      a#blogs-link(href="/") < Return
+  if (config.table_of_contents)
+    | !{table_of_contents}
+  | !{content}
