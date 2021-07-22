@@ -1,0 +1,29 @@
+- if (!config) config = {}
+block vars
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  //-   meta(name='description' content=config.description)
+  title=(config.title?config.title:'Java Grant')
+  link(rel='stylesheet' href='/static/style.css')
+  script(async src='https://www.googletagmanager.com/gtag/js?id=G-BJMGN2YH5Z')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BJMGN2YH5Z');
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,600;0,800;1,600&display=swap' rel='stylesheet')
+body(class=body_class?body_class:'')
+  header
+    h1
+      a(href="/")#title
+        | #{slogan?slogan:'Java makes'} 
+        span#roller=(slogan2?slogan2:'things')
+  main
+      //- if config.tableofcontents
+      //-   a#toc(href="#table-of-contents") Back to index ⬆️
+      block content
