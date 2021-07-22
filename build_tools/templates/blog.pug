@@ -1,8 +1,0 @@
-extends ./main.pug
-block content
-  if (!config.hidden)
-    h2
-      a#blogs-link(href="/") < Return
-  if (config.table_of_contents)
-    | !{table_of_contents}
-  | !{content}

@@ -1,158 +1,76 @@
-import toTree from "@javagt/array-to-tree";
-import pug from "pug";
-import path from "path";
-import gulp from "gulp";
-import { processImages } from "./build_tools/image_gallery/process_images.mjs";
-import renderGalleries from "./build_tools/image_gallery/render_galleries.mjs";
-import sass from "gulp-sass";
-const { series, watch, parallel, src, dest } = gulp;
-import opts from "./options.mjs";
-import { promises as fs } from "fs";
+import { join, parse } from 'path'
+import fs from 'fs/promises'
+import gulp from 'gulp'
+import pug from 'pug'
+import frontmatter from 'frontmatter'
+import markdown from './util/markdown.mjs'
 
-import readBlogs from './build_tools/blogs/read_blogs.mjs'
+const { watch } = gulp
 
-async function processPhotos() {
-  // icons
-  await processImages("_photography", opts.paths.photography_thumbs, {
-    target_filesize: "100kb",
-    width: 800,
-  });
-  // full-size
-  await processImages("_photography", opts.paths.photography_fulls, {
-    target_filesize: "3MB",
-  });
-}
-async function processArt() {
-  // icons
-  await processImages("_art", opts.paths.art_thumbs, {
-    target_filesize: "100kb",
-    width: 800,
-  });
-  // full-size
-  await processImages("_art", opts.paths.art_fulls, {
-    target_filesize: "3MB",
-  });
+const output_directory = join(process.cwd(), 'docs')
+
+function relpath(...crumbs) {
+    return join(process.cwd(), ...crumbs)
 }
 
-
-function photographyPages() {
-  const renderGalleryPage = pug.compileFile(
-    "./build_tools/templates/photography_page.pug"
-  );
-  return renderGalleries("_photography", path.join("docs", "photography"), {
-    root: "photography",
-    title: "Photography",
-    renderGalleryPage,
-    generateThumbRoute: (file) => [
-      "static",
-      "photography",
-      "small",
-      ...file.route,
-    ],
-    generateLargeRoute: (file) => [
-      "static",
-      "photography",
-      "large",
-      ...file.route,
-    ],
-  });
-}
-function artPages() {
-  const renderGalleryPage = pug.compileFile(
-    "./build_tools/templates/art_page.pug"
-  );
-  return renderGalleries("_art", path.join("docs", "art"), {
-    root: "art",
-    title: 'Art',
-    renderGalleryPage,
-    generateThumbRoute: (file) => [
-      "static",
-      "art",
-      "small",
-      ...file.route,
-    ],
-    generateLargeRoute: (file) => [
-      "static",
-      "art",
-      "large",
-      ...file.route,
-    ],
-  });
+async function readpaths(path) {
+    return (await fs.readdir(path)).map(name => join(path, name))
 }
 
+const options = { config: {} }
 
-function styles() {
-  return src("./styles/**/*.scss").pipe(sass()).pipe(dest("./docs/static"));
+function indexPage(options = {}) {
+    const input_path = relpath('source', 'index.pug')
+    const output_path = join(output_directory, 'index.html')
+    return renderPage({ input_path, output_path, options })
+}
+function renderPage({ input_path, output_path, options }) {
+    const renderTemplate = pug.compileFile(input_path)
+    const html = renderTemplate(options)
+    return fs.writeFile(output_path, html)
 }
 
-function cname() {
-  return fs.writeFile(opts.cname.location, opts.cname.value);
+function onlyPaths(type) {
+    return function(path){
+        return parse(path).ext === type
+    }
 }
 
-async function blogs(){
-  const renderBlog = pug.compileFile('./build_tools/templates/blog.pug')
-  const in_directory = 'blogs'
-  const out_directory = 'docs/blog';
-  const entries = await readBlogs(in_directory)
-  await Promise.all(entries.map(async entry=>{
-    const slug = entry.data.slug || entry.data.title || path.parse(entry.route).name
-    const parent_dir = path.join(out_directory, slug);
-    await fs.mkdir(parent_dir, {recursive: true})
-    const table_of_contents = (()=>{
-      if (entry.data.table_of_contents) {
-        const results = entry.content.match(/(#+) ([^\n]+)/g)
-        const split = results.map(string=>string.split('#'))
-        let str = '<div id="table-of-contents"><h2>Table of Contents</h2>'
-        const list = `${split.reduce((prev_depth, next)=>{
-          let inset = false
-          let outset = false
-          if (prev_depth < next.length) inset = true
-          if (prev_depth > next.length) outset = true
-          str += `${outset ? "</ul>" : ""}${
-            inset ? "<ul>" : ""
-          }<li><a href="#${next.join("").trim().toLowerCase().replace(/\s+/g, '-')}">${next
-            .join("")
-            .trim()}</a></li>`;
-          return next.length
-        }, 0)}`
-        return str + '</ul></div>'
-      }
-      return ``
-    })()
-    const html = renderBlog({config: entry.data, content:entry.markdown_html, table_of_contents})
-    await fs.writeFile(path.join(parent_dir, 'index.html'), html)
-  }))
+async function build(){
+    await indexPage()
+    const pages_path = relpath('source', 'pages')
+    const all_pages = await readpaths(pages_path)
+    // const pug_pages = all_pages.filter(onlyPaths('.pug'))
+    // const md_pages = all_pages.filter(onlyPaths('.md'))
 
-  const renderIndex = pug.compileFile('./build_tools/templates/index.pug')
-  const index_html = renderIndex({blogs: entries})
-  await fs.writeFile(path.join('docs', "index.html"), index_html);
+    all_pages.map(async input_path => {
+        const info = parse(input_path)
+        const output_folder = join(output_directory, info.name)
+        const output_path = join(output_folder, 'index.html')
+        await fs.mkdir(output_folder, { recursive: true })
+        if (info.ext === '.md') {
+            
+            const file_content = (await fs.readFile(input_path)).toString()
+            const {content, data} = frontmatter(file_content)
+            const rendered = markdown.render(content)
+            return renderPage({ input_path: join(process.cwd(), 'source', 'template', 'markdown.pug'), output_path, options: {...data, content: rendered} })
+            return fs.writeFile(output_path, rendered)
+        } else if (info.ext === '.pug') {
+            return renderPage({ input_path, output_path, options })
+        }
+    })
+
+    return gulp.src('./source/static/**/*')
+        .pipe(gulp.dest('./docs/static'));
 }
 
-async function watcher() {
-  watch("./styles/**/*", styles);
-  watch("./build_tools/templates/**/*", parallel(blogs, photographyPages, artPages))
-  watch(
-    [
-      "./_photography/**/*",
-      "./build_tools/image_gallery/style.css",
-      "./build_tools/image_gallery/template.pug",
-    ],
-    parallel(processPhotos, photographyPages)
-  );
-  watch(
-    [
-      "./_art/**/*",
-      "./build_tools/image_gallery/style.css",
-      "./build_tools/image_gallery/template.pug",
-    ],
-    parallel(processArt, artPages)
-  );
-  watch("./blogs/**/*", blogs);
-}
+// async function googleDoc({output_path, input_url}){
+//     const url = input_url
+//     //'https://docs.google.com/document/d/1XIArxJB87pKG2w0PU7H4KiLXkc7DCY1w_ttZjZhmpsQ/export?format=html'
+//     const html = await fetch(url).then(res=>res.text())
+//     const output_directory = output_path
+//     await fs.mkdir(output_directory, { recursive: true })
+//     await fs.writeFile(output_path, html)
+// }
 
-const photos = parallel(processPhotos, photographyPages);
-const art = parallel(processArt, artPages);
-
-export { watcher as watch };
-
-export default parallel(photos, art, styles, cname, blogs);
+export default ()=>watch(['./source/**/*'], build);
