@@ -8,6 +8,7 @@ import markdown from './util/markdown.mjs'
 const { watch } = gulp
 
 const output_directory = join(process.cwd(), 'docs')
+await fs.mkdir(output_directory).catch(x=>x)
 
 function relpath(...crumbs) {
     return join(process.cwd(), ...crumbs)
