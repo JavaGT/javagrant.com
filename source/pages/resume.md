@@ -122,7 +122,19 @@ Involvement in the organisation, participation and management of various forms o
 
 Issues covered include mechanisms of communication, university–student relations, and the responsibilities of the university in creating a safe educational space for all students.
 
-## Student Representative Campaign
+## AUSA Class Representation
+I've represented many classes for student-lecturer engagement, staff-student consultations and student-university communications.
+|Class|Year|Semester|
+|-|-|-|
+|ARTSCHOL 100 & 200|2019|1 + 2|
+|ARTSCHOL 200|2020|1 + 2|
+|SOCIOL 208|2020|1|
+|ARTSCHOL 300|2021|1 + 2|
+|SOCIOL 310|2021|1|
+|SOCIOL 203|2021|2|
+|SOCIOL 333|2021|2|
+
+## University Student Representative Campaign
 Although I wasn’t selected as the student representative I ran an otherwise successful campaign as a first-year student, gathering 7% of votes and placing 4th.
 
 # Skills
@@ -133,8 +145,8 @@ Although I wasn’t selected as the student representative I ran an otherwise su
     - Office Suite
     - Google Suite
 - ## Art
-    - [Photography](/art/photography)
-    - [Digital Illustration](/art/illustration)
+    - [Photography](/art/#photography)
+    - [Digital Illustration](/art/#illustration)
 - ## Leadership
     - Communication Management
     - Problem Solving
