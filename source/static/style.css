@@ -84,21 +84,27 @@ main {
 #links a:hover {
     transform: translateX(1rem);
 }
+.bars main > p {
+    margin: 1rem;
+}
 .bars h2 {
     color: white;
     padding: 0.3em 0.5rem;
+    margin: 1.4rem 0;
     background: -webkit-linear-gradient(35deg, rgb(196, 85, 224), rgb(114, 50, 235));
     transform: skewX(-8deg);
 }
 .bars h3 {
     color: white;
     padding: 0.3em 0.5rem;
+    margin: 0.4rem 0.3rem;
     background: -webkit-linear-gradient(35deg, rgb(78, 206, 199), rgb(69, 50, 235));
     transform: skewX(-8deg);
 }
-.bars h4{
+.bars h4 {
     color: white;
     padding: 0.3em 0.5rem;
+    margin: 0.4rem 1rem;
     background: -webkit-linear-gradient(35deg, rgb(236, 155, 89), rgb(235, 62, 50));
     transform: skewX(-8deg);
 }
@@ -225,4 +231,15 @@ h3:has(> input) + * {
 }
 h3:has(> input:checked) + * {
     display: block;
+}
+table {
+    margin: 1rem auto;
+}
+@media print {
+    .table-of-contents {
+        display: none;
+    }
+}
+body {
+    -webkit-print-color-adjust: exact !important;
 }
