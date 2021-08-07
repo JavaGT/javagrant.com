@@ -9,13 +9,14 @@ An incomprehensive history of Java's activities.{.center}
 # Employment and Volunteering
 ## Teaching Assistant
 I am a teaching assistant for the fantastic [COMMS 301 – Digital Communication and Practice
-](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2021) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/).
+](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2021) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/). This role primarily involves hosting lectorial format workshops, tutoring the large cohort of students on computer programming concepts and implimentation.
+
 ## MATES Mentoring
-Working with [The Great Potentials Foundation](https://www.greatpotentials.org.nz) I have helped various students from [Southern Cross Campus](https://southerncross.school.nz/) and [Auckland Girls Grammar School](http://www.aggs.school.nz/)with creative subjects and their transition from highschool to tertiary education. Adittionally I've mentored year eight students at [Finlayson Park School](https://www.finlaysonpark.school.nz/) as part of the MATES Jr. programme.
+Working with [The Great Potentials Foundation](https://www.greatpotentials.org.nz) I have helped various students from [Southern Cross Campus](https://southerncross.school.nz/) and [Auckland Girls Grammar School](http://www.aggs.school.nz/) with creative subjects and their transition from highschool to tertiary education. Additionally I've mentored year eight students at [Finlayson Park School](https://www.finlaysonpark.school.nz/) as part of the MATES Jr. programme.
 ## Youth Arts New Zealand
 ![The Future is Creative – Youth Arts New Zealand is a social enterprise powered by Aotearoa's creative youth.](/static/images/yanz.png){.pad}
-Actively volunteering with various [Youth Arts New Zealand](https://youtharts.co.nz) projects in both hands-on and consultation roles.
-Currently operating with responsibilities of online community engagement, newsletter management, and in-person engagement.
+I hold a volunteer role in various [Youth Arts New Zealand](https://youtharts.co.nz) projects, operating in both hands-on and consultation capacities.
+Current responsibilities include online and in-person community engagement, and in-person engagement.
 ### Art Jam
 ![Art Jam](/static/images/artjam.png){.pad}
 Every month on behalf of Youth Arts NZ and in collaberation with [Shore Junction](http://www.shorejunction.nz/) I host the YANZ Art Jam. The event is a three-hour social and artistic meet-up for local creatives to develop and collaberate on personal projects in a supportive environment.
@@ -26,11 +27,10 @@ Volunteered with hands-on roles for [VIBE Youth Festival 2019](https://www.faceb
 # Education
 ## University of Auckland
 ![The University of Auckland](/static/images/uoa.jpg){.pad}
-- Bachelor of Arts majoring in [Sociology](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/sociology.html) and [Communication](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/communication.html)
-- [Arts Scholars Module](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)
+Graduating 2021 with a Bachelor of Arts majoring in [Sociology](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/sociology.html) and [Communication](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/communication.html). Additionally, my completion of the [Arts Scholars module](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) includes a dissertation exploring the use of educational pedagogy in online videos.
 
 ### Leadership
-#### Orientation
+#### Arts Scholars Orientation
 Every year of my degree I have assisted in orientating the new cohort of Arts Scholars. A believer in the programme, I help the new students adjust to the course and university as a whole.
 #### Representation
 Throughout my degree I've held leadership roles such as multiple class representative positions, and helped form and managing of student consultation processes for the university and its students.
@@ -45,26 +45,26 @@ I achieved the higest grades of my cohort in the following classes
 #### High Grades
 I have achieved distinctive grades in the following classes
 
-|Year|Points|Subject|Class|Grade|Title|
-|-|-|-|-|-|-|
-|2019/1|15|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|100|A|[Arts Scholars 1](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=100&Year=2019)|
-|2019/1|15|Computer Science|101|A+|Principles of Programming|
-|2019/1|15|Sociology|105|A|Cultural Studies and Society|
-|2019/2|15|Communication|204|A|Social Media|
-|2020/1|15|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|200|A|[Arts Scholars 2](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=200&Year=2020)|
-|2020/1|15|Communication|302|A|Visual Communication|
-|2020/1|15|Sociology|200|A-|Sociological Theory|
-|2020/1|15|Sociology|206|A+|Sociology for Auckland|
-|2020/2|15|Communication|300|A+|New Media and the Future of Communication|
-|2020/2|15|Communication|301|A+|Digital Communication and Practise|
-|2020/2|15|Sociology|208|A-|Economy and Society|
-|2021/1|15|Economics|151|A+|Understanding the Global Economy|
-|2021/1|15|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|300|N/A|[Arts Scholars 3](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=300&Year=2021)|
-|2021/1|15|Sociology|310|A|Researching Social Problems|
-|2021/1|15|Sociology|326|A+|Sociology of Violence|
-|2021/2|15|Education|100|N/A|The Creative Process|
-|2021/2|15|Sociology|203|N/A|Social Reality and Ideology|
-|2021/2|15|Sociology|333|N/A|Sociology of Health, Illness, and Medicine|
+|Year|Subject|Class|Grade|Title|
+|-|-|-|-|-|
+|2019/1|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|100|A|[Arts Scholars 1](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=100&Year=2019)|
+|2019/1|Computer Science|101|A+|Principles of Programming|
+|2019/1|Sociology|105|A|Cultural Studies and Society|
+|2019/2|Communication|204|A|Social Media|
+|2020/1|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|200|A|[Arts Scholars 2](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=200&Year=2020)|
+|2020/1|Communication|302|A|Visual Communication|
+|2020/1|Sociology|200|A-|Sociological Theory|
+|2020/1|Sociology|206|A+|Sociology for Auckland|
+|2020/2|Communication|300|A+|New Media and the Future of Communication|
+|2020/2|Communication|301|A+|Digital Communication and Practise|
+|2020/2|Sociology|208|A-|Economy and Society|
+|2021/1|Economics|151|A+|Understanding the Global Economy|
+|2021/1|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|300|N/A|[Arts Scholars 3](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=300&Year=2021)|
+|2021/1|Sociology|310|A|Researching Social Problems|
+|2021/1|Sociology|326|A+|Sociology of Violence|
+|2021/2|Education|100|N/A|The Creative Process|
+|2021/2|Sociology|203|N/A|Social Reality and Ideology|
+|2021/2|Sociology|333|N/A|Sociology of Health, Illness, and Medicine|
 
 #### Arts Scholars
 [The Arts Scholars programme](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) has been the defining aspect of my university experience.
@@ -79,20 +79,35 @@ Completion of the NCEA Level 3 with excellence endorsement, university entrance 
 ### Leadership
 
 #### Prefect
-As a KKHS prefect I worked with year twelve students in supporting career building and pathway discovery for students.
+As a KKHS prefect I worked with year twelve students in supporting career building and pathway discovery for students. I also represented the school at community and cultural events.
 
 #### Peer Support
 As a KKHS peer support mentor, I was responsible for introducing the year seven cohort to the school and making them comfortable in the new learning environment.
 
+#### Kiwi Buddy Programme
+One of my most rewarding roles was that of Kiwi Buddy. Tasked with making international students welcome in their new school and culture, I befriended 50+ incredible people from all over the world. Directly I was assigned to students from Switzerland, Japan, and the United States.
+
+This programme hugely influenced my life, and led to me to travel the world in 2018.
+[Read more...](#overseas-experience)
+
+#### Debating Coach
+Just as kind students before me tutored my cohort, I assisted in devloping the abilities of younger debaters throughout my time debating at Kerikeri High School.
+
 ### Debating
 As a part of the KKHS debating team, we were champions in the Russell McVey Debating tournament in years 2013, 2014, 2015.
-We achieved a second placement in Northland for the Russell McVey Debating tournament in 2014.
+We achieved a second placement in Northland for the Russell McVey Debating Tournament in 2014.
 
 ### Attitude
 I have received WAKA Excellence in Attitude awards every year they have been offered at Kerikeri High School across multiple subjects.
 
-### Achievement Awards — I.C.A.S.
+### Academic
+- Elite Honours Award: Academic – NCEA Level 1 (2015)
+- Award for Top Scholar (2013, 2014, 2015, 2016)
+- Award for Academic Excellence (2011, 2012, 2017)
+
+### ICAS Achievement Awards
 Throughout high school, I achieved some notable results in the International Competitions and Assessments for Schools.
+
 |Year|Subject|Award|Percentile|
 |-|-|-|-|
 |2013|Computer Skills|Distinction|3%|
@@ -105,7 +120,7 @@ Throughout high school, I achieved some notable results in the International Com
 ### Scholarship — NZQA Photography
 NZQA recognised my efforts in Art Photography with an [NZQA scholarship](https://www.nzqa.govt.nz/qualifications-standards/awards/new-zealand-scholarship/) for university.
 
-"Scholarship candidates are expected to demonstrate high-level critical thinking, abstraction and generalisation, and to integrate, synthesise and apply knowledge, skills, understanding, and ideas to complex situations." _- NZQA Scholarship_
+"Scholarship candidates are expected to demonstrate high-level critical thinking, abstraction and generalisation, and to integrate, synthesise and apply knowledge, skills, understanding, and ideas to complex situations." _- NZQA_
 {.quote}
 
 ### Idea Bootcamp
@@ -115,7 +130,7 @@ I have completed [University of Auckland Business School’s Idea Bootcamp](http
 I have help present the interests of students to the university in seeking changes in a number of occassions, including through the creation of feedback sessions between engaged students and faculty.
 
 ## Social Sciences Funding Cuts
-[Successfully ran a campaign](https://sites.google.com/view/social-sciences-open-letter/home) to garnish student awareness and engage with faculty over funding cuts to the Social Sciences, despite an increase in enrollments. This momentum was handed off to the Arts Student Organisation at the university.
+I [successfully ran a campaign](https://sites.google.com/view/social-sciences-open-letter/home) to garnish student awareness and engage with faculty in regards to funding cuts to the Social Sciences, despite an increase in enrollments. This momentum was handed off to the Arts Student Organisation at the university.
 
 ## Student Consultations
 Involvement in the organisation, participation and management of various forms of student consultation at The University of Auckland, working with AUSA, the Arts faculty, and the Arts Scholars programme.
