@@ -3,9 +3,10 @@ slogan: Java did
 slogan2: things
 body_class: bars
 ---
-An incomprehensive history of Java's activities.{.center}
+An somewhat comprehensive history of Java's activities.{.center}
 
 [[toc]]
+[🔝](#){.goto-top}
 # Employment and Volunteering
 ## Teaching Assistant
 I am a teaching assistant for the fantastic [COMMS 301 – Digital Communication and Practice
@@ -19,7 +20,9 @@ I hold a volunteer role in various [Youth Arts New Zealand](https://youtharts.co
 Current responsibilities include online and in-person community engagement, and in-person engagement.
 ### Art Jam
 ![Art Jam](/static/images/artjam.png){.pad}
-Every month on behalf of Youth Arts NZ and in collaberation with [Shore Junction](http://www.shorejunction.nz/) I host the YANZ Art Jam. The event is a three-hour social and artistic meet-up for local creatives to develop and collaberate on personal projects in a supportive environment.
+I host the YANZ Art Jam every month on behalf of Youth Arts New Zealand and in collaberation with [Shore Junction](http://www.shorejunction.nz/).
+
+[Read more about Art Jam here...](#art-jam-1)
 ## VIBE Youth Arts Festival
 ![Vibe Youth Festival – Live Music, Workshops, Activities, Exhibition, Dance, Graffiti Battles, Food Stalls](/static/images/vibe.jpeg){.pad}
 Volunteered with hands-on roles for [VIBE Youth Festival 2019](https://www.facebook.com/VibeYouthFestival/) in Henderson, Auckland.
@@ -42,6 +45,7 @@ Throughout my degree I've held leadership roles such as multiple class represent
 I achieved the higest grades of my cohort in the following classes
 - [Communication 300 – New Media and the Future of Communication](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS%20&Number=300%20&Year=2020)
 - [Sociology 206 – Sociology for Auckland](https://artsfaculty.auckland.ac.nz/courses/?Subject=SOCIOL%20&Number=206%20&Year=2020)
+- [Sociology 326 – Sociology for Violence and Death](https://artsfaculty.auckland.ac.nz/courses/?Subject=SOCIOL%20&Number=326%20&Year=2021)
 #### High Grades
 I have achieved distinctive grades in the following classes
 
@@ -120,7 +124,7 @@ Throughout high school, I achieved some notable results in the International Com
 ### Scholarship — NZQA Photography
 NZQA recognised my efforts in Art Photography with an [NZQA scholarship](https://www.nzqa.govt.nz/qualifications-standards/awards/new-zealand-scholarship/) for university.
 
-"Scholarship candidates are expected to demonstrate high-level critical thinking, abstraction and generalisation, and to integrate, synthesise and apply knowledge, skills, understanding, and ideas to complex situations." _- NZQA_
+"Scholarship candidates are expected to demonstrate high-level critical thinking, abstraction and generalisation, and to integrate, synthesise and apply knowledge, skills, understanding, and ideas to complex situations." _— NZQA_
 {.quote}
 
 ### Idea Bootcamp
@@ -139,15 +143,14 @@ Issues covered include mechanisms of communication, university–student relatio
 
 ## AUSA Class Representation
 I've represented many classes for student-lecturer engagement, staff-student consultations and student-university communications.
-|Class|Year|Semester|
-|-|-|-|
-|ARTSCHOL 100 & 200|2019|1 + 2|
-|ARTSCHOL 200|2020|1 + 2|
-|SOCIOL 208|2020|1|
-|ARTSCHOL 300|2021|1 + 2|
-|SOCIOL 310|2021|1|
-|SOCIOL 203|2021|2|
-|SOCIOL 333|2021|2|
+- Arts Scholars 100
+- Arts Scholars 200
+- Arts Scholars 300
+- Sociol 203
+- Sociol 208
+- Sociol 310
+- Sociol 333
+<!-- {.dash-list-sep}  -->
 
 ## University Student Representative Campaign
 Although I wasn’t selected as the student representative I ran an otherwise successful campaign as a first-year student, gathering 7% of votes and placing 4th.
@@ -174,6 +177,24 @@ Although I wasn’t selected as the student representative I ran an otherwise su
     - Minimum Viable Product Development
     - Pitching
 
+# Projects
+## Art Jam
+![Young Creatives at Shore Junction](/static/images/artjam2.jpg){.pad}
+I host the YANZ Art Jam every month on behalf of Youth Arts NZ and in collaberation with [Shore Junction](http://www.shorejunction.nz/). The event is a three-hour social and artistic meet-up for local creatives to develop and collaberate on personal projects in a supportive environment.
+## New Zealand Birds
+I've started drawing some cool New Zealand birds! I might make them into prints someday.
+
+![Kakapo](/static/art/birds/kakapo.jpg)
+![Kereru](/static/art/birds/kereru.jpg)
+{.gallery}
+
+<!-- ## Year 13 Photography Board
+## Visualiser.js
+## Zines
+## Generative Art
+## Selfie Every Day
+## Construction -->
+
 
 {.grid-list}
 # Achievements
@@ -194,4 +215,4 @@ My most significant achievement to date has been my overseas experience. In 2018
 {.dash-list}
 
 ## First in Family
-Beginning my degree, I was surprised by many aspects of the academic system. I was unfamiliar with even simple elements, for example, correctly referencing sources in my essays. While I may not have had access to experienced family members, I substituted for another resource - my friends. I’m proud of my success at university, and that much of it is due to my ability to engage with both students and faculty to problem-solve and overcome difficulties in the new environment.
+Beginning my degree, I was surprised by many aspects of the academic system. I was unfamiliar with even simple elements, for example, correctly referencing sources in my essays. While I may not have had access to experienced family members, I substituted for another resource — my friends. I’m proud of my success at university, and that much of it is due to my ability to engage with both students and faculty to problem-solve and overcome difficulties in the new environment.

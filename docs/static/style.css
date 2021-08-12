@@ -36,10 +36,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: max(min(4rem, 10vw), 1.5em);
     margin: 0;
-    padding: min(3rem, 22vh) 1rem;
+    padding: 1rem;
     display: block;
     color: black;
 }
+
 /* a,
 a:active,
 a:visited {
@@ -52,9 +53,11 @@ a:visited {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 #roller::after {
     content: '.';
 }
+
 main {
     flex-grow: 1;
     padding: 1rem;
@@ -78,15 +81,19 @@ main {
     background: -webkit-linear-gradient(35deg, rgb(85, 208, 224), rgb(166, 89, 253));
     width: 100%;
 }
+
 #links.pink a {
     background: -webkit-linear-gradient(35deg, rgb(196, 85, 224), rgb(114, 50, 235));
 }
+
 #links a:hover {
     transform: translateX(1rem);
 }
-.bars main > p {
+
+.bars main>p {
     margin: 1rem;
 }
+
 .bars h2 {
     color: white;
     padding: 0.3em 0.5rem;
@@ -94,6 +101,7 @@ main {
     background: -webkit-linear-gradient(35deg, rgb(196, 85, 224), rgb(114, 50, 235));
     transform: skewX(-8deg);
 }
+
 .bars h3 {
     color: white;
     padding: 0.3em 0.5rem;
@@ -101,6 +109,7 @@ main {
     background: -webkit-linear-gradient(35deg, rgb(78, 206, 199), rgb(69, 50, 235));
     transform: skewX(-8deg);
 }
+
 .bars h4 {
     color: white;
     padding: 0.3em 0.5rem;
@@ -108,24 +117,38 @@ main {
     background: -webkit-linear-gradient(35deg, rgb(236, 155, 89), rgb(235, 62, 50));
     transform: skewX(-8deg);
 }
+
 main a {
     /* color: black; */
     color: inherit;
+    border-radius: 0.15rem 0.15rem 0 0;
     padding: 0.2em;
     border-bottom: solid purple 0.1em;
     text-decoration: none;
 }
+
 main a:hover {
     background: -webkit-linear-gradient(35deg, rgba(30, 156, 173, 0.404), rgba(105, 21, 201, 0.329));
 }
+
+main :is(h1, h2, h3, h4, h5, h6) a {
+    padding: 0;
+    border-bottom: none;
+}
+
+main :is(h1, h2, h3, h4, h5, h6) a:hover {
+    background:none;
+    text-decoration: underline;
+}
+
 main p {
     line-height: 1.8em;
 }
-li h1,
-li h2,
-li h3 {
+
+li h1, li h2, li h3 {
     margin: 0.4em 0;
 }
+
 /* .table-of-contents {
 }
 .table-of-contents > ol {
@@ -143,25 +166,25 @@ li h3 {
     margin: 0.5em;
     white-space: nowrap;
 } */
-.table-of-contents,
-.grid-list {
+
+.table-of-contents, .grid-list {
     padding: 0.5rem;
     width: 100%;
 }
-.table-of-contents ol,
-.grid-list {
+
+.table-of-contents ol, .grid-list {
     list-style: none;
     width: 100%;
     padding: 0 1em;
 }
-.table-of-contents > ol,
-.grid-list {
+
+.table-of-contents>ol, .grid-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
-.table-of-contents > ol > li,
-.grid-list > li {
+
+.table-of-contents>ol>li, .grid-list>li {
     background: rgba(0, 0, 0, 0.068);
     flex-grow: 1;
     flex-basis: 40%;
@@ -172,13 +195,14 @@ li h3 {
     /* padding: 0.5em; */
     /* margin: 0.5em; */
 }
-.table-of-contents > ol > li > a {
+
+.table-of-contents>ol>li>a {
     text-align: center;
     display: block;
     font-weight: bold;
 }
-.table-of-contents li,
-.grid-list li, li {
+
+.table-of-contents li, .grid-list li, li {
     line-height: 1.8em;
 }
 
@@ -186,6 +210,7 @@ li h3 {
     padding: 0;
     text-align: center;
 }
+
 .dash-list li {
     display: inline-block;
     margin: 0.3em;
@@ -196,50 +221,94 @@ table {
     margin: 0 auto;
     border-spacing: 0;
 }
+
 thead {
     background: -webkit-linear-gradient(35deg, rgb(93, 228, 221), rgb(170, 162, 240));
 }
+
 td, th {
     padding: 0.5em;
 }
+
 tr:nth-child(even) {
     background: rgba(5, 139, 180, 0.233);
 }
+
 .quote {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     padding: 1em;
     margin: 1em;
 }
+
 .center {
     text-align: center;
 }
+
 img {
     max-width: 100%;
 }
+
 .pad {
     padding: 0.5em 3em;
     /* padding-top: 1; */
 }
+
 .sml {
     max-width: 15em;
 }
+
 h3 input {
     display: none;
 }
-h3:has(> input) + * {
+
+h3:has(> input)+* {
     display: none;
 }
-h3:has(> input:checked) + * {
+
+h3:has(> input:checked)+* {
     display: block;
 }
+
 table {
     margin: 1rem auto;
 }
+
 @media print {
     .table-of-contents {
         display: none;
     }
 }
+
 body {
     -webkit-print-color-adjust: exact !important;
+}
+
+/* Increase padding left subheadings */
+
+/* permalink headers mardown */
+
+/* more top padding main header */
+
+/* Java Grant's activites */
+
+/* Dark mode? */
+
+thead * {
+    text-align: left;
+}
+
+.gallery * {
+    width: 10rem;
+    /* max-width: 40%; */
+    /* max-height: 22rem; */
+}
+.goto-top {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 1rem;
+    border-bottom: none;
+    z-index: 100;
 }

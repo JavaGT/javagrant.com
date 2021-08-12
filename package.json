@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-webserver": "^0.9.1"
   },
   "dependencies": {
     "frontmatter": "^0.0.3",

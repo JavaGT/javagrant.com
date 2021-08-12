@@ -4,11 +4,12 @@ import gulp from 'gulp'
 import pug from 'pug'
 import frontmatter from 'frontmatter'
 import markdown from './util/markdown.mjs'
+import gwebserver from 'gulp-webserver'
 
-const { watch } = gulp
+const { watch, parallel, series } = gulp
 
 const output_directory = join(process.cwd(), 'docs')
-await fs.mkdir(output_directory).catch(x=>x)
+await fs.mkdir(output_directory).catch(x => x)
 
 function relpath(...crumbs) {
     return join(process.cwd(), ...crumbs)
@@ -32,12 +33,12 @@ function renderPage({ input_path, output_path, options }) {
 }
 
 function onlyPaths(type) {
-    return function(path){
+    return function (path) {
         return parse(path).ext === type
     }
 }
 
-async function build(){
+async function build() {
     await indexPage()
     const pages_path = relpath('source', 'pages')
     const all_pages = await readpaths(pages_path)
@@ -50,19 +51,21 @@ async function build(){
         const output_path = join(output_folder, 'index.html')
         await fs.mkdir(output_folder, { recursive: true })
         if (info.ext === '.md') {
-            
+
             const file_content = (await fs.readFile(input_path)).toString()
-            const {content, data} = frontmatter(file_content)
+            const { content, data } = frontmatter(file_content)
             const rendered = markdown.render(content)
-            return renderPage({ input_path: join(process.cwd(), 'source', 'template', 'markdown.pug'), output_path, options: {...data, content: rendered} })
+            return renderPage({ input_path: join(process.cwd(), 'source', 'template', 'markdown.pug'), output_path, options: { ...data, content: rendered } })
             return fs.writeFile(output_path, rendered)
         } else if (info.ext === '.pug') {
             return renderPage({ input_path, output_path, options })
         }
     })
 
-    return gulp.src('./source/static/**/*')
-        .pipe(gulp.dest('./docs/static'));
+
+    gulp.src('./source/favicon.png')
+        .pipe(gulp.dest('./docs'))
+    return gulp.src('./source/static/**/*').pipe(gulp.dest('./docs/static'))
 }
 
 // async function googleDoc({output_path, input_url}){
@@ -74,4 +77,13 @@ async function build(){
 //     await fs.writeFile(output_path, html)
 // }
 
-export default ()=>watch(['./source/**/*'], build);
+function webserver(){
+    gulp.src('./docs')
+        .pipe(gwebserver({
+            livereload: true,
+            // directoryListing: true,
+            open: true
+        }));
+};
+
+export default () => { build(); webserver(); watch(['./source/**/*'], build) }
