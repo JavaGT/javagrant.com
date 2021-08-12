@@ -7,18 +7,19 @@ An somewhat comprehensive history of Java's activities.{.center}
 
 [[toc]]
 [🔝](#){.goto-top}
+
 # Employment and Volunteering
-## Teaching Assistant
+## 🧑‍🏫 Teaching Assistant
 I am a teaching assistant for the fantastic [COMMS 301 – Digital Communication and Practice
 ](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2021) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/). This role primarily involves hosting lectorial format workshops, tutoring the large cohort of students on computer programming concepts and implimentation.
 
-## MATES Mentoring
+## 🎈 MATES Mentoring
 Working with [The Great Potentials Foundation](https://www.greatpotentials.org.nz) I have helped various students from [Southern Cross Campus](https://southerncross.school.nz/) and [Auckland Girls Grammar School](http://www.aggs.school.nz/) with creative subjects and their transition from highschool to tertiary education. Additionally I've mentored year eight students at [Finlayson Park School](https://www.finlaysonpark.school.nz/) as part of the MATES Jr. programme.
-## Youth Arts New Zealand
+## 👨‍🎨 Youth Arts New Zealand
 ![The Future is Creative – Youth Arts New Zealand is a social enterprise powered by Aotearoa's creative youth.](/static/images/yanz.png){.pad}
 I hold a volunteer role in various [Youth Arts New Zealand](https://youtharts.co.nz) projects, operating in both hands-on and consultation capacities.
 Current responsibilities include online and in-person community engagement, and in-person engagement.
-### Art Jam
+### 🎨 Art Jam
 ![Art Jam](/static/images/artjam.png){.pad}
 I host the YANZ Art Jam every month on behalf of Youth Arts New Zealand and in collaberation with [Shore Junction](http://www.shorejunction.nz/).
 
@@ -28,9 +29,10 @@ I host the YANZ Art Jam every month on behalf of Youth Arts New Zealand and in c
 Volunteered with hands-on roles for [VIBE Youth Festival 2019](https://www.facebook.com/VibeYouthFestival/) in Henderson, Auckland.
 
 # Education
-## University of Auckland
+## 🏫 University of Auckland
 ![The University of Auckland](/static/images/uoa.jpg){.pad}
 Graduating 2021 with a Bachelor of Arts majoring in [Sociology](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/sociology.html) and [Communication](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/communication.html). Additionally, my completion of the [Arts Scholars module](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) includes a dissertation exploring the use of educational pedagogy in online videos.
+I am the first in my family to attend university. [Read more...](#first-in-family)
 
 ### Leadership
 #### Arts Scholars Orientation
@@ -88,7 +90,7 @@ As a KKHS prefect I worked with year twelve students in supporting career buildi
 #### Peer Support
 As a KKHS peer support mentor, I was responsible for introducing the year seven cohort to the school and making them comfortable in the new learning environment.
 
-#### Kiwi Buddy Programme
+#### 🇳🇿 Kiwi Buddy Programme
 One of my most rewarding roles was that of Kiwi Buddy. Tasked with making international students welcome in their new school and culture, I befriended 50+ incredible people from all over the world. Directly I was assigned to students from Switzerland, Japan, and the United States.
 
 This programme hugely influenced my life, and led to me to travel the world in 2018.
@@ -97,19 +99,19 @@ This programme hugely influenced my life, and led to me to travel the world in 2
 #### Debating Coach
 Just as kind students before me tutored my cohort, I assisted in devloping the abilities of younger debaters throughout my time debating at Kerikeri High School.
 
-### Debating
+### 🤺 Debating
 As a part of the KKHS debating team, we were champions in the Russell McVey Debating tournament in years 2013, 2014, 2015.
 We achieved a second placement in Northland for the Russell McVey Debating Tournament in 2014.
 
-### Attitude
+### 😀 Attitude
 I have received WAKA Excellence in Attitude awards every year they have been offered at Kerikeri High School across multiple subjects.
 
-### Academic
+### 📚 Academic
 - Elite Honours Award: Academic – NCEA Level 1 (2015)
 - Award for Top Scholar (2013, 2014, 2015, 2016)
 - Award for Academic Excellence (2011, 2012, 2017)
 
-### ICAS Achievement Awards
+### 📃 ICAS Achievement Awards
 Throughout high school, I achieved some notable results in the International Competitions and Assessments for Schools.
 
 |Year|Subject|Award|Percentile|
@@ -121,27 +123,27 @@ Throughout high school, I achieved some notable results in the International Com
 |2015|Digital Technologies|Distinction|4%|
 |2016|English|Distinction|5%|
 
-### Scholarship — NZQA Photography
+### 📸 Scholarship — NZQA Photography
 NZQA recognised my efforts in Art Photography with an [NZQA scholarship](https://www.nzqa.govt.nz/qualifications-standards/awards/new-zealand-scholarship/) for university.
 
 "Scholarship candidates are expected to demonstrate high-level critical thinking, abstraction and generalisation, and to integrate, synthesise and apply knowledge, skills, understanding, and ideas to complex situations." _— NZQA_
 {.quote}
 
-### Idea Bootcamp
+### 🧑‍💼 Idea Bootcamp
 I have completed [University of Auckland Business School’s Idea Bootcamp](https://www.cie.auckland.ac.nz/newsroom/idea-bootcamp-2019/) where teams are created to identify problems and create viable solutions. Honing creative problem-solving skills, business model utilisation, data collection and analysis.
 
 # Student Representation
 I have help present the interests of students to the university in seeking changes in a number of occassions, including through the creation of feedback sessions between engaged students and faculty.
 
-## Social Sciences Funding Cuts
+## 💰 Social Sciences Funding Cuts
 I [successfully ran a campaign](https://sites.google.com/view/social-sciences-open-letter/home) to garnish student awareness and engage with faculty in regards to funding cuts to the Social Sciences, despite an increase in enrollments. This momentum was handed off to the Arts Student Organisation at the university.
 
-## Student Consultations
+## 📜 Student Consultations
 Involvement in the organisation, participation and management of various forms of student consultation at The University of Auckland, working with AUSA, the Arts faculty, and the Arts Scholars programme.
 
 Issues covered include mechanisms of communication, university–student relations, and the responsibilities of the university in creating a safe educational space for all students.
 
-## AUSA Class Representation
+## 📣 AUSA Class Representation
 I've represented many classes for student-lecturer engagement, staff-student consultations and student-university communications.
 - Arts Scholars 100
 - Arts Scholars 200
@@ -152,11 +154,83 @@ I've represented many classes for student-lecturer engagement, staff-student con
 - Sociol 333
 <!-- {.dash-list-sep}  -->
 
-## University Student Representative Campaign
+## 🗳 University Student Representative Campaign
 Although I wasn’t selected as the student representative I ran an otherwise successful campaign as a first-year student, gathering 7% of votes and placing 4th.
 
 # Skills
+- ## 🔌 Advanced Computer Usage
+    - Programming
+        - Scripting
+            - Bash
+            - LUA
+        - Object Oriented Programming
+            - JavaScript
+                - ElectronJS
+                - Slvete
+        - VS Code
+            - Emmet
+    - Version Control
+        - Git
+    - Databases
+        - CouchDB
+        - NeDB
+        - LevelDB
+        - MongoDB
+    - Web Development
+        - JavaScript
+        - HTML
+        - CSS
+    - Image Editing
+        - Photoshop
+        - Affinity Photo
+    - Vector Editing
+        - Illustrator
+        - Affinity Designer
+    - Live Video Production
+        - Open Broadcaster Studio
+            - Browser Source
+    - Video Production
+        - Script Writing
+        - Final Cut Pro X
+        - Compressor
+        - Lighting
+- ## 🧑‍💻 Computer Skills
+    - Word Processing
+    - Spreadsheet Use
+- ## 🧐 Thinking
+    - Critical Thinking
+    - Critical Analysis
+    - Logic
+- ## ☎️ Communication
+    - Documentory Film Making
+    - Essay Writing
+    - Persuasion
+    - Various Media Creation
+        - Documentory
+        - GIF
+        - Data Visualisation
+        - Illusration
+        - Meme Generation
+        - Twitter/Chat Bots
+        - Websites
+        - Photo-visual Narrative
+- ## 🙌 Leadership
+    - Communication
+        - Intercultural
+- ## 📚 Research
+    - Qualitative Methods
+    - Quanitative Methods
+    - Methodology
+- ## 🎭 Arts
+    - Photography
+        - DSLR/Mirrorless
+        - Lighting
+    - Digital Illustration
+        - Procreate
+    - Screen Printing
 
+{.block-list}
+<!-- 
 - ## Computing
     - [Programming](https://github.com/javagt)
     - Markup
@@ -175,21 +249,34 @@ Although I wasn’t selected as the student representative I ran an otherwise su
     - Market Validation
     - Risk and Assumption Analysis
     - Minimum Viable Product Development
-    - Pitching
+    - Pitching -->
 
 # Projects
-## Art Jam
+## 🎨 Art Jam
 ![Young Creatives at Shore Junction](/static/images/artjam2.jpg){.pad}
 I host the YANZ Art Jam every month on behalf of Youth Arts NZ and in collaberation with [Shore Junction](http://www.shorejunction.nz/). The event is a three-hour social and artistic meet-up for local creatives to develop and collaberate on personal projects in a supportive environment.
-## New Zealand Birds
+## Illustrations
+I enjoy illustrating things in my down time. I use Procreate on an iPad to make them happen.
+
+![Home Sweet Home](/static/art/home-sweet-home.jpg)
+![Evil Tower](/static/art/evil-tower.jpg)
+![Space](/static/art/space.jpg)
+{.gallery}
+
+### 🦉 New Zealand Birds
 I've started drawing some cool New Zealand birds! I might make them into prints someday.
 
 ![Kakapo](/static/art/birds/kakapo.jpg)
 ![Kereru](/static/art/birds/kereru.jpg)
 {.gallery}
 
+## 🖼 Visualiser.js
+I constructed a framework for generating live audio visualisers in the browser. Using JavaScaript, the HTML Audio API and HTML canvas, this framework enables anyone with even a small amount of programming knowledge create their own visualiser in 2d, 3d or both!
+The framework allows the use of customisable plugins and layers to generate graphics on the fly.
+
+[See on github...](https://github.com/JavaGT/Visualiser.js)
+
 <!-- ## Year 13 Photography Board
-## Visualiser.js
 ## Zines
 ## Generative Art
 ## Selfie Every Day
@@ -199,7 +286,7 @@ I've started drawing some cool New Zealand birds! I might make them into prints 
 {.grid-list}
 # Achievements
 
-## Overseas Experience
+## 🌍 Overseas Experience
 My most significant achievement to date has been my overseas experience. In 2018 I worked for eight months to travel for four months across ten countries. The experience both challenged my worldview and was incredibly fun.
 
 - 🇬🇧 United Kingdom
@@ -214,5 +301,5 @@ My most significant achievement to date has been my overseas experience. In 2018
 - 🇨🇱 Chile
 {.dash-list}
 
-## First in Family
+## 🧑‍🎓 First in Family
 Beginning my degree, I was surprised by many aspects of the academic system. I was unfamiliar with even simple elements, for example, correctly referencing sources in my essays. While I may not have had access to experienced family members, I substituted for another resource — my friends. I’m proud of my success at university, and that much of it is due to my ability to engage with both students and faculty to problem-solve and overcome difficulties in the new environment.
