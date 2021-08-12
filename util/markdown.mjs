@@ -7,7 +7,10 @@ import mila from 'markdown-it-link-attributes'
 
 // MarkdownIt is used to read md files
 const markdown = new MarkdownIt({ html: true });
-markdown.use(anchor, { slugify });
+markdown.use(anchor, {
+    slugify,
+    permalink: anchor.permalink.headerLink()
+});
 markdown.use(toc)
 markdown.use(spans)
 markdown.use(attrs)
