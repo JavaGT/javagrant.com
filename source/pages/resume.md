@@ -3,7 +3,7 @@ slogan: Java did
 slogan2: things
 body_class: bars
 ---
-An somewhat comprehensive history of Java's activities.{.center}
+A somewhat comprehensive history of Java's activities.{.center}
 
 [[toc]]
 [🔝](#){.goto-top}
@@ -11,19 +11,19 @@ An somewhat comprehensive history of Java's activities.{.center}
 # Employment and Volunteering
 ## 🧑‍🏫 Teaching Assistant
 I am a teaching assistant for the fantastic [COMMS 301 – Digital Communication and Practice
-](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2021) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/). This role primarily involves hosting lectorial format workshops, tutoring the large cohort of students on computer programming concepts and implimentation.
+](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2021) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/). As Teaching Assistant, I host lecture/tutorial format workshops, tutoring a large cohort of students on computer programming concepts and implementation.
 
 ## 🎈 MATES Mentoring
-Working with [The Great Potentials Foundation](https://www.greatpotentials.org.nz) I have helped various students from [Southern Cross Campus](https://southerncross.school.nz/) and [Auckland Girls Grammar School](http://www.aggs.school.nz/) with creative subjects and their transition from highschool to tertiary education. Additionally I've mentored year eight students at [Finlayson Park School](https://www.finlaysonpark.school.nz/) as part of the MATES Jr. programme.
+Working with [The Great Potentials Foundation](https://www.greatpotentials.org.nz), I have helped various students from [Southern Cross Campus](https://southerncross.school.nz/) and [Auckland Girls Grammar School](http://www.aggs.school.nz/) with creative subjects and their transition from high school to tertiary education. Additionally, I've mentored year eight students at [Finlayson Park School](https://www.finlaysonpark.school.nz/) as part of the MATES Jr. programme.
 ## 👨‍🎨 Youth Arts New Zealand
 ![The Future is Creative – Youth Arts New Zealand is a social enterprise powered by Aotearoa's creative youth.](/static/images/yanz.png){.pad}
-I hold a volunteer role in various [Youth Arts New Zealand](https://youtharts.co.nz) projects, operating in both hands-on and consultation capacities.
-Current responsibilities include online and in-person community engagement, and in-person engagement.
+I hold a volunteer role in various [Youth Arts New Zealand](https://youtharts.co.nz) projects, operating in hands-on and consultation capacities.
+Current responsibilities include online and in-person community engagement.
 ### 🎨 Art Jam
 ![Art Jam](/static/images/artjam.png){.pad}
-I host the YANZ Art Jam every month on behalf of Youth Arts New Zealand and in collaberation with [Shore Junction](http://www.shorejunction.nz/).
+I host the YANZ Art Jam every month on behalf of Youth Arts New Zealand and in collaboration with [Shore Junction](http://www.shorejunction.nz/).
 
-[Read more about Art Jam here...](#art-jam-1)
+[Read more about Art Jam here.](#🎨-art-jam-1)
 ## VIBE Youth Arts Festival
 ![Vibe Youth Festival – Live Music, Workshops, Activities, Exhibition, Dance, Graffiti Battles, Food Stalls](/static/images/vibe.jpeg){.pad}
 Volunteered with hands-on roles for [VIBE Youth Festival 2019](https://www.facebook.com/VibeYouthFestival/) in Henderson, Auckland.
@@ -31,20 +31,20 @@ Volunteered with hands-on roles for [VIBE Youth Festival 2019](https://www.faceb
 # Education
 ## 🏫 University of Auckland
 ![The University of Auckland](/static/images/uoa.jpg){.pad}
-Graduating 2021 with a Bachelor of Arts majoring in [Sociology](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/sociology.html) and [Communication](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/communication.html). Additionally, my completion of the [Arts Scholars module](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) includes a dissertation exploring the use of educational pedagogy in online videos.
-I am the first in my family to attend university. [Read more...](#first-in-family)
+Graduating 2021 with a Bachelor of Arts majoring in [Sociology](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/sociology.html) and [Communication](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/communication.html). Additionally, my completion of the [Arts Scholars module](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) includes a dissertation exploring educational pedagogy in online videos.
+I am the first in my family to attend university. [Read more.](#🧑%E2%80%8D🎓-first-in-family)
 
 ### Leadership
 #### Arts Scholars Orientation
-Every year of my degree I have assisted in orientating the new cohort of Arts Scholars. A believer in the programme, I help the new students adjust to the course and university as a whole.
+Every year of my degree, I have assisted in orientating the new cohort of Arts Scholars. A believer in the programme, I help the new students adjust to the course and university as a whole.
 #### Representation
-Throughout my degree I've held leadership roles such as multiple class representative positions, and helped form and managing of student consultation processes for the university and its students.
+Throughout my degree, I've held leadership roles such as multiple class representative positions and helped form and manage student consultation processes for the university and its students.
 
-[Read more...](#student-representation)
+[Read more.](#student-representation)
 
 ### Academic
 #### Top of Class
-I achieved the higest grades of my cohort in the following classes
+I achieved the highest grades of my cohort in the following classes
 - [Communication 300 – New Media and the Future of Communication](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS%20&Number=300%20&Year=2020)
 - [Sociology 206 – Sociology for Auckland](https://artsfaculty.auckland.ac.nz/courses/?Subject=SOCIOL%20&Number=206%20&Year=2020)
 - [Sociology 326 – Sociology for Violence and Death](https://artsfaculty.auckland.ac.nz/courses/?Subject=SOCIOL%20&Number=326%20&Year=2021)
@@ -75,36 +75,36 @@ I have achieved distinctive grades in the following classes
 #### Arts Scholars
 [The Arts Scholars programme](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) has been the defining aspect of my university experience.
 
-“The Arts Scholars courses consider important subjects in-depth and explore alternate perspectives. Learning and curiosity are the ultimate goal. Also, the people are pretty cool.” - _Java_ {.quote}
+“The Arts Scholars courses consider important subjects in-depth and explore alternate perspectives. Learning and curiosity are the ultimate goal. Also, the people are pretty cool.” - _Java._ {.quote}
 
-During my final year of the programme, I'm undergoing a research project into the educational pedagogy of social science YouTube videos in order to understand how to effectively use videos for scalable, accessable, and engaging education.
+During my final year of the programme, I'm undergoing a research project into the educational pedagogy of social science YouTube videos to understand how to effectively use videos for scalable, accessible, and engaging education.
 
 ## Kerikeri High School
-Completion of the NCEA Level 3 with excellence endorsement, university entrance and a photography scholarship.
+I completed NCEA Level 3 with excellence endorsement, university entrance and a [photography scholarship](#📸-scholarship-—-nzqa-photography).
 
 ### Leadership
 
 #### Prefect
-As a KKHS prefect I worked with year twelve students in supporting career building and pathway discovery for students. I also represented the school at community and cultural events.
+As a KKHS prefect I worked with career building and pathway discovery for year twelve students. I also represented the school at community and cultural events.
 
 #### Peer Support
-As a KKHS peer support mentor, I was responsible for introducing the year seven cohort to the school and making them comfortable in the new learning environment.
+As a KKHS peer support mentor, I introduced the year seven cohort to the school and made them comfortable in the new learning environment.
 
 #### 🇳🇿 Kiwi Buddy Programme
 One of my most rewarding roles was that of Kiwi Buddy. Tasked with making international students welcome in their new school and culture, I befriended 50+ incredible people from all over the world. Directly I was assigned to students from Switzerland, Japan, and the United States.
 
-This programme hugely influenced my life, and led to me to travel the world in 2018.
-[Read more...](#overseas-experience)
+This programme hugely influenced my life and led me to travel the world in 2018.
+[Read more.](#🌍-overseas-experience)
 
 #### Debating Coach
-Just as kind students before me tutored my cohort, I assisted in devloping the abilities of younger debaters throughout my time debating at Kerikeri High School.
+Just as kind students before me tutored my cohort, I assisted in developing the abilities of younger debaters throughout my time debating at Kerikeri High School.
 
 ### 🤺 Debating
-As a part of the KKHS debating team, we were champions in the Russell McVey Debating tournament in years 2013, 2014, 2015.
+As a part of the KKHS debating team, we were champions in the Russell McVey Debating tournament in 2013, 2014, 2015.
 We achieved a second placement in Northland for the Russell McVey Debating Tournament in 2014.
 
 ### 😀 Attitude
-I have received WAKA Excellence in Attitude awards every year they have been offered at Kerikeri High School across multiple subjects.
+I have received WAKA Excellence in Attitude awards every year offered at Kerikeri High School across multiple subjects.
 
 ### 📚 Academic
 - Elite Honours Award: Academic – NCEA Level 1 (2015)
@@ -130,18 +130,18 @@ NZQA recognised my efforts in Art Photography with an [NZQA scholarship](https:/
 {.quote}
 
 ### 🧑‍💼 Idea Bootcamp
-I have completed [University of Auckland Business School’s Idea Bootcamp](https://www.cie.auckland.ac.nz/newsroom/idea-bootcamp-2019/) where teams are created to identify problems and create viable solutions. Honing creative problem-solving skills, business model utilisation, data collection and analysis.
+I have completed [The University of Auckland Business School’s Idea Bootcamp](https://www.cie.auckland.ac.nz/newsroom/idea-bootcamp-2019/), where teams identify problems and create viable solutions–honing creative problem-solving skills, business model utilisation, data collection and analysis.
 
 # Student Representation
-I have help present the interests of students to the university in seeking changes in a number of occassions, including through the creation of feedback sessions between engaged students and faculty.
+I have presented the interests of students to the university on multiple occasssions, in various formats, including through the creation of feedback sessions between students and faculty.
 
 ## 💰 Social Sciences Funding Cuts
-I [successfully ran a campaign](https://sites.google.com/view/social-sciences-open-letter/home) to garnish student awareness and engage with faculty in regards to funding cuts to the Social Sciences, despite an increase in enrollments. This momentum was handed off to the Arts Student Organisation at the university.
+I [successfully ran a campaign](https://sites.google.com/view/social-sciences-open-letter/home) to garnish student awareness and engage with faculty reguarding funding cuts to the Social Sciences, despite an increase in enrollments. I handed off this social momentum to the Arts Students Organisation at the university.
 
 ## 📜 Student Consultations
 Involvement in the organisation, participation and management of various forms of student consultation at The University of Auckland, working with AUSA, the Arts faculty, and the Arts Scholars programme.
 
-Issues covered include mechanisms of communication, university–student relations, and the responsibilities of the university in creating a safe educational space for all students.
+Issues covered include mechanisms of communication, university–student relations, and the responsibilities of the university in creating a safe and effective educational space for all students.
 
 ## 📣 AUSA Class Representation
 I've represented many classes for student-lecturer engagement, staff-student consultations and student-university communications.
@@ -155,15 +155,15 @@ I've represented many classes for student-lecturer engagement, staff-student con
 <!-- {.dash-list-sep}  -->
 
 ## 🗳 University Student Representative Campaign
-Although I wasn’t selected as the student representative I ran an otherwise successful campaign as a first-year student, gathering 7% of votes and placing 4th.
+Although I didn't make student representative, I ran an otherwise successful campaign as a first-year student, gathering 7% of votes and placing 4th.
 
 # Skills
 - ## 🔌 Advanced Computer Usage
-    - Programming
+    - [Programming](https://github.com/javagt)
         - Scripting
             - Bash
             - LUA
-        - Object Oriented Programming
+        - Object-Oriented Programming
             - JavaScript
                 - ElectronJS
                 - Slvete
@@ -200,18 +200,17 @@ Although I wasn’t selected as the student representative I ran an otherwise su
 - ## 🧐 Thinking
     - Critical Thinking
     - Critical Analysis
-    - Logic
+    - [Logic](https://artsfaculty.auckland.ac.nz/courses/?Subject=PHIL&Number=101&Year=2019)
 - ## ☎️ Communication
-    - Documentory Film Making
-    - Essay Writing
-    - Persuasion
+    - [Persuasion](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=206&Year=2020)
     - Various Media Creation
-        - Documentory
+        - [Documentary Film Making](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=300&Year=2020)
+        - Essay Writing
         - GIF
         - Data Visualisation
-        - Illusration
+        - Illustration
         - Meme Generation
-        - Twitter/Chat Bots
+        - [Twitter Bots](https://twitter.com/JMemeMaker301)
         - Websites
         - Photo-visual Narrative
 - ## 🙌 Leadership
@@ -219,7 +218,7 @@ Although I wasn’t selected as the student representative I ran an otherwise su
         - Intercultural
 - ## 📚 Research
     - Qualitative Methods
-    - Quanitative Methods
+    - Quantitative Methods
     - Methodology
 - ## 🎭 Arts
     - Photography
@@ -230,33 +229,13 @@ Although I wasn’t selected as the student representative I ran an otherwise su
     - Screen Printing
 
 {.block-list}
-<!-- 
-- ## Computing
-    - [Programming](https://github.com/javagt)
-    - Markup
-    - Office Suite
-    - Google Suite
-- ## Art
-    - [Photography](/art/#photography)
-    - [Digital Illustration](/art/#illustration)
-- ## Leadership
-    - Communication Management
-    - Problem Solving
-- ## Entrepenureship
-    - Stakeholder mapping
-    - Business Model Development
-    - Value Proposition Development
-    - Market Validation
-    - Risk and Assumption Analysis
-    - Minimum Viable Product Development
-    - Pitching -->
 
 # Projects
 ## 🎨 Art Jam
 ![Young Creatives at Shore Junction](/static/images/artjam2.jpg){.pad}
-I host the YANZ Art Jam every month on behalf of Youth Arts NZ and in collaberation with [Shore Junction](http://www.shorejunction.nz/). The event is a three-hour social and artistic meet-up for local creatives to develop and collaberate on personal projects in a supportive environment.
-## Illustrations
-I enjoy illustrating things in my down time. I use Procreate on an iPad to make them happen.
+I host the YANZ Art Jam every month on behalf of Youth Arts NZ and in collaboration with [Shore Junction](http://www.shorejunction.nz/). The event is a three-hour social and artistic meet-up for local creatives to develop and collaborate on personal projects in a supportive environment.
+## ✏️ Illustrations
+I enjoy illustrating things in my downtime. I use Procreate on an iPad to make them happen.
 
 ![Home Sweet Home](/static/art/home-sweet-home.jpg)
 ![Evil Tower](/static/art/evil-tower.jpg)
@@ -264,17 +243,17 @@ I enjoy illustrating things in my down time. I use Procreate on an iPad to make 
 {.gallery}
 
 ### 🦉 New Zealand Birds
-I've started drawing some cool New Zealand birds! I might make them into prints someday.
+I'm proud of my New Zealand birds! I might make them into prints someday.
 
 ![Kakapo](/static/art/birds/kakapo.jpg)
 ![Kereru](/static/art/birds/kereru.jpg)
 {.gallery}
 
 ## 🖼 Visualiser.js
-I constructed a framework for generating live audio visualisers in the browser. Using JavaScaript, the HTML Audio API and HTML canvas, this framework enables anyone with even a small amount of programming knowledge create their own visualiser in 2d, 3d or both!
+I constructed a framework for generating live audio visualisers in the browser. Using JavaScript, the HTML Audio API and HTML canvas, this framework enables anyone with even a small amount of programming knowledge to create an audio visualiser in 2d, 3d or both!
 The framework allows the use of customisable plugins and layers to generate graphics on the fly.
 
-[See on github...](https://github.com/JavaGT/Visualiser.js)
+[See on github.](https://github.com/JavaGT/Visualiser.js)
 
 <!-- ## Year 13 Photography Board
 ## Zines
@@ -302,4 +281,4 @@ My most significant achievement to date has been my overseas experience. In 2018
 {.dash-list}
 
 ## 🧑‍🎓 First in Family
-Beginning my degree, I was surprised by many aspects of the academic system. I was unfamiliar with even simple elements, for example, correctly referencing sources in my essays. While I may not have had access to experienced family members, I substituted for another resource — my friends. I’m proud of my success at university, and that much of it is due to my ability to engage with both students and faculty to problem-solve and overcome difficulties in the new environment.
+Beginning my degree, I was surprised by many aspects of the academic system. I was unfamiliar with even simple elements, for example, correctly referencing sources in my essays. While I may not have had access to experienced family members, I substituted for another resource — my friends. I’m proud of my success at university, much of it due to my ability to engage with students and faculty to problem-solve and overcome difficulties in the new environment.

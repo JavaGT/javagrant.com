@@ -29,6 +29,7 @@ body {
     height: 100vh;
     background: rgb(248, 248, 248);
     margin: 0;
+    -webkit-print-color-adjust: exact !important;
 }
 
 #title {
@@ -93,12 +94,14 @@ main {
 .bars main>p {
     margin: 1rem;
 }
+
 .bars :is(h2, h3, h4) {
     color: white;
     padding: 0.3em 0.5rem;
     transform: skewX(-8deg);
     border-radius: 0.2rem;
 }
+
 .bars h2 {
     margin: 0.6rem 0;
     background: -webkit-linear-gradient(35deg, rgb(196, 85, 224), rgb(114, 50, 235));
@@ -181,7 +184,7 @@ li h1, li h2, li h3 {
 }
 
 .table-of-contents>ol>li, .grid-list>li {
-    background: rgba(0, 0, 0, 0.068);
+    background: rgba(0, 0, 0, 0.02);
     flex-grow: 1;
     flex-basis: 40%;
     min-width: 20em;
@@ -275,10 +278,6 @@ table {
     }
 }
 
-body {
-    -webkit-print-color-adjust: exact !important;
-}
-
 /* Increase padding left subheadings */
 
 /* permalink headers mardown */
@@ -292,6 +291,7 @@ body {
 thead * {
     text-align: left;
 }
+
 .gallery {
     display: flex;
     justify-content: space-around;
@@ -319,8 +319,9 @@ thead * {
 .block-list {
     padding: 0;
 }
+
 .block-list>* {
-list-style: none;
+    list-style: none;
 }
 
 .block-list>*>* {
@@ -337,24 +338,31 @@ list-style: none;
     display: inline-block;
     background: rgba(0, 0, 0, 0.1);
 }
+
 .block-list>*>*>li:nth-child(6n+1) {
     background: rgba(255, 0, 0, 0.2);
 }
+
 .block-list>*>*>li:nth-child(6n+2) {
     background: rgba(255, 255, 0, 0.3);
 }
+
 .block-list>*>*>li:nth-child(6n+3) {
     background: rgba(0, 255, 0, 0.2);
 }
+
 .block-list>*>*>li:nth-child(6n+4) {
     background: rgba(0, 255, 255, 0.2);
 }
+
 .block-list>*>*>li:nth-child(6n+5) {
     background: rgba(0, 0, 255, 0.2);
 }
+
 .block-list>*>*>li:nth-child(6n+6) {
     background: rgba(255, 0, 255, 0.2);
 }
+
 .block-list li ul ul {
     padding-left: 1.3rem;
 }
