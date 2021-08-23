@@ -1,89 +1,84 @@
-import { join, parse } from 'path'
-import fs from 'fs/promises'
+import path from 'path'
 import gulp from 'gulp'
+import fs from 'fs/promises'
 import pug from 'pug'
 import frontmatter from 'frontmatter'
 import markdown from './util/markdown.mjs'
 import gwebserver from 'gulp-webserver'
-
 const { watch, parallel, series } = gulp
 
-const output_directory = join(process.cwd(), 'docs')
-await fs.mkdir(output_directory).catch(x => x)
+const source_directory = relpath('source')
+const output_directory = relpath('docs')
+const MARKDOWN_PUG_TEMPLATE_FILE = path.join(process.cwd(), 'source', 'template', 'markdown.pug')
 
 function relpath(...crumbs) {
-    return join(process.cwd(), ...crumbs)
+    return path.join(process.cwd(), ...crumbs)
 }
 
-async function readpaths(path) {
-    return (await fs.readdir(path)).map(name => join(path, name))
+function copy(input_path, output_path) {
+    return gulp.src(path.join(input_path)).pipe(gulp.dest(output_path))
 }
 
-const options = { config: {} }
-
-function indexPage(options = {}) {
-    const input_path = relpath('source', 'index.pug')
-    const output_path = join(output_directory, 'index.html')
-    return renderPage({ input_path, output_path, options })
-}
-function renderPage({ input_path, output_path, options }) {
+async function buildPug(input_path, output_path, options) {
     const renderTemplate = pug.compileFile(input_path)
     const html = renderTemplate(options)
     return fs.writeFile(output_path, html)
 }
 
-function onlyPaths(type) {
-    return function (path) {
-        return parse(path).ext === type
+async function buildMarkdown(input_path, output_path) {
+    const file_content = (await fs.readFile(input_path)).toString()
+    const { content, data } = frontmatter(file_content)
+    const rendered = markdown.render(content)
+    return buildPug(MARKDOWN_PUG_TEMPLATE_FILE, output_path, { ...data, content: rendered })
+}
+
+async function buildPage(input_path, output_path) {
+    const info = path.parse(input_path)
+    const output_folder = path.join(output_path)
+    const file_output_path = path.join(output_folder, 'index.html')
+    await fs.mkdir(output_folder, { recursive: true })
+
+    if (info.ext === '.md') {
+        return buildMarkdown(input_path, file_output_path)
+    } else if (info.ext === '.pug') {
+        return buildPug(input_path, file_output_path)
     }
 }
 
-async function build() {
-    await indexPage()
-    const pages_path = relpath('source', 'pages')
-    const all_pages = await readpaths(pages_path)
-    // const pug_pages = all_pages.filter(onlyPaths('.pug'))
-    // const md_pages = all_pages.filter(onlyPaths('.md'))
-
-    all_pages.map(async input_path => {
-        const info = parse(input_path)
-        const output_folder = join(output_directory, info.name)
-        const output_path = join(output_folder, 'index.html')
-        await fs.mkdir(output_folder, { recursive: true })
-        if (info.ext === '.md') {
-
-            const file_content = (await fs.readFile(input_path)).toString()
-            const { content, data } = frontmatter(file_content)
-            const rendered = markdown.render(content)
-            return renderPage({ input_path: join(process.cwd(), 'source', 'template', 'markdown.pug'), output_path, options: { ...data, content: rendered } })
-            return fs.writeFile(output_path, rendered)
-        } else if (info.ext === '.pug') {
-            return renderPage({ input_path, output_path, options })
+async function buildPages(input_path, output_path) {
+    await fs.mkdir(output_path, { recursive: true })
+    const files = await fs.readdir(input_path, { withFileTypes: true })
+    return files.reduce(async (prev, file) => {
+        await prev
+        const name = path.parse(file.name).name
+        const filepath = path.join(input_path, file.name)
+        const filepath_output = path.join(output_path, (name !== 'index' ? name : ''))
+        if (file.isDirectory()) {
+            await buildPages(filepath, filepath_output)
+        } else {
+            return buildPage(filepath, filepath_output)
         }
-    })
-
-
-    gulp.src('./source/favicon.png')
-        .pipe(gulp.dest('./docs'))
-    return gulp.src('./source/static/**/*').pipe(gulp.dest('./docs/static'))
+    }, Promise.resolve())
 }
 
-// async function googleDoc({output_path, input_url}){
-//     const url = input_url
-//     //'https://docs.google.com/document/d/1XIArxJB87pKG2w0PU7H4KiLXkc7DCY1w_ttZjZhmpsQ/export?format=html'
-//     const html = await fetch(url).then(res=>res.text())
-//     const output_directory = output_path
-//     await fs.mkdir(output_directory, { recursive: true })
-//     await fs.writeFile(output_path, html)
-// }
+async function build() {
+    await copy(path.join(source_directory, 'static', '**', '*'), path.join(output_directory, 'static'))
+    await copy('./source/favicon.png', output_directory)
+    await copy('./source/CNAME', output_directory)
+    await buildPages(path.join(source_directory, 'pages'), path.join(output_directory))
+    await buildPage(path.join(source_directory, 'index.pug'), path.join(output_directory))
+}
 
-function webserver(){
-    gulp.src('./docs')
+function webserver() {
+    gulp.src(output_directory)
         .pipe(gwebserver({
             livereload: true,
-            // directoryListing: true,
-            open: true
+            open: true,
         }));
 };
 
-export default () => { build(); webserver(); watch(['./source/**/*'], build) }
+export default () => {
+    build();
+    webserver();
+    watch([source_directory + '/**/*'], build);
+}

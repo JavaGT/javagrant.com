@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Atkinson Hyperlegible', 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -34,7 +34,7 @@ body {
 
 #title {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     font-size: max(min(4rem, 10vw), 1.5em);
     margin: 0;
     padding: 1rem;
@@ -258,14 +258,6 @@ img {
 
 h3 input {
     display: none;
-}
-
-h3:has(> input)+* {
-    display: none;
-}
-
-h3:has(> input:checked)+* {
-    display: block;
 }
 
 table {
