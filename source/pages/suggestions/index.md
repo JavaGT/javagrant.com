@@ -25,7 +25,7 @@
 - [Babish Culinary Universe](https://www.youtube.com/results?search_query=Babish%20Culinary%20Universe&sp=EgIQAg%253D%253D)
 - [Steve Mould](https://www.youtube.com/results?search_query=Steve%20Mould&sp=EgIQAg%253D%253D)
 - [Theory & Philosophy](https://www.youtube.com/results?search_query=Theory%20&%20Philosophy&sp=EgIQAg%253D%253D)
-- [I Like To Make Stuff](https://www.youtube.com/results?search_query=I%20Like%20To%20Make Stuff&sp=EgIQAg%253D%253D)
+- [I Like To Make Stuff](https://www.youtube.com/results?search_query=I%20Like%20To%20Make%20Stuff&sp=EgIQAg%253D%253D)
 - [CGP Grey](https://www.youtube.com/results?search_query=CGP%20Grey&sp=EgIQAg%253D%253D)
 - [The Gravel Institute](https://www.youtube.com/results?search_query=The%20Gravel%20Institute&sp=EgIQAg%253D%253D)
 - [The Spinoff](https://www.youtube.com/results?search_query=The%20Spinoff&sp=EgIQAg%253D%253D)
