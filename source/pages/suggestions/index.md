@@ -62,7 +62,7 @@
 - [OneHandClap](https://www.youtube.com/results?search_query=OneHandClap&sp=EgIQAg%253D%253D)
 - [Mark Rober](https://www.youtube.com/results?search_query=Mark%20Rober&sp=EgIQAg%253D%253D)
 - [Captain Disillusion](https://www.youtube.com/results?search_query=Captain%20Disillusion&sp=EgIQAg%253D%253D)
-- [Primitive Technology (TURN ON CLOSED CAPTIONS](https://www.youtube.com/results?search_query=Primitive%20Technology&sp=EgIQAg%253D%253D)
+- [Primitive Technology (TURN ON CLOSED CAPTIONS)](https://www.youtube.com/results?search_query=Primitive%20Technology&sp=EgIQAg%253D%253D)
 - [BrainCraft](https://www.youtube.com/results?search_query=BrainCraft&sp=EgIQAg%253D%253D)
 - [The Art Assignment](https://www.youtube.com/results?search_query=The%20Art%20Assignment&sp=EgIQAg%253D%253D)
 - [Every Frame a Painting](https://www.youtube.com/results?search_query=Every%20Frame%20a%20Painting&sp=EgIQAg%253D%253D)
