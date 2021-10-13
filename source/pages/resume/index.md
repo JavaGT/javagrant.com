@@ -8,7 +8,7 @@ A somewhat comprehensive history of Java's activities.{.center}
 [[toc]]
 [🔝](#){.goto-top}
 
-# Employment and Volunteering
+# 👷 Employment and Volunteering
 ## 🧑‍🏫 Teaching Assistant
 I am a teaching assistant for the fantastic [COMMS 301 – Digital Communication and Practice
 ](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2021) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/). As Teaching Assistant, I host lecture/tutorial format workshops, tutoring a large cohort of students on computer programming concepts and implementation.
@@ -28,7 +28,7 @@ I host the YANZ Art Jam every month on behalf of Youth Arts New Zealand and in c
 ![Vibe Youth Festival – Live Music, Workshops, Activities, Exhibition, Dance, Graffiti Battles, Food Stalls](/static/images/vibe.jpeg){.pad}
 Volunteered with hands-on roles for [VIBE Youth Festival 2019](https://www.facebook.com/VibeYouthFestival/) in Henderson, Auckland.
 
-# Education
+# 📖 Education
 ## 🏫 University of Auckland
 ![The University of Auckland](/static/images/uoa.jpg){.pad}
 Graduating 2021 with a Bachelor of Arts majoring in [Sociology](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/sociology.html) and [Communication](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/communication.html). Additionally, my completion of the [Arts Scholars module](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) includes a dissertation exploring educational pedagogy in online videos.
@@ -72,7 +72,7 @@ I have achieved distinctive grades in the following classes
 |2021/2|Sociology|203|N/A|Social Reality and Ideology|
 |2021/2|Sociology|333|N/A|Sociology of Health, Illness, and Medicine|
 
-#### Arts Scholars
+#### 🧐 Arts Scholars
 [The Arts Scholars programme](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) has been the defining aspect of my university experience.
 
 “The Arts Scholars courses consider important subjects in-depth and explore alternate perspectives. Learning and curiosity are the ultimate goal. Also, the people are pretty cool.” - _Java._ {.quote}
@@ -159,7 +159,7 @@ I have also represented the department of Social Sciences in the Arts Faculty co
 ## 🗳 University Student Representative Campaign
 Although I didn't make student representative, I ran an otherwise successful campaign as a first-year student, gathering 7% of votes and placing 4th.
 
-# Skills
+# 🔨 Skills
 - ## 🔌 Advanced Computer Usage
     - [Programming](https://github.com/javagt)
         - Scripting
@@ -231,8 +231,27 @@ Although I didn't make student representative, I ran an otherwise successful cam
     - Screen Printing
 
 {.block-list}
+# 🎖 Achievements
 
-# Projects
+## 🌍 Overseas Experience
+My most significant achievement to date has been my overseas experience. In 2018 I worked for eight months to travel for four months across ten countries. The experience both challenged my worldview and was incredibly fun.
+
+- 🇬🇧 United Kingdom
+- 🇮🇹 Italy
+- 🇭🇺 Hungary
+- 🇨🇿 Czechia
+- 🇦🇹 Austria
+- 🇩🇪 Germany
+- 🇨🇭 Switzerland
+- 🇵🇹 Portugal
+- 🇧🇷 Brazil
+- 🇨🇱 Chile
+{.dash-list}
+
+## 🧑‍🎓 First in Family
+Beginning my degree, I was surprised by many aspects of the academic system. I was unfamiliar with even simple elements, for example, correctly referencing sources in my essays. While I may not have had access to experienced family members, I substituted for another resource — my friends. I’m proud of my success at university, much of it due to my ability to engage with students and faculty to problem-solve and overcome difficulties in the new environment.
+
+# ⚙️ Projects
 ## 🎨 Art Jam
 ![Young Creatives at Shore Junction](/static/images/artjam2.jpg){.pad}
 I host the YANZ Art Jam every month on behalf of Youth Arts NZ and in collaboration with [Shore Junction](http://www.shorejunction.nz/). The event is a three-hour social and artistic meet-up for local creatives to develop and collaborate on personal projects in a supportive environment.
@@ -271,7 +290,7 @@ Mark: 10/10
 
 "Ahhhhh facelist is amazing!!" _-Lecurer_ {.quote}
 
-[You can explore facelist here.](/static/facelist)
+[Explore Facelist.](/static/facelist)
 
 ## 🚫 Anti-bullying Programme
 For [Sociol 326](https://artsfaculty.auckland.ac.nz/courses/?Subject=SOCIOL&Number=326&Year=2021) I designed 'Got what it takes', a violence prevention programme targeting bullying behaviours in New Zealand high schools.
@@ -283,18 +302,18 @@ Mark: 39/40
 If you explicitly talked about the interconnection between the Role Strain and HM, it would be even better." _–Tutor._
 {.quote}
 
-[You can read the proposal here.](https://docs.google.com/document/d/e/2PACX-1vS65nlsqlR5oGHK_9J6phvwfL1dFPBFKetxilXAVf1n2vma3XZYqFqjT_xos0hvQ5QMB8Y_jqamvP_N/pub)
+[Read the proposal.](https://docs.google.com/document/d/e/2PACX-1vS65nlsqlR5oGHK_9J6phvwfL1dFPBFKetxilXAVf1n2vma3XZYqFqjT_xos0hvQ5QMB8Y_jqamvP_N/pub)
 
-## The Past, Present and Future of Labour Facilitation
+## 🔮 The Past, Present and Future of Labour Facilitation
 This essay looks into the shifting role of labour and capital in labour relations under the uber model of production. The obligations of labourers are increasing while their job stability, incomes and rights are all shrinking. Adittionally, labourers are now expected to front capital in order to sell their labour, while recieveing none of the traditional capitalist rewards.
 
 Mark: 25/25
 
 "This is a well researched and well written piece of work. While you present a wide array of technologies and businesses as examples, you manage to package them in a clearly structured and coherent essay that works to analyze technological progress through an economic determinist view. You demonstrate a wealth of knowledge and understanding when it comes to the processes of labor and the impacts caused by the systems that facilitate these processes. Also how technology and the 'Uber' model could be playing into those ideas under capitalism and the exploitation of automation.  I am deeply impressed and highly commend you on your work and efforts with this assignment. Well done!" _-Tutor_ {.quote}
 
-[You can read the essay here.](https://docs.google.com/document/d/e/2PACX-1vR-RxTAxTY_eRFZABN_VAb38Xx2wETsmTDluaxlQgHjmrm1RS-L2zLfIQ_HMq1ErEf6gM_CM5ZYmtSk/pub)
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vR-RxTAxTY_eRFZABN_VAb38Xx2wETsmTDluaxlQgHjmrm1RS-L2zLfIQ_HMq1ErEf6gM_CM5ZYmtSk/pub)
 
-## Ethnicity & Place Stratification in Auckland
+## 🏠 Ethnicity & Place Stratification in Auckland
 
 This essay uses Spatial Assimilation and Place Stratification theories to model the effects of race and ethnicity. Specifically how these factors effect actualising socio-economic status into real attainment, for the minority Māori population in the Auckland region. The arguments are supported along the way by quantitative data collected from NZ.Stat.
 
@@ -302,42 +321,42 @@ Mark: 20/20
 
 "Well done Java on an insightful paper. This is the type of data analysis that is important to begin conversations on discrimination and racism. Congratulations on an outstanding paper." _-Lecturer_ {.quote}
 
-[You can read the essay here.](https://docs.google.com/document/d/e/2PACX-1vTc9nfO3Y5-PvaKNmkS6ilxKLk5WvF1NNk95RIqHFcrLWtE85S6sU2PVfE01wRHXMh5pgbBlbkgh9IN/pub)
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vTc9nfO3Y5-PvaKNmkS6ilxKLk5WvF1NNk95RIqHFcrLWtE85S6sU2PVfE01wRHXMh5pgbBlbkgh9IN/pub)
 
-## Autobiography – My Role in Gentrification
+## 🏡 Autobiography – My Role in Gentrification
 
 Mark: 30/30
 
 "Thank you for sharing your experiences with me Java. As always, you have written a wonderfully critical paper. Your ability to weave not only the personal with theory but also Auckland city with broader national concerns is to be commended. I have enjoyed getting to know you this semester through your writing, and I look forward to having you in my classes again in the future." _-Lecturer_ {.quote}
 
-[You can read the essay here.](https://docs.google.com/document/d/e/2PACX-1vQ_KWQuuRaqw_MSajdIfQ1Go38ru_Iby1w1h0_HJPoyJ2l3oq8kjLElrgMxtJap4b0OhzWl1pS5pI4b/pub)
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vQ_KWQuuRaqw_MSajdIfQ1Go38ru_Iby1w1h0_HJPoyJ2l3oq8kjLElrgMxtJap4b0OhzWl1pS5pI4b/pub)
 
-## Marxist Theory for Ihumatao
+## ⚒️ Marxist Theory for Ihumatao
 
 Mark: 19/20
 
 "Well done Java on an intellectually stimulating analysis of Ihumātao. I look forward to reading more of your work." _-Lecturer_ {.quote}
 
-[You can read the essay here.](https://docs.google.com/document/d/e/2PACX-1vST5ReOhFdzSpUE5xXvd1KgQoKjTRTlJCP_IFwylPejKQ5hzJOS9115ZLHMnRVBqjoFAkMcBJDVZfCt/pub)
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vST5ReOhFdzSpUE5xXvd1KgQoKjTRTlJCP_IFwylPejKQ5hzJOS9115ZLHMnRVBqjoFAkMcBJDVZfCt/pub)
 
-## Anti-Union Rhetoric and Structure: It’s time for unions to re-brand
+## 📣 Anti-Union Rhetoric and Structure: It’s time for unions to re-brand
 
 Mark: 28.2/30
 
 "Good use of examples, excellent work, moves a bit fast at points and could benefit from slower more methodical explanation, but otherwise a very strong essay. Well done!" _-Tutor_ {.quote}
 
-[You can read the essay here.](https://docs.google.com/document/d/e/2PACX-1vRNJPujBcIZKOR7aWx2t8jkyQXZULxyJo7cD6ivcX0YZRe8_tv3_rmcpehZ1LBWSfXE6zix7nhOKxTW/pub)
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vRNJPujBcIZKOR7aWx2t8jkyQXZULxyJo7cD6ivcX0YZRe8_tv3_rmcpehZ1LBWSfXE6zix7nhOKxTW/pub)
 
-## Analysis of Intimate Partner Relationships in The Tattoo
+## 👨‍👩‍👦 Analysis of Intimate Partner Relationships in The Tattoo
 
 Mark: 18.5/20
 
 "Java, excellent job. All 3 of us (Tutor1, Tutor2 and me) read your essay. Tutor2 described it as "beautiful" and although we assume you put a good deal of work into it, they said it read as if it was written effortlessly.
 Our only critique is you cut back on digging into one theoretical perspective. Your application of the theories are great, but a bit more describing selected theories would have helped. You do a good job with hegemonic masculinity. With coercive control, you introduce and bring out a detailed aspect of Starks' perspective with safety zones. But you don't define it thoroughly and you had some word count space to do so. Still, your application of CC and HM is great. Good job also bringing in Foucault. Overall, a very sophisticated analysis." _–Lecturer_ {.quote}
 
-[You can read the essay here.](https://docs.google.com/document/d/e/2PACX-1vTcSQFtEM1lnzCR9B0ypzhIfsTG1u9coUKnXZE4MdoJKHLfZe_uRdZdzvQdoY3B510zpP2ZVMc9cYYE/pub)
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vTcSQFtEM1lnzCR9B0ypzhIfsTG1u9coUKnXZE4MdoJKHLfZe_uRdZdzvQdoY3B510zpP2ZVMc9cYYE/pub)
 
-## Essays on Violence
+## 👊 Essays on Violence
 - Defining Violence
 - Gender & Sexuality
 - Popular Culture
@@ -347,26 +366,26 @@ Mark: 37/40
 
 No feedback given for final assignments.
 
-[You can read the essays here.](https://docs.google.com/document/d/e/2PACX-1vTiQExYuYYSZJg0h9mRao8IT_wYkG4-52hN7lmJwOfJOBsO1TOaPZHErOUmAYgaE22vKiiaO0l4klUL/pub)
+[Read the essays.](https://docs.google.com/document/d/e/2PACX-1vTiQExYuYYSZJg0h9mRao8IT_wYkG4-52hN7lmJwOfJOBsO1TOaPZHErOUmAYgaE22vKiiaO0l4klUL/pub)
 
-## Data Gathering Instrument
+## 📋 Data Gathering Instrument
 
 Mark: 25/25
 
 "Kia Ora Java,
 I enjoyed reading your assignment as it eloquently offers a refined data gathering instrument and literature review. Your literature is insightful and offers nuance to your research question. Great incorporation of graphs. Well done!" _–Tutor_ {.quote}
 
-[You can view the instrument here.](https://docs.google.com/document/d/e/2PACX-1vSHCPAlBcfdgPAESn58VvbAis2-J0Q-L383pSfpwJdAerFzGV-BJSHrkf4hJC4Fz3uHgYavMDOP-qBA/pub)
+[View the instrument.](https://docs.google.com/document/d/e/2PACX-1vSHCPAlBcfdgPAESn58VvbAis2-J0Q-L383pSfpwJdAerFzGV-BJSHrkf4hJC4Fz3uHgYavMDOP-qBA/pub)
 
-## Research Proposal: The Needs and Desires of Tasmin and Southland Retail Workers
+## 🔎 Research Proposal: The Needs and Desires of Tasmin and Southland Retail Workers
 
 Mark: 36/40
 
 No feedback given for final assignments.
 
-[You can read the proposal here.](https://docs.google.com/document/d/e/2PACX-1vRGex23PBivyYREzbdGAApFMVZBqrm9QEpRgC76P5v9bC2DASdfqhTh0aC26gxG5TUmH4c0wUx2eV3E/pub)
+[Read the proposal.](https://docs.google.com/document/d/e/2PACX-1vRGex23PBivyYREzbdGAApFMVZBqrm9QEpRgC76P5v9bC2DASdfqhTh0aC26gxG5TUmH4c0wUx2eV3E/pub)
 
-## The Contested Definition of Culture
+## 🎭 The Contested Definition of Culture
 This was my first university essay! 
 
 Mark: 17/20
@@ -376,9 +395,9 @@ This was an interesting and well articulated essay, which followed a clear narra
 Discussion of the conservative scholars covered some important aspects of their work, and engaged well with critiques. 
 This is contrasted well with that of Williams, however the discussion included the perspective of so many scholars that the essay could not address these in detail. Nonetheless, as the different definition are discussed, the implications are acknowledged for most of these. Narrowing the scope of the essay to allow for more detailed analysis would have allowed for a higher mark, but nonetheless this was great work." _–Tutor_ {.quote}
 
-[You can read the essay here.](https://docs.google.com/document/d/e/2PACX-1vRVrDKpsPdKN9dIuO1Cu66s7YDoLYnIfnplx6ySSIR5qjgr3mdvVOHWIDAFPY1ckb2YJNdfaD_9iD6F/pub)
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vRVrDKpsPdKN9dIuO1Cu66s7YDoLYnIfnplx6ySSIR5qjgr3mdvVOHWIDAFPY1ckb2YJNdfaD_9iD6F/pub)
 
-## The Right to Remix: Lessons from _Pirate Cinema_.
+## 💿 The Right to Remix: Lessons from _Pirate Cinema_.
 
 Mark: 27/30
 
@@ -387,9 +406,9 @@ This was an engaging project essay, with the cultural text and essay question ch
 The discussion of the text is contextualised well within debates around copyright law, acknowledging the differing perspectives on this. While this is important contextual information, a lot of the essay was dedicated to exploring this issue, meaning that there was less opportunity for focus on the analysis of the cultural text at hand, or the work of Jenkins as the subject of the essay question.
 Nonetheless, when these subjects are explored in the essay they are done so well, demonstrating a good understanding of the appropriate theory. Overall, this was an excellent essay." _–Tutor_ {.quote}
 
-[You can read the essay here.](https://docs.google.com/document/d/e/2PACX-1vTsjq7vGIC-eBzvw1NFYafa4jXuBCQxMZgHiF2V6g0n1vkh6Sy53isk5jQURZ29wOZ_DPfV_rTuuwuD/pub)
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vTsjq7vGIC-eBzvw1NFYafa4jXuBCQxMZgHiF2V6g0n1vkh6Sy53isk5jQURZ29wOZ_DPfV_rTuuwuD/pub)
 
-## GIF Project
+## 🎞 GIF Project
 
 Mark: 10/10
 
@@ -399,16 +418,16 @@ Mark: 10/10
 ![Flappybird Paper Animation](/static/art/gifs/flappy.gif)
 {.gallery}
 
-## Meme Twitter Bot
+## 🤖 Meme Twitter Bot
 
 Mark: 15/15
 
 "This is SO GOOD. The Tracery grammar developing the text, as you note, could be improved, expanded, developed in different directions, but even in this kind of raw dadaist version, the mashup is great! Would be curious to hear about that bug and why you chose url.me instead of memegen? Holler!" _–Lecturer_ {.quote}
 
-[Check out on twitter.](https://twitter.com/JMemeMaker301)
+[See on twitter.](https://twitter.com/JMemeMaker301)
 
 
-## Review of _In the Age of AI_
+## 🎬 Review of _In the Age of AI_
 
 Mark: 25/25
 
@@ -420,7 +439,7 @@ Well done!" _–Tutor_ {.quote}
 
 [Read the review.](https://docs.google.com/document/d/e/2PACX-1vScsbW1uN5rSm954iTXHNWr9xkXoCGxPQ8lN3RGv1xTdUwKVeTaE3NfE6HJct4EJSLSXHKUjxYh_cB_/pub)
 
-## Postmodern Advertising: The role of brands as a cultural resource for identity signalling.
+## 👟 Postmodern Advertising: The role of brands as a cultural resource for identity signalling.
 
 Mark: 17/20
 
@@ -438,22 +457,3 @@ If you have any questions or if any of my feedback needs clarifying please don't
 
 
 <!-- {.grid-list} -->
-# Achievements
-
-## 🌍 Overseas Experience
-My most significant achievement to date has been my overseas experience. In 2018 I worked for eight months to travel for four months across ten countries. The experience both challenged my worldview and was incredibly fun.
-
-- 🇬🇧 United Kingdom
-- 🇮🇹 Italy
-- 🇭🇺 Hungary
-- 🇨🇿 Czechia
-- 🇦🇹 Austria
-- 🇩🇪 Germany
-- 🇨🇭 Switzerland
-- 🇵🇹 Portugal
-- 🇧🇷 Brazil
-- 🇨🇱 Chile
-{.dash-list}
-
-## 🧑‍🎓 First in Family
-Beginning my degree, I was surprised by many aspects of the academic system. I was unfamiliar with even simple elements, for example, correctly referencing sources in my essays. While I may not have had access to experienced family members, I substituted for another resource — my friends. I’m proud of my success at university, much of it due to my ability to engage with students and faculty to problem-solve and overcome difficulties in the new environment.

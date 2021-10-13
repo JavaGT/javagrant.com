@@ -1,0 +1,613 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Java Grant</title><link rel="stylesheet" href="/static/style.css"><script async src="https://www.googletagmanager.com/gtag/js?id=G-BJMGN2YH5Z"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-BJMGN2YH5Z');</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="shortcut icon" href="/favicon.png" type="image/png"><meta name="theme-color" content="#55D0E0"><style>/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt43C1KxNDXMspQ1lPyU89-1h6ONRlW45G056IkUwCgblWmLWQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt43C1KxNDXMspQ1lPyU89-1h6ONRlW45G056IqUwCgblWm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt93C1KxNDXMspQ1lPyU89-1h6ONRlW45G056qRdhWDTFiMF225Z2k.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt93C1KxNDXMspQ1lPyU89-1h6ONRlW45G056qRdhWNTFiMF225.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45G07JIoWQeCbGWn.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45G04pIoWQeCbA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8Wbc9eiWPRl-uFV24.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8Wbc9dCWPRl-uFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style></head><body class="bars"><header><h1><a href="/" id="title">Java has <span id="roller">skills</span></a></h1></header><main><p class="center">A somewhat comprehensive list of of Java's skills.</p>
+<nav class="table-of-contents"><ol><li><a href="#skills">Skills</a><ol><li><a href="#learning">Learning</a></li><li><a href="#programming">Programming</a></li><li><a href="#programmes">Programmes</a></li><li><a href="#math">Math</a></li><li><a href="#philosophy/computer-science">Philosophy/Computer Science</a></li><li><a href="#research">Research</a></li><li><a href="#communication">Communication</a></li><li><a href="#problem-solving">Problem Solving</a></li><li><a href="#leadership">Leadership</a></li></ol></li><li><a href="#to-learn">To Learn</a></li></ol></nav><p><a href="#" class="goto-top">🔝</a></p>
+<h1 id="skills" tabindex="-1"><a class="header-anchor" href="#skills">Skills</a></h1>
+<h2 id="learning" tabindex="-1"><a class="header-anchor" href="#learning">Learning</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skill</th>
+<th>Description</th>
+<th>Confidence</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>–</td>
+<td>Self Directed</td>
+<td>-</td>
+<td>100%</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="programming" tabindex="-1"><a class="header-anchor" href="#programming">Programming</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skill</th>
+<th>Description</th>
+<th>Confidence</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paradigm</td>
+<td>Object Oriented</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Paradigm</td>
+<td>Procedural</td>
+<td>-</td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Paradigm</td>
+<td>Declaritive</td>
+<td>Focusing on outcomes, not methods, eg. Excel</td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Paradigm</td>
+<td>Event Driven</td>
+<td></td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Paradigm</td>
+<td>Asynchronous</td>
+<td></td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Paradigm</td>
+<td>Reactive Programming</td>
+<td>Impliments change propgration, eg. getters in Javascript</td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Javascript NodeJS Engine</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Javascript Chromium Engine</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Python</td>
+<td>-</td>
+<td>50%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Lua</td>
+<td>-</td>
+<td>50%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>MongoDB</td>
+<td>-</td>
+<td>80%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>NeDB</td>
+<td>-</td>
+<td>100%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>CouchDB</td>
+<td>-</td>
+<td>80%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>SQLite</td>
+<td>-</td>
+<td>65%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Framework</td>
+<td>Electron</td>
+<td>-</td>
+<td>80%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Web Development</td>
+<td>HTML 5</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Web Development</td>
+<td>CSS 3</td>
+<td>-</td>
+<td>80%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Web Development</td>
+<td>Javascript ES6</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Web Development</td>
+<td>Slvete</td>
+<td>-</td>
+<td>60%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Web Development</td>
+<td>Gulp</td>
+<td>-</td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Web Development</td>
+<td>NPM</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Project Management</td>
+<td>Git</td>
+<td>-</td>
+<td>50%</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="programmes" tabindex="-1"><a class="header-anchor" href="#programmes">Programmes</a></h2>
+<p>Affinity Photo, Affinity Designer, Adobe Lightroom, Adobe Photoshop, Adobe Illustrator, Microsoft Word, Microsoft Powerpoint, Microsoft Excel, Google Docs, Google Slides, Google Sheets, Google Forms, Google Sites, Visual Studio Code, Open Broadcaster Software, Notion, Slack, Final Cut Pro X, Motion, Compressor, Unity</p>
+<h2 id="math" tabindex="-1"><a class="header-anchor" href="#math">Math</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skill</th>
+<th>Description</th>
+<th>Confidence</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vectors</td>
+<td>Dot Product</td>
+<td>-</td>
+<td>70%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Vectors</td>
+<td>Distance</td>
+<td>-</td>
+<td>100%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Vectors</td>
+<td>Magnitude</td>
+<td>-</td>
+<td>100%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Vectors</td>
+<td>Normalisation</td>
+<td>-</td>
+<td>100%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Vectors</td>
+<td>Local and Global Space</td>
+<td>-</td>
+<td>40%</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="philosophy/computer-science" tabindex="-1"><a class="header-anchor" href="#philosophy/computer-science">Philosophy/Computer Science</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skill</th>
+<th>Description</th>
+<th>Confidence</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logic</td>
+<td>Binary</td>
+<td>-</td>
+<td>80%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Logic</td>
+<td>Basic Gates</td>
+<td>-</td>
+<td>80%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Logic</td>
+<td>Advanced Gates</td>
+<td>-</td>
+<td>40%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Logic</td>
+<td>Truth Tables</td>
+<td>-</td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Logic</td>
+<td>Truth Trees</td>
+<td>-</td>
+<td>10%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Problem Solving</td>
+<td>Computational Thinking</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Method</td>
+<td>Recursion</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Machine Learning</td>
+<td>Neural Networks</td>
+<td>-</td>
+<td>40%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Machine Learning</td>
+<td>Back Propogation</td>
+<td>-</td>
+<td>10%</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="research" tabindex="-1"><a class="header-anchor" href="#research">Research</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skill</th>
+<th>Description</th>
+<th>Confidence</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Methods</td>
+<td>Quantitative</td>
+<td>-</td>
+<td>60%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td>Qualitative</td>
+<td>-</td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td>Data Gathering Instruments</td>
+<td>-</td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td>Kaupapa Māori</td>
+<td>-</td>
+<td>60%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td>Community Based Paticipatory Research</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td>Talanoa</td>
+<td>-</td>
+<td>80%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Analysis</td>
+<td>Discourse</td>
+<td>-</td>
+<td>85%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Analysis</td>
+<td>Social Structures</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Analysis</td>
+<td>Applying Theory</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="communication" tabindex="-1"><a class="header-anchor" href="#communication">Communication</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skill</th>
+<th>Description</th>
+<th>Confidence</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Presenting</td>
+<td>Public Speaking</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Media Creation</td>
+<td>Slide Shows</td>
+<td>-</td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Media Creation</td>
+<td>Data Vidualisations</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Media Creation</td>
+<td>GIF</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Media Creation</td>
+<td>Twitter Bot</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Writing</td>
+<td>Essay</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Writing</td>
+<td>Creative</td>
+<td>-</td>
+<td>80%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Writing</td>
+<td>Script</td>
+<td>-</td>
+<td>50%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Writing</td>
+<td>Satire</td>
+<td>-</td>
+<td>70%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Reading</td>
+<td>Textual Analysis</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="problem-solving" tabindex="-1"><a class="header-anchor" href="#problem-solving">Problem Solving</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skill</th>
+<th>Description</th>
+<th>Confidence</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>Critical Thinking</td>
+<td>-</td>
+<td>90%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Proposal</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Evaluation</td>
+<td>-</td>
+<td>95%</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="leadership" tabindex="-1"><a class="header-anchor" href="#leadership">Leadership</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skill</th>
+<th>Description</th>
+<th>Confidence</th>
+<th>Evidence</th>
+</tr>
+</thead>
+</table>
+<!-- |-|Critical Thinking|-|90%|-| -->
+<!-- ## Critical Thinking TODO
+|Category|Skill|Description|Confidence|Evidence|
+|-|-|-|-|-|
+|-|Critical Thinking|-|90%|-| -->
+<h1 id="to-learn" tabindex="-1"><a class="header-anchor" href="#to-learn">To Learn</a></h1>
+<p>Unity
+Blender
+GLSL</p>
+</main></body></html>
