@@ -10,8 +10,12 @@ A somewhat comprehensive history of Java's activities.{.center}
 
 # 👷 Employment and Volunteering
 ## 🧑‍🏫 Teaching Assistant
-I am a teaching assistant for the fantastic [COMMS 301 – Digital Communication and Practice
+I was a teaching assistant for the fantastic [COMMS 301 – Digital Communication and Practice
 ](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2021) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/). As Teaching Assistant, I host lecture/tutorial format workshops, tutoring a large cohort of students on computer programming concepts and implementation.
+
+## 👨‍🏫 Graduate Teaching Assistant
+I am a graduate teaching assistant for the new [COMMS 103 – Digital Communication and Practice
+](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=103&Year=2022) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/). As a Graduate Teaching Assistant, I mark assignments, teach tutorials and run computer science labs for over sixty students.
 
 ## 🎈 MATES Mentoring
 Working with [The Great Potentials Foundation](https://www.greatpotentials.org.nz), I have helped various students from [Southern Cross Campus](https://southerncross.school.nz/) and [Auckland Girls Grammar School](http://www.aggs.school.nz/) with creative subjects and their transition from high school to tertiary education. Additionally, I've mentored year eight students at [Finlayson Park School](https://www.finlaysonpark.school.nz/) as part of the MATES Jr. programme.
@@ -65,15 +69,20 @@ I have achieved distinctive grades in the following classes
 |2020/2|Communication|301|A+|Digital Communication and Practise|
 |2020/2|Sociology|208|A-|Economy and Society|
 |2021/1|Economics|151|A+|Understanding the Global Economy|
-|2021/1|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|300|N/A|[Arts Scholars 3](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=300&Year=2021)|
+|2021/1|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|300|A|[Arts Scholars 3](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=300&Year=2021)|
 |2021/1|Sociology|310|A|Researching Social Problems|
 |2021/1|Sociology|326|A+|Sociology of Violence|
-|2021/2|Education|100|N/A|The Creative Process|
-|2021/2|Sociology|203|N/A|Social Reality and Ideology|
-|2021/2|Sociology|333|N/A|Sociology of Health, Illness, and Medicine|
+|2021/2|Education|100|A+|The Creative Process|
+|2021/2|Sociology|203|A+|Social Reality and Ideology|
+|2021/2|Sociology|333|A|Sociology of Health, Illness, and Medicine|
+|2022/1|Sociology|718|A+|Research Projects: Design and Practice|
+|2022/1|Sociology|706|A+|The Sociology of Disasters|
+|2022/2|Sociology|748|NA|Critical Theory and Social Change|
+|2022/2|Sociology|790|NA|Research Project|
+
 
 #### 🧐 Arts Scholars
-[The Arts Scholars programme](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) has been the defining aspect of my university experience.
+[The Arts Scholars programme](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) has been the defining aspect of my undergraduate experience.
 
 “The Arts Scholars courses consider important subjects in-depth and explore alternate perspectives. Learning and curiosity are the ultimate goal. Also, the people are pretty cool.” - _Java._ {.quote}
 
@@ -448,6 +457,47 @@ Your essay shows a good understanding of the essay question and Holt's discussio
 If you have any questions or if any of my feedback needs clarifying please don't hesitate to let me know." _–Tutor_ {.quote}
 
 [Read the essay.](https://docs.google.com/document/d/e/2PACX-1vRPePVubCE_omdOVlN0qn7AUAO9vcDEmh2D6jUnoimxNXW9-01Cx43mefk9CBtxXToljerU2qpjeM8z/pub)
+
+## 🩺 Reflections on New Zealand Health Inequalities Amplified by Housing, Isolation, and Stratification.
+
+Mark: 18.34/20 pts
+
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vTXHnrHvFe3WeWYFv7x9u2WdyLzy1dsXoEcrWlGYaeIlteCQ4qAm89CDYWShEY0boIGkAjkskQ1qU61/pub)
+
+## 🤳 ADHD Discourse on TikTok: Relatable Disease or Normal Behaviour?.
+
+Mark: 22.04/29
+
+"Hi Java, You've picked an important topic to study, and were quite thorough in your description and analysis of the Tik Tok videos. As well, you do a good job of articulating why the information discrepancies matter. One area that could have been stronger is the introduction. While you do a good job of introducing TikTok and why its coverage matters, it would have been helpful to articulate your rationale for choosing ADHD. Also, you should always end your introduction with a roadmap, which describes what you will be covering in your paper. Regarding the content, while your discussion of the videos was thorough, I would have liked to see a discussion about the sources of the problems. Nevertheless, this was a fine effort overall, and I hope analysing the TikTok content has helped you see the discrepancies that exist between the medical literature and the media portrayals of disease. take good care of yourself and I wish you the best of luck with all your future endeavours, Lecturer :)." _–Lecturer_ {.quote}
+
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vTD42POWPgnrtHeAx4EAza1BdjgdoOo_Q39RL8mOna8Cf8Lq6Hf3tGITSusaB5SYeYnmL4d1PtFQ2s7/pub)
+
+## 🧹 Does tidying bring you joy? The distinction of minimalism as ideology.
+
+Mark: 28.5/30
+
+"This is a good piece; cogent and the sections are well balanced. The show and/or its philosophy is kept central to the analysis, and acts as a thread that links content. The "debunking" aspect of this is compelling. The correspondence between distinction and ideology is clearer toward the end, a little less clear up front." _–Lecturer_ {.quote}
+
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vTsAy-LzjrQ_AxCNxKnPJWuaRrZazwOJgFWQVjk5911ywTLlN6Bqx9_JHyEkbQ9g4nbFzCcVy7hs0gj/pub)
+
+## 🧱 An Evaluation of Ideology and Radical Constructivism.
+
+Mark: 19.25/20
+
+"This is well-written and shows a good understanding of the concepts. Good to see someone grapple with Luhmann and do it well. The analytic paragraph does something novel, which is also good to see." _–Lecturer_ {.quote}
+
+[Read the essay.](https://docs.google.com/document/d/e/2PACX-1vTBUN_nK4UJyVyOxSK16l8Ji7SKvyOA315mLLfRclBJdNDFARHsdKsb7n4eBZqlTvDpMFXX3kukNuPY/pub)
+
+## 🎞 Scenefinder
+
+Mark: 20/20
+
+"Kia ora, Java. What an awesome project! Both your documentation and essay are sound and unique. You demonstrate an excellent understanding of course content; your arguments are strong and well-developed. Brilliant work, really. It is always a pleasure to read such insightful writing. (Random comment: I was surprised to see 3 of the YouTube channels I subscribe to on page 12 + Chomsky!)" _–Tutor_ {.quote}
+
+[Read the reflection](https://docs.google.com/document/d/e/2PACX-1vTjWccprVHn12WMqwaVbFyxj-tKNqoW_MXEostOw6-PC9GTSCJ7WE25pYeVDSyl-EFW-oa9yeQYh6Yx/pub)
+
+<!-- TODO: Postgrad sociology work -->
+
 
 <!-- ## Year 13 Photography Board
 ## Zines
