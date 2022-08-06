@@ -89,7 +89,7 @@ I have achieved distinctive grades in the following classes
 During my final year of the programme, I'm undergoing a research project into the educational pedagogy of social science YouTube videos to understand how to effectively use videos for scalable, accessible, and engaging education.
 
 ## 🏫 Kerikeri High School
-I completed NCEA Level 3 with excellence endorsement, university entrance and a [photography scholarship](#📸-scholarship-—-nzqa-photography).
+I completed NCEA Level 3 with excellence endorsement, university entrance and a [photography scholarship](#scholarship-%E2%80%94-nzqa-photography).
 
 ### 🗺 Leadership
 
