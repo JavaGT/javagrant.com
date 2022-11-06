@@ -3,85 +3,107 @@ slogan: Java did
 slogan2: things
 body_class: bars
 ---
+
 A somewhat comprehensive history of Java's activities.{.center}
 
 [[toc]]
 [🔝](#){.goto-top}
 
 # 👷 Employment and Volunteering
+
 ## 🧑‍🏫 Teaching Assistant
+
 I was a teaching assistant for the fantastic [COMMS 301 – Digital Communication and Practice
-](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2021) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/). As Teaching Assistant, I host lecture/tutorial format workshops, tutoring a large cohort of students on computer programming concepts and implementation.
+](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2021) course at The University of Auckland with the remarkable [Dr Ethan Plaut](http://www.ethanplaut.com/). As Teaching Assistant, I host lecture/tutorial format workshops, tutoring a large cohort of students on computer programming concepts and implementation.
 
 ## 👨‍🏫 Graduate Teaching Assistant
+
 I am a graduate teaching assistant for the new [COMMS 103 – Digital Communication and Practice
-](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=103&Year=2022) course at The University of Auckland with the amazing [Dr Ethan Plaut](http://www.ethanplaut.com/). As a Graduate Teaching Assistant, I mark assignments, teach tutorials and run computer science labs for over sixty students.
+](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=103&Year=2022) course at The University of Auckland with the excellent [Dr Ethan Plaut](http://www.ethanplaut.com/). As a Graduate Teaching Assistant, I mark assignments, teach tutorials and run computer science labs for over sixty students.
 
 ## 🎈 MATES Mentoring
+
 Working with [The Great Potentials Foundation](https://www.greatpotentials.org.nz), I have helped various students from [Southern Cross Campus](https://southerncross.school.nz/) and [Auckland Girls Grammar School](http://www.aggs.school.nz/) with creative subjects and their transition from high school to tertiary education. Additionally, I've mentored year eight students at [Finlayson Park School](https://www.finlaysonpark.school.nz/) as part of the MATES Jr. programme.
+
 ## 👨‍🎨 Youth Arts New Zealand
+
 ![The Future is Creative – Youth Arts New Zealand is a social enterprise powered by Aotearoa's creative youth](/static/images/yanz.png){.pad}
-I hold a volunteer role in various [Youth Arts New Zealand](https://youtharts.co.nz) projects, operating in hands-on and consultation capacities.
+I volunteer in various [Youth Arts New Zealand](https://youtharts.co.nz) projects, operating in hands-on and consultation capacities.
 Current responsibilities include online and in-person community engagement.
+
 ### 🎨 Art Jam
+
 ![Art Jam](/static/images/artjam.png){.pad}
 I host the YANZ Art Jam every month on behalf of Youth Arts New Zealand and in collaboration with [Shore Junction](http://www.shorejunction.nz/).
 
 [Read more about Art Jam here](#🎨-art-jam-1)
+
 ## 🎉 VIBE Youth Arts Festival
+
 ![Vibe Youth Festival – Live Music, Workshops, Activities, Exhibition, Dance, Graffiti Battles, Food Stalls](/static/images/vibe.jpeg){.pad}
 Volunteered with hands-on roles for [VIBE Youth Festival 2019](https://www.facebook.com/VibeYouthFestival/) in Henderson, Auckland.
 
 # 📖 Education
+
 ## 🏫 University of Auckland
+
 ![The University of Auckland](/static/images/uoa.jpg){.pad}
 Graduating 2021 with a Bachelor of Arts majoring in [Sociology](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/sociology.html) and [Communication](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/communication.html). Additionally, my completion of the [Arts Scholars module](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) includes a dissertation exploring educational pedagogy in online videos.
 I am the first in my family to attend university. [Read more](#🧑%E2%80%8D🎓-first-in-family)
 
 ### 🗺 Leadership
+
 #### 🧭 Arts Scholars Orientation
-Every year of my degree, I have assisted in orientating the new cohort of Arts Scholars. A believer in the programme, I help the new students adjust to the course and university as a whole.
+
+Every year of my degree, I have assisted in orientating the new cohort of Arts Scholars. A believer in the programme, I help the new students adjust to the course and university.
+
 #### 🗳 Representation
+
 Throughout my degree, I've held leadership roles such as multiple class representative positions and helped form and manage student consultation processes for the university and its students.
 
 [Read more](#student-representation)
 
 ### 📚 Academic
+
 #### 🥇 Top of Class
+
 I achieved the highest grades of my cohort in the following classes
+
 - [Communication 300 – New Media and the Future of Communication](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS%20&Number=300%20&Year=2020)
 - [Sociology 206 – Sociology for Auckland](https://artsfaculty.auckland.ac.nz/courses/?Subject=SOCIOL%20&Number=206%20&Year=2020)
 - [Sociology 326 – Sociology for Violence and Death](https://artsfaculty.auckland.ac.nz/courses/?Subject=SOCIOL%20&Number=326%20&Year=2021)
+
 #### 🏆 High Grades
-I have achieved distinctive grades in the following classes
 
-|Year|Subject|Class|Grade|Title|
-|-|-|-|-|-|
-|2019/1|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|100|A|[Arts Scholars 1](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=100&Year=2019)|
-|2019/1|Computer Science|101|A+|Principles of Programming|
-|2019/1|Sociology|105|A|Cultural Studies and Society|
-|2019/2|Communication|204|A|Social Media|
-|2020/1|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|200|A|[Arts Scholars 2](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=200&Year=2020)|
-|2020/1|Communication|302|A|Visual Communication|
-|2020/1|Sociology|200|A-|Sociological Theory|
-|2020/1|Sociology|206|A+|Sociology for Auckland|
-|2020/2|Communication|300|A+|New Media and the Future of Communication|
-|2020/2|Communication|301|A+|Digital Communication and Practise|
-|2020/2|Sociology|208|A-|Economy and Society|
-|2021/1|Economics|151|A+|Understanding the Global Economy|
-|2021/1|[Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html)|300|A|[Arts Scholars 3](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=300&Year=2021)|
-|2021/1|Sociology|310|A|Researching Social Problems|
-|2021/1|Sociology|326|A+|Sociology of Violence|
-|2021/2|Education|100|A+|The Creative Process|
-|2021/2|Sociology|203|A+|Social Reality and Ideology|
-|2021/2|Sociology|333|A|Sociology of Health, Illness, and Medicine|
-|2022/1|Sociology|718|A+|Research Projects: Design and Practice|
-|2022/1|Sociology|706|A+|The Sociology of Disasters|
-|2022/2|Sociology|748|NA|Critical Theory and Social Change|
-|2022/2|Sociology|790|NA|Research Project|
+I have achieved distinctive grades in the following classes:
 
+| Year   | Subject                                                                                            | Class | Grade | Title                                                                                                |
+| ------ | -------------------------------------------------------------------------------------------------- | ----- | ----- | ---------------------------------------------------------------------------------------------------- |
+| 2019/1 | [Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) | 100   | A     | [Arts Scholars 1](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=100&Year=2019) |
+| 2019/1 | Computer Science                                                                                   | 101   | A+    | Principles of Programming                                                                            |
+| 2019/1 | Sociology                                                                                          | 105   | A     | Cultural Studies and Society                                                                         |
+| 2019/2 | Communication                                                                                      | 204   | A     | Social Media                                                                                         |
+| 2020/1 | [Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) | 200   | A     | [Arts Scholars 2](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=200&Year=2020) |
+| 2020/1 | Communication                                                                                      | 302   | A     | Visual Communication                                                                                 |
+| 2020/1 | Sociology                                                                                          | 200   | A-    | Sociological Theory                                                                                  |
+| 2020/1 | Sociology                                                                                          | 206   | A+    | Sociology for Auckland                                                                               |
+| 2020/2 | Communication                                                                                      | 300   | A+    | New Media and the Future of Communication                                                            |
+| 2020/2 | Communication                                                                                      | 301   | A+    | Digital Communication and Practise                                                                   |
+| 2020/2 | Sociology                                                                                          | 208   | A-    | Economy and Society                                                                                  |
+| 2021/1 | Economics                                                                                          | 151   | A+    | Understanding the Global Economy                                                                     |
+| 2021/1 | [Arts Scholars](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) | 300   | A     | [Arts Scholars 3](https://artsfaculty.auckland.ac.nz/courses/?Subject=ARTSCHOL&Number=300&Year=2021) |
+| 2021/1 | Sociology                                                                                          | 310   | A     | Researching Social Problems                                                                          |
+| 2021/1 | Sociology                                                                                          | 326   | A+    | Sociology of Violence                                                                                |
+| 2021/2 | Education                                                                                          | 100   | A+    | The Creative Process                                                                                 |
+| 2021/2 | Sociology                                                                                          | 203   | A+    | Social Reality and Ideology                                                                          |
+| 2021/2 | Sociology                                                                                          | 333   | A     | Sociology of Health, Illness, and Medicine                                                           |
+| 2022/1 | Sociology                                                                                          | 718   | A+    | Research Projects: Design and Practice                                                               |
+| 2022/1 | Sociology                                                                                          | 706   | A+    | The Sociology of Disasters                                                                           |
+| 2022/2 | Sociology                                                                                          | 748   | NA    | Critical Theory and Social Change                                                                    |
+| 2022/2 | Sociology                                                                                          | 790   | NA    | Research Project                                                                                     |
 
 #### 🧐 Arts Scholars
+
 [The Arts Scholars programme](https://www.auckland.ac.nz/en/arts/study-with-us/study-options/arts-scholars.html) has been the defining aspect of my undergraduate experience.
 
 “The Arts Scholars courses consider important subjects in-depth and explore alternate perspectives. Learning and curiosity are the ultimate goal. Also, the people are pretty cool.” - _Java._ {.quote}
@@ -89,71 +111,87 @@ I have achieved distinctive grades in the following classes
 During my final year of the programme, I'm undergoing a research project into the educational pedagogy of social science YouTube videos to understand how to effectively use videos for scalable, accessible, and engaging education.
 
 ## 🏫 Kerikeri High School
+
 I completed NCEA Level 3 with excellence endorsement, university entrance and a [photography scholarship](#scholarship-%E2%80%94-nzqa-photography).
 
 ### 🗺 Leadership
 
 #### 🤵 Prefect
-As a KKHS prefect I worked with career building and pathway discovery for year twelve students. I also represented the school at community and cultural events.
+
+As a KKHS prefect, I worked with career building and pathway discovery for year twelve students. I also represented the school at community and cultural events.
 
 #### 👩‍👦 Peer Support
+
 As a KKHS peer support mentor, I introduced the year seven cohort to the school and made them comfortable in the new learning environment.
 
 #### 🇳🇿 Kiwi Buddy Programme
+
 One of my most rewarding roles was that of Kiwi Buddy. Tasked with making international students welcome in their new school and culture, I befriended 50+ incredible people from all over the world. Directly I was assigned to students from Switzerland, Japan, and the United States.
 
 This programme hugely influenced my life and led me to travel the world in 2018.
 [Read more](#🌍-overseas-experience)
 
 #### ⏱ Debating Coach
+
 Just as kind students before me tutored my cohort, I assisted in developing the abilities of younger debaters throughout my time debating at Kerikeri High School.
 
 ### 🤺 Debating
-As a part of the KKHS debating team, we were champions in the Russell McVey Debating tournament in 2013, 2014, 2015.
+
+As a part of the KKHS debating team, we were champions in the Russell McVey Debating tournament in 2013, 2014, and 2015.
 We achieved a second placement in Northland for the Russell McVey Debating Tournament in 2014.
 
 ### 😀 Attitude
+
 I have received WAKA Excellence in Attitude awards every year offered at Kerikeri High School across multiple subjects.
 
 ### 📚 Academic
+
 - Elite Honours Award: Academic – NCEA Level 1 (2015)
 - Award for Top Scholar (2013, 2014, 2015, 2016)
 - Award for Academic Excellence (2011, 2012, 2017)
 
 ### 📃 ICAS Achievement Awards
-Throughout high school, I achieved some notable results in the International Competitions and Assessments for Schools.
 
-|Year|Subject|Award|Percentile|
-|-|-|-|-|
-|2013|Computer Skills|Distinction|3%|
-|2013|English|Distinction|7%|
-|2014|Computer Skills|Distinction|5%|
-|2014|English|Distinction|11%|
-|2015|Digital Technologies|Distinction|4%|
-|2016|English|Distinction|5%|
+I achieved notable results in International Competitions and Assessments for Schools throughout high school.
+
+| Year | Subject              | Award       | Percentile |
+| ---- | -------------------- | ----------- | ---------- |
+| 2013 | Computer Skills      | Distinction | 3%         |
+| 2013 | English              | Distinction | 7%         |
+| 2014 | Computer Skills      | Distinction | 5%         |
+| 2014 | English              | Distinction | 11%        |
+| 2015 | Digital Technologies | Distinction | 4%         |
+| 2016 | English              | Distinction | 5%         |
 
 ### 📸 Scholarship — NZQA Photography
+
 NZQA recognised my efforts in Art Photography with an [NZQA scholarship](https://www.nzqa.govt.nz/qualifications-standards/awards/new-zealand-scholarship/) for university.
 
 "Scholarship candidates are expected to demonstrate high-level critical thinking, abstraction and generalisation, and to integrate, synthesise and apply knowledge, skills, understanding, and ideas to complex situations." _— NZQA_
 {.quote}
 
 ### 🧑‍💼 Idea Bootcamp
+
 I have completed [The University of Auckland Business School’s Idea Bootcamp](https://www.cie.auckland.ac.nz/newsroom/idea-bootcamp-2019/), where teams identify problems and create viable solutions–honing creative problem-solving skills, business model utilisation, data collection and analysis.
 
 # 🗳 Student Representation
-I have presented the interests of students to the university on multiple occasssions, in various formats, including through the creation of feedback sessions between students and faculty.
+
+I have presented students' interests to the university on multiple occasions, in various formats, including through the creation of feedback sessions between students and faculty.
 
 ## 💰 Social Sciences Funding Cuts
-I [successfully ran a campaign](https://sites.google.com/view/social-sciences-open-letter/home) to garnish student awareness and engage with faculty reguarding funding cuts to the Social Sciences, despite an increase in enrollments. I handed off this social momentum to the Arts Students Organisation at the university.
+
+I [successfully ran a campaign](https://sites.google.com/view/social-sciences-open-letter/home) to garnish student awareness and engage with faculty regarding funding cuts to the Social Sciences, despite an increase in enrollments. I handed off this social momentum to the Arts Students Organisation at the university.
 
 ## 📜 Student Consultations
+
 Involvement in the organisation, participation and management of various forms of student consultation at The University of Auckland, working with AUSA, the Arts faculty, and the Arts Scholars programme.
 
-Issues covered include mechanisms of communication, university–student relations, and the responsibilities of the university in creating a safe and effective educational space for all students.
+Issues covered include communication mechanisms, university–student relations, and the responsibilities of the university in creating a safe and effective educational space for all students.
 
 ## 📣 AUSA Class Representation
+
 I've represented many classes for student-lecturer engagement, staff-student consultations and student-university communications.
+
 - Arts Scholars 100
 - Arts Scholars 200
 - Arts Scholars 300
@@ -162,13 +200,15 @@ I've represented many classes for student-lecturer engagement, staff-student con
 - Sociol 310
 - Sociol 333
 
-I have also represented the department of Social Sciences in the Arts Faculty consultation meetings twice, and the Arts Scholars module once.
+I have also represented the department of Social Sciences in the Arts Faculty consultation meetings twice and the Arts Scholars module once.
+
 <!-- {.dash-list-sep}  -->
 
 ## 🗳 University Student Representative Campaign
-Although I didn't make student representative, I ran an otherwise successful campaign as a first-year student, gathering 7% of votes and placing 4th.
 
-# 🔨 Skills
+Although I didn't hold student representative, I ran an otherwise successful campaign as a first-year student, gathering 7% of votes and placing 4th.
+
+<!-- # 🔨 Skills
 - ## 🔌 Advanced Computer Usage
     - [Programming](https://github.com/javagt)
         - Scripting
@@ -237,12 +277,14 @@ Although I didn't make student representative, I ran an otherwise successful cam
         - Lighting
     - Digital Illustration
         - Procreate
-    - Screen Printing
+    - Screen Printing -->
 
 {.block-list}
+
 # 🎖 Achievements
 
 ## 🌍 Overseas Experience
+
 My most significant achievement to date has been my overseas experience. In 2018 I worked for eight months to travel for four months across ten countries. The experience both challenged my worldview and was incredibly fun.
 
 - 🇬🇧 United Kingdom
@@ -255,16 +297,21 @@ My most significant achievement to date has been my overseas experience. In 2018
 - 🇵🇹 Portugal
 - 🇧🇷 Brazil
 - 🇨🇱 Chile
-{.dash-list}
+  {.dash-list}
 
 ## 🧑‍🎓 First in Family
+
 Beginning my degree, I was surprised by many aspects of the academic system. I was unfamiliar with even simple elements, for example, correctly referencing sources in my essays. While I may not have had access to experienced family members, I substituted for another resource — my friends. I’m proud of my success at university, much of it due to my ability to engage with students and faculty to problem-solve and overcome difficulties in the new environment.
 
 # ⚙️ Projects
+
 ## 🎨 Art Jam
+
 ![Young Creatives at Shore Junction](/static/images/artjam2.jpg){.pad}
-I host the YANZ Art Jam every month on behalf of Youth Arts NZ and in collaboration with [Shore Junction](http://www.shorejunction.nz/). The event is a three-hour social and artistic meet-up for local creatives to develop and collaborate on personal projects in a supportive environment.
+I host the YANZ Art Jam on behalf of Youth Arts NZ and in collaboration with [Shore Junction](http://www.shorejunction.nz/). The event was a three-hour social and artistic meet-up for local creatives to develop and collaborate on personal projects in a supportive environment.
+
 ## ✏️ Illustrations
+
 I enjoy illustrating things in my downtime. I use Procreate on an iPad to make them happen.
 
 ![Home Sweet Home](/static/art/home-sweet-home.jpg)
@@ -273,6 +320,7 @@ I enjoy illustrating things in my downtime. I use Procreate on an iPad to make t
 {.gallery}
 
 ### 🦉 New Zealand Birds
+
 I'm proud of my New Zealand birds! I might make them into prints someday.
 
 ![Kakapo](/static/art/birds/kakapo.jpg)
@@ -280,15 +328,18 @@ I'm proud of my New Zealand birds! I might make them into prints someday.
 {.gallery}
 
 ## 🖼 Visualiser.js
+
 I constructed a framework for generating live audio visualisers in the browser. Using JavaScript, the HTML Audio API and HTML canvas, this framework enables anyone with even a small amount of programming knowledge to create an audio visualiser in 2d, 3d or both!
-The framework allows the use of customisable plugins and layers to generate graphics on the fly.
+The framework utilises customisable plugins and layers to generate graphics on the fly.
 
 [See on github](https://github.com/JavaGT/Visualiser.js)
 
 # 📄 Assignments
-I have completed a number of assignments I am particularly proud of. In order to not overwhelm this page, I have placed them on their own part of the website here
+
+I am particularly proud of a number of my assignments.
 
 ## 🤦‍♀️ Facelist
+
 As a submission for [Comms 301](https://artsfaculty.auckland.ac.nz/courses/?Subject=COMMS&Number=301&Year=2020), I created Facelist, a Facebook satire that you can access [here](/static/facelist).
 
 Tip: try clocking in with "Harry" or "Frodo".
@@ -302,29 +353,31 @@ Mark: 10/10
 [Explore Facelist](/static/facelist)
 
 ## 🚫 Anti-bullying Programme
+
 For [Sociol 326](https://artsfaculty.auckland.ac.nz/courses/?Subject=SOCIOL&Number=326&Year=2021) I designed 'Got what it takes', a violence prevention programme targeting bullying behaviours in New Zealand high schools.
-The assignment was grounded in role strain theory, included methods for evaluating the programme and acknowledged potential limitations of implimentation.
+The assignment was grounded in role strain theory, included methods for evaluating the programme and acknowledged potential implementation limitations.
 
 Mark: 39/40
 
-"One word: Sophistication 
+"One word: Sophistication
 If you explicitly talked about the interconnection between the Role Strain and HM, it would be even better." _–Tutor._
 {.quote}
 
 [Read the proposal](https://docs.google.com/document/d/e/2PACX-1vS65nlsqlR5oGHK_9J6phvwfL1dFPBFKetxilXAVf1n2vma3XZYqFqjT_xos0hvQ5QMB8Y_jqamvP_N/pub)
 
 ## 🔮 The Past, Present and Future of Labour Facilitation
-This essay looks into the shifting role of labour and capital in labour relations under the uber model of production. The obligations of labourers are increasing while their job stability, incomes and rights are all shrinking. Adittionally, labourers are now expected to front capital in order to sell their labour, while recieveing none of the traditional capitalist rewards.
+
+This essay looks into the shifting role of labour and capital in labour relations under the uber production model. The obligations of labourers are increasing while their job stability, incomes and rights are all shrinking. Additionally, labourers are now expected to front capital to sell their labour while receiving none of the traditional capitalist rewards.
 
 Mark: 25/25
 
-"This is a well researched and well written piece of work. While you present a wide array of technologies and businesses as examples, you manage to package them in a clearly structured and coherent essay that works to analyze technological progress through an economic determinist view. You demonstrate a wealth of knowledge and understanding when it comes to the processes of labor and the impacts caused by the systems that facilitate these processes. Also how technology and the 'Uber' model could be playing into those ideas under capitalism and the exploitation of automation.  I am deeply impressed and highly commend you on your work and efforts with this assignment. Well done!" _-Tutor_ {.quote}
+"This is a well researched and well written piece of work. While you present a wide array of technologies and businesses as examples, you manage to package them in a clearly structured and coherent essay that works to analyze technological progress through an economic determinist view. You demonstrate a wealth of knowledge and understanding when it comes to the processes of labor and the impacts caused by the systems that facilitate these processes. Also how technology and the 'Uber' model could be playing into those ideas under capitalism and the exploitation of automation. I am deeply impressed and highly commend you on your work and efforts with this assignment. Well done!" _-Tutor_ {.quote}
 
 [Read the essay](https://docs.google.com/document/d/e/2PACX-1vR-RxTAxTY_eRFZABN_VAb38Xx2wETsmTDluaxlQgHjmrm1RS-L2zLfIQ_HMq1ErEf6gM_CM5ZYmtSk/pub)
 
 ## 🏠 Ethnicity & Place Stratification in Auckland
 
-This essay uses Spatial Assimilation and Place Stratification theories to model the effects of race and ethnicity. Specifically how these factors effect actualising socio-economic status into real attainment, for the minority Māori population in the Auckland region. The arguments are supported along the way by quantitative data collected from NZ.Stat.
+This essay uses Spatial Assimilation and Place Stratification theories to model the effects of race and ethnicity. Precisely how these factors affect actualising socio-economic status into actual attainment for the minority Māori population in the Auckland region. The arguments are supported along the way by quantitative data collected from NZ.Stat.
 
 Mark: 20/20
 
@@ -366,6 +419,7 @@ Our only critique is you cut back on digging into one theoretical perspective. Y
 [Read the essay](https://docs.google.com/document/d/e/2PACX-1vTcSQFtEM1lnzCR9B0ypzhIfsTG1u9coUKnXZE4MdoJKHLfZe_uRdZdzvQdoY3B510zpP2ZVMc9cYYE/pub)
 
 ## 👊 Essays on Violence
+
 - Defining Violence
 - Gender & Sexuality
 - Popular Culture
@@ -373,7 +427,7 @@ Our only critique is you cut back on digging into one theoretical perspective. Y
 
 Mark: 37/40
 
-No feedback given for final assignments.
+No feedback was given for final assignments.
 
 [Read the essays](https://docs.google.com/document/d/e/2PACX-1vTiQExYuYYSZJg0h9mRao8IT_wYkG4-52hN7lmJwOfJOBsO1TOaPZHErOUmAYgaE22vKiiaO0l4klUL/pub)
 
@@ -395,13 +449,14 @@ No feedback given for final assignments.
 [Read the proposal](https://docs.google.com/document/d/e/2PACX-1vRGex23PBivyYREzbdGAApFMVZBqrm9QEpRgC76P5v9bC2DASdfqhTh0aC26gxG5TUmH4c0wUx2eV3E/pub)
 
 ## 🎭 The Contested Definition of Culture
-This was my first university essay! 
+
+This was my first university essay!
 
 Mark: 17/20
 
 "Kia ora Java,
 This was an interesting and well articulated essay, which followed a clear narrative progression, however this could have been outlined more clearly in the introduction.
-Discussion of the conservative scholars covered some important aspects of their work, and engaged well with critiques. 
+Discussion of the conservative scholars covered some important aspects of their work, and engaged well with critiques.
 This is contrasted well with that of Williams, however the discussion included the perspective of so many scholars that the essay could not address these in detail. Nonetheless, as the different definition are discussed, the implications are acknowledged for most of these. Narrowing the scope of the essay to allow for more detailed analysis would have allowed for a higher mark, but nonetheless this was great work." _–Tutor_ {.quote}
 
 [Read the essay](https://docs.google.com/document/d/e/2PACX-1vRVrDKpsPdKN9dIuO1Cu66s7YDoLYnIfnplx6ySSIR5qjgr3mdvVOHWIDAFPY1ckb2YJNdfaD_9iD6F/pub)
@@ -434,7 +489,6 @@ Mark: 15/15
 "This is SO GOOD. The Tracery grammar developing the text, as you note, could be improved, expanded, developed in different directions, but even in this kind of raw dadaist version, the mashup is great! Would be curious to hear about that bug and why you chose url.me instead of memegen? Holler!" _–Lecturer_ {.quote}
 
 [See on twitter](https://twitter.com/JMemeMaker301)
-
 
 ## 🎬 Review of _In the Age of AI_
 
@@ -522,9 +576,7 @@ Mark: 38/40
 
 "Fantastic work Java that reflects your capability. Great literature review that was much more cohesive and wove things together. There were moments the relation to the overall question could have been clearer. Perhaps we can discuss some techniques for this over the semester. Your writing is improving and once you nail the clear communication piece we can start to weave your voice into the work again - the joy of PG is making, unmaking and remaking our writing so that it walks that fine balance between clearly communicated and reflective of the author. You have some brilliant one-liners in here that you build to with evidence and examples, well done. You have carefully through your proposal and as a result, have a really solid proposal here." _–Lecturer_ {.quote}
 
-[Read the propsal](https://docs.google.com/document/d/e/2PACX-1vSXHvpDrx_te4bJdXmPmBGBw103JnI_OHEvtkipunZlrHyQecgxWeaWemXu1IQpz1o11DKiCQWOTITR/pub)
-
-
+[Read the proposal](https://docs.google.com/document/d/e/2PACX-1vSXHvpDrx_te4bJdXmPmBGBw103JnI_OHEvtkipunZlrHyQecgxWeaWemXu1IQpz1o11DKiCQWOTITR/pub)
 
 <!-- TODO: Postgrad sociology work -->
 
