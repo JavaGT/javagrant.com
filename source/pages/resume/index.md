@@ -461,7 +461,7 @@ This is contrasted well with that of Williams, however the discussion included t
 
 [Read the essay](https://docs.google.com/document/d/e/2PACX-1vRVrDKpsPdKN9dIuO1Cu66s7YDoLYnIfnplx6ySSIR5qjgr3mdvVOHWIDAFPY1ckb2YJNdfaD_9iD6F/pub)
 
-## 💿 The Right to Remix: Lessons from _Pirate Cinema_.
+## 💿 The Right to Remix: Lessons from _Pirate Cinema_
 
 Mark: 27/30
 
@@ -502,7 +502,7 @@ Well done!" _–Tutor_ {.quote}
 
 [Read the review](https://docs.google.com/document/d/e/2PACX-1vScsbW1uN5rSm954iTXHNWr9xkXoCGxPQ8lN3RGv1xTdUwKVeTaE3NfE6HJct4EJSLSXHKUjxYh_cB_/pub)
 
-## 👟 Postmodern Advertising: The role of brands as a cultural resource for identity signalling.
+## 👟 Postmodern Advertising: The role of brands as a cultural resource for identity signalling
 
 Mark: 17/20
 
@@ -512,13 +512,13 @@ If you have any questions or if any of my feedback needs clarifying please don't
 
 [Read the essay](https://docs.google.com/document/d/e/2PACX-1vRPePVubCE_omdOVlN0qn7AUAO9vcDEmh2D6jUnoimxNXW9-01Cx43mefk9CBtxXToljerU2qpjeM8z/pub)
 
-## 🩺 Reflections on New Zealand Health Inequalities Amplified by Housing, Isolation, and Stratification.
+## 🩺 Reflections on New Zealand Health Inequalities Amplified by Housing, Isolation, and Stratification
 
 Mark: 18.34/20 pts
 
 [Read the essay](https://docs.google.com/document/d/e/2PACX-1vTXHnrHvFe3WeWYFv7x9u2WdyLzy1dsXoEcrWlGYaeIlteCQ4qAm89CDYWShEY0boIGkAjkskQ1qU61/pub)
 
-## 🤳 ADHD Discourse on TikTok: Relatable Disease or Normal Behaviour?.
+## 🤳 ADHD Discourse on TikTok: Relatable Disease or Normal Behaviour?
 
 Mark: 22.04/29
 
@@ -526,7 +526,7 @@ Mark: 22.04/29
 
 [Read the essay](https://docs.google.com/document/d/e/2PACX-1vTD42POWPgnrtHeAx4EAza1BdjgdoOo_Q39RL8mOna8Cf8Lq6Hf3tGITSusaB5SYeYnmL4d1PtFQ2s7/pub)
 
-## 🧹 Does tidying bring you joy? The distinction of minimalism as ideology.
+## 🧹 Does tidying bring you joy? The distinction of minimalism as ideology
 
 Mark: 28.5/30
 
@@ -534,7 +534,7 @@ Mark: 28.5/30
 
 [Read the essay](https://docs.google.com/document/d/e/2PACX-1vTsAy-LzjrQ_AxCNxKnPJWuaRrZazwOJgFWQVjk5911ywTLlN6Bqx9_JHyEkbQ9g4nbFzCcVy7hs0gj/pub)
 
-## 🧱 An Evaluation of Ideology and Radical Constructivism.
+## 🧱 An Evaluation of Ideology and Radical Constructivism
 
 Mark: 19.25/20
 

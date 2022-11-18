@@ -28,6 +28,8 @@ visualiser.addLayer(layer22d)
 visualiser.addLayer(layer)
 visualiser.addLayer(layer2d)
 
+plugin2.disabled = true
+
 document.addEventListener('click', async () => {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
     visualiser.start()
