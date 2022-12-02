@@ -61,7 +61,7 @@ async function buildPages(input_path, output_path) {
     }, Promise.resolve())
 }
 
-async function build() {
+export async function build() {
     await copy(path.join(source_directory, 'static', '**', '*'), path.join(output_directory, 'static'))
     await copy('./source/favicon.png', output_directory)
     await copy('./source/CNAME', output_directory)
