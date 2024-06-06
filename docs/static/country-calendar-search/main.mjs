@@ -2,28 +2,20 @@ const content_element = document.getElementById('content')
 const video_element = document.createElement('video')
 const currently_playing = document.getElementById('currently-playing')
 
-function decompressGunzipBlob(blob) {
-    return new Promise((resolve, reject) => {
-        const reader = new FileReader()
-        reader.onload = () => {
-            resolve(reader.result)
-        }
-        reader.onerror = reject
-        reader.readAsText(blob)
-    }
-    )
-}
-
-
 // check if search index is saved in local storage
 setStatus('Downloading search index...')
 // Download Search Index
-const response = await fetch('./country-calendar-transcripts.json.gz')
-setStatus('Decompressing search index... [this may take a while]')
-const decompressedData = await decompressGunzipBlob(await response.blob())
-setStatus('Loading search index (from memory)...')
-const searchIndexData = JSON.parse(decompressedData)
+
+const response = await fetch('./country-calendar-transcripts.json')
+const searchIndexData = await response.json()
 setStatus('Search index loaded!')
+
+
+// setStatus('Decompressing search index... [this may take a while]')
+// const decompressedData = await decompressGunzipBlob(response)
+// setStatus('Loading search index (from memory)...')
+// const searchIndexData = JSON.parse(decompressedData)
+// setStatus('Search index loaded!')
 
 
 
@@ -35,8 +27,7 @@ search_input.addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
         searchInput()
     }
-}
-)
+})
 
 const search_button = document.createElement('button')
 search_button.innerText = 'Search'
