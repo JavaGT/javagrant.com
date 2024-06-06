@@ -18,7 +18,8 @@ setStatus('Search index loaded!')
 // setStatus('Search index loaded!')
 
 
-
+const search_spot = document.createElement('div')
+search_spot.id = 'search-spot'
 const search_input = document.createElement('input')
 search_input.type = 'text'
 search_input.placeholder = 'Search for a term. $dirt$ will exclude partial matches, e.g. "dirty"'
@@ -33,38 +34,42 @@ const search_button = document.createElement('button')
 search_button.innerText = 'Search'
 search_button.onclick = searchInput
 
+search_spot.appendChild(search_input)
+search_spot.appendChild(search_button)
 const search_results = document.createElement('div')
-content_element.appendChild(search_input)
-content_element.appendChild(search_button)
+content_element.appendChild(search_spot)
 content_element.appendChild(search_results)
 
 function searchInput() {
     const data = search(search_input.value)
-    renderSearchData(data)
+    renderSearchData(data, search_input.value)
 }
 
-function renderSearchData(data) {
+function renderSearchData(data, bold_term) {
     // clear
     search_results.innerHTML = ''
     // search_results.innerHTML = JSON.stringify(data, null, 2)
     for (const file of data) {
         const file_element = document.createElement('div')
-        file_element.style.border = '1px solid black'
-        file_element.style.margin = '10px'
-        file_element.style.padding = '10px'
-        file_element.style.borderRadius = '10px'
-        file_element.style.backgroundColor = 'lightgray'
+        file_element.classList.add('file')
+        // file_element.style.border = '1px solid black'
+        // file_element.style.margin = '10px'
+        // file_element.style.padding = '10px'
+        // file_element.style.borderRadius = '10px'
+        // file_element.style.backgroundColor = 'lightgray'
         // filename
         const file_name = document.createElement('h3')
         file_name.innerText = file.file
         file_element.appendChild(file_name)
         for (const chunk of file.chunks) {
+            if (bold_term) chunk.text = chunk.text.replace(RegExp(`(${bold_term})`, 'gi'), '<b>$1</b>')
             const chunk_element = document.createElement('div')
-            chunk_element.style.border = '1px solid black'
-            chunk_element.style.margin = '10px'
-            chunk_element.style.padding = '10px'
-            chunk_element.style.borderRadius = '10px'
-            chunk_element.style.backgroundColor = 'white'
+            chunk_element.classList.add('chunk')
+            // chunk_element.style.border = '1px solid black'
+            // chunk_element.style.margin = '10px'
+            // chunk_element.style.padding = '10px'
+            // chunk_element.style.borderRadius = '10px'
+            // chunk_element.style.backgroundColor = 'white'
             const chunk_text = document.createElement('p')
             chunk_text.innerHTML = chunk.text
             const chunk_time = document.createElement('p')
