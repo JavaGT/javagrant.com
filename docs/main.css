@@ -384,6 +384,7 @@ a:active {
 
 a:hover {
   filter: brightness(var(--hover-brightness));
+  text-decoration: underline;
 }
 
 a b,
