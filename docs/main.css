@@ -119,6 +119,7 @@ hr {
 }
 .media {
   display: flex;
+  flex-direction: column-reverse;
   /* flex-wrap: wrap; */
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.2);
@@ -138,12 +139,11 @@ hr {
   padding: 0.5rem;
   color: var(--color-dark);
 }
-.media > * {
-  margin-right: 2rem;
-  display: inline-block;
-}
 hgroup * {
   margin: 0;
+}
+.float-right {
+  float: right;
 }
 
 /* section {
@@ -373,8 +373,8 @@ a:hover h4,
 a:hover h5,
 a:hover h6 {
   text-decoration: underline;
-  text-decoration-thickness: 0.5rem;
-  text-decoration-color: var(--color-accent);
+  /* text-decoration-thickness: 0.5rem; */
+  /* text-decoration-color: var(--color-accent); */
 }
 
 a:active {
