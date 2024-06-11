@@ -8,7 +8,7 @@
   --orange-yellow-crayola: #f4d06fff;
   --dark-orange: #ff8811ff;
   --middle-blue-green: #9dd9d2ff;
-  --floral-white: #fff8f0ff;
+  --floral-white: rgb(245, 232, 218);
   --space-cadet: rgb(21, 16, 33);
 
   --color-pop: var(--dark-orange);
@@ -96,6 +96,10 @@
   justify-content: center;
 }
 
+#social-links svg {
+  color: var(--color-light);
+}
+
 #nametag {
   font-family: var(--font-title);
   transform: rotate(-2deg);
@@ -155,7 +159,7 @@
 /* The animation */
 @keyframes marquee {
   0% {
-    transform: translateX(0%);
+    transform: translateX(100vw);
   }
 
   100% {
