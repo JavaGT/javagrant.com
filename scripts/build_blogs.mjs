@@ -48,7 +48,7 @@ const blogs = []
 for await (const file of files) {
     const file_content = await fsp.readFile(file, 'utf-8')
     const { content, data } = parse_blog(file_content)
-    const output_folder = path.join(output_directory, path.parse(file).name)
+    const output_folder = path.join(output_directory, data.slug)
     const file_output_path = path.join(output_folder, 'index.html')
     await fsp.mkdir(output_folder, { recursive: true })
     const html = template
@@ -56,17 +56,18 @@ for await (const file of files) {
         .replaceAll('{{title}}', data.title)
         .replaceAll('{{date}}', data.date)
     await fsp.writeFile(file_output_path, html)
-    blogs.push({ title: data.title, date: data.date, path: file_output_path })
+    blogs.push({ title: data.title, date: data.date, path: file_output_path, data })
 }
 
 // todo generate index.html
 const index_template_filepath = os_path('./source/template/blog-index.html')
 const index_template = await fsp.readFile(index_template_filepath, 'utf-8')
 const index_output_path = os_path('./docs/blog/index.html')
+console.log(blogs)
 const index_html = index_template
     .replaceAll('{{blogs}}',
         blogs.map(blog =>
-            `<li><a href="${blog.path}">${blog.title}</a> - <span>${blog.date}</span></li>`
+            `<li><a href="${blog.data.slug}">${blog.title}</a> - <span>${blog.date}</span></li>`
         ).join('\n'))
 await fsp.writeFile(index_output_path, index_html)
 
