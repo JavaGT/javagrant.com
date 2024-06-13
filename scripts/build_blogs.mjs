@@ -19,7 +19,6 @@ function render_markdown(content) {
     return markdown.render(content)
 }
 
-
 function parse_blog(content) {
     // Extract frontmatter from content
     const frontmatter_regex = /^---\n([\s\S]+?)\n---\n([\s\S]+)$/
@@ -32,11 +31,12 @@ function parse_blog(content) {
     }
 }
 
+
 const source_directory = os_path('./source/blog')
 const output_directory = os_path('./docs/blog')
 
 const template_filepath = os_path('./source/template/blog.html')
-const template = await fsp.readFile(template_filepath, 'utf-8')
+const blog_template = await fsp.readFile(template_filepath, 'utf-8')
 
 
 // clean output directory
@@ -51,12 +51,15 @@ for await (const file of files) {
     blogs.push({ title: data.title, date: data.date, data, content })
 }
 
+blogs.sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
+
 const blogs_string = blogs.map(blog =>
     `<li><a href="/blog/${blog.data.slug}">${blog.title}</a> - <span>${blog.date}</span></li>`
 ).join('\n')
 
 const blogs_table_string =
-    '<table><thead><tr><th>Post Title</th><th>Date</th></tr></thead><tbody>'
+    '<table><tbody>'
+    // '<table><thead><tr><th>Post Title</th><th>Date</th></tr></thead><tbody>'
     + blogs.map(blog =>
         `<tr><td><a href="/blog/${blog.data.slug}">${blog.title}</a></td><td>${blog.date}</td></tr>`
     ).join('\n') + '</tbody></table>'
@@ -75,7 +78,7 @@ for (const file of blogs) {
     const output_folder = path.join(output_directory, file.data.slug)
     await fsp.mkdir(output_folder, { recursive: true })
     const file_output_path = path.join(output_folder, 'index.html')
-    file.html = template
+    file.html = blog_template
         .replaceAll('{{content}}', file.content)
         .replaceAll('{{title}}', file.data.title)
         .replaceAll('{{date}}', file.data.date)
@@ -96,6 +99,26 @@ const index_template = await fsp.readFile(index_template_filepath, 'utf-8')
 const index_output_path = os_path('./docs/index.html')
 const index_html = index_template.replaceAll('{{blogs_table}}', blogs_table_string)
 await fsp.writeFile(index_output_path, render_root(index_html, "Java Grant"))
+
+
+// loop over /source/pages and render them
+const pages_directory = os_path('./source/pages')
+const pages_output_directory = os_path('./docs')
+const pages_files = await fsp.glob(path.join(pages_directory, '**', '*.md'))
+
+for await (const file of pages_files) {
+    const file_content = await fsp.readFile(file, 'utf-8')
+    const { content, data } = parse_blog(file_content)
+    const output_folder = path.join(pages_output_directory, data.slug)
+    await fsp.mkdir(output_folder, { recursive: true })
+    const file_output_path = path.join(output_folder, 'index.html')
+    const file_html = blog_template
+        .replaceAll('{{content}}', content)
+        .replaceAll('{{title}}', data?.title || '')
+        .replaceAll('{{date}}', data?.date || '')
+        .replaceAll('{{blogs}}', blogs_string || '')
+    await fsp.writeFile(file_output_path, render_root(file_html, data.title))
+}
 
 
 // todo generate RSS feed
