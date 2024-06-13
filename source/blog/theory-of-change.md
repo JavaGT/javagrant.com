@@ -5,12 +5,13 @@ tags: ["Ngā Ara Whetū Advocacy Workshops"]
 slug: theory-of-change
 ---
 
-Today I attended the second [Ngā Ara Whetū (Centre for Climate, Biodiversity and Society) Advocacy Workshops](/blog/tags#Ngā-Ara-Whetū-Advocacy-Workshops) for doctorial students.
+Today I attended the second [Ngā Ara Whetū (Centre for Climate, Biodiversity and Society) Advocacy Workshops](/blog/tags#Ngā-Ara-Whetū-Advocacy-Workshops) for doctorial students hosted by [Niki Harre](https://profiles.auckland.ac.nz/n-harre) and [Margaret Stanley](https://profiles.auckland.ac.nz/mc-stanley) as well as coordinated by [Sharon Smith](https://profiles.auckland.ac.nz/sharon-smith).
 
-Introduced today to the concept of having a Theory of Change.
+I was introduced today to the concept of having a Theory of Change.
 
-Had three great speakers; [Neal Curtis](https://profiles.auckland.ac.nz/n-curtis), [Alys Longley](https://profiles.auckland.ac.nz/a-longley), and [Jennifer Frost](https://profiles.auckland.ac.nz/j-frost).
+Had three great guest speakers; [Neal Curtis](https://profiles.auckland.ac.nz/n-curtis), [Alys Longley](https://profiles.auckland.ac.nz/a-longley), and [Jennifer Frost](https://profiles.auckland.ac.nz/j-frost).
 
+[More to be written here]
 
 # Connection & Relationships
 The key take-away I had was about how making progress can happen at various scales and the importance of finding the things you can do well, and working collaboratively to make that work useful for others, or working with others directly to develop it into meaningful change.
