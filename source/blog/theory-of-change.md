@@ -1,11 +1,11 @@
 ---
 title: Theory of Change
-date: 2024/06/13
+date: 2024/06/14
 tags: ["Ngā Ara Whetū Advocacy Workshops"]
 slug: theory-of-change
 ---
 
-Today I attended the second [Ngā Ara Whetū (Centre for Climate, Biodiversity and Society) Advocacy Workshops](/blog/tags#Ngā-Ara-Whetū-Advocacy-Workshops) for doctorial students hosted by [Niki Harre](https://profiles.auckland.ac.nz/n-harre) and [Margaret Stanley](https://profiles.auckland.ac.nz/mc-stanley) as well as coordinated by [Sharon Smith](https://profiles.auckland.ac.nz/sharon-smith).
+Yesterday I attended the second [Ngā Ara Whetū (Centre for Climate, Biodiversity and Society) Advocacy Workshops](/blog/tags#Ngā-Ara-Whetū-Advocacy-Workshops) for doctorial students hosted by [Niki Harre](https://profiles.auckland.ac.nz/n-harre) and [Margaret Stanley](https://profiles.auckland.ac.nz/mc-stanley) as well as coordinated by [Sharon Smith](https://profiles.auckland.ac.nz/sharon-smith).
 
 I was introduced today to the concept of having a Theory of Change.
 

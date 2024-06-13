@@ -17,7 +17,7 @@
   --color-highlight: var(--orange-yellow-crayola);
   --color-tertiary: var(--middle-blue-green);
 
-  --color-link: var(--color-pop);
+  --color-link: var(--color-highlight);
   --color-text: var(--color-light);
 
   --width-content: 1080px;
@@ -301,6 +301,7 @@ h1.nametag {
 
 .paper a {
   color: #222;
+  font-weight: bolder;
 }
 
 #headshot {
@@ -549,7 +550,7 @@ ul li {
 }
 
 p {
-  line-height: 1.3;
+  line-height: 1.5;
   margin: 0.75rem 0;
   width: 100%;
 }
@@ -586,10 +587,22 @@ sup {
 
 /* Links */
 a {
-  color: var(--color-link);
-  display: inline-block;
-  font-weight: bold;
+  /* color: var(--color-link); */
+  /* color: inherit; */
+  background-color: rgba(255, 255, 255, 0.133);
+  padding: 0em 0.1em;
+  margin: 0.1em 0;
+  border-radius: 0.2em;
+  color: inherit;
+  /* font-weight: bold; */
+  /* text-decoration: underline; */
+  /* text-decoration-color: var(--color-link); */
   text-decoration: none;
+}
+
+table a,
+#social-links a {
+  background: none;
 }
 
 a h1,
