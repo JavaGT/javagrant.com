@@ -5,7 +5,7 @@ tags: ["Ngā Ara Whetū Advocacy Workshops"]
 slug: theory-of-change
 ---
 
-Today I attended the second [Ngā Ara Whetū (Centre for Climate, Biodiversity and Society) Advocacy Workshops](/blog/tags#Ngā Ara Whetū Advocacy Workshops) for doctorial students.
+Today I attended the second [Ngā Ara Whetū (Centre for Climate, Biodiversity and Society) Advocacy Workshops](/blog/tags#Ngā-Ara-Whetū-Advocacy-Workshops) for doctorial students.
 
 Introduced today to the concept of having a Theory of Change.
 
