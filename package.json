@@ -18,7 +18,7 @@
     "cpy": "^8.1.2",
     "emoji-strip": "^1.0.1",
     "frontmatter": "^0.0.3",
-    "markdown-it": "^12.0.6",
+    "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.0.4",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-bracketed-spans": "^1.0.1",
@@ -27,6 +27,7 @@
     "markdown-it-link-target": "^1.0.2",
     "markdown-it-toc-done-right": "^4.2.0",
     "node-fetch": "^2.6.1",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "yaml": "^2.4.5"
   }
 }
