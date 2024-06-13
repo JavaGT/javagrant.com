@@ -63,11 +63,10 @@ for await (const file of files) {
 const index_template_filepath = os_path('./source/template/blog-index.html')
 const index_template = await fsp.readFile(index_template_filepath, 'utf-8')
 const index_output_path = os_path('./docs/blog/index.html')
-console.log(blogs)
 const index_html = index_template
     .replaceAll('{{blogs}}',
         blogs.map(blog =>
-            `<li><a href="${blog.data.slug}">${blog.title}</a> - <span>${blog.date}</span></li>`
+            `<li><a href="/blog/${blog.data.slug}">${blog.title}</a> - <span>${blog.date}</span></li>`
         ).join('\n'))
 await fsp.writeFile(index_output_path, index_html)
 
