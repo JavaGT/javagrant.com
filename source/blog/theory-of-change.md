@@ -13,7 +13,7 @@ Had three great guest speakers; [Neal Curtis](https://profiles.auckland.ac.nz/n-
 
 [More to be written here]
 
-# Connection & Relationships
+## Connection & Relationships
 The key take-away I had was about how making progress can happen at various scales and the importance of finding the things you can do well, and working collaboratively to make that work useful for others, or working with others directly to develop it into meaningful change.
 
 

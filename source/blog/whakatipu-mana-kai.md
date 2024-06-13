@@ -16,6 +16,6 @@ Observing Tai and Christina's challenge and their growth in this space, as well 
 
 ## [Whakatipu Mana Kai](https://www.instagram.com/p/C6d3JTCp-Nv/)
 This kaupapa includes three interwoven elements... 
-• Whakatipu Mana Kai wananga - gatherings to share kai and knowledge 
-• Awhi ki te taiao - be in good relation with te taiao
-• Marama o te wero kai - for the month of May, we're planning to only eat food from the garden, forest, and ocean
+- Whakatipu Mana Kai wananga - gatherings to share kai and knowledge 
+- Awhi ki te taiao - be in good relation with te taiao
+- Marama o te wero kai - for the month of May, we're planning to only eat food from the garden, forest, and ocean
