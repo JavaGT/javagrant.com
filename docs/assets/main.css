@@ -358,7 +358,7 @@ h1.nametag {
 }
 
 section {
-  max-width: 80vw;
+  max-width: 90ch;
   margin: 3rem auto;
   padding: 0 min(3rem, 10%);
 }
@@ -583,6 +583,7 @@ p {
   line-height: 1.5;
   margin: 0.75rem 0;
   width: 100%;
+  max-width: 90ch;
 }
 
 pre {
