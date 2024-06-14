@@ -7,7 +7,7 @@ slug: work-with-me
 
 Kia ora!
 
-I'm interested in all kinds of cool things. If you think I can help you, [send me a message](/contact)! No harm in asking 🙂.
+I'm interested in all kinds of cool things. If you think I can help you, [send me a message](#contact)! No harm in asking 🙂.
 
 I have skills of various capabilities accross a wide variety of things. I'm generally happy to provide some basic consultation of how to solve problems for free for anyone doing interesting work with good intentions and if I've got the time (and you've got the cause) I might be able to offer more.
 
