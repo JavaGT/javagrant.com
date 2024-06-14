@@ -16,6 +16,8 @@
   --color-light: var(--floral-white);
   --color-highlight: var(--orange-yellow-crayola);
   --color-tertiary: var(--middle-blue-green);
+  --color-bg-1: rgb(13, 4, 33);
+  --color-bg-2: rgb(23, 14, 43);
 
   --color-link: var(--color-highlight);
   --color-text: var(--color-light);
@@ -53,6 +55,12 @@ body {
 
 .tint {
   background-color: #0004;
+  background-color: var(--color-bg-1);
+  background-color: var(--color-bg-2);
+  background-image: linear-gradient(135deg, var(--color-bg-1) 25%, transparent 25%), linear-gradient(225deg, var(--color-bg-1) 25%, transparent 25%), linear-gradient(45deg, var(--color-bg-1) 25%, transparent 25%), linear-gradient(315deg, var(--color-bg-1) 25%, var(--color-bg-2) 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
 }
 
 .align-center {
@@ -73,6 +81,10 @@ body {
 
 .margin-0 {
   margin: 0;
+}
+.padding-y-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .padding-1 {
@@ -150,6 +162,7 @@ h1 {
   color: var(--color-dark);
   font-weight: 800;
   padding: 0.2rem;
+  margin: 0;
 }
 
 h1.nametag {
@@ -163,17 +176,10 @@ h1.nametag {
   justify-content: center;
   background-color: #fff1;
   color: white;
-  padding: 0.4rem;
+  padding: 0 0.4rem;
   font-size: 0.8rem;
   font-weight: 300;
   font-family: 'Courier New', Courier, monospace;
-}
-
-#scrolling-bar {
-  flex: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: visible;
 }
 
 #scroll-container .label,
@@ -216,7 +222,8 @@ h1.nametag {
 
 #scrolling-bar {
   /* display: flex; */
-  overflow: hidden
+  overflow: hidden;
+  padding: 0.3rem;
 }
 
 
@@ -228,6 +235,7 @@ h1.nametag {
   animation: marquee 50s linear infinite;
   list-style: none;
   margin: 0;
+  align-content: center;
 }
 
 .moving-text .date {
