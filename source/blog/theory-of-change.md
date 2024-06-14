@@ -11,9 +11,53 @@ I was introduced today to the concept of having a Theory of Change.
 
 Had three great guest speakers; [Neal Curtis](https://profiles.auckland.ac.nz/n-curtis), [Alys Longley](https://profiles.auckland.ac.nz/a-longley), and [Jennifer Frost](https://profiles.auckland.ac.nz/j-frost).
 
-[More to be written here]
+## [Neal Curtis](https://profiles.auckland.ac.nz/n-curtis)
+- Means-focused, engagement model for sharing research with communities. Meet them where they are at, engage with their world.
+- It is more than a communication challenge, it is a relationship challenge.
+    - More is needed thatn the traditional model of expertise, authroity, and compliance.
+- Relationships emerge from relating.
+    - Whanaungatanga includes building difficult relations
+- Pay attention to the medium.
+- Include narrative (see [Randy Olson](https://www.goodreads.com/book/show/25245928-houston-we-have-a-narrative)). A simple story!
+- Communication needs to be personal & intimate (e.g. place and engage with people in their context so they can see themselves).
+    - Create recognisable worlds
+    - Be historically sensitive (awareness of the people, places and histories!)
 
-## Connection & Relationships
+## [Alys Longley](https://profiles.auckland.ac.nz/a-longley)
+- Relationships inform communication practice
+- Gentling the space (see [Alison Phipps and Lesley Saunders](http://eprints.gla.ac.uk/24444/))
+- Forging relationships
+- Rearticulating the familiar to connect people differently to their environements
+- Value of co-creation pedagagies
+- Find your team, find your bit. What can you do? What do you need others to do?
+- Keep going with little chunks of doing. Whatever is in your capacity.
+
+## [Jennifer Frost](https://profiles.auckland.ac.nz/j-frost)
+- History is about changes and consistency over time.
+- Quite a social determinist perspective offered.
+- Notes that the personal is political (a notion from 2nd wave feminism)
+- Teaching and raising consiousness often found to be more valuable for change and influence than research (also 2nd wave feminist methods)
+- Must have patience in planning, but act with urgency.
+    - Plan and prepare, but when the conditions are right, act urgently
+    - This perspective recognises the holistic social forces we find ourselves amongst. Understand what we can control, focus on that, preparing for opportunity is creating opportunity.
+    - Without preperation, there is no opportunity
+- Build the movement 1-by-1. Construct meaningful relationships accorss diverse groups with a common goal. Be prepared to compromise but be empowered by one-another. 
+    - Multiplicty enhances a movement!
+- Prepare diverse arguments to support your cause. Different audiences will be won over differently.
+- Build connectsions
+- Be an ambassador
+- Resource community building. Prepare solidarity.
+- Be concrete. Tie your cause and messaging to the real world (or percieved real experiences of your audience).
+
+
+## My thoughts
+### Collaboration
+- Work with people, find your strengths to support them with.
+- Identify common causes. Sometimes these may not be appartent. Make them apparent. Our issues are intersectional.
+- It's all about relationships. Make bonds that can't be broken.
+    - When they come to cut jobs in one sector, make sure everyone cares.
+
+### Connection & Relationships
 The key take-away I had was about how making progress can happen at various scales and the importance of finding the things you can do well, and working collaboratively to make that work useful for others, or working with others directly to develop it into meaningful change.
 
 
