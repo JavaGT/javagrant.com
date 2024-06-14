@@ -9,15 +9,16 @@
   --dark-orange: #ff8811ff;
   --middle-blue-green: #9dd9d2ff;
   --floral-white: rgb(245, 232, 218);
-  --space-cadet: rgb(33, 24, 53);
+  /* --space-cadet: rgb(33, 24, 53); */
+  --space-cadet: rgb(21, 31, 53);
 
   --color-pop: var(--dark-orange);
   --color-dark: var(--space-cadet);
   --color-light: var(--floral-white);
   --color-highlight: var(--orange-yellow-crayola);
   --color-tertiary: var(--middle-blue-green);
-  --color-bg-1: rgb(13, 4, 33);
-  --color-bg-2: rgb(23, 14, 43);
+  --color-bg-1: rgb(9, 0, 28);
+  --color-bg-2: rgb(15, 23, 39);
 
   --color-link: var(--color-highlight);
   --color-text: var(--color-light);
