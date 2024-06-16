@@ -1,5 +1,5 @@
 ---
-title: Todo
+title: Ideas & more for future
 slug: todo
 ---
 
