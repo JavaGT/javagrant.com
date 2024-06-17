@@ -11,8 +11,12 @@
             "id": "9bd48e8df370b8ae",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "blog/university-movements-aotearoa.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "blog/university-movements-aotearoa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "blog/university-movements-aotearoa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "blog/university-movements-aotearoa.md"
+              }
             }
           }
         ]
@@ -141,8 +149,15 @@
   "active": "9bd48e8df370b8ae",
   "lastOpenFiles": [
     "blog/critical-university-studies-reading-group.md",
+    "blog/whakatipu-mana-kai.md",
+    "blog/disorientation.md",
+    "blog/making-a-website.md",
     "blog/reimagining-aotearoa-togeather.md",
+    "blog/rsvp-system.md",
     "blog/theory-of-change.md",
-    "blog/whakatipu-mana-kai.md"
+    "blog/university-movements-aotearoa.md",
+    "pages/contact.md",
+    "pages/work-with-me.md",
+    "pages/todo.md"
   ]
 }

@@ -5,7 +5,7 @@ slug: todo
 
 In the future these are some texts I would like to write.
 
-## How language decieves
+## How language deceives
 If I take an apple, the last item from a bowl, we would now say the bowl is empty. If I were to ask you what is in the bowl, you would say nothing. This language presents a certian understanding of the world, and reflects the construction of the world we have in our heads. Despite the absolute fullness of the bowl–of whichever transparent gas has taken the place of the apple I removed we say that nothing is in the bowl. This is practical for communicating the meaning you assume I am questioning (what items are in the bowl at this moment), but is clearly imprecise.
 - This communication assumes and makes use of theory of minds
 - Assumuming the one saying the bowl is empty understands that, if they considered it from a more detailed, science-informed perspective, the bowl is not empty.
@@ -21,7 +21,7 @@ If I take an apple, the last item from a bowl, we would now say the bowl is empt
 - My thoughts on luck, including luck as an attitude.
 - Collected ideas on luck e.g. from Swix.io & Eric Barker
     - Specific focus on networking–understanding others, having them understand you (and want to work with you) and how opportunities flow through networks.
-        - Networks are just a shitty form of community. 'Networking' seems to be just the commodified 'social capital' interpretation of knowing people, engaging with people. Networking is capitalism's warped view of community. Some economist's wet dream grounded in game-theory and percieving every human as a little robot capable of producing n* units of commodity per minute. *scaled by average follower-count of linkedin connections.
+        - Networks are just a shitty form of community. 'Networking' seems to be just the commodified 'social capital' interpretation of knowing people, engaging with people. Networking is capitalism's warped view of community. Some economist's wet dream grounded in game-theory and perceiving every human as a little robot capable of producing n* units of commodity per minute. *scaled by average follower-count of linkedin connections.
         - The more diverse your community–the more it intersects with other communities vastly different to your own and the larger it is, the more opportunity there is to engage with ideas and people the interest you.
     - Sources
         - [How to Create Luck](https://www.swyx.io/create-luck)

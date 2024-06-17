@@ -44,12 +44,14 @@ await fsp.rm(output_directory, { recursive: true }).catch(() => { })
 
 const files = await fsp.glob(path.join(source_directory, '**', '*.md'))
 
-const blogs = []
+let blogs = []
 for await (const file of files) {
     const file_content = await fsp.readFile(file, 'utf-8')
     const { content, data } = parse_blog(file_content)
     blogs.push({ title: data.title, date: data.date, data, content })
 }
+
+blogs = blogs.filter(blog => blog?.data?.publish !== false)
 
 blogs.sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
 

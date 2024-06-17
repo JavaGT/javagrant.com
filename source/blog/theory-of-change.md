@@ -27,8 +27,8 @@ Had three great guest speakers; [Neal Curtis](https://profiles.auckland.ac.nz/n-
 - Relationships inform communication practice
 - Gentling the space (see [Alison Phipps and Lesley Saunders](http://eprints.gla.ac.uk/24444/))
 - Forging relationships
-- Rearticulating the familiar to connect people differently to their environements
-- Value of co-creation pedagagies
+- Re-articulating the familiar to connect people differently to their environments
+- Value of co-creation pedagogies
 - Find your team, find your bit. What can you do? What do you need others to do?
 - Keep going with little chunks of doing. Whatever is in your capacity.
 
@@ -36,15 +36,15 @@ Had three great guest speakers; [Neal Curtis](https://profiles.auckland.ac.nz/n-
 - History is about changes and consistency over time.
 - Quite a social determinist perspective offered.
 - Notes that the personal is political (a notion from 2nd wave feminism)
-- Teaching and raising consiousness often found to be more valuable for change and influence than research (also 2nd wave feminist methods)
+- Teaching and raising consciousness often found to be more valuable for change and influence than research (also 2nd wave feminist methods)
 - Must have patience in planning, but act with urgency.
     - Plan and prepare, but when the conditions are right, act urgently
     - This perspective recognises the holistic social forces we find ourselves amongst. Understand what we can control, focus on that, preparing for opportunity is creating opportunity.
-    - Without preperation, there is no opportunity
-- Build the movement 1-by-1. Construct meaningful relationships accorss diverse groups with a common goal. Be prepared to compromise but be empowered by one-another. 
-    - Multiplicty enhances a movement!
+    - Without preparation, there is no opportunity
+- Build the movement 1-by-1. Construct meaningful relationships across diverse groups with a common goal. Be prepared to compromise but be empowered by one-another. 
+    - Multiplicity enhances a movement!
 - Prepare diverse arguments to support your cause. Different audiences will be won over differently.
-- Build connectsions
+- Build connections
 - Be an ambassador
 - Resource community building. Prepare solidarity.
 - Be concrete. Tie your cause and messaging to the real world (or percieved real experiences of your audience).
