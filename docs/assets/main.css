@@ -459,13 +459,13 @@ header {
   text-align: var(--justify-important);
 }
 
-header a b,
+/* header a b,
 header a em,
 header a i,
 header a strong {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-}
+} */
 
 header nav img {
   margin: 1rem 0;
@@ -676,7 +676,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a b,
+/* a b,
 a em,
 a i,
 a strong,
@@ -689,7 +689,7 @@ input[type="submit"] {
   line-height: var(--line-height);
   margin: 0.5rem 0;
   padding: 1rem 2rem;
-}
+} */
 
 button,
 input[type="submit"] {
@@ -716,14 +716,14 @@ input[type="submit"] {
   color: var(--color-bg);
 }
 
-a em,
+/* a em,
 a i {
   border: 2px solid var(--color-link);
   border-radius: var(--border-radius);
   color: var(--color-link);
   display: inline-block;
   padding: 1rem 2rem;
-}
+} */
 
 article aside a {
   color: var(--color-secondary);
