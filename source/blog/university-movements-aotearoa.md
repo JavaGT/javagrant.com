@@ -4,7 +4,6 @@ date: 2024/06/18
 slug: university-movements-aotearoa
 ---
 
-
 This is a summary and curation of 'university movements' which I am classifying as grass-roots activities which regard the university institutions in Aotearoa, particularly the University of Auckland.
 
 Currently this is just an archive of the materials I plan to use.
@@ -18,7 +17,7 @@ Lost media[?]: http://www.95bfm.co.nz/assets/sm/217162/3/Lillian.mp3
 ### We are the University Publication Vol 1
 Posted MAR 4 2012
 [Mediafire](http://www.mediafire.com/?gp7co6etlgbf5sy)
-[Hosted on this website](/assets/We Are the University Akl Vol.1.pdf)
+[Hosted on this website](/assets/We%20Are%20the%20University%20Akl%20Vol.1.pdf)
 
 ### ETHOS
 We are a community of students and staff who are committed to the University as a site of intellectual expansion and academic freedom. We believe the University should function as the ‘critic and conscience of society’ and as an open space for expression of dissent. The escalating profit-driven and market-oriented agenda of the University over the last thirty years has eroded these principles.
@@ -1830,3 +1829,4 @@ You can read reviews of the book here: [http://www.shaviro.com/Blog/?p=401](htt
 About the reading group:  
 The reading group: is open to anyone who wishes to participate and we encourage you to forward this invitation to your networks. We will be reading and discussing specific sections each fortnight moving through the book. The group is facilitated by Melissa Laing [melissa at melissalaing.com] who will be learning alongside and with everyone who participates.
 
+### [Everything's Fucked: But the Point is to Go Beyond That (2017)](https://annas-archive.org/md5/e1d8d622156d84a560ae615b7b9d0368)
