@@ -716,14 +716,6 @@ input[type="submit"] {
   color: var(--color-bg);
 }
 
-/* a em,
-a i {
-  border: 2px solid var(--color-link);
-  border-radius: var(--border-radius);
-  color: var(--color-link);
-  display: inline-block;
-  padding: 1rem 2rem;
-} */
 
 article aside a {
   color: var(--color-secondary);
