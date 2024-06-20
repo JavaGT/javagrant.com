@@ -3,6 +3,7 @@ title: Finding Knowledge
 date: 2024/06/18
 tags: []
 slug: freeing-knowledge
+rating: 3
 ---
 
 This page refers to the more 'academic' kind of knowledge: books & articles generally.

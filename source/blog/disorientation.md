@@ -3,6 +3,7 @@ title: Disorientation
 date: 2024/06/17
 tags: []
 slug: disorientation-2024
+rating: 6
 ---
 
 As a part of the [reading group](/blog/critical-universtiy-studies-reading-group), I am contributing to a pamphlet for 2024 Semester 2 *Disorientation*. The purpose is to get people–new students particularly–considering the university insitution critically. Our priorities include:

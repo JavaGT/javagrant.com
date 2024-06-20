@@ -3,6 +3,7 @@ title: Freeing Information
 date: 2024/06/19
 tags: []
 slug: freeing-information
+rating: 3
 ---
 
 This page refers to the more 'content' and 'data' kind of information: videos, podcasts, music & more.

@@ -3,13 +3,14 @@ title: Influencing Policy
 date: 2024/06/20
 tags: ["Ngā Ara Whetū Advocacy Workshops"]
 slug: influencing-policy
+rating: 5
 ---
 
 Notes from presentation by
 Dr Sarah Bickerton & Dr Suzanne Woodward
 sarah.bickerton@auckland.ac.nz s.woodward@auckland.ac.nz
 
-- Try contacting science advisor of the apporpirate organisation. 
+- Try contacting science advisor of the appropriate organisation. 
     - [Briefing Note: The New Zealand Science Advisory System](https://www.dpmc.govt.nz/sites/default/files/2021-10/pmcsa-Overview-of-NZ-science-advisory-system.pdf)
     - [Office of the Prime Minister’s Chief Science Advisor](https://www.pmcsa.ac.nz/who-we-are/our-office/)
 

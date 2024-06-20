@@ -3,6 +3,7 @@ title: Making a website (cheaply)
 date: 2024/06/17
 tags: []
 slug: making-a-website
+rating: 5
 ---
 
 ## Alternatives

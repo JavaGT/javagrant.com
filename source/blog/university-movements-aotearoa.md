@@ -2,6 +2,7 @@
 title: University Movements in Aotearoa
 date: 2024/06/18
 slug: university-movements-aotearoa
+rating: 3
 ---
 
 This is a summary and curation of 'university movements' which I am classifying as grass-roots activities which regard the university institutions in Aotearoa, particularly the University of Auckland.
