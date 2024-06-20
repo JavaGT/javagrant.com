@@ -63,7 +63,7 @@ const blogs_table_string =
     '<table><tbody>'
     // '<table><thead><tr><th>Post Title</th><th>Date</th></tr></thead><tbody>'
     + blogs.map(blog =>
-        `<tr><td><a href="/blog/${blog.data.slug}">${blog.title}</a></td><td>${blog.date}</td></tr>`
+        `<tr><td><a href="/blog/${blog.data.slug}">${blog.title}</a></td><td>${blog.date}</td><td><progress class="rating" value="${blog?.data?.rating || 0}" max="10"> ${blog?.data?.rating || 0}/10 </progress></td></tr>`
     ).join('\n') + '</tbody></table>'
 
 
