@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/university-movements-aotearoa.md",
+                "file": "blog/critical-university-studies-reading-group.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/university-movements-aotearoa.md",
+                "file": "blog/critical-university-studies-reading-group.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/university-movements-aotearoa.md",
+                "file": "blog/critical-university-studies-reading-group.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/university-movements-aotearoa.md"
+                "file": "blog/critical-university-studies-reading-group.md"
               }
             }
           }
@@ -148,14 +148,18 @@
   },
   "active": "9bd48e8df370b8ae",
   "lastOpenFiles": [
+    "blog/disorientation.md",
+    "blog/freeing-information.md",
+    "blog/freeing-knowledge.md",
+    "blog/making-a-website.md",
+    "blog/influencing-policy.md",
+    "blog/finding-knowledge.md",
+    "blog/university-movements-aotearoa.md",
     "blog/critical-university-studies-reading-group.md",
     "blog/whakatipu-mana-kai.md",
-    "blog/disorientation.md",
-    "blog/making-a-website.md",
     "blog/reimagining-aotearoa-togeather.md",
     "blog/rsvp-system.md",
     "blog/theory-of-change.md",
-    "blog/university-movements-aotearoa.md",
     "pages/contact.md",
     "pages/work-with-me.md",
     "pages/todo.md"

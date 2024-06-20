@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/main.css" />
-    <title>Work with me</title>
+    <title>Freeing Information</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
@@ -34,36 +34,41 @@
         </div>
     </div>
     <section class="full-width tint margin-0 padding-15vw">
-    <span class="date"></span>
-    <h1>Work with me</h1>
+    <span class="date">2024/06/19</span>
+    <h1>Freeing Information</h1>
 </section>
 <section>
-    <p><p>[This webpage is still in development]</p>
-<p>Kia ora!</p>
-<p>I’m interested in all kinds of cool things. If you think I can help you, <a href="#contact">send me a message</a>! No harm in asking 🙂.</p>
-<p>I have skills of various capabilities accross a wide variety of things. I’m generally happy to provide some basic consultation of how to solve problems for free for anyone doing interesting work with good intentions and if I’ve got the time (and you’ve got the cause) I might be able to offer more.</p>
-<h2>Skills</h2>
-<h3>Research</h3>
-<h4>Interviewing</h4>
-<h4>Workshops</h4>
-<h4>Analysis</h4>
-<h4>Examining Literature</h4>
-<h3>Critical Thinking</h3>
-<h3>Communication</h3>
-<h3>Events</h3>
-<h4>Hands-on-deck</h4>
-<p>Need someone who can problem-solve on their feet and support your event? Let me know.
-I’ve even build custom software for events. Want live photo screens for instagram posts of your event? I’ve done it before!</p>
-<h3>Networking</h3>
-<p>I know heaps of cool people.</p>
-<p>Probably my greatest skill is getting to know great people doing great things. If you’ve got an interest in anything from <a href="https://profiles.auckland.ac.nz/e-plaut">origami</a> to <a href="https://www.linkedin.com/in/xavier-walsh-94a665231/">unionism</a>, I probably know someone you should talk to!</p>
-<h3>Media</h3>
-<h3>Computers</h3>
-<h4>Web Development</h4>
-<h4>JavaScript</h4>
-<h4>Information Management</h4>
-<h4>Data Gathering</h4>
-<h4>Data Interfaces</h4>
+    <p><p>This page refers to the more ‘content’ and ‘data’ kind of information: videos, podcasts, music &amp; more.
+For ‘academic knowledge’ (books &amp; articles) check out <a href="/blog/freeing-knowledge">freeing-knowledge</a>.</p>
+<h2>Nothing is forever</h2>
+<p>DO NOT ASSUME ANYTHING ON THE INTERNET WILL REMAIN THERE.</p>
+<ul>
+<li>Uploaders may take them down, or they may be lost/written off when intellectual property and media organisations are sold.</li>
+</ul>
+<h1>Resources</h1>
+<p><a href="https://rentry.org/firehawk52">https://rentry.org/firehawk52</a>
+<a href="https://champagne.pages.dev/">https://champagne.pages.dev/</a>
+<a href="https://fmhy.net/beginners-guide">https://fmhy.net/beginners-guide</a>
+<a href="https://ripped.guide/">https://ripped.guide/</a>
+<a href="https://ori5000.github.io/musicripping.html">https://ori5000.github.io/musicripping.html</a></p>
+<h2>Spotify and podcasts</h2>
+<p>Spotify is largely an interface for podcasts which use the <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> format.</p>
+<p>This causes issues for accessing old podcast content, because RSS feeds aren’t designed to go back far in time, instead being a location for listing the most recent episodes or posts in a feed.</p>
+<p>As of today (19th June 2024) the RNZ Checkpoint Podcast <a href="https://www.rnz.co.nz/podcasts/checkpoint.rss">rss feed</a> returns an the earliest episode as:</p>
+<pre><code>&lt;pubDate&gt;Mon, 11 Mar 2024 16:46:00 +1300&lt;/pubDate&gt;
+&lt;itunes:title&gt;Oppenheimer claims best picture trophy at the Academy Awards&lt;/itunes:title&gt;
+</code></pre>
+<p>while the earliest I could find by searching through the <a href="https://www.rnz.co.nz/national/programmes/checkpoint/podcast">RNZ webpage</a> was an episode from <a href="https://www.rnz.co.nz/national/programmes/checkpoint/audio/915930/focus-on-politics-for-4-may">May 2007</a>. At time of searching, it was on the 3001st page.</p>
+<p>In comparison, the <a href="https://developer.spotify.com/documentation/web-api/reference/get-a-shows-episodes">Spotify API</a> when requesting the episodes for RNZ checkpoint responded that there were <code>&quot;total&quot;: 1000,</code> episodes. Requesting the 1000th episode reveals that it is <code>&quot;href&quot;: &quot;https://api.spotify.com/v1/episodes/5DiGRXupHLBU2KpMfIwELL&quot;,</code> <code>&quot;name&quot;: &quot;Oppenheimer claims best picture trophy at the Academy Awards&quot;, &quot;release_date&quot;: &quot;2024-03-11&quot;,</code> The same as the RSS feed!</p>
+<p>So, Spotify doesn’t show you all the episodes of a podcast, only the ones in the current RSS feed. This makes sense, as it provides a single source of truth for the show, meaning the creator can remove it from the RSS feed and it will probably come off of all platforms that people use to listen to it. This means that the content is likely not being stored on Spotify servers, instead accessing old podcast episodes requires finding an archive of the files (and hopefully the metadata).</p>
+<blockquote>
+<p>Please let me know if there is another way you are aware of!</p>
+</blockquote>
+<p>Searching through Spotify’s network requests when playing the Oppenheimer Episode reveals that the audio comes from <code>https://flex.acast.com/podcast.radionz.co.nz/ckpt/ckpt-20240311-1646-oppenheimer_claims_best_picture_trophy_at_the_academy_awards-128.mp3</code> which redirects to <code>https://stitcher2.acast.com/livestitches/ba76f3080777b5c6033e5eb0a03365f3.mp3?aid=[apparent authentication parameters]</code></p>
+<p>However, it is apparent the url after <code>flex.acast.com/</code> works by itself: <a href="podcast.radionz.co.nz/ckpt/ckpt-20240311-1646-oppenheimer_claims_best_picture_trophy_at_the_academy_awards-128.mp3">podcast.radionz.co.nz/ckpt/ckpt-20240311-1646-oppenheimer_claims_best_picture_trophy_at_the_academy_awards-128.mp3</a></p>
+<p>I think this confirms that Spotify isn’t storing or hosting the podcast audio files, however, they do seem to host 60s previews.
+<code>https://podz-content.spotifycdn.com/audio/clips/7xYyZqKhhwlM0jYlEnTw2x/clip_0_60000.mp3</code> is the preview of the Oppenheimer episode. It will be interesting to see if Spotify continues to host the preview as the episode slides off the end of the RSS feed.</p>
+<p>The Spotify original podcast <a href="https://open.spotify.com/show/6mTel3azvnK8isLs4VujvF?si=314af60c53c74dd9">The Big Picture</a> has <a href="https://feeds.megaphone.fm/the-big-picture">a public RSS feed</a> and is therefore <a href="https://podcasts.apple.com/us/podcast/the-big-picture/id1439252196">available on other podcasting platforms</a>. However the audio files come from <a href="https://megaphone.spotify.com/">Spotify’s podcasing platform Megaphone</a>. Apple podcasts serves up <code>https://traffic.megaphone.fm/GLT9379274207.mp3</code> which redirects to <code>https://dcs.megaphone.fm/GLT9379274207.mp3</code> with some event id stuff in the queryparams that isn’t needed to access the file.</p>
 </p>
 </section>
     <footer>
