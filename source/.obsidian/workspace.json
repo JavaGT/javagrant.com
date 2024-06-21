@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/critical-university-studies-reading-group.md",
+                "file": "blog/comms-103.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/critical-university-studies-reading-group.md",
+                "file": "blog/comms-103.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/critical-university-studies-reading-group.md",
+                "file": "blog/comms-103.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/critical-university-studies-reading-group.md"
+                "file": "blog/comms-103.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "9bd48e8df370b8ae",
   "lastOpenFiles": [
+    "blog/critical-university-studies-reading-group.md",
     "blog/disorientation.md",
     "blog/freeing-information.md",
     "blog/freeing-knowledge.md",
@@ -155,7 +156,6 @@
     "blog/influencing-policy.md",
     "blog/finding-knowledge.md",
     "blog/university-movements-aotearoa.md",
-    "blog/critical-university-studies-reading-group.md",
     "blog/whakatipu-mana-kai.md",
     "blog/reimagining-aotearoa-togeather.md",
     "blog/rsvp-system.md",

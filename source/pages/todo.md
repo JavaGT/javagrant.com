@@ -41,3 +41,7 @@ If I take an apple, the last item from a bowl, we would now say the bowl is empt
 ## Anti-intellectualism in Aotearoa
 [Master's thesis on the topic – Paloma Waverly Ozier (2018)](https://researchspace.auckland.ac.nz/bitstream/handle/2292/37639/whole.pdf)
 
+## The myth of (high)school not preparing students for the real world
+- There is no 'real world'
+- School is the opportunity to try things. Jump into sports teams, try out different fields of research, (hopefully) learn about our social systems and why they exist and are shaped how they are, learn to challenge things(?), make friends and resolve conflicts. It teaches us how to interact with people that might not reach our social circles without external forces. Oh people have different diets? Some people use wheelchairs? Some people look or act different to us and our families? These are things not everyone would learn if it weren't for the school system. 
+    - When people say school didn't prepare them for the real world, often it seems they are reffering to money. Newsflash, money isn't the 'real world' it is one factor in life and it is entirely a social construct. They are just too deep in [Capitalist Realism](https://en.wikipedia.org/wiki/Capitalist_Realism) to imagine any other purpose to life than hoarding resources.
