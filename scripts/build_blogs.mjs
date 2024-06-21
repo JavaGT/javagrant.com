@@ -48,7 +48,7 @@ let blogs = []
 for await (const file of files) {
     const file_content = await fsp.readFile(file, 'utf-8')
     const { content, data } = parse_blog(file_content)
-    blogs.push({ title: data.title, date: data.date, data, content })
+    blogs.push({ title: data.title, date: data.date, data, content, word_count: content.split(/\s+/).length })
 }
 
 blogs = blogs.filter(blog => blog?.data?.publish !== false)
@@ -63,7 +63,7 @@ const blogs_table_string =
     '<table><tbody>'
     // '<table><thead><tr><th>Post Title</th><th>Date</th></tr></thead><tbody>'
     + blogs.map(blog =>
-        `<tr><td><a href="/blog/${blog.data.slug}">${blog.title}</a></td><td>${blog.date}</td><td><progress class="rating" value="${blog?.data?.rating || 0}" max="10"> ${blog?.data?.rating || 0}/10 </progress></td></tr>`
+        `<tr><td><a href="/blog/${blog.data.slug}">${blog?.data?.emoji || '📝'} ${blog.title}</a></td><td>${blog.date}</td><td><progress class="rating" value="${blog?.data?.rating || 0}" max="10"> ${blog?.data?.rating || 0}/10 </progress></td><td>${(blog.word_count / 238).toFixed(1)} mins</td></tr>`
     ).join('\n') + '</tbody></table>'
 
 

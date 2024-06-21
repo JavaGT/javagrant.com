@@ -31,41 +31,42 @@
   background-color: var(--color-dark);
 }
 
-progress {
+progress.rating {
   border-radius: 0.2rem;
   height: 0.4rem;
   display: inline-block;
   vertical-align: middle;
+  max-width: 4rem;
 }
 
-progress::-webkit-progress-bar {
+progress.rating::-webkit-progress-bar {
   background-color: var(--color-bg-2);
   border-radius: 0.2rem;
 }
 
-progress::-webkit-progress-value {
+progress.rating::-webkit-progress-value {
   border-radius: 0.2rem;
   background-color: var(--color-background);
 }
 
-progress[value="1"]::-webkit-progress-value,
-progress[value="2"]::-webkit-progress-value,
-progress[value="3"]::-webkit-progress-value {
-  background-color: var(--color-tertiary);
+progress.rating[value="1"]::-webkit-progress-value,
+progress.rating[value="2"]::-webkit-progress-value,
+progress.rating[value="3"]::-webkit-progress-value {
+  background-color: #8b2918;
 }
 
-progress[value="4"]::-webkit-progress-value,
-progress[value="5"]::-webkit-progress-value,
-progress[value="6"]::-webkit-progress-value,
-progress[value="7"]::-webkit-progress-value {
-  background-color: var(--color-highlight);
+progress.rating[value="4"]::-webkit-progress-value,
+progress.rating[value="5"]::-webkit-progress-value,
+progress.rating[value="6"]::-webkit-progress-value,
+progress.rating[value="7"]::-webkit-progress-value {
+  background-color: #bf9c11;
 }
 
 
 progress[value="8"]::-webkit-progress-value,
 progress[value="9"]::-webkit-progress-value,
 progress[value="10"]::-webkit-progress-value {
-  background-color: var(--color-pop)
+  background-color: #0f9d58;
 }
 
 
