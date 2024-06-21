@@ -3,7 +3,7 @@ title: Communications 103
 date: 2024/06/21
 tags: ['teaching']
 slug: comms-103
-rating: 7
+rating: 8
 emoji: 🧑‍🏫
 ---
 
@@ -18,8 +18,7 @@ As I had experience with programming (specifically Javascript) I reached out to 
 Students do really well in this course! It has a very flexible and forgiving rubric and allows people to include their passions to enhance their projects. However, approaching computers and programming for Arts students it is certainly scary–but those who give it a go come out much more confident in their abilities to learn and problem solve. Hopefully this encourages students towards a *Growth Mindset*.
 
 > A student with a growth mindset tends to: 
- believe that learning and growth are possible in all areas tackle tasks with confidence that they can manage them explore new subjects and interests relish challenge, struggle and hard work because they believe this means they are improving acknowledge and reflect upon errors and mistakes as a means for improvement withstand setbacks, stay on track, and apply more effort when they face difficulties understand the value of effort and using strategies to overcome challenges see school as full of opportunities to learn.
- From: [The Education Hub](https://theeducationhub.org.nz/an-introduction-to-growth-mindset-2/)
+ believe that learning and growth are possible in all areas tackle tasks with confidence that they can manage them explore new subjects and interests relish challenge, struggle and hard work because they believe this means they are improving acknowledge and reflect upon errors and mistakes as a means for improvement withstand setbacks, stay on track, and apply more effort when they face difficulties understand the value of effort and using strategies to overcome challenges see school as full of opportunities to learn. ([The Education Hub](https://theeducationhub.org.nz/an-introduction-to-growth-mindset-2/))
 
 
 # Communications 301 (and now 103)
