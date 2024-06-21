@@ -3,7 +3,7 @@ title: Communications 103
 date: 2024/06/21
 tags: ['teaching']
 slug: comms-103
-rating: 8
+rating: 10
 emoji: 🧑‍🏫
 ---
 
