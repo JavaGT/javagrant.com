@@ -4,6 +4,7 @@ date: 2024/06/17
 tags: []
 slug: rsvp-system
 rating: 3
+emoji: 📬
 ---
 
 Doing some research here for an RSVP system to support [Whakatipu Mana Kai](https://www.instagram.com/whakatipumanakai/).

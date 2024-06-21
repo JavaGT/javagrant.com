@@ -4,6 +4,7 @@ date: 2024/06/12
 tags: ["whakatipu mana kai"]
 slug: whakatipu-mana-kai
 rating: 9
+emoji: 🧑🏽‍🌾
 ---
 
 I'm incredibly proud of my friends [Tai Wright](https://www.instagram.com/taiwrightt/) and [Christina van der Velde](https://www.instagram.com/christinavdvelde/) on their most recent project(s), [Whakatipu Mana Kai](https://www.instagram.com/whakatipumanakai/) and [Marama o te wero kai](https://www.instagram.com/p/C6gKisApZ77/). A natural extension of both their studies in [indigenous food soverignty](https://profiles.auckland.ac.nz/el-sharp/teaching#:~:text=%2D%20MSc%20(GEOG)%3A%20Tai%20Wright%20%2D%20Indigenous%20Food%20sovereignty) and Te Reo Māori.

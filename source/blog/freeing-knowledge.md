@@ -1,9 +1,10 @@
 ---
 title: Finding Knowledge
 date: 2024/06/18
-tags: []
+tags: ['freedom']
 slug: freeing-knowledge
 rating: 3
+emoji: ⛓️‍💥
 ---
 
 This page refers to the more 'academic' kind of knowledge: books & articles generally.

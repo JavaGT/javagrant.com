@@ -4,6 +4,7 @@ date: 2024/06/13
 tags: ["union", "reimagining aotearoa"]
 slug: reimagining-aotearoa-togeather
 rating: 8
+emoji: 💭
 ---
 
 Today I attended a hui with the [Council of Trade Unions](https://union.org.nz) as a member of the [Tertiary Education Union](https://teu.ac.nz). Called [Reimagining Aotearoa Togeather](https://www.instagram.com/reimagining_aotearoa_together/)

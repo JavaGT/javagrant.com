@@ -37,3 +37,7 @@ If I take an apple, the last item from a bowl, we would now say the bowl is empt
 - Inclusion of legislative roles
 - Sources
     - [What are the functions of the modern university? 7 answers for the government review – Anthony Richardson](https://theconversation.com/what-are-the-functions-of-the-modern-university-7-answers-for-the-government-review-231261)
+
+## Anti-intellectualism in Aotearoa
+[Master's thesis on the topic – Paloma Waverly Ozier (2018)](https://researchspace.auckland.ac.nz/bitstream/handle/2292/37639/whole.pdf)
+

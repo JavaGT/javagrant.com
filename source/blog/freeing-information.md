@@ -1,9 +1,10 @@
 ---
 title: Freeing Information
 date: 2024/06/19
-tags: []
+tags: ['freedom']
 slug: freeing-information
 rating: 3
+emoji: ⛓️‍💥
 ---
 
 This page refers to the more 'content' and 'data' kind of information: videos, podcasts, music & more.

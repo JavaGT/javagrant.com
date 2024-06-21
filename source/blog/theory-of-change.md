@@ -4,6 +4,7 @@ date: 2024/06/14
 tags: ["Ngā Ara Whetū Advocacy Workshops"]
 slug: theory-of-change
 rating: 9
+emoji: 🌊
 ---
 
 Yesterday I attended the second [Ngā Ara Whetū (Centre for Climate, Biodiversity and Society) Advocacy Workshops](/blog/tags#Ngā-Ara-Whetū-Advocacy-Workshops) for doctorial students hosted by [Niki Harre](https://profiles.auckland.ac.nz/n-harre) and [Margaret Stanley](https://profiles.auckland.ac.nz/mc-stanley) as well as coordinated by [Sharon Smith](https://profiles.auckland.ac.nz/sharon-smith).
