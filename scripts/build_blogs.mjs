@@ -37,7 +37,7 @@ const boardgames_html =
         // remove duplicates using objectid property
         .filter((game, i, self) => self.findIndex(t => t.objectid === game.objectid) === i)
         .map(game => {
-            const time_string = game.minplaytime == game.maxplaytime ? game.minplaytime : `${game.minplaytime}-${game.maxplaytime}`
+            const time_string = (game.maxplaytime == 0 || game.minplaytime == game.maxplaytime) ? game.minplaytime : `${game.minplaytime}-${game.maxplaytime}`
             const player_string = game.minplayers == game.maxplayers ? game.minplayers : `${game.minplayers}-${game.maxplayers}`
             return `<tr><td><a href="https://boardgamegeek.com/boardgame/${game.objectid}">${game.objectname}</a></td><td>${player_string}</td><td>${time_string}</td><td>${game.yearpublished}</td></tr>`
         })
@@ -106,14 +106,14 @@ blogs = blogs.filter(blog => blog?.data?.publish !== false)
 blogs.sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
 
 const blogs_string = blogs.map(blog =>
-    `< li > <a href="/blog/${blog.data.slug}">${blog.title}</a> - <span>${blog.date}</span></li > `
+    `<li><a href="/blog/${blog.data.slug}">${blog.title}</a> - <span>${blog.date}</span></li>`
 ).join('\n')
 
 const blogs_table_string =
-    '<table><tbody>'
-    // '<table><thead><tr><th>Post Title</th><th>Date</th></tr></thead><tbody>'
+    // '<table><tbody>'
+    '<table><thead><tr><th>Post Title</th><th>Date</th><th>Rating</th><th>Est. Time</th></tr></thead><tbody>'
     + blogs.map(blog =>
-        `< tr ><td><a href="/blog/${blog.data.slug}">${blog?.data?.emoji || '📝'} ${blog.title}</a></td><td>${blog.date}</td><td><progress class="rating" value="${blog?.data?.rating || 0}" max="10"> ${blog?.data?.rating || 0}/10 </progress></td><td>${(blog.word_count / 238).toFixed(1)} mins</td></tr > `
+        `<tr><td><a href="/blog/${blog.data.slug}">${blog?.data?.emoji || '📝'} ${blog.title}</a></td><td>${blog.date}</td><td><progress class="rating" value="${blog?.data?.rating || 0}" max="10"> ${blog?.data?.rating || 0}/10 </progress></td><td>${(blog.word_count / 238).toFixed(1)} mins</td></tr>`
     ).join('\n') + '</tbody></table>'
 
 
