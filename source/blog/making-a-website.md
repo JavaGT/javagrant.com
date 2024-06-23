@@ -6,6 +6,8 @@ slug: making-a-website
 rating: 5
 ---
 
+[[toc]]
+
 ## Alternatives
 
 Are you considering creating a website? Before you dive in, take a step back and explore alternatives. Maybe running a social media account, large group chat or Discord server might be a better fit for your goals. But if you're still convinced that a website is the way to go, here are some things to consider:

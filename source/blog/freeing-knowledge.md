@@ -7,6 +7,8 @@ rating: 3
 emoji: ⛓️‍💥
 ---
 
+[[toc]]
+
 This page refers to the more 'academic' kind of knowledge: books & articles generally.
 For 'content' and 'data' (arbitrary distinctions) check out [freeing-information](/blog/freeing-information).
 

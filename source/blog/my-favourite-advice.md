@@ -7,6 +7,8 @@ rating: 7
 emoji: 🗣️
 ---
 
+[[toc]]
+
 Links to some of my favourite advice.
 
 

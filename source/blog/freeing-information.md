@@ -7,6 +7,8 @@ rating: 3
 emoji: ⛓️‍💥
 ---
 
+[[toc]]
+
 This page refers to the more 'content' and 'data' kind of information: videos, podcasts, music & more.
 For 'academic knowledge' (books & articles) check out [freeing-knowledge](/blog/freeing-knowledge).
 

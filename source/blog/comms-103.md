@@ -7,6 +7,8 @@ rating: 10
 emoji: 🧑‍🏫
 ---
 
+[toc]
+
 I am the tutor for Communications 103. It was a class I took myself in 2020, however it was a third-stage course at the time: Communications *301.*
 
 The course was reworked into 103 in order to fill a new spot within the fresh [Bachelor of Communication (BC)](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/bachelor-of-communication.html) and is a core course of the major of [Communication and Technology](https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/communication-and-technology.html).

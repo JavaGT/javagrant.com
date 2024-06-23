@@ -6,6 +6,8 @@ rating: 8
 emoji: 📚
 ---
 
+[[toc]]
+
 
 ## What is enjoyable about the reading group?
 We had a discussion today, in preparation for potentially more members (and inspired by [the reading](https://link.springer.com/chapter/10.1007/978-3-319-95834-7_10))

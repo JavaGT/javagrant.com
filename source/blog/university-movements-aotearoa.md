@@ -6,6 +6,8 @@ rating: 3
 emoji: 🚧
 ---
 
+[[toc]]
+
 This is a summary and curation of 'university movements' which I am classifying as grass-roots activities which regard the university institutions in Aotearoa, particularly the University of Auckland.
 
 Currently this is just an archive of the materials I plan to use.
