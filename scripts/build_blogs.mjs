@@ -2,12 +2,22 @@ import fsp from 'fs/promises'
 import path from 'path'
 import markdownIt from 'markdown-it'
 import YAML from 'yaml'
+import mdAnchor from 'markdown-it-anchor'
+import mdTocDoneRight from 'markdown-it-toc-done-right'
 
 const markdown = markdownIt({
     html: true,
     linkify: true,
     typographer: true,
 })
+    .use(mdAnchor, { permalink: true, permalinkBefore: true, permalinkSymbol: '🔗' })
+    .use(mdTocDoneRight, {
+        containerClass: 'toc',
+        listClass: 'toc-list',
+        itemClass: 'toc-item',
+        linkClass: 'toc-link',
+        // level: [2, 3],
+    })
 
 function os_path(filepath) {
     // Normalize path to OS path
@@ -85,6 +95,7 @@ for (const file of blogs) {
         .replaceAll('{{title}}', file.data.title)
         .replaceAll('{{date}}', file.data.date)
         .replaceAll('{{blogs}}', blogs_string)
+        .replaceAll('[[]]', '') // the table of contents plugin leaves this in the output for some reason
     await fsp.writeFile(file_output_path, render_root(file.html, file.data.title))
 }
 
