@@ -99,9 +99,15 @@ submit_button.addEventListener('click', () => {
     const total_words = input_element.innerText.split(' ').length;
     let excess_words = 0;
     for (const word of mark_words) {
-        const regex = new RegExp(`${word.word}`, 'gi');
-        excess_words += (input_element.innerText.match(regex) || []).length;
-        input_element.innerHTML = input_element.innerHTML.replace(regex, `<mark>${word.word}</mark>`);
+        // count the word
+        const regex = new RegExp(`\\b${word}\\b`, 'g');
+        const matches = input_element.innerText.match(regex);
+        if (matches) {
+            excess_words += matches.length;
+        }
+        // replace word with <mark>word</mark>
+        const mark_regex = new RegExp(`\\b(${word})\\b`, 'g');
+        input_element.innerHTML = input_element.innerHTML.replace(mark_regex, `<mark>${word}</mark>`);
     }
     const excess_percentage = (excess_words / total_words) * 100;
     document.getElementById('excess-words').innerText = excess_words;

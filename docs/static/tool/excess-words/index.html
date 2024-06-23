@@ -10,16 +10,23 @@
 <body>
     <h1>Excess Word Highlighter</h1>
     <p>Enter a text and the tool will highlight common ChatGPT words found in academic articles according to <a
-            href="https://doi.org/10.48550/arXiv.2406.07016">Kobak et al. 2024</a>. (<a
-            href="https://github.com/berenslab/chatgpt-excess-words/blob/main/scripts/preprocess-and-count.py">source</a>)
+            href="https://doi.org/10.48550/arXiv.2406.07016">Kobak et al. 2024</a>'s <a
+            href="https://github.com/berenslab/chatgpt-excess-words/blob/main/scripts/preprocess-and-count.py">source
+            code</a>
     </p>
+    <p>
+        <a href="https://twitter.com/hippopedoid/status/1804057603628012001">Twitter thread with more information about
+            these words & research</a>
+    </p>
+    <p>All processing happens on your computer. No data is sent anywhere.</p>
 
-    <p><strong>CAUTION</strong> This is not 'evidence' of large-language model use (nor is it evidence against it!).
+    <h4>CAUTION:</h4>
+    <p>This is not 'evidence' of large-language model use (nor is it evidence against it!).
         This is a measure of literally what it says: the occurance of words provided by the authors of <a
-            href="https://doi.org/10.48550/arXiv.2406.07016">this paper</a> within the provided text. These words were a reflection
+            href="https://doi.org/10.48550/arXiv.2406.07016">this paper</a> within the provided text. These words were a
+        reflection
         of terminology commonly found AT TIME OF PUBLISHING in journal abstracts (June 2024).</p>
-        <p><a href="https://twitter.com/hippopedoid/status/1804057603628012001">Twitter thread with more information about these words & research</a></p>
-        <p>All processing happens on your computer. No data is sent anywhere.</p>
+
 
     <button id="submit">Run</button>
     <p id="processing" style="display: none;">Processing text...</p>
@@ -56,6 +63,18 @@
             border-image: initial;
             padding: 2px;
             white-space: pre-wrap;
+        }
+
+        html {
+            background-color: #b9cedc;
+        }
+
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: #f9f9f9;
         }
     </style>
     <script type="module" src="./main.mjs"></script>
