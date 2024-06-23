@@ -5,6 +5,44 @@ import YAML from 'yaml'
 import mdAnchor from 'markdown-it-anchor'
 import mdTocDoneRight from 'markdown-it-toc-done-right'
 
+// check when source/data/boardgames.csv was last updated
+// const boardgames_last_updated = await fsp.stat(os_path('./source/data/boardgames.csv')).then(stat => stat.mtime)
+// if it was less then 10 minutes ago, don't update it
+// if (Date.now() - boardgames_last_updated < 10 * 60 * 1000) {
+//     console.log('boardgames.csv was updated less than 10 minutes ago, skipping download')
+// } else {
+//     console.log('boardgames.csv was updated more than 10 minutes ago, downloading')
+//     const response = await fetch('https://docs.google.com/spreadsheets/d/1VljHjImr2FCw4zAh6G60DbJJq4ktgEyc_pLLx0oCk18/gviz/tq?tqx=out:csv')
+//     const data = await response.text()
+//     await fsp.writeFile(os_path('./source/data/boardgames.csv'), data)
+// }
+
+const boardgames_csv = await fsp.readFile(os_path('./source/data/boardgames.csv'), 'utf-8')
+const boardgames_strings = [...new Set(boardgames_csv.split('\n'))].filter(Boolean)
+const boardgames_header = boardgames_strings.shift().split(',')
+const boardgames_html =
+    '<table><thead><tr><th>Game</th><th>Players</th><th>Time</th><th>Year</th></tr></thead><tbody>' +
+    boardgames_strings
+        .map(row => {
+            return row.split('","').reduce((acc, value, i) => {
+                value = value.replaceAll('"', '')
+                if (value.startsWith('"') && value.endsWith('"')) {
+                    acc[boardgames_header[i]] = value.slice(1, -1)
+                } else {
+                    acc[boardgames_header[i]] = value
+                }
+                return acc
+            }, {})
+        })
+        // remove duplicates using objectid property
+        .filter((game, i, self) => self.findIndex(t => t.objectid === game.objectid) === i)
+        .map(game => {
+            return `<tr><td><a href="https://boardgamegeek.com/boardgame/${game.objectid}">${game.objectname}</a></td><td>${game.minplayers}-${game.maxplayers}</td><td>${game.minplaytime}-${game.maxplaytime}</td><td>${game.yearpublished}</td></tr>`
+        })
+        .join('\n')
+    + '</tbody></table>'
+
+
 const markdown = markdownIt({
     html: true,
     linkify: true,
@@ -130,6 +168,8 @@ for await (const file of pages_files) {
         .replaceAll('{{title}}', data?.title || '')
         .replaceAll('{{date}}', data?.date || '')
         .replaceAll('{{blogs}}', blogs_string || '')
+        .replaceAll('[[]]', '') // the table of contents plugin leaves this in the output for some reason
+        .replaceAll('{{boardgames}}', boardgames_html)
     await fsp.writeFile(file_output_path, render_root(file_html, data.title))
 }
 

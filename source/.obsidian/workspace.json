@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "82364f0d0a98d7bd",
+        "id": "00cee83a72c454ec",
         "type": "tabs",
         "children": [
           {
-            "id": "9bd48e8df370b8ae",
+            "id": "07d8f10a88f1bb36",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/comms-103.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/comms-103.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/comms-103.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "blog/comms-103.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9bd48e8df370b8ae",
+  "active": "07d8f10a88f1bb36",
   "lastOpenFiles": [
+    "blog/comms-103.md",
     "blog/my-favourite-advice.md",
     "pages/about.md",
     "blog/critical-university-studies-reading-group.md",
