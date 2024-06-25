@@ -31,6 +31,14 @@
   background-color: var(--color-dark);
 }
 
+.header-anchor {
+  opacity: 0.2;
+  transition: opacity 0.2s;
+}
+
+.header-anchor:hover {
+  opacity: 1;
+}
 
 /* Table of Contents */
 body {

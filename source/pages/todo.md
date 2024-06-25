@@ -45,3 +45,23 @@ If I take an apple, the last item from a bowl, we would now say the bowl is empt
 - There is no 'real world'
 - School is the opportunity to try things. Jump into sports teams, try out different fields of research, (hopefully) learn about our social systems and why they exist and are shaped how they are, learn to challenge things(?), make friends and resolve conflicts. It teaches us how to interact with people that might not reach our social circles without external forces. Oh people have different diets? Some people use wheelchairs? Some people look or act different to us and our families? These are things not everyone would learn if it weren't for the school system. 
     - When people say school didn't prepare them for the real world, often it seems they are reffering to money. Newsflash, money isn't the 'real world' it is one factor in life and it is entirely a social construct. They are just too deep in [Capitalist Realism](https://en.wikipedia.org/wiki/Capitalist_Realism) to imagine any other purpose to life than hoarding resources.
+
+## First in Family
+
+Beginning my degree, I was surprised by many aspects of the academic system. I was unfamiliar with even simple elements, for example, correctly referencing sources in my essays. While I may not have had access to experienced family members, I substituted for another resource — my friends. I’m proud of my success at university, much of it due to my ability to engage with students and faculty to problem-solve and overcome difficulties in the new environment.
+
+## It is known
+A.K.A.
+- common-sense
+- people say...
+- cliché
+and other vague expressions.
+
+I despise these expressions. They are used to cover vauge, often ideological ideas that are being presented as truth.
+
+So-called common-sense and chiché are used as replacements for thought.
+
+Support your claims properly!
+Who says these things? On what grounds?? If they are only observations and not claims, give me details so I can consider them myself!
+
+

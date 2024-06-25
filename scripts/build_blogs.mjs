@@ -4,6 +4,7 @@ import markdownIt from 'markdown-it'
 import YAML from 'yaml'
 import mdAnchor from 'markdown-it-anchor'
 import mdTocDoneRight from 'markdown-it-toc-done-right'
+import attrs from 'markdown-it-attrs'
 
 // check when source/data/boardgames.csv was last updated
 // const boardgames_last_updated = await fsp.stat(os_path('./source/data/boardgames.csv')).then(stat => stat.mtime)
@@ -50,7 +51,7 @@ const markdown = markdownIt({
     linkify: true,
     typographer: true,
 })
-    .use(mdAnchor, { permalink: true, permalinkBefore: true, permalinkSymbol: '🔗' })
+    .use(mdAnchor, { permalink: true, permalinkBefore: true })
     .use(mdTocDoneRight, {
         containerClass: 'toc',
         listClass: 'toc-list',
@@ -58,6 +59,7 @@ const markdown = markdownIt({
         linkClass: 'toc-link',
         // level: [2, 3],
     })
+    .use(attrs)
 
 function os_path(filepath) {
     // Normalize path to OS path

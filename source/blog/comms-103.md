@@ -15,7 +15,7 @@ The course was reworked into 103 in order to fill a new spot within the fresh [B
 
 In 2020, there was a teaching assistant who was also a student of the course. They were a computer-science student there to help debug our twitter bots and support out other class projects.
 
-As I had experience with programming (specifically Javascript) I reached out to [Ethan](http://www.ethanplaut.com) and inquired about the teaching assistant role for the future. Next year Ethan got back to me with the position. I was co-teaching assistant for a 2021 with another student, then took on the role individually in 2022. In 2023 I became tutor for the course and am continuing tutoring for 2024.
+As I had experience with programming (specifically Javascript) I reached out to [Ethan](http://www.ethanplaut.com) and inquired about the teaching assistant role for the future. Next year Ethan got back to me with the position and I was a co-teaching assistant for 2021 with another student. In 2022 I became tutor for the course and have continued in this role for 2023 and 2024.
 
 Students do really well in this course! It has a very flexible and forgiving rubric and allows people to include their passions to enhance their projects. However, approaching computers and programming for Arts students it is certainly scary–but those who give it a go come out much more confident in their abilities to learn and problem solve. Hopefully this encourages students towards a *Growth Mindset*.
 
