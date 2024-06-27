@@ -65,3 +65,12 @@ Support your claims properly!
 Who says these things? On what grounds?? If they are only observations and not claims, give me details so I can consider them myself!
 
 
+## Update Theories of Change
+- Incorporate material from these videos https://www.youtube.com/@theoriesofchangeaotearoa8796/videos
+
+
+## Debt
+- David Graber & Harney and Moten
+- Being poor makes you hyper-aware of the value you recieve through gifts.
+- I always wanted to repay everyone in full, feeling guilty for their sacrifice, but unwilling/unable to pay them back more.
+- It is easy to be genorous when you are well off.
