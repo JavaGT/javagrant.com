@@ -20,7 +20,7 @@ slug: critical-university-studies
 ## The Undercommons
 - Internet Commentary
     - [https://www.reddit.com/r/askphilosophy/comments/jfsx1f/help_understanding_the_undercommons_and_how_to_be/]
-        - the undercommons is a space of activity invisible to capitalism as it cannot be exploited or be 'productive' in terms of capital accumulation (or be measured at all). 
+        - the undercommons is a space of activity invisible to capitalism as it cannot be exploited or be 'productive' in terms of capital accumulation (or be measured at all).
         - capitalism has a sensorium, it can 'perceive' some things (exploitable), while other things escape its senses ("Bad debt is senseless, which is to say it cannot be perceived by the senses of capital"). 
         - Lots occurs beneath the perception of capital (M&H probably say most things).
         - M&H use vocabulary of legibility or comprehension: "Governance is a way to make it [social life] more legible to them in certain ways". 
@@ -50,8 +50,8 @@ slug: critical-university-studies
                 - 'bad debt' is already everywhere:
                     - "debt runs in every direction, scatters, escapes, seeks refuge. The debtor seeks refuge among other debtors, acquires debt from them, offers debt to them ... Here [in the undercommons] they meet those others who dwell in a different compulsion, in the same debt, a distance, forgetting, remembered again but only after. These other ones carry bags of newspaper clippings, or sit at the end of the bar, or stand at the stove cooking, or sit on a box at the newsstand, or speak through bars, or speak in tongues".
                     - I read these lines as M&H getting at the 'everydayness' of bad debt, it's being everywhere, and people being OK with it because it's simply the default. What's to be explained for M&H is less how we are OK with bad debt, but how we ever came not to be.
-- There's a deep Nietzschian strain among all this
-    - "To be incapable of taking one's enemies, one's accidents, even one's misdeeds seriously for very long—that is the sign of strong, full natures in whom there is an excess of the power to form, to mold, to recuperate and to forget (a good example of this in modem times is Mirabeau, who had no memory for insults and vile actions done him and was unable to forgive simply because he—forgot)" (Genealogy of Morals).
+        - There's a deep Nietzschian strain among all this
+            - "To be incapable of taking one's enemies, one's accidents, even one's misdeeds seriously for very long—that is the sign of strong, full natures in whom there is an excess of the power to form, to mold, to recuperate and to forget (a good example of this in modem times is Mirabeau, who had no memory for insults and vile actions done him and was unable to forgive simply because he—forgot)" (Genealogy of Morals).
         - [-u/Streetli](https://www.reddit.com/r/askphilosophy/comments/jfsx1f/help_understanding_the_undercommons_and_how_to_be/)
     - [https://www.reddit.com/r/CriticalTheory/comments/ucqat0/fred_moten_stefano_harneys_debt_and_study/]
     - [https://www.reddit.com/r/AskLiteraryStudies/comments/oiit5p/eli5_fred_moten/]
