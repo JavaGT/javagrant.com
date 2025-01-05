@@ -27,6 +27,9 @@ Movies, doumentories, speeches, youtube videos that would help grow an interesti
 - [James Acaster Repertoire](https://en.wikipedia.org/wiki/James_Acaster:_Repertoire) (I just htink he's funny)
 - [What if? Video Series XKCD](https://www.youtube.com/@xkcd_whatif)
 
+
+- [Philosophytube](https://www.youtube.com/@PhilosophyTube)
+- [Andrewism](https://www.youtube.com/@Andrewism)
 - [Vape-o-nomics](https://www.youtube.com/watch?v=XuTQbOo3Y30)
     - A video about disposable vapes, and how addiction became the goal of every single company on the planet.
     - Written, directed and presented by Tom Nicholas.

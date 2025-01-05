@@ -15,9 +15,20 @@ This government prioritises ideology, such as boot camps for young offenders, be
 
 This is a government which operates religiously rather than logically, and that shows in their policy and in the nasty way they speak (wet, whiny; bottom-feeders).
 
+- [https://x.com/kaiwgtn/status/1808835979018654197]
+- [https://x.com/minnieprickle/status/1808287922283860209]
+- [https://x.com/cheap_as_infree/status/1808422204281131099]
+- [https://x.com/NewstalkZB/status/1807915084280389729]
+- [https://x.com/ClintVSmith/status/1808590273116844238]
+- [https://x.com/Jandal_It/status/1808004705177510023]
+- [https://x.com/Slanecartoons/status/1808972046606684310]
 
-[https://x.com/minnieprickle/status/1808287922283860209]
-[https://x.com/cheap_as_infree/status/1808422204281131099]
-[https://x.com/NewstalkZB/status/1807915084280389729]
-[https://x.com/ClintVSmith/status/1808590273116844238]
-[https://x.com/Jandal_It/status/1808004705177510023]
+
+## Hipocracy
+- [Luxon won't lower rents when being a landloard is cheaper under his own policies](https://x.com/StrayDogNZ/status/1764491063966986305)
+
+## Love of Trump
+- [ACT MPs history of supporting Trump: ACT MP Mark Cameron, No.8 pl Simon Court, No.39 pl Simon Angelo, Sean Colgen who lent Seymour private jet, ACT donor Mike Allen](https://x.com/StrayDogNZ/status/1808690583545991662)
+
+## Refusal to answer questions
+[https://x.com/StrayDogNZ/status/1702428445559619806](https://x.com/StrayDogNZ/status/1702428445559619806)

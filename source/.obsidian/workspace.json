@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "00cee83a72c454ec",
+        "id": "c4745037a93bf618",
         "type": "tabs",
         "children": [
           {
-            "id": "07d8f10a88f1bb36",
+            "id": "02460cfb05f03185",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "phd-drafts/University Identity.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "identity",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,10 +66,26 @@
             }
           }
         ]
+      },
+      {
+        "id": "aa5b5553ab44c57e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3b6784aea57e983",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "phd-drafts/University Identity.md"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "1027858999a8e4c6",
@@ -81,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "phd-drafts/University Identity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "phd-drafts/University Identity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,14 +133,6 @@
                 "sortOrder": "frequency",
                 "useHierarchy": true
               }
-            }
-          },
-          {
-            "id": "c3b6784aea57e983",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {}
             }
           }
         ]
@@ -138,8 +152,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07d8f10a88f1bb36",
+  "active": "286b17b922b9ebb9",
   "lastOpenFiles": [
+    "pages/work-with-me.md",
+    "phd-drafts/Hope and universities.md",
+    "Simon Marginson.md",
+    "Bingus.md",
+    "phd-drafts/University Identity.md",
+    "Cats.md",
+    "reading-notes/creative-ruptions-for-emergent-educational-futures.md",
+    "phd-drafts",
+    "reading-notes/the-university-and-the-undercommons.md",
+    "ordered-notes/Purpose.md",
+    "ordered-notes",
     "blog/comms-103.md",
     "blog/my-favourite-advice.md",
     "pages/about.md",
@@ -156,7 +181,6 @@
     "blog/rsvp-system.md",
     "blog/theory-of-change.md",
     "pages/contact.md",
-    "pages/work-with-me.md",
     "pages/todo.md"
   ]
 }

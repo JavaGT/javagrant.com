@@ -3,6 +3,16 @@ title: Ideas & more for future
 slug: todo
 ---
 
+# Website
+
+## Framework
+- [Hugo](https://gohugo.io/getting-started/quick-start/)
+
+## Microfeatures
+- [A bunch](https://danilafe.com/blog/blog_microfeatures/)
+- [Sidenotes](https://danilafe.com/blog/sidenotes/)
+
+# Writing 
 In the future these are some texts I would like to write.
 
 ## How language deceives
