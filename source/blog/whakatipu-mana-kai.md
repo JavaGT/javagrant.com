@@ -22,4 +22,4 @@ This kaupapa includes three interwoven elements...
 - Awhi ki te taiao - be in good relation with te taiao
 - Marama o te wero kai - for the month of May, we're planning to only eat food from the garden, forest, and ocean
 
-You can find out more about Whakatipu Mana Kai on their [website](https://www.whakatipumanakai.co.nz/), [Instagram](https://www.instagram.com/whakatipumanakai/).
+You can find out more about Whakatipu Mana Kai on their [website](https://www.whakatipumanakai.co.nz/) and [Instagram](https://www.instagram.com/whakatipumanakai/).
