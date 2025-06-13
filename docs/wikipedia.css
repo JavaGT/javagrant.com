@@ -2827,14 +2827,34 @@
 }
 
 .gen-style-290 {
-    display: inline;
+    border-bottom: 1px solid #a2a9b1;
+    color: #101418;
+    column-rule-color: #101418;
+    display: flow-root;
+    font-family: "Linux Libertine", Georgia, Times, "Source Serif Pro", serif;
+    font-size: 24px;
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    outline-color: #101418;
+    padding-bottom: 4.08px;
+    padding-top: 12px;
+    perspective-origin: 471px 25.0391px;
+    text-decoration-color: #101418;
+    text-emphasis-color: #101418;
+    transform-origin: 471px 25.0391px;
+    word-break: break-word;
+    -webkit-text-fill-color: #101418;
+    -webkit-text-stroke-color: #101418;
+    display: block;
     font-weight: 400;
     height: auto;
     inline-size: auto;
     margin-top: 0;
     perspective-origin: 0 0;
     transform-origin: 0 0;
-    width: auto
+    width: 100%;
 }
 
 .gen-style-291 {
@@ -2921,7 +2941,7 @@
 }
 
 .gen-style-300 {
-    border-bottom: 1px solid #a2a9b1;
+    /* border-bottom: 1px solid #a2a9b1;
     color: #101418;
     column-rule-color: #101418;
     display: flow-root;
@@ -2940,7 +2960,7 @@
     transform-origin: 471px 25.0391px;
     word-break: break-word;
     -webkit-text-fill-color: #101418;
-    -webkit-text-stroke-color: #101418
+    -webkit-text-stroke-color: #101418 */
 }
 
 .gen-style-301,
@@ -2950,20 +2970,20 @@
 }
 
 .gen-style-301 {
-    color: #101418;
-    column-rule-color: #101418;
+    /* color: #101418; */
+    /* column-rule-color: #101418; */
     display: flow-root;
     font-weight: 700;
     margin-top: 4.8px;
-    outline-color: #101418;
+    /* outline-color: #101418; */
     padding-top: 9.6px;
     perspective-origin: 471px 20.1562px;
-    text-decoration-color: #101418;
-    text-emphasis-color: #101418;
+    /* text-decoration-color: #101418; */
+    /* text-emphasis-color: #101418; */
     transform-origin: 471px 20.1562px;
     word-break: break-word;
-    -webkit-text-fill-color: #101418;
-    -webkit-text-stroke-color: #101418
+    /* -webkit-text-fill-color: #101418; */
+    /* -webkit-text-stroke-color: #101418 */
 }
 
 .gen-style-302 {
@@ -3025,19 +3045,12 @@
 
 .gen-style-311 {
     margin-bottom: 0;
-    margin-left: 46.08px;
-    margin-top: 4.32px;
+    margin-left: 2em;
+    margin-top: 1em;
     padding-left: 0;
     perspective-origin: 447.961px 223.828px;
     transform-origin: 447.961px 223.828px;
     width: 895.922px
-}
-
-.gen-style-312 {
-    height: 92.125px;
-    margin-bottom: 1.44px;
-    perspective-origin: 447.961px 46.0625px;
-    transform-origin: 447.961px 46.0625px
 }
 
 .gen-style-313 {
@@ -4804,4 +4817,61 @@ a {
 
 a:hover {
     text-decoration: underline
+}
+
+p {
+    margin: 0.5em 0 1em 0;
+}
+
+.edit-btn {
+    /* link color */
+    margin: 0.3em 0.2em;
+    font-size: 0.8em;
+    color: #36c;
+    font-size: 13px;
+    height: auto;
+    line-height: 0px;
+    outline-color: rgb(51, 102, 204);
+    text-emphasis-color: rgb(51, 102, 204);
+    display: inline-block;
+    font-weight: inherit;
+    font-family: sans-serif;
+}
+
+.edit-btn::before,
+.edit-btn::after {
+    content: "[";
+    color: #54595d;
+    column-rule-color: #54595d;
+    margin: 0.3em;
+    outline-color: #54595d;
+    text-decoration-color: #54595d;
+    text-emphasis-color: #54595d;
+    -webkit-text-fill-color: #54595d;
+    -webkit-text-stroke-color: #54595d;
+}
+
+.edit-btn::after {
+    content: "]";
+}
+
+body {
+    counter-reset: cite_counter;
+}
+
+.cite-note::before {
+    counter-increment: cite_counter;
+    content: "[" counter(cite_counter) "]";
+    color: #36c;
+    font-size: 0.8em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+.cite-note:hover::before {
+    text-decoration: underline;
+}
+
+.cite-note:hover {
+    text-decoration: none;
 }
