@@ -1,5 +1,6 @@
-.gen-style-1 {
-    font-family: sans-serif;
+.gen-style-1,
+.gen-style-2 {
+    font-family: sans-serif
 }
 
 .gen-style-2 {
@@ -8,49 +9,52 @@
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    font-family: sans-serif;
+    color: #36c;
+    column-rule-color: #36c;
     height: 1px;
     inset-block-end: 799px;
     margin: -1px;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 1471px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    top: 0px;
-    transform-origin: 0.5px 0.5px;
+    text-emphasis-color: #36c;
+    top: 0;
+    transform-origin: .5px .5px;
     user-select: none;
     width: 1px;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-3 {
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    color: #202122;
+    column-rule-color: #202122;
     display: flex;
     font-family: sans-serif;
     justify-content: center;
-    outline-color: rgb(32, 33, 34);
-    text-decoration-color: rgb(32, 33, 34);
-    text-emphasis-color: rgb(32, 33, 34);
+    outline-color: #202122;
+    text-decoration-color: #202122;
+    text-emphasis-color: #202122;
     width: 1470px;
-    -webkit-text-fill-color: rgb(32, 33, 34);
-    -webkit-text-stroke-color: rgb(32, 33, 34);
+    -webkit-text-fill-color: #202122;
+    -webkit-text-stroke-color: #202122
+}
+
+.gen-style-4,
+.gen-style-5 {
+    align-items: center;
+    display: flex
 }
 
 .gen-style-4 {
-    align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     box-sizing: border-box;
     gap: 16px;
-    display: flex;
     flex-wrap: wrap;
     height: 66px;
     inline-size: 1470px;
@@ -60,48 +64,48 @@
     padding: 8px 44px;
     perspective-origin: 735px 33px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     transform-origin: 735px 33px;
     width: 1470px;
-    z-index: 3;
+    z-index: 3
 }
 
 .gen-style-5 {
-    align-items: center;
     gap: 20px;
-    display: flex;
     height: 50px;
     perspective-origin: 110px 25px;
     transform-origin: 110px 25px;
-    width: 220px;
+    width: 220px
 }
-
-.gen-style-6 {}
 
 .gen-style-7 {
     margin-left: -6px;
     margin-right: -6px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0
+}
+
+.gen-style-8,
+.gen-style-9 {
+    perspective-origin: 16px 16px;
+    transform-origin: 16px 16px;
+    width: 32px
 }
 
 .gen-style-8 {
     cursor: pointer;
-    inset-block-end: 0px;
-    margin: 0px;
+    inset-block-end: 0;
+    margin: 0;
     opacity: 0;
-    perspective-origin: 16px 16px;
     position: absolute;
-    right: 0px;
-    text-emphasis-color: rgb(0, 0, 0);
-    top: 0px;
-    transform-origin: 16px 16px;
-    width: 32px;
+    right: 0;
+    text-emphasis-color: #000;
+    top: 0;
     z-index: 1;
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-color: #000
 }
 
 .gen-style-9 {
@@ -124,17 +128,14 @@
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
-    perspective-origin: 16px 16px;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transform-origin: 16px 16px;
-    transition-duration: 0.1s;
-    transition-property: background-color, color, border-color, box-shadow;
-    width: 32px;
+    transition-duration: .1s;
+    transition-property: background-color, color, border-color, box-shadow
 }
 
 .gen-style-10 {
-    background-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -145,59 +146,61 @@
     perspective-origin: 10px 10px;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
+}
+
+.gen-style-11,
+.gen-style-12 {
+    font-size: 14px;
+    position: absolute
 }
 
 .gen-style-11 {
     clip: rect(1px, 1px, 1px, 1px);
-    font-size: 14px;
     height: 1px;
     inset-block-end: 16.5px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
-    position: absolute;
+    perspective-origin: .5px .5px;
     right: 16.5px;
     top: 16.5px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-12 {
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px -1px;
-    font-size: 14px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .2)0 2px 6px -1px;
     inset-block-end: -32px;
     max-height: 598.5px;
     max-width: 200px;
     overflow: hidden auto;
     padding: 16px;
     perspective-origin: 109.195px 16px;
-    position: absolute;
     right: -185.391px;
     top: 32px;
     transform-origin: 109.195px 16px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
-    z-index: 50;
+    z-index: 50
 }
 
 .gen-style-13 {
     height: 427.516px;
     perspective-origin: 93.1953px 213.758px;
-    transform-origin: 93.1953px 213.758px;
+    transform-origin: 93.1953px 213.758px
 }
 
 .gen-style-14 {
-    border-bottom: 1px solid rgb(234, 236, 240);
+    border-bottom: 1px solid #eaecf0;
     height: 23.5312px;
     line-height: 22.4px;
     margin-bottom: 6px;
     padding-bottom: 6px;
     perspective-origin: 93.1953px 15.2656px;
-    transform-origin: 93.1953px 15.2656px;
+    transform-origin: 93.1953px 15.2656px
 }
 
 .gen-style-15 {
@@ -207,98 +210,87 @@
     margin-right: 8px;
     perspective-origin: 36.5547px 11.1953px;
     vertical-align: middle;
-    width: 73.1172px;
+    width: 73.1172px
 }
 
-.gen-style-16 {
-    background-color: rgb(234, 236, 240);
-    border-color: rgb(32, 33, 34);
+.gen-style-16,
+.gen-style-17 {
+    background-color: #eaecf0;
+    border-color: #202122;
     border-style: none;
-    border-width: 0px;
+    border-width: 0;
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    color: #202122;
+    column-rule-color: #202122;
     cursor: pointer;
     font-size: 12px;
     height: 22px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     padding: 4px 8px;
     perspective-origin: 50.6875px 11px;
     text-align: left;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     transform-origin: 50.6914px 11px;
-    width: 101.383px;
+    width: 101.383px
 }
 
 .gen-style-17 {
-    background-color: rgb(234, 236, 240);
-    border-color: rgb(32, 33, 34);
-    border-style: none;
-    border-width: 0px;
-    border-end-end-radius: 2px;
-    border-end-start-radius: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
-    cursor: pointer;
     display: none;
-    font-size: 12px;
     height: auto;
     inline-size: auto;
-    outline-color: rgb(32, 33, 34);
-    padding: 4px 8px;
     perspective-origin: 50% 50%;
-    text-align: left;
-    text-decoration-color: rgb(32, 33, 34);
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
 }
 
 .gen-style-18 {
     perspective-origin: 93.1953px 87.4922px;
-    transform-origin: 93.1953px 87.4961px;
+    transform-origin: 93.1953px 87.4961px
 }
 
 .gen-style-19 {
-    border-bottom: 1px solid rgb(234, 236, 240);
-    color: rgb(84, 89, 93);
-    column-rule-color: rgb(84, 89, 93);
+    border-bottom: 1px solid #eaecf0;
+    color: #54595d;
+    column-rule-color: #54595d;
     cursor: default;
     display: none;
     height: auto;
     inline-size: auto;
     margin-bottom: 6px;
     margin-top: 6px;
-    outline-color: rgb(84, 89, 93);
+    outline-color: #54595d;
     padding-bottom: 6px;
     padding-top: 6px;
     perspective-origin: 50% 50%;
-    text-decoration-color: rgb(84, 89, 93);
-    text-emphasis-color: rgb(84, 89, 93);
+    text-decoration-color: #54595d;
+    text-emphasis-color: #54595d;
     transform-origin: 50% 50%;
     width: auto;
-    -webkit-text-fill-color: rgb(84, 89, 93);
-    -webkit-text-stroke-color: rgb(84, 89, 93);
+    -webkit-text-fill-color: #54595d;
+    -webkit-text-stroke-color: #54595d
 }
 
 .gen-style-20 {
     height: 174.992px;
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
     perspective-origin: 93.1953px 87.4922px;
     transform-origin: 93.1953px 87.4961px;
-    width: 186.391px;
+    width: 186.391px
+}
+
+.gen-style-21,
+.gen-style-22 {
+    perspective-origin: 93.1953px 14px
 }
 
 .gen-style-21 {
-    margin-bottom: 1.4px;
-    perspective-origin: 93.1953px 14px;
+    margin-bottom: 1.4px
 }
 
 .gen-style-22 {
@@ -307,103 +299,102 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: flex;
     height: 16px;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 93.1953px 14px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     transform-origin: 93.1953px 14px;
     width: 186.391px;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-23 {
     transform-origin: 32.6914px 8px;
-    width: 65.3828px;
+    width: 65.3828px
 }
 
 .gen-style-24 {
-    perspective-origin: 28.0156px 8px;
+    perspective-origin: 28.0156px 8px
 }
 
 .gen-style-25 {
     perspective-origin: 45.9062px 8px;
     transform-origin: 45.9102px 8px;
-    width: 91.8203px;
+    width: 91.8203px
 }
 
 .gen-style-26 {
     transform-origin: 47.0781px 8px;
-    width: 94.1562px;
+    width: 94.1562px
 }
 
 .gen-style-27 {
-    perspective-origin: 50.5859px 8px;
+    perspective-origin: 50.5859px 8px
 }
 
 .gen-style-28 {
-    perspective-origin: 33.4609px 8px;
+    perspective-origin: 33.4609px 8px
 }
 
 .gen-style-29 {
     perspective-origin: 93.1953px 104.992px;
-    transform-origin: 93.1953px 104.996px;
+    transform-origin: 93.1953px 104.996px
 }
 
 .gen-style-30 {
-    border-bottom: 1px solid rgb(234, 236, 240);
-    color: rgb(84, 89, 93);
-    column-rule-color: rgb(84, 89, 93);
+    border-bottom: 1px solid #eaecf0;
+    color: #54595d;
+    column-rule-color: #54595d;
     cursor: default;
     margin-bottom: 6px;
     margin-top: 6px;
-    outline-color: rgb(84, 89, 93);
+    outline-color: #54595d;
     padding-bottom: 6px;
     padding-top: 6px;
     perspective-origin: 93.1953px 14.5px;
-    text-decoration-color: rgb(84, 89, 93);
-    text-emphasis-color: rgb(84, 89, 93);
+    text-decoration-color: #54595d;
+    text-emphasis-color: #54595d;
     transform-origin: 93.1953px 14.5px;
-    -webkit-text-fill-color: rgb(84, 89, 93);
-    -webkit-text-stroke-color: rgb(84, 89, 93);
+    -webkit-text-fill-color: #54595d;
+    -webkit-text-stroke-color: #54595d
 }
 
 .gen-style-31 {
-    perspective-origin: 14.3984px 8px;
+    perspective-origin: 14.3984px 8px
 }
 
 .gen-style-32 {
     transform-origin: 38.918px 8px;
-    width: 77.8359px;
+    width: 77.8359px
 }
 
 .gen-style-33 {
     perspective-origin: 54.8516px 8px;
     transform-origin: 54.8516px 8px;
-    width: 109.703px;
+    width: 109.703px
 }
 
 .gen-style-34 {
-    perspective-origin: 50.5859px 8px;
+    perspective-origin: 50.5859px 8px
 }
 
 .gen-style-35 {
     transform-origin: 33.0781px 8px;
-    width: 66.1562px;
+    width: 66.1562px
 }
 
 .gen-style-36 {
     perspective-origin: 43.9766px 8px;
     transform-origin: 43.9766px 8px;
-    width: 87.9531px;
+    width: 87.9531px
 }
 
 .gen-style-37 {
@@ -412,39 +403,38 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: flex;
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-38 {
     float: left;
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 .gen-style-39 {
-    float: left;
+    float: left
 }
 
-.gen-style-40 {
+.gen-style-40,
+.gen-style-41 {
     display: block;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 .gen-style-41 {
-    display: block;
     margin-left: 1.5px;
     margin-right: 1.5px;
-    margin-top: 5px;
-    vertical-align: middle;
+    margin-top: 5px
 }
 
 .gen-style-42 {
@@ -454,19 +444,19 @@
     height: 32px;
     perspective-origin: 573px 16px;
     transform-origin: 573px 16px;
-    width: 1146px;
+    width: 1146px
 }
 
 .gen-style-43 {
     flex-grow: 1;
     font-size: 14px;
     inline-size: 909.758px;
-    width: 909.758px;
+    width: 909.758px
 }
 
 .gen-style-44 {
     align-items: center;
-    border-color: rgba(0, 0, 0, 0);
+    border-color: transparent;
     border-style: solid;
     border-width: 1px;
     border-end-end-radius: 2px;
@@ -474,9 +464,9 @@
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     box-sizing: border-box;
-    color: rgb(32, 33, 34);
+    color: #202122;
     gap: 4px;
-    column-rule-color: rgb(32, 33, 34);
+    column-rule-color: #202122;
     display: none;
     float: right;
     font-size: 16px;
@@ -485,23 +475,23 @@
     max-width: 448px;
     min-height: 32px;
     min-width: 32px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
     perspective-origin: 50% 50%;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     text-decoration-line: none;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
     transform-origin: 50% 50%;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    -webkit-text-decorations-in-effect: none;
+    -webkit-text-decorations-in-effect: none
 }
 
 .gen-style-45 {
-    background-color: rgb(32, 33, 34);
+    background-color: #202122;
     display: inline-block;
     height: 20px;
     mask-position: 50% 50%;
@@ -512,7 +502,7 @@
     min-inline-size: 20px;
     min-width: 20px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-46 {
@@ -522,23 +512,23 @@
     overflow: hidden;
     position: absolute;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-47 {
     margin-right: 12px;
     max-width: 500px;
-    width: 500px;
+    width: 500px
 }
 
 .gen-style-48 {
     margin-left: 24px;
-    width: 476px;
+    width: 476px
 }
 
 .gen-style-49 {
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(162, 169, 177);
+    background-color: #fff;
+    border-color: #a2a9b1;
     border-style: solid;
     border-width: 1px;
     border-end-end-radius: 2px;
@@ -549,19 +539,24 @@
     height: 30px;
     perspective-origin: 238px16px;
     transform-origin: 238px 16px;
-    width: 474px;
+    width: 474px
 }
 
 .gen-style-50 {
     flex-grow: 1;
     inline-size: 406.297px;
     margin: -1px;
-    perspective-origin: 203.148px 16px;
     position: relative;
-    right: 0px;
-    top: 0px;
-    transform-origin: 203.148px 16px;
-    width: 406.297px;
+    right: 0;
+    top: 0;
+    transform-origin: 203.148px 16px
+}
+
+.gen-style-50,
+.gen-style-51,
+.gen-style-52 {
+    perspective-origin: 203.148px 16px;
+    width: 406.297px
 }
 
 .gen-style-51 {
@@ -570,68 +565,62 @@
     box-sizing: border-box;
     min-width: 256px;
     overflow: hidden;
-    perspective-origin: 203.148px 16px;
     position: relative;
-    right: 0px;
-    top: 0px;
-    width: 406.297px;
+    right: 0;
+    top: 0
 }
 
 .gen-style-52 {
     appearance: none;
     border-style: solid;
     border-width: 1px;
-    column-rule-color: rgb(32, 33, 34);
+    column-rule-color: #202122;
     display: block;
     font-family: sans-serif;
     font-size: 14px;
     line-height: 19.25px;
     min-height: 32px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     padding: 4px 8px 4px 36px;
-    perspective-origin: 203.148px 16px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     transform-origin: 203.148px 16px;
-    transition-duration: 0.25s;
-    transition-property: background-color, color, border-color, box-shadow;
-    width: 406.297px;
+    transition-duration: .25s;
+    transition-property: background-color, color, border-color, box-shadow
 }
 
 .gen-style-53 {
-    background-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
     min-height: 20px;
     min-width: 20px;
-    opacity: 0.51;
+    opacity: .51;
     perspective-origin: 10px 10px;
     position: absolute;
     right: 377.297px;
     top: 16px;
     transform: matrix(1, 0, 0, 1, 0, -10);
     transform-origin: 10px 10px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: color;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-54 {
-    text-emphasis-color: rgb(0, 0, 0);
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-emphasis-color: #000;
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-color: #000
 }
 
 .gen-style-55 {
-    align-items: center;
     border-style: solid;
     border-width: 1px;
     border-end-end-radius: 2px;
     border-top-right-radius: 2px;
     gap: 4px;
-    column-rule-color: rgb(32, 33, 34);
-    display: flex;
+    column-rule-color: #202122;
     flex-shrink: 0;
     font-family: sans-serif;
     font-size: 14px;
@@ -642,85 +631,86 @@
     margin-top: -1px;
     max-width: 448px;
     min-height: 32px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     overflow: hidden;
     padding-left: 11px;
     padding-right: 11px;
     perspective-origin: 35.3516px 16px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
     transform-origin: 35.3516px 16px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 70.7031px;
+    width: 70.7031px
+}
+
+.gen-style-55,
+.gen-style-56,
+.gen-style-57 {
+    align-items: center;
+    display: flex
 }
 
 .gen-style-56 {
-    align-items: center;
-    display: flex;
     height: 32px;
     justify-content: flex-end;
     perspective-origin: 118.117px 16px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     transform-origin: 118.121px 16px;
-    width: 236.242px;
+    width: 236.242px
 }
 
 .gen-style-57 {
-    align-items: center;
-    display: flex;
     perspective-origin: 101.117px 8px;
-    transform-origin: 101.121px 8px;
+    transform-origin: 101.121px 8px
 }
 
 .gen-style-58 {
     display: none;
     height: auto;
     inline-size: auto;
-    min-height: 0px;
-    min-width: 0px;
+    min-height: 0;
+    min-width: 0;
     perspective-origin: 50% 50%;
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
 }
-
-.gen-style-59 {}
 
 .gen-style-60 {
     align-items: center;
     display: flex;
     font-size: 14px;
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0
 }
 
 .gen-style-61 {
-    position: relative;
+    position: relative
 }
 
 .gen-style-62 {
     cursor: pointer;
     height: 100%;
-    left: 0px;
-    margin: 0px;
+    left: 0;
+    margin: 0;
     opacity: 0;
     position: absolute;
-    text-emphasis-color: rgb(0, 0, 0);
-    top: 0px;
+    text-emphasis-color: #000;
+    top: 0;
     width: 100%;
     z-index: 1;
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-color: #000
 }
 
 .gen-style-63 {
     align-items: center;
-    border-color: rgba(0, 0, 0, 0);
+    border-color: transparent;
     border-style: solid;
     border-width: 1px;
     border-end-end-radius: 2px;
@@ -742,12 +732,12 @@
     padding-right: 5px;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transition-duration: 0.1s;
-    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: .1s;
+    transition-property: background-color, color, border-color, box-shadow
 }
 
 .gen-style-64 {
-    background-color: rgb(32, 33, 34);
+    background-color: #202122;
     height: 20px;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
@@ -757,51 +747,47 @@
     min-inline-size: 20px;
     min-width: 20px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
+}
+
+.gen-style-65,
+.gen-style-66 {
+    font-size: 14px;
+    position: absolute
 }
 
 .gen-style-65 {
     clip: rect(1px, 1px, 1px, 1px);
-    font-size: 14px;
     height: 1px;
     margin: -1px;
     overflow: hidden;
-    position: absolute;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-66 {
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px -1px;
-    font-size: 14px;
-    height: 0px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .2)0 2px 6px -1px;
+    height: 0;
     max-height: 598.5px;
     max-width: 200px;
     opacity: 0;
     overflow: hidden auto;
     padding: 16px;
-    position: absolute;
-    right: 0px;
+    right: 0;
     top: 100%;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
     width: max-content;
-    z-index: 50;
-
+    z-index: 50
 }
 
-.gen-style-67 {}
-
-.gen-style-68 {
+.gen-style-68,
+.gen-style-69,
+.gen-style-70 {
     perspective-origin: 101.117px 8px;
-    transform-origin: 101.121px 8px;
-}
-
-.gen-style-69 {
-    perspective-origin: 101.117px 8px;
-    transform-origin: 101.121px 8px;
+    transform-origin: 101.121px 8px
 }
 
 .gen-style-70 {
@@ -810,12 +796,11 @@
     font-size: 14px;
     height: 16px;
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
-    perspective-origin: 101.117px 8px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
     transform-origin: 101.121px8px;
-    width: 202.242px;
+    width: 202.242px
 }
 
 .gen-style-71 {
@@ -823,7 +808,7 @@
     margin-right: 4px;
     perspective-origin: 22.5703px 8px;
     transform-origin: 22.5742px 8px;
-    width: 45.1484px;
+    width: 45.1484px
 }
 
 .gen-style-72 {
@@ -831,56 +816,53 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
-.gen-style-73 {}
-
-.gen-style-74 {
-    margin-left: 4px;
-    margin-right: 4px;
-    transform-origin: 47.4727px 8px;
-    width: 94.9453px;
-}
-
+.gen-style-74,
 .gen-style-75 {
     margin-left: 4px;
     margin-right: 4px;
+    transform-origin: 47.4727px 8px;
+    width: 94.9453px
+}
+
+.gen-style-75 {
     perspective-origin: 19.0703px 8px;
     transform-origin: 19.0742px 8px;
-    width: 38.1484px;
+    width: 38.1484px
 }
 
 .gen-style-76 {
     margin-right: -6px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0
 }
 
 .gen-style-77 {
     cursor: pointer;
-    inset-block-end: 0px;
-    margin: 0px;
+    inset-block-end: 0;
+    margin: 0;
     opacity: 0;
     perspective-origin: 20px 16px;
     position: absolute;
-    right: 0px;
-    text-emphasis-color: rgb(0, 0, 0);
-    top: 0px;
+    right: 0;
+    text-emphasis-color: #000;
+    top: 0;
     transform-origin: 20px 16px;
     width: 40px;
     z-index: 1;
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-color: #000
 }
 
 .gen-style-78 {
@@ -909,14 +891,13 @@
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
     transform-origin: 16px 16px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 32px;
-
+    width: 32px
 }
 
 .gen-style-79 {
-    background-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -927,43 +908,45 @@
     perspective-origin: 10px 10px;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
+}
+
+.gen-style-80,
+.gen-style-81 {
+    font-size: 14px;
+    position: absolute
 }
 
 .gen-style-80 {
     clip: rect(1px, 1px, 1px, 1px);
-    font-size: 14px;
     height: 1px;
     inset-block-end: 16.5px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
-    position: absolute;
+    perspective-origin: .5px .5px;
     right: 20.5px;
     top: 16.5px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-81 {
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px -1px;
-    font-size: 14px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .2)0 2px 6px -1px;
     inset-block-end: -32px;
     max-height: 598.5px;
     max-width: 200px;
     overflow: hidden auto;
     padding: 16px;
     perspective-origin: 116px 16px;
-    position: absolute;
-    right: 0px;
+    right: 0;
     top: 32px;
     transform-origin: 116px 16px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
-    z-index: 50;
+    z-index: 50
 }
 
 .gen-style-82 {
@@ -972,18 +955,18 @@
     inline-size: auto;
     perspective-origin: 50% 50%;
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
 }
 
 .gen-style-83 {
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0
 }
 
 .gen-style-84 {
-    display: none;
+    display: none
 }
 
 .gen-style-85 {
@@ -992,39 +975,23 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: flex;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     padding-bottom: 6px;
     padding-top: 6px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
-.gen-style-86 {}
-
-.gen-style-87 {
-    background-color: rgb(32, 33, 34);
-    height: 20px;
-    margin-right: 6px;
-    mask-position: 50% 50%;
-    mask-repeat: no-repeat;
-    mask-size: 20px;
-    min-block-size: 20px;
-    min-height: 20px;
-    min-inline-size: 20px;
-    min-width: 20px;
-    vertical-align: text-bottom;
-    width: 20px;
-}
-
+.gen-style-87,
 .gen-style-88 {
-    background-color: rgb(32, 33, 34);
+    background-color: #202122;
     height: 20px;
     margin-right: 6px;
     mask-position: 50% 50%;
@@ -1035,44 +1002,34 @@
     min-inline-size: 20px;
     min-width: 20px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
-
-.gen-style-89 {}
-
-.gen-style-90 {}
 
 .gen-style-91 {
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
-
-.gen-style-92 {}
-
-.gen-style-93 {}
 
 .gen-style-94 {
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
     perspective-origin: 100px 28px;
     transform-origin: 100px28px;
-    width: 200px;
+    width: 200px
 }
-
-.gen-style-95 {}
 
 .gen-style-96 {
     align-items: center;
@@ -1080,55 +1037,53 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: flex;
     height: 16px;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     padding-bottom: 6px;
     padding-top: 6px;
     perspective-origin: 100px 14px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     transform-origin: 100px 14px;
     width: 200px;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
-
-.gen-style-97 {}
 
 .gen-style-98 {
     perspective-origin: 12.4453px 8px;
     transform-origin: 12.4492px 8px;
-    width: 24.8984px;
+    width: 24.8984px
 }
 
 .gen-style-99 {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     box-sizing: border-box;
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    color: #202122;
+    column-rule-color: #202122;
     font-family: sans-serif;
     height: 2403px;
     max-width: 1596px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     padding-left: 44px;
     padding-right: 44px;
-    padding-top: 0.05px;
+    padding-top: .05px;
     perspective-origin: 735px 1201.5px;
     position: relative;
-    right: 0px;
-    text-decoration-color: rgb(32, 33, 34);
-    text-emphasis-color: rgb(32, 33, 34);
-    top: 0px;
+    right: 0;
+    text-decoration-color: #202122;
+    text-emphasis-color: #202122;
+    top: 0;
     transform-origin: 735px 1201.5px;
     width: 1470px;
     z-index: 0;
-    -webkit-text-fill-color: rgb(32, 33, 34);
-    -webkit-text-stroke-color: rgb(32, 33, 34);
+    -webkit-text-fill-color: #202122;
+    -webkit-text-stroke-color: #202122
 }
 
 .gen-style-100 {
@@ -1139,12 +1094,12 @@
  91px / 196px 1162px;
     height: 2402.95px;
     perspective-origin: 691px 1201.48px;
-    transform-origin: 691px 1201.48px;
+    transform-origin: 691px 1201.48px
 }
 
 .gen-style-101 {
     grid-area: siteNotice;
-    width: 1382px;
+    width: 1382px
 }
 
 .gen-style-102 {
@@ -1161,15 +1116,15 @@
     position: relative;
     text-align: center;
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
 }
 
 .gen-style-103 {
-    display: none;
+    display: none
 }
 
 .gen-style-104 {
-    border-top: 1px solid rgba(0, 0, 0, 0);
+    border-top: 1px solid transparent;
     grid-area: columnStart;
     height: 2081.77px;
     margin-left: -12px;
@@ -1177,21 +1132,19 @@
     overflow-anchor: none;
     perspective-origin: 104px 1041.38px;
     transform-origin: 104px 1041.38px;
-    width: 208px;
+    width: 208px
 }
 
 .gen-style-105 {
     margin-left: 12px;
-    width: 196px;
+    width: 196px
 }
 
-.gen-style-106 {}
-
 .gen-style-107 {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     margin-bottom: 32px;
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 16px
 }
 
 .gen-style-108 {
@@ -1202,32 +1155,31 @@
     perspective-origin: 104px 168.266px;
     position: sticky;
     top: 74px;
-    transform-origin: 104px 168.266px;
+    transform-origin: 104px 168.266px
 }
 
-.gen-style-109 {
+.gen-style-109,
+.gen-style-110 {
     perspective-origin: 104px 144.266px;
-    transform-origin: 104px 144.266px;
+    transform-origin: 104px 144.266px
 }
 
 .gen-style-110 {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     margin-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
-    perspective-origin: 104px 144.266px;
-    transform-origin: 104px 144.266px;
-    width: 176px;
+    width: 176px
 }
 
 .gen-style-111 {
     font-size: 14px;
     perspective-origin: 88px 144.266px;
-    transform-origin: 88px 144.266px;
+    transform-origin: 88px 144.266px
 }
 
 .gen-style-112 {
-    border-bottom: 1px solid rgb(234, 236, 240);
+    border-bottom: 1px solid #eaecf0;
     height: 23.5312px;
     line-height: 22.4px;
     margin-bottom: 6px;
@@ -1235,96 +1187,84 @@
     padding-bottom: 6px;
     perspective-origin: 82px 15.2656px;
     transform-origin: 82px 15.2656px;
-    width: 164px;
+    width: 164px
 }
 
 .gen-style-113 {
-    color: rgb(16, 20, 24);
-    column-rule-color: rgb(16, 20, 24);
+    color: #101418;
+    column-rule-color: #101418;
     display: inline-block;
     font-size: 14px;
     height: 22.3984px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-right: 8px;
-    margin-top: 0px;
-    outline-color: rgb(16, 20, 24);
+    margin-top: 0;
+    outline-color: #101418;
     perspective-origin: 30.3281px 11.1953px;
-    text-decoration-color: rgb(16, 20, 24);
-    text-emphasis-color: rgb(16, 20, 24);
+    text-decoration-color: #101418;
+    text-emphasis-color: #101418;
     transform-origin: 30.332px 11.1992px;
     vertical-align: middle;
     width: 60.6641px;
     word-break: break-word;
-    -webkit-text-fill-color: rgb(16, 20, 24);
-    -webkit-text-stroke-color: rgb(16, 20, 24);
+    -webkit-text-fill-color: #101418;
+    -webkit-text-stroke-color: #101418
+}
+
+.gen-style-114,
+.gen-style-115 {
+    background-color: #eaecf0;
+    border-color: #202122;
+    border-style: none;
+    border-width: 0;
+    border-end-end-radius: 2px;
+    border-end-start-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    color: #202122;
+    column-rule-color: #202122;
+    cursor: pointer;
+    font-size: 12px;
+    outline-color: #202122;
+    padding: 4px 8px;
+    text-align: left;
+    text-decoration-color: #202122
 }
 
 .gen-style-114 {
-    background-color: rgb(234, 236, 240);
-    border-color: rgb(32, 33, 34);
-    border-style: none;
-    border-width: 0px;
-    border-end-end-radius: 2px;
-    border-end-start-radius: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
-    cursor: pointer;
     display: none;
-    font-size: 12px;
     height: auto;
     inline-size: auto;
-    outline-color: rgb(32, 33, 34);
-    padding: 4px 8px;
     perspective-origin: 50% 50%;
-    text-align: left;
-    text-decoration-color: rgb(32, 33, 34);
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
 }
 
 .gen-style-115 {
-    background-color: rgb(234, 236, 240);
-    border-color: rgb(32, 33, 34);
-    border-style: none;
-    border-width: 0px;
-    border-end-end-radius: 2px;
-    border-end-start-radius: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
-    cursor: pointer;
-    font-size: 12px;
     height: 22px;
-    outline-color: rgb(32, 33, 34);
-    padding: 4px 8px;
     perspective-origin: 19.3438px 11px;
-    text-align: left;
-    text-decoration-color: rgb(32, 33, 34);
     transform-origin: 19.3438px 11px;
-    width: 38.6875px;
+    width: 38.6875px
 }
 
 .gen-style-116 {
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
     perspective-origin: 88px 126px;
     transform-origin: 88px126px;
-    width: 176px;
+    width: 176px
 }
 
 .gen-style-117 {
     padding-left: 12px;
     perspective-origin: 88px 14px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     transform-origin: 88px 14px;
-    width: 164px;
+    width: 164px
 }
 
 .gen-style-118 {
@@ -1332,19 +1272,19 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    color: #202122;
+    column-rule-color: #202122;
     display: block;
     font-weight: 700;
     height: 28px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     perspective-origin: 82px 14px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     text-decoration-line: none;
     transform-origin: 82px 14px;
     width: 164px;
     word-break: break-word;
-    -webkit-text-decorations-in-effect: none;
+    -webkit-text-decorations-in-effect: none
 }
 
 .gen-style-119 {
@@ -1352,7 +1292,13 @@
     padding-top: 6px;
     perspective-origin: 90px 14px;
     transform-origin: 90px 14px;
-    width: 180px;
+    width: 180px
+}
+
+.gen-style-120,
+.gen-style-121 {
+    perspective-origin: 82px 14px;
+    transform-origin: 82px 14px
 }
 
 .gen-style-120 {
@@ -1360,54 +1306,48 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: block;
     height: 28px;
-    outline-color: rgb(51, 102, 204);
-    perspective-origin: 82px 14px;
-    text-decoration-color: rgb(51, 102, 204);
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    transform-origin: 82px 14px;
+    text-emphasis-color: #36c;
     width: 164px;
     word-break: break-word;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-121 {
     padding-bottom: 6px;
-    padding-top: 6px;
-    perspective-origin: 82px 14px;
-    transform-origin: 82px 14px;
+    padding-top: 6px
 }
 
 .gen-style-122 {
     display: none;
     perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
+    transform-origin: 50% 50%
 }
-
-.gen-style-123 {}
 
 .gen-style-124 {
     list-style-type: none;
-    padding-left: 0px;
-    perspective-origin: 82px 0px;
-    transform-origin: 82px 0px;
-    width: 164px;
+    padding-left: 0;
+    perspective-origin: 82px 0;
+    transform-origin: 82px 0;
+    width: 164px
 }
 
 .gen-style-125 {
     padding-left: 12px;
     perspective-origin: 88px 70px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     transform-origin: 88px 70px;
-    width: 164px;
+    width: 164px
 }
 
 .gen-style-126 {
@@ -1425,59 +1365,57 @@
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
     top: 1px;
-    transition-duration: 0.1s;
-    width: 22px;
+    transition-duration: .1s;
+    width: 22px
+}
+
+.gen-style-127,
+.gen-style-128 {
+    color: #202122;
+    column-rule-color: #202122;
+    font-size: 11.2px;
+    font-weight: 700;
+    outline-color: #202122;
+    text-decoration-color: #202122
 }
 
 .gen-style-127 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     display: inline-block;
-    font-size: 11.2px;
-    font-weight: 700;
     height: 12px;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 12px;
     min-height: 12px;
     min-width: 12px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 6px 6px;
-    text-decoration-color: rgb(32, 33, 34);
     transform-origin: 6px 6px;
     vertical-align: text-bottom;
-    width: 12px;
+    width: 12px
 }
 
 .gen-style-128 {
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
-    font-size: 11.2px;
-    font-weight: 700;
     height: 1px;
     inset-block-end: 4.75px;
-    left: 0px;
+    left: 0;
     margin: -1px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 21px;
-    text-decoration-color: rgb(32, 33, 34);
     top: 16.25px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-129 {
     list-style-type: none;
-    padding-left: 0px;
+    padding-left: 0;
     perspective-origin: 82px 56px;
     transform-origin: 82px 56px;
-    width: 164px;
+    width: 164px
 }
 
 .gen-style-130 {
@@ -1485,10 +1423,16 @@
     padding-left: 12px;
     perspective-origin: 82px 14px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     transform-origin: 82px 14px;
-    width: 152px;
+    width: 152px
+}
+
+.gen-style-131,
+.gen-style-132 {
+    perspective-origin: 76px 14px;
+    transform-origin: 76px 14px
 }
 
 .gen-style-131 {
@@ -1496,60 +1440,56 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: block;
     height: 28px;
-    outline-color: rgb(51, 102, 204);
-    perspective-origin: 76px 14px;
-    text-decoration-color: rgb(51, 102, 204);
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    transform-origin: 76px 14px;
+    text-emphasis-color: #36c;
     width: 152px;
     word-break: break-word;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-132 {
     padding-bottom: 6px;
-    padding-top: 6px;
-    perspective-origin: 76px 14px;
-    transform-origin: 76px 14px;
+    padding-top: 6px
 }
 
 .gen-style-133 {
     list-style-type: none;
-    padding-left: 0px;
-    perspective-origin: 76px 0px;
-    transform-origin: 76px 0px;
-    width: 152px;
+    padding-left: 0;
+    perspective-origin: 76px 0;
+    transform-origin: 76px 0;
+    width: 152px
 }
 
 .gen-style-134 {
-    grid-area: pageContent;
+    grid-area: pageContent
 }
 
 .gen-style-135 {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .gen-style-136 {
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0
 }
 
 .gen-style-137 {
     margin-left: -6px;
-    position: relative;
+    position: relative
 }
 
 .gen-style-138 {
     align-items: center;
-    border-color: rgba(0, 0, 0, 0);
+    border-color: transparent;
     border-style: solid;
     border-width: 1px;
     border-end-end-radius: 2px;
@@ -1569,12 +1509,12 @@
     padding-right: 5px;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transition-duration: 0.1s;
-    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: .1s;
+    transition-property: background-color, color, border-color, box-shadow
 }
 
 .gen-style-139 {
-    background-color: rgb(32, 33, 34);
+    background-color: #202122;
     height: 20px;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
@@ -1584,14 +1524,14 @@
     min-inline-size: 20px;
     min-width: 20px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-140 {
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px -1px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .2)0 2px 6px -1px;
     font-size: 14px;
-    height: 0px;
+    height: 0;
     left: -1px;
     max-height: 598.5px;
     max-width: 200px;
@@ -1600,34 +1540,31 @@
     padding: 16px;
     position: absolute;
     top: 100%;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
     width: max-content;
-    z-index: 50;
-
+    z-index: 50
 }
 
 .gen-style-141 {
-    color: rgb(16, 20, 24);
+    color: #101418;
     flex-grow: 1;
     font-family: "Linux Libertine", Georgia, Times, " Source Serif Pro", serif;
     font-size: 28.8px;
     font-weight: 400;
     inline-size: 796.078px;
     line-height: 39.6px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    outline-color: rgb(16, 20, 24);
+    margin-bottom: 0;
+    margin-top: 0;
+    outline-color: #101418;
     overflow-wrap: break-word;
-    text-decoration-color: rgb(16, 20, 24);
-    text-emphasis-color: rgb(16, 20, 24);
+    text-decoration-color: #101418;
+    text-emphasis-color: #101418;
     transform-origin: 398.039px 19.7969px;
-    -webkit-text-fill-color: rgb(16, 20, 24);
-    -webkit-text-stroke-color: rgb(16, 20, 24);
+    -webkit-text-fill-color: #101418;
+    -webkit-text-stroke-color: #101418
 }
-
-.gen-style-142 {}
 
 .gen-style-143 {
     box-sizing: border-box;
@@ -1636,31 +1573,34 @@
     margin-right: -12px;
     perspective-origin: 78.9609px 16px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0
+}
+
+.gen-style-144,
+.gen-style-145 {
+    align-items: center;
+    perspective-origin: 78.9609px 16px;
+    transform-origin: 78.9609px 16px;
+    width: 157.922px
 }
 
 .gen-style-144 {
-    align-items: center;
     cursor: pointer;
     display: flex;
-    inset-block-end: 0px;
-    margin: 0px;
+    inset-block-end: 0;
+    margin: 0;
     opacity: 0;
-    perspective-origin: 78.9609px 16px;
     position: absolute;
-    right: 0px;
-    text-emphasis-color: rgb(0, 0, 0);
-    top: 0px;
-    transform-origin: 78.9609px 16px;
-    width: 157.922px;
+    right: 0;
+    text-emphasis-color: #000;
+    top: 0;
     z-index: 1;
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-color: #000
 }
 
 .gen-style-145 {
-    align-items: center;
     border-style: solid;
     border-width: 1px;
     border-end-end-radius: 2px;
@@ -1669,35 +1609,37 @@
     border-top-right-radius: 2px;
     box-sizing: border-box;
     gap: 4px;
-    column-rule-color: rgb(51, 102, 204);
+    column-rule-color: #36c;
     display: inline-flex;
     font-weight: 700;
     height: 32px;
     justify-content: center;
     max-width: 448px;
     min-height: 32px;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     overflow: hidden;
     padding-left: 11px;
     padding-right: 11px;
-    perspective-origin: 78.9609px 16px;
-    text-decoration-color: rgb(51, 102, 204);
-    text-emphasis-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
+    text-emphasis-color: #36c;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transform-origin: 78.9609px 16px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
     user-select: none;
-    width: 157.922px;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
+}
+
+.gen-style-146,
+.gen-style-147 {
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c
 }
 
 .gen-style-146 {
-    background-color: rgb(51, 102, 204);
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    background-color: #36c;
     margin-right: 6px;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
@@ -1706,35 +1648,31 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(51, 102, 204);
     perspective-origin: 10px 10px;
     text-decoration: none solidrgb(51, 102, 204);
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-147 {
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
     font-size: 14px;
     height: 16px;
-    outline-color: rgb(51, 102, 204);
     perspective-origin: 40.4609px 8px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     transform-origin: 40.4609px 8px;
-    width: 80.9219px;
+    width: 80.9219px
 }
 
 .gen-style-148 {
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px -1px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .2)0 2px 6px -1px;
     box-sizing: border-box;
     display: none;
     font-size: 14px;
-    height: 0px;
+    height: 0;
     inline-size: max-content;
-    inset-block: 100% auto;
+    inset-block: 100%auto;
     inset-inline-start: auto;
     left: auto;
     max-height: 518.7px;
@@ -1743,102 +1681,77 @@
     padding: 16px;
     perspective-origin: 50% 50%;
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 100%;
     transform-origin: 50% 50%;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
     width: max-content;
-    z-index: 50;
+    z-index: 50
 }
 
 .gen-style-149 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-left: 22.4px;
     margin-top: 4.2px;
-    padding-left: 0px;
+    padding-left: 0
 }
 
 .gen-style-150 {
-    margin-bottom: 1.4px;
+    margin-bottom: 1.4px
 }
 
-.gen-style-151 {
-    align-items: center;
-    border-end-end-radius: 2px;
-    border-end-start-radius: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    display: flex;
-    outline-color: rgb(51, 102, 204);
-    padding-bottom: 6px;
-    padding-top: 6px;
-    text-decoration-color: rgb(51, 102, 204);
-    text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
-}
-
-.gen-style-152 {}
-
+.gen-style-151,
 .gen-style-153 {
     align-items: center;
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: flex;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     padding-bottom: 6px;
     padding-top: 6px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
-
-.gen-style-154 {}
 
 .gen-style-155 {
-    margin-top: 10px;
+    margin-top: 10px
 }
-
-.gen-style-156 {}
 
 .gen-style-157 {
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-158 {
-    grid-row-end: toolbar;
+    grid-row-end: toolbar
 }
 
 .gen-style-159 {
-    box-shadow: rgb(200, 204, 209) 0px 1px 0px 0px;
+    box-shadow: #c8ccd1 0 1px 0 0;
     font-size: 14px;
     height: 1px;
-    margin-bottom: 1px;
+    margin-bottom: 1px
 }
 
 .gen-style-160 {
@@ -1848,32 +1761,32 @@
     margin-left: -8px;
     perspective-origin: 352.742px 18px;
     transform-origin: 352.746px 18px;
-    width: 705.492px;
+    width: 705.492px
 }
 
-.gen-style-161 {
-    perspective-origin: 47.8984px 18px;
+.gen-style-161,
+.gen-style-162 {
+    perspective-origin: 47.8984px 18px
 }
 
 .gen-style-162 {
     float: left;
     height: 36px;
-    perspective-origin: 47.8984px 18px;
-    transform-origin: 47.8984px 18px;
+    transform-origin: 47.8984px 18px
 }
 
-.gen-style-163 {
-    perspective-origin: 47.8984px 0px;
+.gen-style-163,
+.gen-style-164 {
+    perspective-origin: 47.8984px 0
 }
 
 .gen-style-164 {
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
-    perspective-origin: 47.8984px 0px;
-    transform-origin: 47.8984px 0px;
-    width: 95.7969px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    transform-origin: 47.8984px 0;
+    width: 95.7969px
 }
 
 .gen-style-165 {
@@ -1883,7 +1796,7 @@
     perspective-origin: 19.4453px 18px;
     text-wrap-mode: nowrap;
     transform-origin: 19.4492px 18px;
-    width: 38.8984px;
+    width: 38.8984px
 }
 
 .gen-style-166 {
@@ -1893,30 +1806,30 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    color: #202122;
+    column-rule-color: #202122;
     display: inline-flex;
     height: 16px;
     inline-size: 38.8984px;
     margin-bottom: -1px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     padding-bottom: 7px;
     padding-top: 12px;
     perspective-origin: 19.4453px 18.5px;
     position: relative;
-    right: 0px;
-    text-decoration-color: rgb(32, 33, 34);
+    right: 0;
+    text-decoration-color: #202122;
     text-decoration-line: none;
-    top: 0px;
+    top: 0;
     transform-origin: 19.4492px 18.5px;
     width: 38.8984px;
-    -webkit-text-decorations-in-effect: none;
+    -webkit-text-decorations-in-effect: none
 }
 
 .gen-style-167 {
     perspective-origin: 19.4453px 8px;
     transform-origin: 19.4492px 8px;
-    width: 38.8984px;
+    width: 38.8984px
 }
 
 .gen-style-168 {
@@ -1926,42 +1839,42 @@
     perspective-origin: 12.4453px 18px;
     text-wrap-mode: nowrap;
     transform-origin: 12.4492px 18px;
-    width: 24.8984px;
+    width: 24.8984px
 }
 
 .gen-style-169 {
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid transparent;
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: inline-flex;
     height: 16px;
     inline-size: 24.8984px;
     margin-bottom: -1px;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     padding-bottom: 7px;
     padding-top: 12px;
     perspective-origin: 12.4453px 18.5px;
     position: relative;
-    right: 0px;
-    text-decoration-color: rgb(51, 102, 204);
+    right: 0;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    top: 0px;
+    text-emphasis-color: #36c;
+    top: 0;
     transform-origin: 12.4492px 18.5px;
     width: 24.8984px;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-170 {
     perspective-origin: 12.4453px 8px;
     transform-origin: 12.4492px 8px;
-    width: 24.8984px;
+    width: 24.8984px
 }
 
 .gen-style-171 {
@@ -1977,12 +1890,12 @@
     perspective-origin: 50% 50%;
     position: relative;
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
 }
 
 .gen-style-172 {
     align-items: center;
-    border-color: rgba(0, 0, 0, 0);
+    border-color: transparent;
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
@@ -2001,45 +1914,41 @@
     position: relative;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transition-duration: 0.1s;
-    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: .1s;
+    transition-property: background-color, color, border-color, box-shadow
 }
-
-.gen-style-173 {}
 
 .gen-style-174 {
     display: flex;
     margin-right: -8px;
     perspective-origin: 126.25px 18px;
     transform-origin: 126.254px 18px;
-    width: 252.508px;
+    width: 252.508px
 }
 
-.gen-style-175 {
+.gen-style-175,
+.gen-style-176 {
     perspective-origin: 90.4062px 18px;
-    transform-origin: 90.4102px 18px;
+    transform-origin: 90.4102px 18px
 }
 
 .gen-style-176 {
     float: left;
-    height: 36px;
-    perspective-origin: 90.4062px 18px;
-    transform-origin: 90.4102px 18px;
+    height: 36px
 }
 
-.gen-style-177 {
-    perspective-origin: 90.4062px 0px;
-    transform-origin: 90.4102px 0px;
+.gen-style-177,
+.gen-style-178 {
+    perspective-origin: 90.4062px 0;
+    transform-origin: 90.4102px 0
 }
 
 .gen-style-178 {
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
-    perspective-origin: 90.4062px 0px;
-    transform-origin: 90.4102px 0px;
-    width: 180.82px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    width: 180.82px
 }
 
 .gen-style-179 {
@@ -2047,7 +1956,7 @@
     margin-left: 8px;
     margin-right: 8px;
     text-wrap-mode: nowrap;
-    width: 33.4688px;
+    width: 33.4688px
 }
 
 .gen-style-180 {
@@ -2057,26 +1966,24 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    color: #202122;
+    column-rule-color: #202122;
     display: inline-flex;
     height: 16px;
     margin-bottom: -1px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     padding-bottom: 7px;
     padding-top: 12px;
     perspective-origin: 16.7344px 18.5px;
     position: relative;
-    right: 0px;
-    text-decoration-color: rgb(32, 33, 34);
+    right: 0;
+    text-decoration-color: #202122;
     text-decoration-line: none;
-    top: 0px;
+    top: 0;
     transform-origin: 16.7344px 18.5px;
     width: 33.4688px;
-    -webkit-text-decorations-in-effect: none;
+    -webkit-text-decorations-in-effect: none
 }
-
-.gen-style-181 {}
 
 .gen-style-182 {
     float: left;
@@ -2084,38 +1991,36 @@
     margin-right: 8px;
     text-wrap-mode: nowrap;
     transform-origin: 12.0625px 18px;
-    width: 24.125px;
+    width: 24.125px
 }
 
 .gen-style-183 {
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid transparent;
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: inline-flex;
     height: 16px;
     margin-bottom: -1px;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     padding-bottom: 7px;
     padding-top: 12px;
     perspective-origin: 12.0625px 18.5px;
     position: relative;
-    right: 0px;
-    text-decoration-color: rgb(51, 102, 204);
+    right: 0;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    top: 0px;
+    text-emphasis-color: #36c;
+    top: 0;
     transform-origin: 12.0625px 18.5px;
     width: 24.125px;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
-
-.gen-style-184 {}
 
 .gen-style-185 {
     float: left;
@@ -2123,65 +2028,68 @@
     margin-right: 8px;
     text-wrap-mode: nowrap;
     transform-origin: 37.6133px 18px;
-    width: 75.2266px;
+    width: 75.2266px
+}
+
+.gen-style-186,
+.gen-style-189 {
+    position: relative;
+    right: 0;
+    top: 0
 }
 
 .gen-style-186 {
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid transparent;
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: inline-flex;
     height: 16px;
     margin-bottom: -1px;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     padding-bottom: 7px;
     padding-top: 12px;
     perspective-origin: 37.6094px 18.5px;
-    position: relative;
-    right: 0px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    top: 0px;
+    text-emphasis-color: #36c;
     transform-origin: 37.6133px 18.5px;
     width: 75.2266px;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
-
-.gen-style-187 {}
-
-.gen-style-188 {}
 
 .gen-style-189 {
     float: left;
     margin-left: 8px;
-    margin-right: 8px;
-    position: relative;
-    right: 0px;
-    top: 0px;
+    margin-right: 8px
 }
 
 .gen-style-190 {
     cursor: pointer;
-    inset-block-end: 0px;
-    margin: 0px;
+    inset-block-end: 0;
+    margin: 0;
     opacity: 0;
     perspective-origin: 27.8438px 17px;
     position: absolute;
-    right: 0px;
-    text-emphasis-color: rgb(0, 0, 0);
-    top: 0px;
+    right: 0;
+    text-emphasis-color: #000;
+    top: 0;
     transform-origin: 27.8438px 17px;
     width: 55.6875px;
     z-index: 1;
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-color: #000
+}
+
+.gen-style-191,
+.gen-style-193 {
+    right: 0;
+    transition-duration: .1s
 }
 
 .gen-style-191 {
@@ -2204,21 +2112,17 @@
     padding-top: 12px;
     perspective-origin: 27.8438px 17.5px;
     position: relative;
-    right: 0px;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    top: 0px;
+    top: 0;
     transform-origin: 27.8438px 17.5px;
-    transition-duration: 0.1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 55.6875px;
+    width: 55.6875px
 }
 
-.gen-style-192 {}
-
 .gen-style-193 {
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px -1px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .2)0 2px 6px -1px;
     inset-block-end: -32px;
     left: -125.891px;
     max-height: 598.5px;
@@ -2227,30 +2131,28 @@
     padding: 16px;
     perspective-origin: 90.7891px 16px;
     position: absolute;
-    right: 0px;
     top: 34px;
     transform-origin: 90.7891px 16px;
-    transition-duration: 0.1s;
     transition-property: opacity;
     visibility: hidden;
-    z-index: 50;
+    z-index: 50
 }
 
 .gen-style-194 {
     height: 472.719px;
     perspective-origin: 74.7891px 236.359px;
     transform-origin: 74.7891px 236.359px;
-    width: 149.578px;
+    width: 149.578px
 }
 
 .gen-style-195 {
-    border-bottom: 1px solid rgb(234, 236, 240);
+    border-bottom: 1px solid #eaecf0;
     height: 23.5312px;
     line-height: 22.4px;
     margin-bottom: 6px;
     padding-bottom: 6px;
     perspective-origin: 74.7891px 15.2656px;
-    transform-origin: 74.7891px 15.2656px;
+    transform-origin: 74.7891px 15.2656px
 }
 
 .gen-style-196 {
@@ -2260,73 +2162,76 @@
     margin-right: 8px;
     perspective-origin: 18.1484px 11.1953px;
     vertical-align: middle;
-    width: 36.3047px;
+    width: 36.3047px
 }
 
 .gen-style-197 {
-    border-bottom: 1px solid rgb(234, 236, 240);
-    color: rgb(84, 89, 93);
-    column-rule-color: rgb(84, 89, 93);
+    border-bottom: 1px solid #eaecf0;
+    color: #54595d;
+    column-rule-color: #54595d;
     cursor: default;
     margin-bottom: 6px;
     margin-top: 6px;
-    outline-color: rgb(84, 89, 93);
+    outline-color: #54595d;
     padding-bottom: 6px;
     padding-top: 6px;
-    text-decoration-color: rgb(84, 89, 93);
-    text-emphasis-color: rgb(84, 89, 93);
-    -webkit-text-fill-color: rgb(84, 89, 93);
-    -webkit-text-stroke-color: rgb(84, 89, 93);
+    text-decoration-color: #54595d;
+    text-emphasis-color: #54595d;
+    -webkit-text-fill-color: #54595d;
+    -webkit-text-stroke-color: #54595d
 }
 
 .gen-style-198 {
     display: none;
-    margin-bottom: 1.4px;
+    margin-bottom: 1.4px
 }
 
 .gen-style-199 {
     perspective-origin: 74.7891px 134.391px;
-    transform-origin: 74.7891px 134.395px;
+    transform-origin: 74.7891px 134.395px
 }
 
 .gen-style-200 {
-    border-bottom: 1px solid rgb(234, 236, 240);
-    color: rgb(84, 89, 93);
-    column-rule-color: rgb(84, 89, 93);
+    border-bottom: 1px solid #eaecf0;
+    color: #54595d;
+    column-rule-color: #54595d;
     cursor: default;
     margin-bottom: 6px;
     margin-top: 6px;
-    outline-color: rgb(84, 89, 93);
+    outline-color: #54595d;
     padding-bottom: 6px;
     padding-top: 6px;
     perspective-origin: 74.7891px 14.5px;
-    text-decoration-color: rgb(84, 89, 93);
-    text-emphasis-color: rgb(84, 89, 93);
+    text-decoration-color: #54595d;
+    text-emphasis-color: #54595d;
     transform-origin: 74.7891px 14.5px;
-    -webkit-text-fill-color: rgb(84, 89, 93);
-    -webkit-text-stroke-color: rgb(84, 89, 93);
+    -webkit-text-fill-color: #54595d;
+    -webkit-text-stroke-color: #54595d
 }
 
-.gen-style-201 {
+.gen-style-201,
+.gen-style-202 {
     perspective-origin: 74.7891px 116.891px;
-    transform-origin: 74.7891px 116.895px;
+    transform-origin: 74.7891px 116.895px
 }
 
 .gen-style-202 {
     height: 233.789px;
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
-    perspective-origin: 74.7891px 116.891px;
-    transform-origin: 74.7891px 116.895px;
-    width: 149.578px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    width: 149.578px
+}
+
+.gen-style-203,
+.gen-style-204 {
+    transform-origin: 74.7891px 14px
 }
 
 .gen-style-203 {
     margin-bottom: 1.4px;
-    perspective-origin: 74.7891px 14px;
-    transform-origin: 74.7891px 14px;
+    perspective-origin: 74.7891px 14px
 }
 
 .gen-style-204 {
@@ -2335,120 +2240,105 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: flex;
     height: 16px;
     inline-size: 149.578px;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     padding-bottom: 6px;
     padding-top: 6px;
     perspective-origin: 74.7891px14px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    transform-origin: 74.7891px 14px;
+    text-emphasis-color: #36c;
     width: 149.578px;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
-
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
-
-.gen-style-205 {}
 
 .gen-style-206 {
     perspective-origin: 52.5391px 8px;
     transform-origin: 52.5391px 8px;
-    width: 105.078px;
+    width: 105.078px
 }
 
 .gen-style-207 {
     transform-origin: 46.6914px 8px;
-    width: 93.3828px;
+    width: 93.3828px
 }
-
-.gen-style-208 {}
-
-.gen-style-209 {}
-
-.gen-style-210 {}
 
 .gen-style-211 {
     transform-origin: 60.7031px 8px;
-    width: 121.406px;
+    width: 121.406px
 }
-
-.gen-style-212 {}
 
 .gen-style-213 {
     perspective-origin: 74.7891px 46.1953px;
-    transform-origin: 74.7891px 46.1992px;
+    transform-origin: 74.7891px 46.1992px
 }
 
-.gen-style-214 {
+.gen-style-214,
+.gen-style-215 {
     perspective-origin: 74.7891px 28.6953px;
-    transform-origin: 74.7891px 28.6992px;
+    transform-origin: 74.7891px 28.6992px
 }
 
 .gen-style-215 {
     height: 57.3984px;
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
-    perspective-origin: 74.7891px 28.6953px;
-    transform-origin: 74.7891px 28.6992px;
-    width: 149.578px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    width: 149.578px
 }
 
 .gen-style-216 {
     perspective-origin: 56.4141px 8px;
     transform-origin: 56.4141px 8px;
-    width: 112.828px;
+    width: 112.828px
 }
 
 .gen-style-217 {
     transform-origin: 52.1406px 8px;
-    width: 104.281px;
+    width: 104.281px
 }
 
 .gen-style-218 {
     perspective-origin: 74.7891px 31.5px;
-    transform-origin: 74.7891px 31.5px;
+    transform-origin: 74.7891px 31.5px
 }
 
-.gen-style-219 {
+.gen-style-219,
+.gen-style-220 {
     perspective-origin: 74.7891px 14px;
-    transform-origin: 74.7891px 14px;
+    transform-origin: 74.7891px 14px
 }
 
 .gen-style-220 {
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
-    perspective-origin: 74.7891px 14px;
-    transform-origin: 74.7891px 14px;
-    width: 149.578px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    width: 149.578px
 }
 
 .gen-style-221 {
     perspective-origin: 42.0078px 8px;
     transform-origin: 42.0117px 8px;
-    width: 84.0234px;
+    width: 84.0234px
 }
 
 .gen-style-222 {
-    border-top: 1px solid rgba(0, 0, 0, 0);
+    border-top: 1px solid transparent;
     grid-area: columnEnd;
     height: 2081.77px;
     margin-top: 44.8px;
     overflow-anchor: none;
     perspective-origin: 98px 1041.38px;
     transform-origin: 98px 1041.38px;
-    width: 196px;
-
+    width: 196px
 }
 
 .gen-style-223 {
@@ -2459,38 +2349,38 @@
     perspective-origin: 98px 244.766px;
     position: sticky;
     top: 74px;
-    transform-origin: 98px 244.766px;
+    transform-origin: 98px 244.766px
 }
 
-.gen-style-224 {
+.gen-style-224,
+.gen-style-225 {
     perspective-origin: 98px 220.766px;
-    transform-origin: 98px220.766px;
+    transform-origin: 98px220 .766px
 }
 
 .gen-style-225 {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     margin-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
-    perspective-origin: 98px 220.766px;
     transform-origin: 98px 220.766px;
-    width: 164px;
+    width: 164px
 }
 
 .gen-style-226 {
     font-size: 14px;
     perspective-origin: 82px 220.766px;
-    transform-origin: 82px 220.766px;
+    transform-origin: 82px 220.766px
 }
 
 .gen-style-227 {
-    border-bottom: 1px solid rgb(234, 236, 240);
+    border-bottom: 1px solid #eaecf0;
     height: 23.5312px;
     line-height: 22.4px;
     margin-bottom: 6px;
     padding-bottom: 6px;
     perspective-origin: 82px 15.2656px;
-    transform-origin: 82px 15.2656px;
+    transform-origin: 82px 15.2656px
 }
 
 .gen-style-228 {
@@ -2501,52 +2391,46 @@
     perspective-origin: 40.0703px 11.1953px;
     transform-origin: 40.0742px 11.1992px;
     vertical-align: middle;
-    width: 80.1484px;
+    width: 80.1484px
 }
 
-.gen-style-229 {}
-
 .gen-style-230 {
-    border-bottom: 1px solid rgb(234, 236, 240);
-    color: rgb(84, 89, 93);
-    column-rule-color: rgb(84, 89, 93);
+    border-bottom: 1px solid #eaecf0;
+    color: #54595d;
+    column-rule-color: #54595d;
     cursor: default;
     margin-bottom: 6px;
     margin-top: 6px;
-    outline-color: rgb(84, 89, 93);
+    outline-color: #54595d;
     padding-bottom: 6px;
     padding-top: 6px;
     perspective-origin: 82px 14.5px;
-    text-decoration-color: rgb(84, 89, 93);
-    text-emphasis-color: rgb(84, 89, 93);
+    text-decoration-color: #54595d;
+    text-emphasis-color: #54595d;
     transform-origin: 82px 14.5px;
-    -webkit-text-fill-color: rgb(84, 89, 93);
-    -webkit-text-stroke-color: rgb(84, 89, 93);
+    -webkit-text-fill-color: #54595d;
+    -webkit-text-stroke-color: #54595d
 }
-
-.gen-style-231 {}
 
 .gen-style-232 {
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
     perspective-origin: 82px 54px;
     transform-origin: 82px54px;
-    width: 164px;
+    width: 164px
 }
 
 .gen-style-233 {
-    margin-bottom: 1.4px;
+    margin-bottom: 1.4px
 }
-
-.gen-style-234 {}
 
 .gen-style-235 {
     padding-bottom: 6px;
     padding-top: 6px;
     perspective-origin: 82px 54px;
-    transform-origin: 82px 54px;
+    transform-origin: 82px 54px
 }
 
 .gen-style-236 {
@@ -2556,29 +2440,33 @@
     min-height: 20px;
     min-width: 20px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0
+}
+
+.gen-style-237,
+.gen-style-238 {
+    min-height: 20px;
+    min-width: 20px;
+    perspective-origin: 10px 10px;
+    position: absolute;
+    right: 144px;
+    top: 0;
+    transform-origin: 10px 10px;
+    width: 20px
 }
 
 .gen-style-237 {
     cursor: auto;
     font-size: 14px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    min-height: 20px;
-    min-width: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     opacity: 0;
-    perspective-origin: 10px 10px;
-    position: absolute;
-    right: 144px;
-    text-emphasis-color: rgb(0, 0, 0);
-    top: 0px;
-    transform-origin: 10px 10px;
-    width: 20px;
+    text-emphasis-color: #000;
     z-index: 1;
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-color: #000
 }
 
 .gen-style-238 {
@@ -2589,16 +2477,8 @@
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     box-sizing: border-box;
-    min-height: 20px;
-    min-width: 20px;
-    perspective-origin: 10px 10px;
-    position: absolute;
-    right: 144px;
-    top: 0px;
-    transform-origin: 10px 10px;
-    transition-duration: 0.1s;
-    transition-property: background-color, color, border-color, box-shadow;
-    width: 20px;
+    transition-duration: .1s;
+    transition-property: background-color, color, border-color, box-shadow
 }
 
 .gen-style-239 {
@@ -2609,14 +2489,19 @@
     padding-left: 28px;
     perspective-origin: 82px 12px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     transform-origin: 82px 12px;
     width: 136px;
-    z-index: 0;
+    z-index: 0
 }
 
-.gen-style-240 {}
+.gen-style-241,
+.gen-style-242 {
+    min-height: 20px;
+    min-width: 20px;
+    top: 0
+}
 
 .gen-style-241 {
     border-style: solid;
@@ -2626,147 +2511,120 @@
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     box-sizing: border-box;
-    min-height: 20px;
-    min-width: 20px;
     perspective-origin: 10px 10px;
     position: absolute;
     right: 144px;
-    top: 0px;
     transform-origin: 10px 10px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-242 {
     display: flex;
     flex-direction: column;
-    min-height: 20px;
-    min-width: 20px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0
 }
 
 .gen-style-243 {
     display: none;
     perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
+    transform-origin: 50% 50%
 }
-
-.gen-style-244 {}
-
-.gen-style-245 {}
 
 .gen-style-246 {
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
     perspective-origin: 82px 36px;
     transform-origin: 82px36px;
-    width: 164px;
+    width: 164px
 }
 
 .gen-style-247 {
-    margin-bottom: 1.4px;
+    margin-bottom: 1.4px
 }
-
-.gen-style-248 {}
 
 .gen-style-249 {
     padding-bottom: 6px;
     padding-top: 6px;
     perspective-origin: 82px 36px;
-    transform-origin: 82px 36px;
+    transform-origin: 82px 36px
 }
-
-.gen-style-250 {}
 
 .gen-style-251 {
     display: none;
     perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
+    transform-origin: 50% 50%
 }
 
 .gen-style-252 {
     grid-column-end: content;
     grid-row-start: content;
-    line-height: 25.6px;
+    line-height: 25.6px
 }
 
-.gen-style-253 {}
+.gen-style-254,
+.gen-style-255 {
+    font-size: 14px;
+    line-height: 22.4px;
+    margin-top: 8px
+}
 
 .gen-style-254 {
     column-gap: 8px;
     display: flex;
     flex-wrap: wrap;
     float: right;
-    font-size: 14px;
-    line-height: 22.4px;
-    margin-top: 8px;
     position: relative;
-    right: 0px;
-    top: 0px;
-    width: 0px;
-    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 0;
+    z-index: 1
 }
 
 .gen-style-255 {
-    font-size: 14px;
     height: 22.3984px;
-    line-height: 22.4px;
-    margin-top: 8px;
     perspective-origin: 471px 11.1953px;
-    transform-origin: 471px 11.1992px;
+    transform-origin: 471px 11.1992px
 }
 
 .gen-style-256 {
-    color: rgb(84, 89, 93);
-    column-rule-color: rgb(84, 89, 93);
+    color: #54595d;
+    column-rule-color: #54595d;
     font-size: 14px;
     margin-top: 8px;
-    outline-color: rgb(84, 89, 93);
-    text-decoration-color: rgb(84, 89, 93);
-    text-emphasis-color: rgb(84, 89, 93);
-    -webkit-text-fill-color: rgb(84, 89, 93);
-    -webkit-text-stroke-color: rgb(84, 89, 93);
+    outline-color: #54595d;
+    text-decoration-color: #54595d;
+    text-emphasis-color: #54595d;
+    -webkit-text-fill-color: #54595d;
+    -webkit-text-stroke-color: #54595d
 }
 
-.gen-style-257 {}
-
-.gen-style-258 {}
-
-.gen-style-259 {}
-
-.gen-style-260 {
-    display: none;
-    height: auto;
-    inline-size: auto;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: auto;
-}
-
+.gen-style-260,
 .gen-style-261 {
     display: none;
     height: auto;
     inline-size: auto;
-    margin-top: 8px;
     perspective-origin: 50% 50%;
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
+}
 
+.gen-style-261 {
+    margin-top: 8px
 }
 
 .gen-style-262 {
-    background-color: rgb(248, 249, 250);
-    border-color: rgb(162, 169, 177);
+    background-color: #f8f9fa;
+    border-color: #a2a9b1;
     border-style: solid;
     border-width: 1px;
     clear: right;
-    color: rgb(0, 0, 0);
-    column-rule-color: rgb(0, 0, 0);
+    color: #000;
+    column-rule-color: #000;
     float: right;
     font-size: 14.08px;
     height: 320.148px;
@@ -2774,52 +2632,49 @@
     margin-bottom: 7.04px;
     margin-left: 14.08px;
     margin-top: 7.04px;
-    outline-color: rgb(0, 0, 0);
+    outline-color: #000;
     padding: 2.816px;
     perspective-origin: 154.875px 160.07px;
-    text-decoration-color: rgb(0, 0, 0);
-    text-emphasis-color: rgb(0, 0, 0);
+    text-decoration-color: #000;
+    text-emphasis-color: #000;
     transform-origin: 154.879px 160.074px;
     width: 309.758px;
     border-spacing: 3px;
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-color: #000
 }
 
 .gen-style-263 {
-    perspective-origin: 148.062px 153.258px;
+    perspective-origin: 148.062px 153.258px
 }
-
-.gen-style-264 {}
 
 .gen-style-265 {
     font-size: 17.6px;
     perspective-origin: 148.062px 11.5547px;
-    vertical-align: top;
+    vertical-align: top
 }
 
 .gen-style-266 {
-    perspective-origin: 147.062px 10.5547px;
+    perspective-origin: 147.062px 10.5547px
 }
 
 .gen-style-267 {
-    perspective-origin: 45.2031px 11.5547px;
-    text-align: left;
-    vertical-align: top;
+    perspective-origin: 45.2031px 11.5547px
 }
 
+.gen-style-267,
 .gen-style-268 {
     text-align: left;
-    vertical-align: top;
+    vertical-align: top
 }
 
 .gen-style-269 {
     display: inline;
     height: auto;
     inline-size: auto;
-    perspective-origin: 0px 0px;
-    transform-origin: 0px 0px;
-    width: auto;
+    perspective-origin: 0 0;
+    transform-origin: 0 0;
+    width: auto
 }
 
 .gen-style-270 {
@@ -2827,74 +2682,69 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
     overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-271 {
-    perspective-origin: 148.062px 22.1172px;
+    perspective-origin: 148.062px 22.1172px
 }
 
-.gen-style-272 {
+.gen-style-272,
+.gen-style-273 {
     perspective-origin: 45.2031px 22.1172px;
     text-align: left;
-    vertical-align: top;
+    vertical-align: top
 }
 
 .gen-style-273 {
-    perspective-origin: 101.359px 22.1172px;
-    text-align: left;
-    vertical-align: top;
+    perspective-origin: 101.359px 22.1172px
 }
 
 .gen-style-274 {
-    perspective-origin: 148.062px 64.3516px;
+    perspective-origin: 148.062px 64.3516px
 }
 
 .gen-style-275 {
     perspective-origin: 45.2031px 64.3516px;
     text-align: left;
-    vertical-align: top;
+    vertical-align: top
 }
 
 .gen-style-276 {
-    text-wrap-mode: nowrap;
+    text-wrap-mode: nowrap
 }
 
 .gen-style-277 {
     perspective-origin: 101.359px 64.3516px;
     text-align: left;
-    vertical-align: top;
+    vertical-align: top
 }
-
-.gen-style-278 {}
 
 .gen-style-279 {
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
     overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
-
-.gen-style-280 {}
 
 .gen-style-281 {
     font-style: italic;
@@ -2902,7 +2752,7 @@
     padding-left: 25.6px;
     perspective-origin: 471px 25.5938px;
     transform-origin: 471px 25.5938px;
-    width: 916.406px;
+    width: 916.406px
 }
 
 .gen-style-282 {
@@ -2910,105 +2760,101 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
     overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-283 {
     margin-top: 8px;
     perspective-origin: 471px 102.375px;
-    transform-origin: 471px 102.375px;
+    transform-origin: 471px 102.375px
 }
-
-.gen-style-284 {}
-
-.gen-style-285 {}
 
 .gen-style-286 {
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
     overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-287 {
-    transform-origin: 471px 12.7969px;
+    transform-origin: 471px 12.7969px
 }
 
-.gen-style-288 {}
+.gen-style-289,
+.gen-style-290 {
+    font-size: 24px;
+    margin-bottom: 6px
+}
 
 .gen-style-289 {
-    border-bottom: 1px solid rgb(162, 169, 177);
-    color: rgb(16, 20, 24);
-    column-rule-color: rgb(16, 20, 24);
+    border-bottom: 1px solid #a2a9b1;
+    color: #101418;
+    column-rule-color: #101418;
     display: flow-root;
     font-family: "Linux Libertine", Georgia, Times, "Source Serif Pro", serif;
-    font-size: 24px;
     height: 33px;
     line-height: 33px;
-    margin-bottom: 6px;
     margin-top: 6px;
-    outline-color: rgb(16, 20, 24);
+    outline-color: #101418;
     padding-bottom: 4.08px;
     padding-top: 12px;
     perspective-origin: 309.078px 25.0391px;
-    text-decoration-color: rgb(16, 20, 24);
-    text-emphasis-color: rgb(16, 20, 24);
-    transform-origin: 309.082px25.0391px;
+    text-decoration-color: #101418;
+    text-emphasis-color: #101418;
+    transform-origin: 309.082px25 .0391px;
     word-break: break-word;
-    -webkit-text-fill-color: rgb(16, 20, 24);
-    -webkit-text-stroke-color: rgb(16, 20, 24);
+    -webkit-text-fill-color: #101418;
+    -webkit-text-stroke-color: #101418
 }
 
 .gen-style-290 {
     display: inline;
-    font-size: 24px;
     font-weight: 400;
     height: auto;
     inline-size: auto;
-    margin-bottom: 6px;
-    margin-top: 0px;
-    perspective-origin: 0px 0px;
-    transform-origin: 0px 0px;
-    width: auto;
+    margin-top: 0;
+    perspective-origin: 0 0;
+    transform-origin: 0 0;
+    width: auto
 }
 
 .gen-style-291 {
     font-family: sans-serif;
     font-size: 13px;
-    line-height: 0px;
-    margin-left: 0.5rem;
+    line-height: 0;
+    margin-left: .5rem;
     unicode-bidi: isolate;
-    user-select: none;
+    user-select: none
 }
 
 .gen-style-292 {
-    color: rgb(84, 89, 93);
-    column-rule-color: rgb(84, 89, 93);
+    color: #54595d;
+    column-rule-color: #54595d;
     margin-right: 3.25px;
-    outline-color: rgb(84, 89, 93);
-    text-decoration-color: rgb(84, 89, 93);
-    text-emphasis-color: rgb(84, 89, 93);
-    -webkit-text-fill-color: rgb(84, 89, 93);
-    -webkit-text-stroke-color: rgb(84, 89, 93);
+    outline-color: #54595d;
+    text-decoration-color: #54595d;
+    text-emphasis-color: #54595d;
+    -webkit-text-fill-color: #54595d;
+    -webkit-text-stroke-color: #54595d
 }
 
 .gen-style-293 {
@@ -3016,44 +2862,41 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
     overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     text-wrap-mode: nowrap;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
-
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
-.gen-style-294 {}
-
 .gen-style-295 {
-    color: rgb(84, 89, 93);
-    column-rule-color: rgb(84, 89, 93);
+    color: #54595d;
+    column-rule-color: #54595d;
     margin-left: 3.25px;
-    outline-color: rgb(84, 89, 93);
-    text-decoration-color: rgb(84, 89, 93);
-    text-emphasis-color: rgb(84, 89, 93);
-    -webkit-text-fill-color: rgb(84, 89, 93);
-    -webkit-text-stroke-color: rgb(84, 89, 93);
+    outline-color: #54595d;
+    text-decoration-color: #54595d;
+    text-emphasis-color: #54595d;
+    -webkit-text-fill-color: #54595d;
+    -webkit-text-stroke-color: #54595d
 }
 
 .gen-style-296 {
     margin-top: 8px;
     perspective-origin: 471px 38.3906px;
-    transform-origin: 471px 38.3906px;
+    transform-origin: 471px 38.3906px
 }
 
 .gen-style-297 {
     font-size: 12.8px;
     line-height: 12.8px;
     text-wrap-mode: nowrap;
-    unicode-bidi: isolate;
+    unicode-bidi: isolate
 }
 
 .gen-style-298 {
@@ -3061,26 +2904,26 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
     overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-299 {
-    pointer-events: none;
+    pointer-events: none
 }
 
 .gen-style-300 {
-    border-bottom: 1px solid rgb(162, 169, 177);
-    color: rgb(16, 20, 24);
-    column-rule-color: rgb(16, 20, 24);
+    border-bottom: 1px solid #a2a9b1;
+    color: #101418;
+    column-rule-color: #101418;
     display: flow-root;
     font-family: "Linux Libertine", Georgia, Times, "Source Serif Pro", serif;
     font-size: 24px;
@@ -3088,119 +2931,117 @@
     line-height: 33px;
     margin-bottom: 6px;
     margin-top: 6px;
-    outline-color: rgb(16, 20, 24);
+    outline-color: #101418;
     padding-bottom: 4.08px;
     padding-top: 12px;
     perspective-origin: 471px 25.0391px;
-    text-decoration-color: rgb(16, 20, 24);
-    text-emphasis-color: rgb(16, 20, 24);
+    text-decoration-color: #101418;
+    text-emphasis-color: #101418;
     transform-origin: 471px 25.0391px;
     word-break: break-word;
-    -webkit-text-fill-color: rgb(16, 20, 24);
-    -webkit-text-stroke-color: rgb(16, 20, 24);
+    -webkit-text-fill-color: #101418;
+    -webkit-text-stroke-color: #101418
+}
+
+.gen-style-301,
+.gen-style-302 {
+    font-size: 19.2px;
+    margin-bottom: 4.8px
 }
 
 .gen-style-301 {
-    color: rgb(16, 20, 24);
-    column-rule-color: rgb(16, 20, 24);
+    color: #101418;
+    column-rule-color: #101418;
     display: flow-root;
-    font-size: 19.2px;
     font-weight: 700;
-    margin-bottom: 4.8px;
     margin-top: 4.8px;
-    outline-color: rgb(16, 20, 24);
+    outline-color: #101418;
     padding-top: 9.6px;
     perspective-origin: 471px 20.1562px;
-    text-decoration-color: rgb(16, 20, 24);
-    text-emphasis-color: rgb(16, 20, 24);
+    text-decoration-color: #101418;
+    text-emphasis-color: #101418;
     transform-origin: 471px 20.1562px;
     word-break: break-word;
-    -webkit-text-fill-color: rgb(16, 20, 24);
-    -webkit-text-stroke-color: rgb(16, 20, 24);
+    -webkit-text-fill-color: #101418;
+    -webkit-text-stroke-color: #101418
 }
 
 .gen-style-302 {
     display: inline;
-    font-size: 19.2px;
     height: auto;
     inline-size: auto;
-    margin-bottom: 4.8px;
-    margin-top: 0px;
-    perspective-origin: 0px 0px;
-    transform-origin: 0px 0px;
-    width: auto;
+    margin-top: 0;
+    perspective-origin: 0 0;
+    transform-origin: 0 0;
+    width: auto
 }
 
 .gen-style-303 {
     margin-top: 8px;
     perspective-origin: 471px 51.1875px;
-    transform-origin: 471px 51.1875px;
+    transform-origin: 471px 51.1875px
 }
 
 .gen-style-304 {
     margin-top: 8px;
     perspective-origin: 471px 25.5938px;
-    transform-origin: 471px 25.5938px;
+    transform-origin: 471px 25.5938px
 }
 
 .gen-style-305 {
     font-size: 12.8px;
     line-height: 12.8px;
-    text-wrap-mode: nowrap;
+    text-wrap-mode: nowrap
 }
-
-.gen-style-306 {}
 
 .gen-style-307 {
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
     overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
-
-.gen-style-308 {}
 
 .gen-style-309 {
     font-size: 14.4px;
     line-height: 23.04px;
     list-style-type: decimal;
-    margin-bottom: 7.2px;
-    transform-origin: 471px 223.828px;
+    margin-bottom: 7.2px
 }
 
+.gen-style-309,
 .gen-style-310 {
-    transform-origin: 471px 223.828px;
+    transform-origin: 471px 223.828px
 }
 
 .gen-style-311 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-left: 46.08px;
     margin-top: 4.32px;
-    padding-left: 0px;
+    padding-left: 0;
     perspective-origin: 447.961px 223.828px;
     transform-origin: 447.961px 223.828px;
-    width: 895.922px;
+    width: 895.922px
 }
 
 .gen-style-312 {
     height: 92.125px;
     margin-bottom: 1.44px;
     perspective-origin: 447.961px 46.0625px;
-    transform-origin: 447.961px 46.0625px;
+    transform-origin: 447.961px 46.0625px
 }
 
 .gen-style-313 {
-    user-select: none;
+    user-select: none
 }
 
 .gen-style-314 {
@@ -3208,16 +3049,16 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
     overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-315 {
@@ -3226,243 +3067,183 @@
     inset-block-end: 102049px;
     left: 56.8359px;
     overflow: hidden;
-    perspective-origin: 0.5px0.5px;
+    perspective-origin: .5px0 .5px;
     position: absolute;
     right: 884.164px;
     top: -99999px;
-    transform-origin: 0.5px 0.5px;
-    width: 1px;
+    transform-origin: .5px .5px;
+    width: 1px
 }
 
 .gen-style-316 {
     font-size: 11.52px;
-    line-height: 11.52px;
+    line-height: 11.52px
 }
-
-.gen-style-317 {}
-
-.gen-style-318 {}
-
-.gen-style-319 {}
 
 .gen-style-320 {
     font-style: normal;
-    overflow-wrap: break-word;
+    overflow-wrap: break-word
 }
 
 .gen-style-321 {
     background-position: 100% 50%;
     background-repeat: no-repeat;
     background-size: 12.3408px;
-    border-block-color: rgb(51, 102, 204);
-    border-color: rgb(51, 102, 204);
+    border-block-color: #36c;
+    border-color: #36c;
     border-radius: 2px;
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
-    border-inline-color: rgb(51, 102, 204);
+    border-inline-color: #36c;
     border-start-end-radius: 2px;
     border-start-start-radius: 2px;
-    caret-color: rgb(51, 102, 204);
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    /* padding-inline-end: 14.4px; */
-    /* padding-right: 14.4px; */
-    text-decoration: none solid rgb(51, 102, 204);
-    text-emphasis-color: rgb(51, 102, 204);
+    caret-color: #36c;
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration: none solid #36c;
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-322 {
-    text-wrap-mode: nowrap;
+    text-wrap-mode: nowrap
 }
-
-.gen-style-323 {}
 
 .gen-style-324 {
     height: 46.0625px;
     margin-bottom: 1.44px;
     perspective-origin: 447.961px 23.0312px;
-    transform-origin: 447.961px 23.0312px;
+    transform-origin: 447.961px 23.0312px
 }
-
-.gen-style-325 {}
 
 .gen-style-326 {
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
     overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-decorations-in-effect: none
 }
 
-.gen-style-327 {}
-
-.gen-style-328 {
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
-    text-emphasis-color: rgb(51, 102, 204);
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+.gen-style-326,
+.gen-style-328,
+.gen-style-329,
+.gen-style-330 {
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
+    text-emphasis-color: #36c;
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
-.gen-style-329 {
-    border-end-end-radius: 2px;
-    border-end-start-radius: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
-    text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
-}
-
+.gen-style-329,
 .gen-style-330 {
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-decorations-in-effect: none
 }
 
 .gen-style-331 {
     height: 23.0312px;
     margin-bottom: 1.44px;
     perspective-origin: 447.961px 11.5156px;
-    transform-origin: 447.961px 11.5156px;
+    transform-origin: 447.961px 11.5156px
 }
-
-.gen-style-332 {}
 
 .gen-style-333 {
     height: 52.7812px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-left: 25.6px;
     margin-top: 4.8px;
-    padding-left: 0px;
+    padding-left: 0;
     perspective-origin: 458.203px 26.3906px;
     transform-origin: 458.203px 26.3906px;
-    width: 916.406px;
+    width: 916.406px
 }
 
 .gen-style-334 {
     height: 25.5938px;
     margin-bottom: 1.6px;
-    transform-origin: 458.203px 12.7969px;
+    transform-origin: 458.203px 12.7969px
 }
-
-.gen-style-335 {}
 
 .gen-style-336 {
     background-position: 100% 50%;
     background-repeat: no-repeat;
     background-size: 13.712px;
-    border-block-color: rgb(51, 102, 204);
-    border-color: rgb(51, 102, 204);
+    border-block-color: #36c;
+    border-color: #36c;
     border-radius: 2px;
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
-    border-inline-color: rgb(51, 102, 204);
+    border-inline-color: #36c;
     border-start-end-radius: 2px;
     border-start-start-radius: 2px;
-    caret-color: rgb(51, 102, 204);
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    overflow-wrap: break-word;
-    text-decoration: none solid rgb(51, 102, 204);
-    text-emphasis-color: rgb(51, 102, 204);
+    caret-color: #36c;
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration: none solid #36c;
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
+.gen-style-336,
 .gen-style-337 {
-    border-end-end-radius: 2px;
-    border-end-start-radius: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    overflow-wrap: break-word;
-    text-decoration-color: rgb(51, 102, 204);
-    text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
-    -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    overflow-wrap: break-word
 }
 
-.gen-style-338 {}
-
+.gen-style-337,
 .gen-style-339 {
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-340 {
-    background-color: rgb(248, 249, 250);
-    border-color: rgb(162, 169, 177);
+    background-color: #f8f9fa;
+    border-color: #a2a9b1;
     border-style: solid;
     border-width: 1px;
     margin-top: 16px;
-    padding: 5px;
+    padding: 5px
 }
-
-.gen-style-341 {}
 
 .gen-style-342 {
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-343 {
@@ -3470,12 +3251,12 @@
     height: auto;
     inline-size: auto;
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
-    perspective-origin: 0px 0px;
-    transform-origin: 0px 0px;
-    width: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    perspective-origin: 0 0;
+    transform-origin: 0 0;
+    width: auto
 }
 
 .gen-style-344 {
@@ -3487,7 +3268,7 @@
     padding-right: 8px;
     perspective-origin: 53.1484px 10px;
     transform-origin: 53.1484px 10px;
-    width: 94.2969px;
+    width: 94.2969px
 }
 
 .gen-style-345 {
@@ -3495,19 +3276,21 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
-.gen-style-346 {
-    border-left: 1px solid rgb(162, 169, 177);
+.gen-style-346,
+.gen-style-347,
+.gen-style-348 {
+    border-left: 1px solid #a2a9b1;
     display: inline-block;
     line-height: 20px;
     margin-bottom: 2px;
@@ -3516,122 +3299,88 @@
     padding-right: 8px;
     perspective-origin: 113.883px 10px;
     transform-origin: 113.883px 10px;
-    width: 210.766px;
+    width: 210.766px
 }
 
-.gen-style-347 {
-    border-left: 1px solid rgb(162, 169, 177);
-    display: inline-block;
-    line-height: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
+.gen-style-347,
+.gen-style-348 {
     perspective-origin: 92.9688px 10px;
     transform-origin: 92.9727px 10px;
-    width: 168.945px;
+    width: 168.945px
 }
 
 .gen-style-348 {
-    border-left: 1px solid rgb(162, 169, 177);
-    display: inline-block;
-    line-height: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
     perspective-origin: 125px 10px;
     transform-origin: 125px 10px;
-    width: 233px;
+    width: 233px
 }
 
 .gen-style-349 {
-    border-left: 1px solid rgb(162, 169, 177);
+    border-left: 1px solid #a2a9b1;
+    perspective-origin: 124.547px 10px;
+    transform-origin: 124.551px 10px;
+    width: 232.102px
+}
+
+.gen-style-349,
+.gen-style-350,
+.gen-style-351,
+.gen-style-352,
+.gen-style-353,
+.gen-style-354,
+.gen-style-355 {
     display: inline-block;
     line-height: 20px;
     margin-bottom: 2px;
     margin-top: 2px;
     padding-left: 8px;
-    padding-right: 8px;
-    perspective-origin: 124.547px 10px;
-    transform-origin: 124.551px 10px;
-    width: 232.102px;
+    padding-right: 8px
 }
 
 .gen-style-350 {
-    border-left-color: rgb(162, 169, 177);
-    border-left-style: solid;
-    display: inline-block;
-    line-height: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
+    border-left-color: #a2a9b1;
+    border-left-style: solid
 }
 
-.gen-style-351 {
-    border-left: 1px solid rgb(162, 169, 177);
-    display: inline-block;
-    line-height: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
+.gen-style-351,
+.gen-style-352,
+.gen-style-353,
+.gen-style-354,
+.gen-style-355 {
+    border-left: 1px solid #a2a9b1;
     perspective-origin: 96.9844px 10px;
     transform-origin: 96.9883px 10px;
-    width: 176.977px;
+    width: 176.977px
 }
 
-.gen-style-352 {
-    border-left: 1px solid rgb(162, 169, 177);
-    display: inline-block;
-    line-height: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
+.gen-style-352,
+.gen-style-353,
+.gen-style-354,
+.gen-style-355 {
     perspective-origin: 227.281px 10px;
     transform-origin: 227.281px 10px;
-    width: 437.562px;
+    width: 437.562px
 }
 
-.gen-style-353 {
-    border-left: 1px solid rgb(162, 169, 177);
-    display: inline-block;
-    line-height: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
+.gen-style-353,
+.gen-style-354,
+.gen-style-355 {
     perspective-origin: 100.102px 10px;
     transform-origin: 100.102px 10px;
-    width: 183.203px;
+    width: 183.203px
 }
 
-.gen-style-354 {
-    border-left: 1px solid rgb(162, 169, 177);
-    display: inline-block;
-    line-height: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
+.gen-style-354,
+.gen-style-355 {
     perspective-origin: 136.57px 10px;
     transform-origin: 136.57px 10px;
-    width: 256.141px;
+    width: 256.141px
 }
 
 .gen-style-355 {
-    border-left: 1px solid rgb(162, 169, 177);
-    display: inline-block;
-    line-height: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
     perspective-origin: 151.242px 10px;
     transform-origin: 151.242px 10px;
-    width: 285.484px;
+    width: 285.484px
 }
 
 .gen-style-356 {
@@ -3640,15 +3389,15 @@
     inline-size: auto;
     perspective-origin: 50% 50%;
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
 }
 
 .gen-style-357 {
     display: inline;
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0
 }
 
 .gen-style-358 {
@@ -3657,7 +3406,7 @@
     margin-bottom: 2px;
     margin-top: 2px;
     padding-left: 4px;
-    padding-right: 8px;
+    padding-right: 8px
 }
 
 .gen-style-359 {
@@ -3665,25 +3414,25 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-360 {
-    border-left: 1px solid rgb(162, 169, 177);
+    border-left: 1px solid #a2a9b1;
     display: inline-block;
     line-height: 20px;
     margin-bottom: 2px;
     margin-top: 2px;
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 8px
 }
 
 .gen-style-361 {
@@ -3691,48 +3440,43 @@
     padding-bottom: 82px;
     padding-top: 50px;
     perspective-origin: 691px 137.695px;
-    width: 1382px;
+    width: 1382px
 }
 
 .gen-style-362 {
-    border-top: 1px solid rgb(162, 169, 177);
+    border-top: 1px solid #a2a9b1;
     padding-bottom: 12px;
     padding-top: 12px;
     perspective-origin: 691px 49.6953px;
-    transform-origin: 691px 49.6953px;
+    transform-origin: 691px 49.6953px
 }
 
 .gen-style-363 {
     height: 74.3906px;
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
     perspective-origin: 691px 37.1953px;
     transform-origin: 691px 37.1953px;
-    width: 1382px;
+    width: 1382px
 }
 
-.gen-style-364 {
+.gen-style-364,
+.gen-style-366 {
     font-size: 12px;
     height: 16.7969px;
     line-height: 16.8px;
     padding-bottom: 6px;
     padding-top: 6px;
     perspective-origin: 691px 14.3984px;
-    transform-origin: 691px 14.3984px;
+    transform-origin: 691px 14.3984px
 }
 
-.gen-style-365 {}
-
 .gen-style-366 {
-    font-size: 12px;
     height: 33.5938px;
-    line-height: 16.8px;
-    padding-bottom: 6px;
-    padding-top: 6px;
     perspective-origin: 691px 22.7969px;
-    transform-origin: 691px 22.7969px;
+    transform-origin: 691px 22.7969px
 }
 
 .gen-style-367 {
@@ -3740,25 +3484,25 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-368 {
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
-    perspective-origin: 691px 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    perspective-origin: 691px 0;
     transform-origin: 691px0px;
-    width: 1382px;
+    width: 1382px
 }
 
 .gen-style-369 {
@@ -3771,7 +3515,7 @@
     padding-top: 6px;
     perspective-origin: 36.6797px 18px;
     transform-origin: 36.6797px 18px;
-    width: 73.3594px;
+    width: 73.3594px
 }
 
 .gen-style-370 {
@@ -3779,15 +3523,15 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-371 {
@@ -3800,10 +3544,17 @@
     padding-top: 6px;
     perspective-origin: 43.3594px 18px;
     transform-origin: 43.3594px 18px;
-    width: 86.7188px;
+    width: 86.7188px
 }
 
-.gen-style-372 {
+.gen-style-372,
+.gen-style-373,
+.gen-style-374,
+.gen-style-375,
+.gen-style-376,
+.gen-style-377,
+.gen-style-378,
+.gen-style-379 {
     float: left;
     font-size: 12px;
     height: 24px;
@@ -3813,100 +3564,73 @@
     padding-top: 6px;
     perspective-origin: 31px 18px;
     transform-origin: 31.0039px 18px;
-    width: 62.0078px;
+    width: 62.0078px
 }
 
-.gen-style-373 {
-    float: left;
-    font-size: 12px;
-    height: 24px;
-    line-height: 24px;
-    margin-right: 12px;
-    padding-bottom: 6px;
-    padding-top: 6px;
+.gen-style-373,
+.gen-style-374,
+.gen-style-375,
+.gen-style-376,
+.gen-style-377,
+.gen-style-378,
+.gen-style-379 {
     perspective-origin: 48.3516px 18px;
     transform-origin: 48.3555px 18px;
-    width: 96.7109px;
+    width: 96.7109px
 }
 
-.gen-style-374 {
-    float: left;
-    font-size: 12px;
-    height: 24px;
-    line-height: 24px;
-    margin-right: 12px;
-    padding-bottom: 6px;
-    padding-top: 6px;
+.gen-style-374,
+.gen-style-375,
+.gen-style-376,
+.gen-style-377,
+.gen-style-378,
+.gen-style-379 {
     perspective-origin: 45.0312px 18px;
     transform-origin: 45.0312px 18px;
-    width: 90.0625px;
+    width: 90.0625px
 }
 
-.gen-style-375 {
-    float: left;
-    font-size: 12px;
-    height: 24px;
-    line-height: 24px;
-    margin-right: 12px;
-    padding-bottom: 6px;
-    padding-top: 6px;
+.gen-style-375,
+.gen-style-376,
+.gen-style-377,
+.gen-style-378,
+.gen-style-379 {
     perspective-origin: 30.3516px 18px;
     transform-origin: 30.3516px 18px;
-    width: 60.7031px;
+    width: 60.7031px
 }
 
-.gen-style-376 {
-    float: left;
-    font-size: 12px;
-    height: 24px;
-    line-height: 24px;
-    margin-right: 12px;
-    padding-bottom: 6px;
-    padding-top: 6px;
+.gen-style-376,
+.gen-style-377,
+.gen-style-378,
+.gen-style-379 {
     perspective-origin: 24.0078px 18px;
     transform-origin: 24.0078px 18px;
-    width: 48.0156px;
+    width: 48.0156px
 }
 
-.gen-style-377 {
-    float: left;
-    font-size: 12px;
-    height: 24px;
-    line-height: 24px;
-    margin-right: 12px;
-    padding-bottom: 6px;
-    padding-top: 6px;
+.gen-style-377,
+.gen-style-378,
+.gen-style-379 {
     perspective-origin: 46.6875px 18px;
     transform-origin: 46.6914px 18px;
-    width: 93.3828px;
+    width: 93.3828px
 }
 
-.gen-style-378 {
-    float: left;
-    font-size: 12px;
-    height: 24px;
-    line-height: 24px;
-    margin-right: 12px;
-    padding-bottom: 6px;
-    padding-top: 6px;
+.gen-style-378,
+.gen-style-379 {
     perspective-origin: 31.3438px 18px;
     transform-origin: 31.3477px 18px;
-    width: 62.6953px;
+    width: 62.6953px
 }
 
 .gen-style-379 {
     display: none;
-    float: left;
-    font-size: 12px;
     height: auto;
     inline-size: auto;
-    line-height: 24px;
-    margin-right: 12px;
-    padding-bottom: 6px;
-    padding-top: 6px;
     perspective-origin: 50% 50%;
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
 }
 
 .gen-style-380 {
@@ -3914,27 +3638,27 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
-    text-decoration-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c;
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
 .gen-style-381 {
     float: right;
     height: 56px;
     list-style-type: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
     perspective-origin: 110px28px;
     transform-origin: 110px 28px;
-    width: 220px;
+    width: 220px
 }
 
 .gen-style-382 {
@@ -3947,7 +3671,14 @@
     perspective-origin: 51px 28px;
     text-align: right;
     transform-origin: 51px 28px;
-    width: 102px;
+    width: 102px
+}
+
+.gen-style-383,
+.gen-style-384 {
+    column-rule-color: #202122;
+    outline-color: #202122;
+    text-decoration-color: #202122
 }
 
 .gen-style-383 {
@@ -3960,40 +3691,32 @@
     border-top-right-radius: 2px;
     box-sizing: border-box;
     gap: 4px;
-    column-rule-color: rgb(32, 33, 34);
     display: inline-flex;
     font-weight: 700;
     height: 44px;
     justify-content: center;
     max-width: 448px;
     min-height: 44px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
     padding-left: 8px;
     padding-right: 8px;
     perspective-origin: 51px 22px;
-    text-decoration-color: rgb(32, 33, 34);
     text-decoration-line: none;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
     transform-origin: 51px 22px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
     width: 102px;
-    -webkit-text-decorations-in-effect: none;
+    -webkit-text-decorations-in-effect: none
 }
 
 .gen-style-384 {
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
-    outline-color: rgb(32, 33, 34);
-    text-decoration-color: rgb(32, 33, 34);
+    color: #202122
 }
 
-.gen-style-385 {}
-
 .gen-style-386 {
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 .gen-style-387 {
@@ -4007,7 +3730,14 @@
     perspective-origin: 53px 28px;
     text-align: right;
     transform-origin: 53px 28px;
-    width: 106px;
+    width: 106px
+}
+
+.gen-style-388,
+.gen-style-389 {
+    column-rule-color: #202122;
+    outline-color: #202122;
+    text-decoration-color: #202122
 }
 
 .gen-style-388 {
@@ -4020,71 +3750,69 @@
     border-top-right-radius: 2px;
     box-sizing: border-box;
     gap: 4px;
-    column-rule-color: rgb(32, 33, 34);
     display: inline-flex;
     font-weight: 700;
     height: 44px;
     justify-content: center;
     max-width: 448px;
     min-height: 44px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
     padding-left: 8px;
     padding-right: 8px;
     perspective-origin: 53px 22px;
-    text-decoration-color: rgb(32, 33, 34);
     text-decoration-line: none;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
     transform-origin: 53px 22px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
     width: 106px;
-    -webkit-text-decorations-in-effect: none;
+    -webkit-text-decorations-in-effect: none
 }
 
 .gen-style-389 {
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
-    outline-color: rgb(32, 33, 34);
-    text-decoration-color: rgb(32, 33, 34);
+    color: #202122
 }
 
 .gen-style-390 {
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 .gen-style-391 {
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    color: #202122;
+    column-rule-color: #202122;
     display: flex;
     font-family: sans-serif;
     height: 50px;
     inset-block-end: 748px;
     justify-content: center;
-    left: 0px;
+    left: 0;
     opacity: 0;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     position: fixed;
-    right: 0px;
-    text-decoration-color: rgb(32, 33, 34);
-    text-emphasis-color: rgb(32, 33, 34);
-    top: 0px;
-    transition-duration: 0.25s;
+    right: 0;
+    text-decoration-color: #202122;
+    text-emphasis-color: #202122;
+    top: 0;
+    transition-duration: .25s;
     transition-property: transform;
     transition-timing-function: linear;
     width: 1470px;
     z-index: 3;
-    -webkit-text-fill-color: rgb(32, 33, 34);
-    -webkit-text-stroke-color: rgb(32, 33, 34);
+    -webkit-text-fill-color: #202122;
+    -webkit-text-stroke-color: #202122
+}
+
+.gen-style-392,
+.gen-style-393 {
+    align-items: center;
+    display: flex
 }
 
 .gen-style-392 {
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(234, 236, 240);
+    background-color: #fff;
+    border-bottom: 1px solid #eaecf0;
     box-sizing: border-box;
-    display: flex;
     inline-size: 1470px;
     justify-content: space-between;
     max-width: 1596px;
@@ -4092,24 +3820,29 @@
     min-width: 300px;
     padding-left: 44px;
     padding-right: 44px;
-    width: 1470px;
+    width: 1470px
 }
 
 .gen-style-393 {
-    align-items: center;
-    display: flex;
     flex-grow: 1;
     height: 32px;
     inline-size: 825.531px;
-    min-width: 0px;
+    min-width: 0;
     perspective-origin: 412.766px16px;
     transform-origin: 412.766px 16px;
-    width: 825.531px;
+    width: 825.531px
 }
 
 .gen-style-394 {
     margin-left: -6px;
-    margin-right: -6px;
+    margin-right: -6px
+}
+
+.gen-style-395,
+.gen-style-396,
+.gen-style-397 {
+    column-rule-color: #202122;
+    outline-color: #202122
 }
 
 .gen-style-395 {
@@ -4121,7 +3854,6 @@
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     gap: 4px;
-    column-rule-color: rgb(32, 33, 34);
     display: inline-flex;
     font-family: sans-serif;
     font-size: 16px;
@@ -4130,25 +3862,26 @@
     max-width: 448px;
     min-height: 32px;
     min-width: 32px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
     perspective-origin: 16px 16px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
     transform-origin: 16px 16px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 32px;
+    width: 32px
+}
 
+.gen-style-396,
+.gen-style-397 {
+    color: #202122
 }
 
 .gen-style-396 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -4156,31 +3889,27 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 10px 10px;
-    text-decoration: none solid rgb(32, 33, 34);
+    text-decoration: none solid #202122;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-397 {
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
     height: 1px;
     inset-block-end: 26px;
     margin: -1px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 1416.5px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     top: 25px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-398 {
@@ -4189,36 +3918,34 @@
     font-size: 14px;
     height: auto;
     inline-size: auto;
-    min-height: 0px;
-    min-width: 0px;
+    min-height: 0;
+    min-width: 0;
     perspective-origin: 50% 50%;
     transform-origin: 50% 50%;
-    width: auto;
+    width: auto
 }
 
 .gen-style-399 {
     margin-right: 12px;
-    max-width: 500px;
+    max-width: 500px
 }
 
-.gen-style-400 {}
-
 .gen-style-401 {
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(162, 169, 177);
+    background-color: #fff;
+    border-color: #a2a9b1;
     border-style: solid;
     border-width: 1px;
     border-end-end-radius: 2px;
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    display: flex;
+    display: flex
 }
 
 .gen-style-402 {
     flex-grow: 1;
     margin: -1px;
-    position: relative;
+    position: relative
 }
 
 .gen-style-403 {
@@ -4227,32 +3954,32 @@
     box-sizing: border-box;
     min-width: 256px;
     overflow: hidden;
-    position: relative;
+    position: relative
 }
 
 .gen-style-404 {
     appearance: none;
-    border-color: rgb(114, 119, 125);
+    border-color: #72777d;
     border-style: solid;
     border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px1px inset;
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    box-shadow: transparent 0 0 0px1px inset;
+    color: #202122;
+    column-rule-color: #202122;
     display: block;
     font-family: sans-serif;
     font-size: 14px;
     line-height: 19.25px;
     min-height: 32px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     padding: 4px 8px 4px 36px;
-    text-decoration-color: rgb(32, 33, 34);
-    transition-duration: 0.25s;
+    text-decoration-color: #202122;
+    transition-duration: .25s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 100%;
+    width: 100%
 }
 
 .gen-style-405 {
-    background-color: rgb(32, 33, 34);
+    background-color: #202122;
     height: 20px;
     left: 9px;
     mask-position: 50% 50%;
@@ -4260,27 +3987,31 @@
     mask-size: 20px;
     min-height: 20px;
     min-width: 20px;
-    opacity: 0.51;
+    opacity: .51;
     position: absolute;
     top: 50%;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: color;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
+}
+
+.gen-style-406,
+.gen-style-407 {
+    align-items: center;
+    display: flex
 }
 
 .gen-style-406 {
-    align-items: center;
-    background-color: rgb(248, 249, 250);
-    border-color: rgb(114, 119, 125);
+    background-color: #f8f9fa;
+    border-color: #72777d;
     border-style: solid;
     border-width: 1px;
     border-end-end-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(32, 33, 34);
+    color: #202122;
     gap: 4px;
-    column-rule-color: rgb(32, 33, 34);
-    display: flex;
+    column-rule-color: #202122;
     flex-shrink: 0;
     font-family: sans-serif;
     font-size: 14px;
@@ -4291,56 +4022,62 @@
     margin-top: -1px;
     max-width: 448px;
     min-height: 32px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     overflow: hidden;
     padding-left: 11px;
     padding-right: 11px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transition-duration: 0.1s;
-    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: .1s;
+    transition-property: background-color, color, border-color, box-shadow
 }
 
 .gen-style-407 {
-    align-items: center;
-    border-left: 1px solid rgb(200, 204, 209);
-    display: flex;
+    border-left: 1px solid #c8ccd1;
     margin-left: 30px;
-    min-width: 0px;
+    min-width: 0;
     padding-left: 30px;
     perspective-origin: 125.898px 13.75px;
-    transform-origin: 125.898px 13.75px;
+    transform-origin: 125.898px 13.75px
 }
 
 .gen-style-408 {
     font-family: "Linux Libertine", Georgia, Times, "Source Se
- rif Pro", serif; font-size: 24px; overflow: hidden; perspective-origin: 110
- .398px 13.75px;
+ rif Pro", serif;
+ font-size: 24px;
+    overflow: hidden;
+    perspective-origin: 110 .398px 13.75px;
     text-overflow: ellipsis;
-    text-wrap-mode: nowrap;
+    text-wrap-mode: nowrap
 }
 
-.gen-style-409 {}
-
-.gen-style-410 {
+.gen-style-410,
+.gen-style-411 {
     align-items: center;
     display: flex;
-    height: 32px;
+    height: 32px
+}
+
+.gen-style-410 {
     perspective-origin: 278.234px 16px;
     text-wrap-mode: nowrap;
     transform-origin: 278.234px 16px;
-    width: 556.469px;
+    width: 556.469px
 }
 
 .gen-style-411 {
-    align-items: center;
     column-gap: 8px;
-    display: flex;
-    height: 32px;
     perspective-origin: 136px 16px;
     transform-origin: 136px 16px;
-    width: 272px;
+    width: 272px
+}
+
+.gen-style-412,
+.gen-style-413,
+.gen-style-414 {
+    column-rule-color: #202122;
+    outline-color: #202122
 }
 
 .gen-style-412 {
@@ -4353,32 +4090,33 @@
     border-top-right-radius: 2px;
     box-sizing: border-box;
     gap: 4px;
-    column-rule-color: rgb(32, 33, 34);
     display: flex;
     font-weight: 700;
     justify-content: center;
     max-width: 448px;
     min-height: 32px;
     min-width: 32px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
     perspective-origin: 16px 16px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     text-decoration-line: none;
     text-overflow: ellipsis;
     transform-origin: 16px 16px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
     width: 32px;
-    -webkit-text-decorations-in-effect: none;
+    -webkit-text-decorations-in-effect: none
+}
+
+.gen-style-413,
+.gen-style-414 {
+    color: #202122
 }
 
 .gen-style-413 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -4386,37 +4124,31 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 10px 10px;
-    text-decoration: none solid rgb(32, 33, 34);
+    text-decoration: none solid #202122;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-414 {
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
     height: 1px;
     inset-block-end: 26px;
     margin: -1px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 584.969px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     top: 25px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-415 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -4424,37 +4156,39 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 10px 10px;
-    text-decoration: none solid rgb(32, 33, 34);
+    text-decoration: none solid #202122;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
+}
+
+.gen-style-415,
+.gen-style-416,
+.gen-style-417 {
+    color: #202122;
+    column-rule-color: #202122;
+    outline-color: #202122
 }
 
 .gen-style-416 {
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
     height: 1px;
     inset-block-end: 26px;
     margin: -1px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 544.969px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     top: 25px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-417 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -4462,37 +4196,39 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 10px 10px;
-    text-decoration: none solid rgb(32, 33, 34);
+    text-decoration: none solid #202122;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-418 {
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
     height: 1px;
     inset-block-end: 26px;
     margin: -1px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 504.969px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     top: 25px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
+}
+
+.gen-style-418,
+.gen-style-419,
+.gen-style-420 {
+    color: #202122;
+    column-rule-color: #202122;
+    outline-color: #202122
 }
 
 .gen-style-419 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -4500,39 +4236,33 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 10px 10px;
-    text-decoration: none solid rgb(32, 33, 34);
+    text-decoration: none solid #202122;
     transform-origin: 10px 10px;
-    transition-duration: 0.5s;
+    transition-duration: .5s;
     transition-property: transform;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-420 {
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
     height: 1px;
     inset-block-end: 26px;
     margin: -1px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 464.969px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     top: 25px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-421 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -4540,37 +4270,39 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 10px 10px;
-    text-decoration: none solid rgb(32, 33, 34);
+    text-decoration: none solid #202122;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
+}
+
+.gen-style-421,
+.gen-style-422,
+.gen-style-423 {
+    color: #202122;
+    column-rule-color: #202122;
+    outline-color: #202122
 }
 
 .gen-style-422 {
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
     height: 1px;
     inset-block-end: 26px;
     margin: -1px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 424.969px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     top: 25px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-423 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -4578,37 +4310,39 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 10px 10px;
-    text-decoration: none solid rgb(32, 33, 34);
+    text-decoration: none solid #202122;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-424 {
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
     height: 1px;
     inset-block-end: 26px;
     margin: -1px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 384.969px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     top: 25px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
+}
+
+.gen-style-424,
+.gen-style-425,
+.gen-style-426 {
+    color: #202122;
+    column-rule-color: #202122;
+    outline-color: #202122
 }
 
 .gen-style-425 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
@@ -4616,31 +4350,27 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 10px 10px;
-    text-decoration: none solid rgb(32, 33, 34);
+    text-decoration: none solid #202122;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-426 {
     clip: rect(1px, 1px, 1px, 1px);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
     height: 1px;
     inset-block-end: 26px;
     margin: -1px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
-    perspective-origin: 0.5px 0.5px;
+    perspective-origin: .5px .5px;
     position: absolute;
     right: 344.969px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     top: 25px;
-    transform-origin: 0.5px 0.5px;
+    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    width: 1px
 }
 
 .gen-style-427 {
@@ -4651,7 +4381,14 @@
     height: 32px;
     perspective-origin: 142.234px 16px;
     transform-origin: 142.234px 16px;
-    width: 284.469px;
+    width: 284.469px
+}
+
+.gen-style-428,
+.gen-style-429,
+.gen-style-430 {
+    column-rule-color: #202122;
+    outline-color: #202122
 }
 
 .gen-style-428 {
@@ -4663,7 +4400,6 @@
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     gap: 4px;
-    column-rule-color: rgb(32, 33, 34);
     display: flex;
     font-family: sans-serif;
     font-size: 14px;
@@ -4672,45 +4408,43 @@
     justify-content: center;
     max-width: 448px;
     min-height: 32px;
-    outline-color: rgb(32, 33, 34);
     overflow: hidden;
     padding-left: 11px;
     padding-right: 11px;
     perspective-origin: 78.9609px 16px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
     text-overflow: ellipsis;
     transform-origin: 78.9609px 16px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 157.922px;
+    width: 157.922px
+}
+
+.gen-style-429,
+.gen-style-430 {
+    color: #202122
 }
 
 .gen-style-429 {
-    background-color: rgb(32, 33, 34);
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    background-color: #202122;
     margin-right: 6px;
-    mask-position: 50%50%;
+    mask-position: 50% 50%;
     mask-repeat: no-repeat;
     mask-size: 20px;
     min-block-size: 20px;
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 10px 10px;
-    text-decoration: none solid rgb(32, 33, 34);
+    text-decoration: none solid #202122;
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-430 {
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
-    outline-color: rgb(32, 33, 34);
     perspective-origin: 40.4609px 8px;
-    text-decoration-color: rgb(32, 33, 34);
+    text-decoration-color: #202122
 }
 
 .gen-style-431 {
@@ -4723,7 +4457,7 @@
     border-top-right-radius: 2px;
     box-sizing: border-box;
     gap: 4px;
-    column-rule-color: rgb(51, 102, 204);
+    column-rule-color: #36c;
     display: flex;
     font-weight: 700;
     height: 32px;
@@ -4731,28 +4465,33 @@
     justify-content: center;
     max-width: 448px;
     min-height: 32px;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     overflow: hidden;
     padding-left: 11px;
     padding-right: 11px;
     perspective-origin: 59.2734px 16px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     text-overflow: ellipsis;
     transform-origin: 59.2734px 16px;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
     width: 118.547px;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
+}
+
+.gen-style-432,
+.gen-style-433 {
+    color: #36c;
+    column-rule-color: #36c;
+    outline-color: #36c
 }
 
 .gen-style-432 {
-    background-color: rgb(51, 102, 204);
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    background-color: #36c;
     margin-right: 6px;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
@@ -4761,51 +4500,45 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    outline-color: rgb(51, 102, 204);
     perspective-origin: 10px 10px;
     text-decoration: none solidrgb(51, 102, 204);
     transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 20px
 }
 
 .gen-style-433 {
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
-    outline-color: rgb(51, 102, 204);
     perspective-origin: 32.2734px 8px;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c
 }
-
-.gen-style-434 {}
 
 .gen-style-435 {
     align-items: center;
     display: flex;
     justify-content: flex-end;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0
 }
 
 .gen-style-436 {
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+    color: #202122;
+    column-rule-color: #202122;
     font-family: sans-serif;
     height: 4.79688px;
     inset-block-end: 8px;
     left: 1436.41px;
-    outline-color: rgb(32, 33, 34);
+    outline-color: #202122;
     position: fixed;
     right: 8px;
-    text-decoration-color: rgb(32, 33, 34);
-    text-emphasis-color: rgb(32, 33, 34);
+    text-decoration-color: #202122;
+    text-emphasis-color: #202122;
     top: 785.203px;
     transform-origin: 12.7969px 2.39844px;
     width: 25.5938px;
     z-index: 1;
-    -webkit-text-fill-color: rgb(32, 33, 34);
-    -webkit-text-stroke-color: rgb(32, 33, 34);
+    -webkit-text-fill-color: #202122;
+    -webkit-text-stroke-color: #202122
 }
 
 .gen-style-437 {
@@ -4814,64 +4547,48 @@
     display: flex;
     flex-direction: column-reverse;
     list-style-type: none;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-left: 25.6px;
     margin-top: 4.8px;
-    padding-left: 0px;
-    perspective-origin: 0px 0px;
-    transform-origin: 0px 0px;
+    padding-left: 0;
+    perspective-origin: 0 0;
+    transform-origin: 0 0
 }
 
-.gen-style-438 {
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
+.gen-style-438,
+.gen-style-439,
+.gen-style-440 {
+    color: #202122;
+    column-rule-color: #202122;
     font-family: sans-serif;
-    outline-color: rgb(32, 33, 34);
-    text-decoration-color: rgb(32, 33, 34);
-    text-emphasis-color: rgb(32, 33, 34);
-    -webkit-text-fill-color: rgb(32, 33, 34);
-    -webkit-text-stroke-color: rgb(32, 33, 34);
+    outline-color: #202122;
+    text-decoration-color: #202122;
+    text-emphasis-color: #202122;
+    -webkit-text-fill-color: #202122;
+    -webkit-text-stroke-color: #202122
 }
 
-.gen-style-439 {
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
-    font-family: sans-serif;
+.gen-style-439,
+.gen-style-440 {
     font-size: 14.8571px;
     inset-block-end: 798px;
-    left: 0px;
+    left: 0;
     line-height: 22.2857px;
-    outline-color: rgb(32, 33, 34);
     position: absolute;
-    right: 0px;
-    text-decoration-color: rgb(32, 33, 34);
-    text-emphasis-color: rgb(32, 33, 34);
-    top: 0px;
+    right: 0;
+    top: 0;
     width: 1470px;
-    z-index: 800;
-    -webkit-text-fill-color: rgb(32, 33, 34);
-    -webkit-text-stroke-color: rgb(32, 33, 34);
-
+    z-index: 800
 }
 
 .gen-style-440 {
-    color: rgb(32, 33, 34);
-    column-rule-color: rgb(32, 33, 34);
-    font-family: sans-serif;
     font-size: 14px;
     inset-block-end: -1671px;
-    left: 0px;
     line-height: 22.4px;
-    outline-color: rgb(32, 33, 34);
-    position: absolute;
     right: 1470px;
-    text-decoration-color: rgb(32, 33, 34);
-    text-emphasis-color: rgb(32, 33, 34);
     top: 2469px;
-    width: 0px;
-    z-index: 450;
-    -webkit-text-fill-color: rgb(32, 33, 34);
-    -webkit-text-stroke-color: rgb(32, 33, 34);
+    width: 0;
+    z-index: 450
 }
 
 .gen-style-441 {
@@ -4879,22 +4596,34 @@
     border-end-start-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    color: rgb(51, 102, 204);
-    column-rule-color: rgb(51, 102, 204);
+    color: #36c;
+    column-rule-color: #36c;
     display: none;
     font-family: sans-serif;
-    outline-color: rgb(51, 102, 204);
+    outline-color: #36c;
     perspective-origin: 50% 50%;
-    text-decoration-color: rgb(51, 102, 204);
+    text-decoration-color: #36c;
     text-decoration-line: none;
-    text-emphasis-color: rgb(51, 102, 204);
+    text-emphasis-color: #36c;
     transform-origin: 50% 50%;
     -webkit-text-decorations-in-effect: none;
-    -webkit-text-fill-color: rgb(51, 102, 204);
-    -webkit-text-stroke-color: rgb(51, 102, 204);
+    -webkit-text-fill-color: #36c;
+    -webkit-text-stroke-color: #36c
 }
 
+.wikitable th {
+    background-color: var(--background-color-neutral, #eaecf0);
+    text-align: center
+}
 
+.wikitable,
+.wikitable tbody,
+.wikitable th {
+    color: var(--color-base, #202122);
+    border-collapse: collapse
+}
+
+.wikitable tbody,
 .wikitable th {
     --color-base: #202122;
     --color-base-fixed: #202122;
@@ -5046,196 +4775,33 @@
     font-family: sans-serif;
     direction: ltr;
     line-height: var(--line-height-medium);
-    font-size: 100%;
-    border-collapse: collapse;
-    border: 1px solid var(--border-color-base, #a2a9b1);
-    padding: 0.2em 0.4em;
-    background-color: var(--background-color-neutral, #eaecf0);
-    color: var(--color-base, #202122);
-    text-align: center;
-}
-
-.wikitable tbody {
-    --color-base: #202122;
-    --color-base-fixed: #202122;
-    --color-base--hover: #404244;
-    --color-emphasized: #101418;
-    --color-subtle: #54595d;
-    --color-placeholder: #72777d;
-    --color-disabled: #a2a9b1;
-    --color-disabled-emphasized: #a2a9b1;
-    --color-inverted: #fff;
-    --color-inverted-fixed: #fff;
-    --color-progressive: #36c;
-    --color-progressive--hover: #3056a9;
-    --color-progressive--active: #233566;
-    --color-progressive--focus: #36c;
-    --color-destructive: #bf3c2c;
-    --color-destructive--hover: #9f3526;
-    --color-destructive--active: #612419;
-    --color-destructive--focus: #36c;
-    --color-visited: #6a60b0;
-    --color-visited--hover: #534fa3;
-    --color-visited--active: #353262;
-    --color-destructive--visited: #9f5555;
-    --color-destructive--visited--hover: #854848;
-    --color-destructive--visited--active: #512e2e;
-    --color-error: #bf3c2c;
-    --color-error--hover: #9f3526;
-    --color-error--active: #612419;
-    --color-warning: #886425;
-    --color-success: #177860;
-    --color-notice: #404244;
-    --color-icon-error: #f54739;
-    --color-icon-warning: #ab7f2a;
-    --color-icon-success: #099979;
-    --color-icon-notice: #72777d;
-    --color-content-added: #006400;
-    --color-content-removed: #8b0000;
-    --filter-invert-icon: 0;
-    --filter-invert-primary-button-icon: 1;
-    --box-shadow-color-base: #a2a9b1;
-    --box-shadow-color-progressive--active: #233566;
-    --box-shadow-color-progressive--focus: #36c;
-    --box-shadow-color-progressive-selected: #36c;
-    --box-shadow-color-progressive-selected--hover: #3056a9;
-    --box-shadow-color-progressive-selected--active: #233566;
-    --box-shadow-color-destructive--focus: #36c;
-    --box-shadow-color-inverted: #fff;
-    --box-shadow-color-alpha-base: rgba(0, 0, 0, 0.06);
-    --box-shadow-color-transparent: transparent;
-    --mix-blend-mode-base: normal;
-    --mix-blend-mode-blend: multiply;
-    --background-color-base: #fff;
-    --background-color-base-fixed: #fff;
-    --background-color-neutral: #eaecf0;
-    --background-color-neutral-subtle: #f8f9fa;
-    --background-color-interactive: #eaecf0;
-    --background-color-interactive--hover: #dadde3;
-    --background-color-interactive--active: #c8ccd1;
-    --background-color-interactive-subtle: #f8f9fa;
-    --background-color-interactive-subtle--hover: #eaecf0;
-    --background-color-interactive-subtle--active: #dadde3;
-    --background-color-disabled: #dadde3;
-    --background-color-disabled-subtle: #eaecf0;
-    --background-color-inverted: #101418;
-    --background-color-progressive: #36c;
-    --background-color-progressive--hover: #3056a9;
-    --background-color-progressive--active: #233566;
-    --background-color-progressive--focus: #36c;
-    --background-color-progressive-subtle: #f1f4fd;
-    --background-color-progressive-subtle--hover: #dce3f9;
-    --background-color-progressive-subtle--active: #cbd6f6;
-    --background-color-destructive: #bf3c2c;
-    --background-color-destructive--hover: #9f3526;
-    --background-color-destructive--active: #612419;
-    --background-color-destructive--focus: #36c;
-    --background-color-destructive-subtle: #ffe9e5;
-    --background-color-destructive-subtle--hover: #ffdad3;
-    --background-color-destructive-subtle--active: #ffc8bd;
-    --background-color-error: #f54739;
-    --background-color-error--hover: #d74032;
-    --background-color-error--active: #bf3c2c;
-    --background-color-error-subtle: #ffe9e5;
-    --background-color-error-subtle--hover: #ffdad3;
-    --background-color-error-subtle--active: #ffc8bd;
-    --background-color-warning-subtle: #fdf2d5;
-    --background-color-success-subtle: #dff2eb;
-    --background-color-notice-subtle: #eaecf0;
-    --background-color-content-added: #a3d3ff;
-    --background-color-content-removed: #ffe49c;
-    --background-color-transparent: transparent;
-    --background-color-backdrop-light: rgba(255, 255, 255, 0.65);
-    --background-color-backdrop-dark: rgba(0, 0, 0, 0.65);
-    --background-color-button-quiet--hover: rgba(0, 24, 73, 0.027);
-    --background-color-button-quiet--active: rgba(0, 24, 73, 0.082);
-    --background-color-input-binary--checked: #36c;
-    --background-color-tab-list-item-framed--hover: rgba(255, 255, 255, 0.3);
-    --background-color-tab-list-item-framed--active: rgba(255, 255, 255, 0.65);
-    --opacity-icon-base: 0.87;
-    --opacity-icon-base--hover: 0.74;
-    --opacity-icon-base--selected: 1;
-    --opacity-icon-base--disabled: 0.51;
-    --opacity-icon-placeholder: 0.51;
-    --opacity-icon-subtle: 0.67;
-    --border-color-base: #a2a9b1;
-    --border-color-subtle: #c8ccd1;
-    --border-color-muted: #dadde3;
-    --border-color-interactive: #72777d;
-    --border-color-interactive--hover: #27292d;
-    --border-color-interactive--active: #202122;
-    --border-color-disabled: #c8ccd1;
-    --border-color-inverted: #fff;
-    --border-color-inverted-fixed: #fff;
-    --border-color-progressive: #6485d1;
-    --border-color-progressive--hover: #3056a9;
-    --border-color-progressive--active: #233566;
-    --border-color-progressive--focus: #36c;
-    --border-color-destructive: #f54739;
-    --border-color-destructive--hover: #9f3526;
-    --border-color-destructive--active: #612419;
-    --border-color-destructive--focus: #36c;
-    --border-color-error: #f54739;
-    --border-color-error--hover: #9f3526;
-    --border-color-error--active: #612419;
-    --border-color-warning: #ab7f2a;
-    --border-color-success: #099979;
-    --border-color-notice: #72777d;
-    --border-color-content-added: #a3d3ff;
-    --border-color-content-removed: #ffe49c;
-    --border-color-transparent: transparent;
-    --border-color-divider: #a2a9b1;
-    --outline-color-progressive--focus: #36c;
-    --color-link-red: var(--color-destructive);
-    --color-link-red--hover: var(--color-destructive--hover);
-    --color-link-red--active: var(--color-destructive--active);
-    --color-link-red--focus: var(--color-destructive--focus);
-    --color-link-red--visited: var(--color-destructive--visited);
-    --color-link-red--visited--hover: var(--color-destructive--visited--hover);
-    --color-link-red--visited--active: var(--color-destructive--visited--active);
-    --accent-color-base: #36c;
-    --border-color-input--hover: var(--border-color-interactive);
-    --border-color-input-binary: var(--border-color-interactive);
-    --border-color-input-binary--hover: var(--border-color-progressive--hover);
-    --border-color-input-binary--active: var(--border-color-progressive--active);
-    --border-color-input-binary--focus: var(--border-color-progressive--focus);
-    --border-color-input-binary--checked: var(--border-color-progressive);
-    --color-base--subtle: #54595d;
-    --font-size-medium: var(--font-size-medium, 1rem);
-    --line-height-medium: 1.6;
-    font-family: sans-serif;
-    direction: ltr;
-    line-height: var(--line-height-medium);
-    font-size: 100%;
-    color: var(--color-base, #202122);
-    border-collapse: collapse;
+    font-size: 100%
 }
 
 .wikitable {
     background-color: var(--background-color-neutral-subtle, #f8f9fa);
-    color: var(--color-base, #202122);
     margin: 1em 0;
-    border: 1px solid var(--border-color-base, #a2a9b1);
-    border-collapse: collapse;
+    border: 1px solid var(--border-color-base, #a2a9b1)
 }
 
-.wikitable>tr>th,
-.wikitable>tr>td,
+.wikitable th,
+.wikitable>*>tr>td,
 .wikitable>*>tr>th,
-.wikitable>*>tr>td {
+.wikitable>tr>td,
+.wikitable>tr>th {
     border: 1px solid var(--border-color-base, #a2a9b1);
-    padding: 0.2em 0.4em;
+    padding: .2em .4em
 }
 
 .wikitable>caption {
-    font-weight: bold;
+    font-weight: 700
 }
 
 a {
-    color: #3366cc;
-    text-decoration: none;
+    color: #36c;
+    text-decoration: none
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
