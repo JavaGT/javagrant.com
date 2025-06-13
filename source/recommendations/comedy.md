@@ -1,6 +1,6 @@
 ---
-title: Media
-slug: media
+title: Comedy
+slug: comedy
 ---
 
 [[toc]]
