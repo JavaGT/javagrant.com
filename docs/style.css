@@ -197,6 +197,7 @@ h2 {
     justify-content: center; */
     max-width: 80rem;
     margin: 0 auto;
+    box-shadow: 0 0 2px 1px #00000042;
 }
 
 .highlight-green {
