@@ -1,7 +1,7 @@
 body {
     /* background-color: #1a72b7; */
     background: #1A72B7;
-    background: linear-gradient(90deg, rgba(26, 114, 183, 1) 0%, rgba(26, 114, 183, 1) 49%, #b0935b 51%, #b0935b 100%);
+    background: linear-gradient(90deg, rgba(26, 114, 183, 1) 0%, rgba(26, 114, 183, 1) 49%, #c2a366 51%, #c2a366 100%);
     --nav-height: 4rem;
 
     /* CSS HSL */
@@ -22,40 +22,39 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    width: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
 
 
     font-family: 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif;
 }
 
-nav {
+body>nav {
+    z-index: 10001;
     /* position: fixed; */
     top: 0;
-    left: 0;
-    right: 0;
     height: var(--nav-height);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    position: sticky;
+    background-color: #7cc9fa;
+
 }
 
-nav ul {
+body>nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 20px;
-    width: 30rem;
+    width: 100%;
+    max-width: 40rem;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-nav ul li a {
+body>nav ul li a {
     font-size: 20px;
     line-height: 1.6;
     text-align: center;
@@ -63,7 +62,7 @@ nav ul li a {
     font-family: 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif;
     font-weight: bold;
     display: inline-block;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     position: relative;
     transition: text-decoration-color 0.1s ease, all 0.3s ease;
     letter-spacing: 1px;
@@ -74,10 +73,10 @@ nav ul li a {
     text-decoration-color: rgba(0, 0, 0, 0);
     text-decoration-skip-ink: none;
     /* text-decoration-color: #ffeddb; */
-    padding: 0 2rem;
+    /* padding: 0 min(1rem, 2vw); */
 }
 
-nav ul li a:hover {
+body>nav ul li a:hover {
     text-decoration: underline;
     text-underline-offset: 16px;
     text-decoration-thickness: 4px;
@@ -98,10 +97,12 @@ header {
     text-align: center;
     color: #d6f1ff;
     /* background-image: url('/background.svg'); */
+    background-image: url(background/background.svg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
+    padding: 1rem;
 }
 
 header .information {
@@ -109,7 +110,7 @@ header .information {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5rem auto;
+    margin: 2rem auto;
     /* margin-top: 10rem; */
     /* margin: 10rem; */
     max-width: 400px;
@@ -225,4 +226,24 @@ table img {
     max-height: 100px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wikinav {
+    position: sticky;
+    top: var(--nav-height);
+    background: #fff;
+    z-index: 1000;
+    color: #023047;
+}
+
+.wikinav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+    display: flex;
+}
+
+.wikinav ul li {
+    display: inline-block;
+    margin-right: 1rem;
 }

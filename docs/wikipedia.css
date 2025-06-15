@@ -2331,6 +2331,8 @@
 }
 
 .right-data {
+    position: relative;
+    z-index: 10000;
     background-color: #f8f9fa;
     border-color: #a2a9b1;
     border-style: solid;
@@ -2447,7 +2449,7 @@
 
 .gen-style-281 {
     font-style: italic;
-    margin-bottom: 8px;
+    margin: 8px;
     padding-left: 25.6px;
     /* width: 916.406px */
 }
