@@ -1,4 +1,24 @@
+html,
 body {
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+
+    margin: 0;
+    width: 100vw;
+
     /* background-color: #1a72b7; */
     background: #1A72B7;
     background: linear-gradient(90deg, rgba(26, 114, 183, 1) 0%, rgba(26, 114, 183, 1) 49%, #c2a366 51%, #c2a366 100%);
@@ -11,19 +31,10 @@ body {
     --tufts-blue: hsla(202, 84%, 45%, 1);
     --timberwolf: hsla(120, 5%, 83%, 1);
 
-    --background-1: var(--blue-sapphire);
-    --background-2: #8ecae6;
-    --background-3: #219ebc;
-    /* background-image: linear-gradient(to bottom, var(--background-1), var(--background-2), var(--background-3)); */
-
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: absolute;
 
 
     font-family: 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif;
@@ -235,16 +246,17 @@ table img {
     background: #fff;
     z-index: 1000;
     color: #023047;
+    padding: 0;
 }
 
-.wikinav ul {
+.wikinav {
     list-style: none;
     margin: 0;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     display: flex;
 }
 
-.wikinav ul li {
+.wikinav li {
     display: inline-block;
     margin-right: 1rem;
 }
