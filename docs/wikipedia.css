@@ -16,16 +16,14 @@
     margin: -1px;
     outline-color: #36c;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 1471px;
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
     top: 0;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px;
+    /* width: 1px; */
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
     -webkit-text-stroke-color: #36c
@@ -40,7 +38,7 @@
     outline-color: #202122;
     text-decoration-color: #202122;
     text-emphasis-color: #202122;
-    width: 1470px;
+    /* width: 1470px; */
     -webkit-text-fill-color: #202122;
     -webkit-text-stroke-color: #202122
 }
@@ -58,25 +56,21 @@
     flex-wrap: wrap;
     height: 66px;
     inline-size: 1470px;
-    max-width: 1596px;
+    /* max-width: 1596px; */
     min-height: 50px;
     min-width: 300px;
     padding: 8px 44px;
-    perspective-origin: 735px 33px;
     position: relative;
     right: 0;
     top: 0;
-    transform-origin: 735px 33px;
-    width: 1470px;
+    /* width: 1470px; */
     z-index: 3
 }
 
 .gen-style-5 {
     gap: 20px;
     height: 50px;
-    perspective-origin: 110px 25px;
-    transform-origin: 110px 25px;
-    width: 220px
+    /* width: 220px */
 }
 
 .gen-style-7 {
@@ -89,9 +83,7 @@
 
 .gen-style-8,
 .gen-style-9 {
-    perspective-origin: 16px 16px;
-    transform-origin: 16px 16px;
-    width: 32px
+    /* width: 32px */
 }
 
 .gen-style-8 {
@@ -122,7 +114,7 @@
     font-weight: 700;
     height: 32px;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     min-width: 32px;
     overflow: hidden;
@@ -143,10 +135,8 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-11,
@@ -161,12 +151,10 @@
     inset-block-end: 16.5px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     right: 16.5px;
     top: 16.5px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-12 {
@@ -174,13 +162,11 @@
     box-shadow: rgba(0, 0, 0, .2)0 2px 6px -1px;
     inset-block-end: -32px;
     max-height: 598.5px;
-    max-width: 200px;
+    /* max-width: 200px; */
     overflow: hidden auto;
     padding: 16px;
-    perspective-origin: 109.195px 16px;
     right: -185.391px;
     top: 32px;
-    transform-origin: 109.195px 16px;
     transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
@@ -189,8 +175,6 @@
 
 .gen-style-13 {
     height: 427.516px;
-    perspective-origin: 93.1953px 213.758px;
-    transform-origin: 93.1953px 213.758px
 }
 
 .gen-style-14 {
@@ -199,8 +183,6 @@
     line-height: 22.4px;
     margin-bottom: 6px;
     padding-bottom: 6px;
-    perspective-origin: 93.1953px 15.2656px;
-    transform-origin: 93.1953px 15.2656px
 }
 
 .gen-style-15 {
@@ -208,9 +190,8 @@
     font-weight: 700;
     height: 22.3984px;
     margin-right: 8px;
-    perspective-origin: 36.5547px 11.1953px;
     vertical-align: middle;
-    width: 73.1172px
+    /* width: 73.1172px */
 }
 
 .gen-style-16,
@@ -230,26 +211,19 @@
     height: 22px;
     outline-color: #202122;
     padding: 4px 8px;
-    perspective-origin: 50.6875px 11px;
     text-align: left;
     text-decoration-color: #202122;
-    transform-origin: 50.6914px 11px;
-    width: 101.383px
+    /* width: 101.383px */
 }
 
 .gen-style-17 {
     display: none;
     height: auto;
     inline-size: auto;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
-.gen-style-18 {
-    perspective-origin: 93.1953px 87.4922px;
-    transform-origin: 93.1953px 87.4961px
-}
+.gen-style-18 {}
 
 .gen-style-19 {
     border-bottom: 1px solid #eaecf0;
@@ -264,11 +238,9 @@
     outline-color: #54595d;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 50% 50%;
     text-decoration-color: #54595d;
     text-emphasis-color: #54595d;
-    transform-origin: 50% 50%;
-    width: auto;
+    /* width: auto; */
     -webkit-text-fill-color: #54595d;
     -webkit-text-stroke-color: #54595d
 }
@@ -279,15 +251,11 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    perspective-origin: 93.1953px 87.4922px;
-    transform-origin: 93.1953px 87.4961px;
-    width: 186.391px
+    /* width: 186.391px */
 }
 
 .gen-style-21,
-.gen-style-22 {
-    perspective-origin: 93.1953px 14px
-}
+.gen-style-22 {}
 
 .gen-style-21 {
     margin-bottom: 1.4px
@@ -309,45 +277,31 @@
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
-    transform-origin: 93.1953px 14px;
-    width: 186.391px;
+    /* width: 186.391px; */
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
     -webkit-text-stroke-color: #36c
 }
 
 .gen-style-23 {
-    transform-origin: 32.6914px 8px;
-    width: 65.3828px
+    /* width: 65.3828px */
 }
 
-.gen-style-24 {
-    perspective-origin: 28.0156px 8px
-}
+.gen-style-24 {}
 
 .gen-style-25 {
-    perspective-origin: 45.9062px 8px;
-    transform-origin: 45.9102px 8px;
-    width: 91.8203px
+    /* width: 91.8203px */
 }
 
 .gen-style-26 {
-    transform-origin: 47.0781px 8px;
-    width: 94.1562px
+    /* width: 94.1562px */
 }
 
-.gen-style-27 {
-    perspective-origin: 50.5859px 8px
-}
+.gen-style-27 {}
 
-.gen-style-28 {
-    perspective-origin: 33.4609px 8px
-}
+.gen-style-28 {}
 
-.gen-style-29 {
-    perspective-origin: 93.1953px 104.992px;
-    transform-origin: 93.1953px 104.996px
-}
+.gen-style-29 {}
 
 .gen-style-30 {
     border-bottom: 1px solid #eaecf0;
@@ -359,42 +313,30 @@
     outline-color: #54595d;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 93.1953px 14.5px;
     text-decoration-color: #54595d;
     text-emphasis-color: #54595d;
-    transform-origin: 93.1953px 14.5px;
     -webkit-text-fill-color: #54595d;
     -webkit-text-stroke-color: #54595d
 }
 
-.gen-style-31 {
-    perspective-origin: 14.3984px 8px
-}
+.gen-style-31 {}
 
 .gen-style-32 {
-    transform-origin: 38.918px 8px;
-    width: 77.8359px
+    /* width: 77.8359px */
 }
 
 .gen-style-33 {
-    perspective-origin: 54.8516px 8px;
-    transform-origin: 54.8516px 8px;
-    width: 109.703px
+    /* width: 109.703px */
 }
 
-.gen-style-34 {
-    perspective-origin: 50.5859px 8px
-}
+.gen-style-34 {}
 
 .gen-style-35 {
-    transform-origin: 33.0781px 8px;
-    width: 66.1562px
+    /* width: 66.1562px */
 }
 
 .gen-style-36 {
-    perspective-origin: 43.9766px 8px;
-    transform-origin: 43.9766px 8px;
-    width: 87.9531px
+    /* width: 87.9531px */
 }
 
 .gen-style-37 {
@@ -442,16 +384,14 @@
     display: flex;
     flex-grow: 1;
     height: 32px;
-    perspective-origin: 573px 16px;
-    transform-origin: 573px 16px;
-    width: 1146px
+    /* width: 1146px */
 }
 
 .gen-style-43 {
     flex-grow: 1;
     font-size: 14px;
     inline-size: 909.758px;
-    width: 909.758px
+    /* width: 909.758px */
 }
 
 .gen-style-44 {
@@ -472,19 +412,17 @@
     font-size: 16px;
     font-weight: 700;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     min-width: 32px;
     outline-color: #202122;
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
-    perspective-origin: 50% 50%;
     text-decoration-color: #202122;
     text-decoration-line: none;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transform-origin: 50% 50%;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
     -webkit-text-decorations-in-effect: none
@@ -502,7 +440,7 @@
     min-inline-size: 20px;
     min-width: 20px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-46 {
@@ -512,18 +450,18 @@
     overflow: hidden;
     position: absolute;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-47 {
     margin-right: 12px;
-    max-width: 500px;
-    width: 500px
+    /* max-width: 500px; */
+    /* width: 500px */
 }
 
 .gen-style-48 {
     margin-left: 24px;
-    width: 476px
+    /* width: 476px */
 }
 
 .gen-style-49 {
@@ -537,9 +475,7 @@
     border-top-right-radius: 2px;
     display: flex;
     height: 30px;
-    perspective-origin: 238px16px;
-    transform-origin: 238px 16px;
-    width: 474px
+    /* width: 474px */
 }
 
 .gen-style-50 {
@@ -549,14 +485,12 @@
     position: relative;
     right: 0;
     top: 0;
-    transform-origin: 203.148px 16px
 }
 
 .gen-style-50,
 .gen-style-51,
 .gen-style-52 {
-    perspective-origin: 203.148px 16px;
-    width: 406.297px
+    /* width: 406.297px */
 }
 
 .gen-style-51 {
@@ -583,7 +517,6 @@
     outline-color: #202122;
     padding: 4px 8px 4px 36px;
     text-decoration-color: #202122;
-    transform-origin: 203.148px 16px;
     transition-duration: .25s;
     transition-property: background-color, color, border-color, box-shadow
 }
@@ -596,16 +529,14 @@
     min-height: 20px;
     min-width: 20px;
     opacity: .51;
-    perspective-origin: 10px 10px;
     position: absolute;
     right: 377.297px;
     top: 16px;
     transform: matrix(1, 0, 0, 1, 0, -10);
-    transform-origin: 10px 10px;
     transition-duration: .1s;
     transition-property: color;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-54 {
@@ -629,20 +560,18 @@
     margin-bottom: -1px;
     margin-right: -1px;
     margin-top: -1px;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     outline-color: #202122;
     overflow: hidden;
     padding-left: 11px;
     padding-right: 11px;
-    perspective-origin: 35.3516px 16px;
     text-decoration-color: #202122;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transform-origin: 35.3516px 16px;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 70.7031px
+    /* width: 70.7031px */
 }
 
 .gen-style-55,
@@ -655,18 +584,13 @@
 .gen-style-56 {
     height: 32px;
     justify-content: flex-end;
-    perspective-origin: 118.117px 16px;
     position: relative;
     right: 0;
     top: 0;
-    transform-origin: 118.121px 16px;
-    width: 236.242px
+    /* width: 236.242px */
 }
 
-.gen-style-57 {
-    perspective-origin: 101.117px 8px;
-    transform-origin: 101.121px 8px
-}
+.gen-style-57 {}
 
 .gen-style-58 {
     display: none;
@@ -674,9 +598,7 @@
     inline-size: auto;
     min-height: 0;
     min-width: 0;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-60 {
@@ -702,7 +624,7 @@
     position: absolute;
     text-emphasis-color: #000;
     top: 0;
-    width: 100%;
+    /* width: 100%; */
     z-index: 1;
     -webkit-text-fill-color: #000;
     -webkit-text-stroke-color: #000
@@ -724,7 +646,7 @@
     justify-content: center;
     margin-left: 4px;
     margin-right: 4px;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     min-width: 32px;
     overflow: hidden;
@@ -747,7 +669,7 @@
     min-inline-size: 20px;
     min-width: 20px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-65,
@@ -762,7 +684,7 @@
     margin: -1px;
     overflow: hidden;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-66 {
@@ -770,7 +692,7 @@
     box-shadow: rgba(0, 0, 0, .2)0 2px 6px -1px;
     height: 0;
     max-height: 598.5px;
-    max-width: 200px;
+    /* max-width: 200px; */
     opacity: 0;
     overflow: hidden auto;
     padding: 16px;
@@ -779,16 +701,13 @@
     transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
-    width: max-content;
+    /* width: max-content; */
     z-index: 50
 }
 
 .gen-style-68,
 .gen-style-69,
-.gen-style-70 {
-    perspective-origin: 101.117px 8px;
-    transform-origin: 101.121px 8px
-}
+.gen-style-70 {}
 
 .gen-style-70 {
     align-items: center;
@@ -799,16 +718,13 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    transform-origin: 101.121px8px;
-    width: 202.242px
+    /* width: 202.242px */
 }
 
 .gen-style-71 {
     margin-left: 4px;
     margin-right: 4px;
-    perspective-origin: 22.5703px 8px;
-    transform-origin: 22.5742px 8px;
-    width: 45.1484px
+    /* width: 45.1484px */
 }
 
 .gen-style-72 {
@@ -831,14 +747,11 @@
 .gen-style-75 {
     margin-left: 4px;
     margin-right: 4px;
-    transform-origin: 47.4727px 8px;
-    width: 94.9453px
+    /* width: 94.9453px */
 }
 
 .gen-style-75 {
-    perspective-origin: 19.0703px 8px;
-    transform-origin: 19.0742px 8px;
-    width: 38.1484px
+    /* width: 38.1484px */
 }
 
 .gen-style-76 {
@@ -853,13 +766,11 @@
     inset-block-end: 0;
     margin: 0;
     opacity: 0;
-    perspective-origin: 20px 16px;
     position: absolute;
     right: 0;
     text-emphasis-color: #000;
     top: 0;
-    transform-origin: 20px 16px;
-    width: 40px;
+    /* width: 40px; */
     z-index: 1;
     -webkit-text-fill-color: #000;
     -webkit-text-stroke-color: #000
@@ -881,19 +792,17 @@
     justify-content: center;
     margin-left: 4px;
     margin-right: 4px;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     min-width: 32px;
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
-    perspective-origin: 16px 16px;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transform-origin: 16px 16px;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 32px
+    /* width: 32px */
 }
 
 .gen-style-79 {
@@ -905,10 +814,8 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-80,
@@ -923,12 +830,10 @@
     inset-block-end: 16.5px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     right: 20.5px;
     top: 16.5px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-81 {
@@ -936,13 +841,11 @@
     box-shadow: rgba(0, 0, 0, .2)0 2px 6px -1px;
     inset-block-end: -32px;
     max-height: 598.5px;
-    max-width: 200px;
+    /* max-width: 200px; */
     overflow: hidden auto;
     padding: 16px;
-    perspective-origin: 116px 16px;
     right: 0;
     top: 32px;
-    transform-origin: 116px 16px;
     transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
@@ -953,9 +856,7 @@
     display: none;
     height: auto;
     inline-size: auto;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-83 {
@@ -1002,7 +903,7 @@
     min-inline-size: 20px;
     min-width: 20px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-91 {
@@ -1026,9 +927,7 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    perspective-origin: 100px 28px;
-    transform-origin: 100px28px;
-    width: 200px
+    /* width: 200px */
 }
 
 .gen-style-96 {
@@ -1044,21 +943,17 @@
     outline-color: #36c;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 100px 14px;
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
-    transform-origin: 100px 14px;
-    width: 200px;
+    /* width: 200px; */
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
     -webkit-text-stroke-color: #36c
 }
 
 .gen-style-98 {
-    perspective-origin: 12.4453px 8px;
-    transform-origin: 12.4492px 8px;
-    width: 24.8984px
+    /* width: 24.8984px */
 }
 
 .gen-style-99 {
@@ -1068,19 +963,17 @@
     column-rule-color: #202122;
     font-family: sans-serif;
     height: 2403px;
-    max-width: 1596px;
+    /* max-width: 1596px; */
     outline-color: #202122;
     padding-left: 44px;
     padding-right: 44px;
     padding-top: .05px;
-    perspective-origin: 735px 1201.5px;
     position: relative;
     right: 0;
     text-decoration-color: #202122;
     text-emphasis-color: #202122;
     top: 0;
-    transform-origin: 735px 1201.5px;
-    width: 1470px;
+    /* width: 1470px; */
     z-index: 0;
     -webkit-text-fill-color: #202122;
     -webkit-text-stroke-color: #202122
@@ -1093,13 +986,11 @@
  e siteNotice" 0px " columnStart pageContent" 2127.56px " footer footer" 275.3
  91px / 196px 1162px;
     height: 2402.95px;
-    perspective-origin: 691px 1201.48px;
-    transform-origin: 691px 1201.48px
 }
 
 .gen-style-101 {
     grid-area: siteNotice;
-    width: 1382px
+    /* width: 1382px */
 }
 
 .gen-style-102 {
@@ -1112,11 +1003,9 @@
     left: auto;
     margin-bottom: 24px;
     margin-top: 24px;
-    perspective-origin: 50% 50%;
     position: relative;
     text-align: center;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-103 {
@@ -1130,14 +1019,12 @@
     margin-left: -12px;
     margin-top: 44.8px;
     overflow-anchor: none;
-    perspective-origin: 104px 1041.38px;
-    transform-origin: 104px 1041.38px;
-    width: 208px
+    /* width: 208px */
 }
 
 .gen-style-105 {
     margin-left: 12px;
-    width: 196px
+    /* width: 196px */
 }
 
 .gen-style-107 {
@@ -1152,30 +1039,23 @@
     height: 336.531px;
     max-height: 700px;
     overflow: hidden auto;
-    perspective-origin: 104px 168.266px;
     position: sticky;
     top: 74px;
-    transform-origin: 104px 168.266px
 }
 
 .gen-style-109,
-.gen-style-110 {
-    perspective-origin: 104px 144.266px;
-    transform-origin: 104px 144.266px
-}
+.gen-style-110 {}
 
 .gen-style-110 {
     background-color: #fff;
     margin-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
-    width: 176px
+    /* width: 176px */
 }
 
 .gen-style-111 {
     font-size: 14px;
-    perspective-origin: 88px 144.266px;
-    transform-origin: 88px 144.266px
 }
 
 .gen-style-112 {
@@ -1185,9 +1065,7 @@
     margin-bottom: 6px;
     margin-left: 12px;
     padding-bottom: 6px;
-    perspective-origin: 82px 15.2656px;
-    transform-origin: 82px 15.2656px;
-    width: 164px
+    /* width: 164px */
 }
 
 .gen-style-113 {
@@ -1200,12 +1078,10 @@
     margin-right: 8px;
     margin-top: 0;
     outline-color: #101418;
-    perspective-origin: 30.3281px 11.1953px;
     text-decoration-color: #101418;
     text-emphasis-color: #101418;
-    transform-origin: 30.332px 11.1992px;
     vertical-align: middle;
-    width: 60.6641px;
+    /* width: 60.6641px; */
     word-break: break-word;
     -webkit-text-fill-color: #101418;
     -webkit-text-stroke-color: #101418
@@ -1235,16 +1111,12 @@
     display: none;
     height: auto;
     inline-size: auto;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-115 {
     height: 22px;
-    perspective-origin: 19.3438px 11px;
-    transform-origin: 19.3438px 11px;
-    width: 38.6875px
+    /* width: 38.6875px */
 }
 
 .gen-style-116 {
@@ -1252,19 +1124,15 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    perspective-origin: 88px 126px;
-    transform-origin: 88px126px;
-    width: 176px
+    /* width: 176px */
 }
 
 .gen-style-117 {
     padding-left: 12px;
-    perspective-origin: 88px 14px;
     position: relative;
     right: 0;
     top: 0;
-    transform-origin: 88px 14px;
-    width: 164px
+    /* width: 164px */
 }
 
 .gen-style-118 {
@@ -1278,11 +1146,9 @@
     font-weight: 700;
     height: 28px;
     outline-color: #202122;
-    perspective-origin: 82px 14px;
     text-decoration-color: #202122;
     text-decoration-line: none;
-    transform-origin: 82px 14px;
-    width: 164px;
+    /* width: 164px; */
     word-break: break-word;
     -webkit-text-decorations-in-effect: none
 }
@@ -1290,16 +1156,11 @@
 .gen-style-119 {
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 90px 14px;
-    transform-origin: 90px 14px;
-    width: 180px
+    /* width: 180px */
 }
 
 .gen-style-120,
-.gen-style-121 {
-    perspective-origin: 82px 14px;
-    transform-origin: 82px 14px
-}
+.gen-style-121 {}
 
 .gen-style-120 {
     border-end-end-radius: 2px;
@@ -1314,7 +1175,7 @@
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
-    width: 164px;
+    /* width: 164px; */
     word-break: break-word;
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
@@ -1328,26 +1189,20 @@
 
 .gen-style-122 {
     display: none;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%
 }
 
 .gen-style-124 {
     list-style-type: none;
     padding-left: 0;
-    perspective-origin: 82px 0;
-    transform-origin: 82px 0;
-    width: 164px
+    /* width: 164px */
 }
 
 .gen-style-125 {
     padding-left: 12px;
-    perspective-origin: 88px 70px;
     position: relative;
     right: 0;
     top: 0;
-    transform-origin: 88px 70px;
-    width: 164px
+    /* width: 164px */
 }
 
 .gen-style-126 {
@@ -1356,7 +1211,7 @@
     gap: 4px;
     font-family: sans-serif;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 22px;
     min-width: 22px;
     overflow: hidden;
@@ -1366,7 +1221,7 @@
     text-wrap-mode: nowrap;
     top: 1px;
     transition-duration: .1s;
-    width: 22px
+    /* width: 22px */
 }
 
 .gen-style-127,
@@ -1388,10 +1243,8 @@
     mask-size: 12px;
     min-height: 12px;
     min-width: 12px;
-    perspective-origin: 6px 6px;
-    transform-origin: 6px 6px;
     vertical-align: text-bottom;
-    width: 12px
+    /* width: 12px */
 }
 
 .gen-style-128 {
@@ -1401,39 +1254,30 @@
     left: 0;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 21px;
     top: 16.25px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-129 {
     list-style-type: none;
     padding-left: 0;
-    perspective-origin: 82px 56px;
-    transform-origin: 82px 56px;
-    width: 164px
+    /* width: 164px */
 }
 
 .gen-style-130 {
     display: block;
     padding-left: 12px;
-    perspective-origin: 82px 14px;
     position: relative;
     right: 0;
     top: 0;
-    transform-origin: 82px 14px;
-    width: 152px
+    /* width: 152px */
 }
 
 .gen-style-131,
-.gen-style-132 {
-    perspective-origin: 76px 14px;
-    transform-origin: 76px 14px
-}
+.gen-style-132 {}
 
 .gen-style-131 {
     border-end-end-radius: 2px;
@@ -1448,7 +1292,7 @@
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
-    width: 152px;
+    /* width: 152px; */
     word-break: break-word;
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
@@ -1463,9 +1307,7 @@
 .gen-style-133 {
     list-style-type: none;
     padding-left: 0;
-    perspective-origin: 76px 0;
-    transform-origin: 76px 0;
-    width: 152px
+    /* width: 152px */
 }
 
 .gen-style-134 {
@@ -1473,8 +1315,9 @@
 }
 
 .gen-style-135 {
-    max-width: 1000px;
-    margin: 0 auto
+    /* /* max-width: 1000px; */
+    */
+    /* margin: 0 auto */
 }
 
 .gen-style-136 {
@@ -1501,7 +1344,7 @@
     display: inline-flex;
     font-weight: 700;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     min-width: 32px;
     overflow: hidden;
@@ -1524,7 +1367,7 @@
     min-inline-size: 20px;
     min-width: 20px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-140 {
@@ -1534,7 +1377,7 @@
     height: 0;
     left: -1px;
     max-height: 598.5px;
-    max-width: 200px;
+    /* max-width: 200px; */
     opacity: 0;
     overflow: hidden auto;
     padding: 16px;
@@ -1543,7 +1386,7 @@
     transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
-    width: max-content;
+    /* width: max-content; */
     z-index: 50
 }
 
@@ -1561,7 +1404,6 @@
     overflow-wrap: break-word;
     text-decoration-color: #101418;
     text-emphasis-color: #101418;
-    transform-origin: 398.039px 19.7969px;
     -webkit-text-fill-color: #101418;
     -webkit-text-stroke-color: #101418
 }
@@ -1571,7 +1413,6 @@
     flex-shrink: 0;
     float: right;
     margin-right: -12px;
-    perspective-origin: 78.9609px 16px;
     position: relative;
     right: 0;
     top: 0
@@ -1580,9 +1421,7 @@
 .gen-style-144,
 .gen-style-145 {
     align-items: center;
-    perspective-origin: 78.9609px 16px;
-    transform-origin: 78.9609px 16px;
-    width: 157.922px
+    /* width: 157.922px */
 }
 
 .gen-style-144 {
@@ -1614,7 +1453,7 @@
     font-weight: 700;
     height: 32px;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     outline-color: #36c;
     overflow: hidden;
@@ -1648,20 +1487,16 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solidrgb(51, 102, 204);
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-147 {
     font-size: 14px;
     height: 16px;
-    perspective-origin: 40.4609px 8px;
     text-decoration-color: #36c;
-    transform-origin: 40.4609px 8px;
-    width: 80.9219px
+    /* width: 80.9219px */
 }
 
 .gen-style-148 {
@@ -1676,18 +1511,16 @@
     inset-inline-start: auto;
     left: auto;
     max-height: 518.7px;
-    max-width: 200px;
+    /* max-width: 200px; */
     overflow-y: auto;
     padding: 16px;
-    perspective-origin: 50% 50%;
     position: absolute;
     right: 0;
     top: 100%;
-    transform-origin: 50% 50%;
     transition-duration: .1s;
     transition-property: opacity;
     visibility: hidden;
-    width: max-content;
+    /* width: max-content; */
     z-index: 50
 }
 
@@ -1759,44 +1592,34 @@
     flex-grow: 1;
     inline-size: 705.492px;
     margin-left: -8px;
-    perspective-origin: 352.742px 18px;
-    transform-origin: 352.746px 18px;
-    width: 705.492px
+    /* width: 705.492px */
 }
 
 .gen-style-161,
-.gen-style-162 {
-    perspective-origin: 47.8984px 18px
-}
+.gen-style-162 {}
 
 .gen-style-162 {
     float: left;
     height: 36px;
-    transform-origin: 47.8984px 18px
 }
 
 .gen-style-163,
-.gen-style-164 {
-    perspective-origin: 47.8984px 0
-}
+.gen-style-164 {}
 
 .gen-style-164 {
     list-style-type: none;
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    transform-origin: 47.8984px 0;
-    width: 95.7969px
+    /* width: 95.7969px */
 }
 
 .gen-style-165 {
     float: left;
     margin-left: 8px;
     margin-right: 8px;
-    perspective-origin: 19.4453px 18px;
     text-wrap-mode: nowrap;
-    transform-origin: 19.4492px 18px;
-    width: 38.8984px
+    /* width: 38.8984px */
 }
 
 .gen-style-166 {
@@ -1815,31 +1638,25 @@
     outline-color: #202122;
     padding-bottom: 7px;
     padding-top: 12px;
-    perspective-origin: 19.4453px 18.5px;
     position: relative;
     right: 0;
     text-decoration-color: #202122;
     text-decoration-line: none;
     top: 0;
-    transform-origin: 19.4492px 18.5px;
-    width: 38.8984px;
+    /* width: 38.8984px; */
     -webkit-text-decorations-in-effect: none
 }
 
 .gen-style-167 {
-    perspective-origin: 19.4453px 8px;
-    transform-origin: 19.4492px 8px;
-    width: 38.8984px
+    /* width: 38.8984px */
 }
 
 .gen-style-168 {
     float: left;
     margin-left: 8px;
     margin-right: 8px;
-    perspective-origin: 12.4453px 18px;
     text-wrap-mode: nowrap;
-    transform-origin: 12.4492px 18px;
-    width: 24.8984px
+    /* width: 24.8984px */
 }
 
 .gen-style-169 {
@@ -1857,24 +1674,20 @@
     outline-color: #36c;
     padding-bottom: 7px;
     padding-top: 12px;
-    perspective-origin: 12.4453px 18.5px;
     position: relative;
     right: 0;
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
     top: 0;
-    transform-origin: 12.4492px 18.5px;
-    width: 24.8984px;
+    /* width: 24.8984px; */
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
     -webkit-text-stroke-color: #36c
 }
 
 .gen-style-170 {
-    perspective-origin: 12.4453px 8px;
-    transform-origin: 12.4492px 8px;
-    width: 24.8984px
+    /* width: 24.8984px */
 }
 
 .gen-style-171 {
@@ -1887,10 +1700,8 @@
     left: auto;
     margin-left: 8px;
     margin-right: 8px;
-    perspective-origin: 50% 50%;
     position: relative;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-172 {
@@ -1906,7 +1717,7 @@
     display: inline-flex;
     justify-content: center;
     margin-bottom: -1px;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     overflow: hidden;
     padding-bottom: 7px;
@@ -1921,16 +1732,11 @@
 .gen-style-174 {
     display: flex;
     margin-right: -8px;
-    perspective-origin: 126.25px 18px;
-    transform-origin: 126.254px 18px;
-    width: 252.508px
+    /* width: 252.508px */
 }
 
 .gen-style-175,
-.gen-style-176 {
-    perspective-origin: 90.4062px 18px;
-    transform-origin: 90.4102px 18px
-}
+.gen-style-176 {}
 
 .gen-style-176 {
     float: left;
@@ -1938,17 +1744,14 @@
 }
 
 .gen-style-177,
-.gen-style-178 {
-    perspective-origin: 90.4062px 0;
-    transform-origin: 90.4102px 0
-}
+.gen-style-178 {}
 
 .gen-style-178 {
     list-style-type: none;
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    width: 180.82px
+    /* width: 180.82px */
 }
 
 .gen-style-179 {
@@ -1956,7 +1759,7 @@
     margin-left: 8px;
     margin-right: 8px;
     text-wrap-mode: nowrap;
-    width: 33.4688px
+    /* width: 33.4688px */
 }
 
 .gen-style-180 {
@@ -1974,14 +1777,12 @@
     outline-color: #202122;
     padding-bottom: 7px;
     padding-top: 12px;
-    perspective-origin: 16.7344px 18.5px;
     position: relative;
     right: 0;
     text-decoration-color: #202122;
     text-decoration-line: none;
     top: 0;
-    transform-origin: 16.7344px 18.5px;
-    width: 33.4688px;
+    /* width: 33.4688px; */
     -webkit-text-decorations-in-effect: none
 }
 
@@ -1990,8 +1791,7 @@
     margin-left: 8px;
     margin-right: 8px;
     text-wrap-mode: nowrap;
-    transform-origin: 12.0625px 18px;
-    width: 24.125px
+    /* width: 24.125px */
 }
 
 .gen-style-183 {
@@ -2008,15 +1808,13 @@
     outline-color: #36c;
     padding-bottom: 7px;
     padding-top: 12px;
-    perspective-origin: 12.0625px 18.5px;
     position: relative;
     right: 0;
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
     top: 0;
-    transform-origin: 12.0625px 18.5px;
-    width: 24.125px;
+    /* width: 24.125px; */
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
     -webkit-text-stroke-color: #36c
@@ -2027,8 +1825,7 @@
     margin-left: 8px;
     margin-right: 8px;
     text-wrap-mode: nowrap;
-    transform-origin: 37.6133px 18px;
-    width: 75.2266px
+    /* width: 75.2266px */
 }
 
 .gen-style-186,
@@ -2052,12 +1849,10 @@
     outline-color: #36c;
     padding-bottom: 7px;
     padding-top: 12px;
-    perspective-origin: 37.6094px 18.5px;
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
-    transform-origin: 37.6133px 18.5px;
-    width: 75.2266px;
+    /* width: 75.2266px; */
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
     -webkit-text-stroke-color: #36c
@@ -2074,13 +1869,11 @@
     inset-block-end: 0;
     margin: 0;
     opacity: 0;
-    perspective-origin: 27.8438px 17px;
     position: absolute;
     right: 0;
     text-emphasis-color: #000;
     top: 0;
-    transform-origin: 27.8438px 17px;
-    width: 55.6875px;
+    /* width: 55.6875px; */
     z-index: 1;
     -webkit-text-fill-color: #000;
     -webkit-text-stroke-color: #000
@@ -2105,19 +1898,17 @@
     height: 35px;
     justify-content: center;
     margin-bottom: -1px;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     overflow: hidden;
     padding-bottom: 7px;
     padding-top: 12px;
-    perspective-origin: 27.8438px 17.5px;
     position: relative;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
     top: 0;
-    transform-origin: 27.8438px 17.5px;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 55.6875px
+    /* width: 55.6875px */
 }
 
 .gen-style-193 {
@@ -2126,13 +1917,11 @@
     inset-block-end: -32px;
     left: -125.891px;
     max-height: 598.5px;
-    max-width: 200px;
+    /* max-width: 200px; */
     overflow: hidden auto;
     padding: 16px;
-    perspective-origin: 90.7891px 16px;
     position: absolute;
     top: 34px;
-    transform-origin: 90.7891px 16px;
     transition-property: opacity;
     visibility: hidden;
     z-index: 50
@@ -2140,9 +1929,7 @@
 
 .gen-style-194 {
     height: 472.719px;
-    perspective-origin: 74.7891px 236.359px;
-    transform-origin: 74.7891px 236.359px;
-    width: 149.578px
+    /* width: 149.578px */
 }
 
 .gen-style-195 {
@@ -2151,8 +1938,6 @@
     line-height: 22.4px;
     margin-bottom: 6px;
     padding-bottom: 6px;
-    perspective-origin: 74.7891px 15.2656px;
-    transform-origin: 74.7891px 15.2656px
 }
 
 .gen-style-196 {
@@ -2160,9 +1945,8 @@
     font-weight: 700;
     height: 22.3984px;
     margin-right: 8px;
-    perspective-origin: 18.1484px 11.1953px;
     vertical-align: middle;
-    width: 36.3047px
+    /* width: 36.3047px */
 }
 
 .gen-style-197 {
@@ -2186,10 +1970,7 @@
     margin-bottom: 1.4px
 }
 
-.gen-style-199 {
-    perspective-origin: 74.7891px 134.391px;
-    transform-origin: 74.7891px 134.395px
-}
+.gen-style-199 {}
 
 .gen-style-200 {
     border-bottom: 1px solid #eaecf0;
@@ -2201,19 +1982,14 @@
     outline-color: #54595d;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 74.7891px 14.5px;
     text-decoration-color: #54595d;
     text-emphasis-color: #54595d;
-    transform-origin: 74.7891px 14.5px;
     -webkit-text-fill-color: #54595d;
     -webkit-text-stroke-color: #54595d
 }
 
 .gen-style-201,
-.gen-style-202 {
-    perspective-origin: 74.7891px 116.891px;
-    transform-origin: 74.7891px 116.895px
-}
+.gen-style-202 {}
 
 .gen-style-202 {
     height: 233.789px;
@@ -2221,17 +1997,14 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    width: 149.578px
+    /* width: 149.578px */
 }
 
 .gen-style-203,
-.gen-style-204 {
-    transform-origin: 74.7891px 14px
-}
+.gen-style-204 {}
 
 .gen-style-203 {
     margin-bottom: 1.4px;
-    perspective-origin: 74.7891px 14px
 }
 
 .gen-style-204 {
@@ -2248,42 +2021,31 @@
     outline-color: #36c;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 74.7891px14px;
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
-    width: 149.578px;
+    /* width: 149.578px; */
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
     -webkit-text-stroke-color: #36c
 }
 
 .gen-style-206 {
-    perspective-origin: 52.5391px 8px;
-    transform-origin: 52.5391px 8px;
-    width: 105.078px
+    /* width: 105.078px */
 }
 
 .gen-style-207 {
-    transform-origin: 46.6914px 8px;
-    width: 93.3828px
+    /* width: 93.3828px */
 }
 
 .gen-style-211 {
-    transform-origin: 60.7031px 8px;
-    width: 121.406px
+    /* width: 121.406px */
 }
 
-.gen-style-213 {
-    perspective-origin: 74.7891px 46.1953px;
-    transform-origin: 74.7891px 46.1992px
-}
+.gen-style-213 {}
 
 .gen-style-214,
-.gen-style-215 {
-    perspective-origin: 74.7891px 28.6953px;
-    transform-origin: 74.7891px 28.6992px
-}
+.gen-style-215 {}
 
 .gen-style-215 {
     height: 57.3984px;
@@ -2291,43 +2053,32 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    width: 149.578px
+    /* width: 149.578px */
 }
 
 .gen-style-216 {
-    perspective-origin: 56.4141px 8px;
-    transform-origin: 56.4141px 8px;
-    width: 112.828px
+    /* width: 112.828px */
 }
 
 .gen-style-217 {
-    transform-origin: 52.1406px 8px;
-    width: 104.281px
+    /* width: 104.281px */
 }
 
-.gen-style-218 {
-    perspective-origin: 74.7891px 31.5px;
-    transform-origin: 74.7891px 31.5px
-}
+.gen-style-218 {}
 
 .gen-style-219,
-.gen-style-220 {
-    perspective-origin: 74.7891px 14px;
-    transform-origin: 74.7891px 14px
-}
+.gen-style-220 {}
 
 .gen-style-220 {
     list-style-type: none;
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    width: 149.578px
+    /* width: 149.578px */
 }
 
 .gen-style-221 {
-    perspective-origin: 42.0078px 8px;
-    transform-origin: 42.0117px 8px;
-    width: 84.0234px
+    /* width: 84.0234px */
 }
 
 .gen-style-222 {
@@ -2336,9 +2087,7 @@
     height: 2081.77px;
     margin-top: 44.8px;
     overflow-anchor: none;
-    perspective-origin: 98px 1041.38px;
-    transform-origin: 98px 1041.38px;
-    width: 196px
+    /* width: 196px */
 }
 
 .gen-style-223 {
@@ -2346,31 +2095,23 @@
     height: 489.531px;
     max-height: 700px;
     overflow: hidden auto;
-    perspective-origin: 98px 244.766px;
     position: sticky;
     top: 74px;
-    transform-origin: 98px 244.766px
 }
 
 .gen-style-224,
-.gen-style-225 {
-    perspective-origin: 98px 220.766px;
-    transform-origin: 98px220 .766px
-}
+.gen-style-225 {}
 
 .gen-style-225 {
     background-color: #fff;
     margin-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
-    transform-origin: 98px 220.766px;
-    width: 164px
+    /* width: 164px */
 }
 
 .gen-style-226 {
     font-size: 14px;
-    perspective-origin: 82px 220.766px;
-    transform-origin: 82px 220.766px
 }
 
 .gen-style-227 {
@@ -2379,8 +2120,6 @@
     line-height: 22.4px;
     margin-bottom: 6px;
     padding-bottom: 6px;
-    perspective-origin: 82px 15.2656px;
-    transform-origin: 82px 15.2656px
 }
 
 .gen-style-228 {
@@ -2388,10 +2127,8 @@
     font-weight: 700;
     height: 22.3984px;
     margin-right: 8px;
-    perspective-origin: 40.0703px 11.1953px;
-    transform-origin: 40.0742px 11.1992px;
     vertical-align: middle;
-    width: 80.1484px
+    /* width: 80.1484px */
 }
 
 .gen-style-230 {
@@ -2404,10 +2141,8 @@
     outline-color: #54595d;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 82px 14.5px;
     text-decoration-color: #54595d;
     text-emphasis-color: #54595d;
-    transform-origin: 82px 14.5px;
     -webkit-text-fill-color: #54595d;
     -webkit-text-stroke-color: #54595d
 }
@@ -2417,9 +2152,7 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    perspective-origin: 82px 54px;
-    transform-origin: 82px54px;
-    width: 164px
+    /* width: 164px */
 }
 
 .gen-style-233 {
@@ -2429,8 +2162,6 @@
 .gen-style-235 {
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 82px 54px;
-    transform-origin: 82px 54px
 }
 
 .gen-style-236 {
@@ -2448,12 +2179,10 @@
 .gen-style-238 {
     min-height: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     position: absolute;
     right: 144px;
     top: 0;
-    transform-origin: 10px 10px;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-237 {
@@ -2487,12 +2216,10 @@
     line-height: 20px;
     padding-bottom: 4px;
     padding-left: 28px;
-    perspective-origin: 82px 12px;
     position: relative;
     right: 0;
     top: 0;
-    transform-origin: 82px 12px;
-    width: 136px;
+    /* width: 136px; */
     z-index: 0
 }
 
@@ -2511,13 +2238,11 @@
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     box-sizing: border-box;
-    perspective-origin: 10px 10px;
     position: absolute;
     right: 144px;
-    transform-origin: 10px 10px;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-242 {
@@ -2529,8 +2254,6 @@
 
 .gen-style-243 {
     display: none;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%
 }
 
 .gen-style-246 {
@@ -2538,9 +2261,7 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    perspective-origin: 82px 36px;
-    transform-origin: 82px36px;
-    width: 164px
+    /* width: 164px */
 }
 
 .gen-style-247 {
@@ -2550,14 +2271,10 @@
 .gen-style-249 {
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 82px 36px;
-    transform-origin: 82px 36px
 }
 
 .gen-style-251 {
     display: none;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%
 }
 
 .gen-style-252 {
@@ -2581,14 +2298,12 @@
     position: relative;
     right: 0;
     top: 0;
-    width: 0;
+    /* width: 0; */
     z-index: 1
 }
 
 .gen-style-255 {
     height: 22.3984px;
-    perspective-origin: 471px 11.1953px;
-    transform-origin: 471px 11.1992px
 }
 
 .gen-style-256 {
@@ -2608,16 +2323,14 @@
     display: none;
     height: auto;
     inline-size: auto;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-261 {
     margin-top: 8px
 }
 
-.gen-style-262 {
+.right-data {
     background-color: #f8f9fa;
     border-color: #a2a9b1;
     border-style: solid;
@@ -2634,33 +2347,30 @@
     margin-top: 7.04px;
     outline-color: #000;
     padding: 2.816px;
-    perspective-origin: 154.875px 160.07px;
     text-decoration-color: #000;
     text-emphasis-color: #000;
-    transform-origin: 154.879px 160.074px;
     width: 309.758px;
     border-spacing: 3px;
     -webkit-text-fill-color: #000;
     -webkit-text-stroke-color: #000
 }
 
-.gen-style-263 {
-    perspective-origin: 148.062px 153.258px
+@media screen and (max-width: 600px) {
+    .right-data {
+        width: 100%;
+    }
 }
+
+.gen-style-263 {}
 
 .gen-style-265 {
     font-size: 17.6px;
-    perspective-origin: 148.062px 11.5547px;
     vertical-align: top
 }
 
-.gen-style-266 {
-    perspective-origin: 147.062px 10.5547px
-}
+.gen-style-266 {}
 
-.gen-style-267 {
-    perspective-origin: 45.2031px 11.5547px
-}
+.gen-style-267 {}
 
 .gen-style-267,
 .gen-style-268 {
@@ -2672,9 +2382,7 @@
     display: inline;
     height: auto;
     inline-size: auto;
-    perspective-origin: 0 0;
-    transform-origin: 0 0;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-270 {
@@ -2694,27 +2402,19 @@
     -webkit-text-stroke-color: #36c
 }
 
-.gen-style-271 {
-    perspective-origin: 148.062px 22.1172px
-}
+.gen-style-271 {}
 
 .gen-style-272,
 .gen-style-273 {
-    perspective-origin: 45.2031px 22.1172px;
     text-align: left;
     vertical-align: top
 }
 
-.gen-style-273 {
-    perspective-origin: 101.359px 22.1172px
-}
+.gen-style-273 {}
 
-.gen-style-274 {
-    perspective-origin: 148.062px 64.3516px
-}
+.gen-style-274 {}
 
 .gen-style-275 {
-    perspective-origin: 45.2031px 64.3516px;
     text-align: left;
     vertical-align: top
 }
@@ -2724,7 +2424,6 @@
 }
 
 .gen-style-277 {
-    perspective-origin: 101.359px 64.3516px;
     text-align: left;
     vertical-align: top
 }
@@ -2750,9 +2449,7 @@
     font-style: italic;
     margin-bottom: 8px;
     padding-left: 25.6px;
-    perspective-origin: 471px 25.5938px;
-    transform-origin: 471px 25.5938px;
-    width: 916.406px
+    /* width: 916.406px */
 }
 
 .gen-style-282 {
@@ -2774,8 +2471,6 @@
 
 .gen-style-283 {
     margin-top: 8px;
-    perspective-origin: 471px 102.375px;
-    transform-origin: 471px 102.375px
 }
 
 .gen-style-286 {
@@ -2795,10 +2490,9 @@
     -webkit-text-stroke-color: #36c
 }
 
-.gen-style-287 {
-    transform-origin: 471px 12.7969px
-}
+.gen-style-287 {}
 
+h2,
 .gen-style-289,
 .gen-style-290 {
     font-size: 24px;
@@ -2817,15 +2511,14 @@
     outline-color: #101418;
     padding-bottom: 4.08px;
     padding-top: 12px;
-    perspective-origin: 309.078px 25.0391px;
     text-decoration-color: #101418;
     text-emphasis-color: #101418;
-    transform-origin: 309.082px25 .0391px;
     word-break: break-word;
     -webkit-text-fill-color: #101418;
     -webkit-text-stroke-color: #101418
 }
 
+h2,
 .gen-style-290 {
     border-bottom: 1px solid #a2a9b1;
     color: #101418;
@@ -2840,10 +2533,8 @@
     outline-color: #101418;
     padding-bottom: 4.08px;
     padding-top: 12px;
-    perspective-origin: 471px 25.0391px;
     text-decoration-color: #101418;
     text-emphasis-color: #101418;
-    transform-origin: 471px 25.0391px;
     word-break: break-word;
     -webkit-text-fill-color: #101418;
     -webkit-text-stroke-color: #101418;
@@ -2852,9 +2543,7 @@
     height: auto;
     inline-size: auto;
     margin-top: 0;
-    perspective-origin: 0 0;
-    transform-origin: 0 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .gen-style-291 {
@@ -2906,10 +2595,8 @@
     -webkit-text-stroke-color: #54595d
 }
 
-.gen-style-296 {
+p {
     margin-top: 8px;
-    perspective-origin: 471px 38.3906px;
-    transform-origin: 471px 38.3906px
 }
 
 .gen-style-297 {
@@ -2954,21 +2641,23 @@
     outline-color: #101418;
     padding-bottom: 4.08px;
     padding-top: 12px;
-    perspective-origin: 471px 25.0391px;
+    
     text-decoration-color: #101418;
     text-emphasis-color: #101418;
-    transform-origin: 471px 25.0391px;
+    
     word-break: break-word;
     -webkit-text-fill-color: #101418;
     -webkit-text-stroke-color: #101418 */
 }
 
+h3,
 .gen-style-301,
 .gen-style-302 {
     font-size: 19.2px;
     margin-bottom: 4.8px
 }
 
+h3,
 .gen-style-301 {
     /* color: #101418; */
     /* column-rule-color: #101418; */
@@ -2977,10 +2666,8 @@
     margin-top: 4.8px;
     /* outline-color: #101418; */
     padding-top: 9.6px;
-    perspective-origin: 471px 20.1562px;
     /* text-decoration-color: #101418; */
     /* text-emphasis-color: #101418; */
-    transform-origin: 471px 20.1562px;
     word-break: break-word;
     /* -webkit-text-fill-color: #101418; */
     /* -webkit-text-stroke-color: #101418 */
@@ -2991,21 +2678,15 @@
     height: auto;
     inline-size: auto;
     margin-top: 0;
-    perspective-origin: 0 0;
-    transform-origin: 0 0;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-303 {
     margin-top: 8px;
-    perspective-origin: 471px 51.1875px;
-    transform-origin: 471px 51.1875px
 }
 
 .gen-style-304 {
     margin-top: 8px;
-    perspective-origin: 471px 25.5938px;
-    transform-origin: 471px 25.5938px
 }
 
 .gen-style-305 {
@@ -3039,18 +2720,14 @@
 }
 
 .gen-style-309,
-.gen-style-310 {
-    transform-origin: 471px 223.828px
-}
+.gen-style-310 {}
 
 .gen-style-311 {
     margin-bottom: 0;
     margin-left: 2em;
     margin-top: 1em;
     padding-left: 0;
-    perspective-origin: 447.961px 223.828px;
-    transform-origin: 447.961px 223.828px;
-    width: 895.922px
+    /* width: 895.922px */
 }
 
 .gen-style-313 {
@@ -3080,12 +2757,10 @@
     inset-block-end: 102049px;
     left: 56.8359px;
     overflow: hidden;
-    perspective-origin: .5px0 .5px;
     position: absolute;
     right: 884.164px;
     top: -99999px;
-    transform-origin: .5px .5px;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-316 {
@@ -3128,8 +2803,6 @@
 .gen-style-324 {
     height: 46.0625px;
     margin-bottom: 1.44px;
-    perspective-origin: 447.961px 23.0312px;
-    transform-origin: 447.961px 23.0312px
 }
 
 .gen-style-326 {
@@ -3168,25 +2841,19 @@
 .gen-style-331 {
     height: 23.0312px;
     margin-bottom: 1.44px;
-    perspective-origin: 447.961px 11.5156px;
-    transform-origin: 447.961px 11.5156px
 }
 
 .gen-style-333 {
-    height: 52.7812px;
     margin-bottom: 0;
     margin-left: 25.6px;
     margin-top: 4.8px;
     padding-left: 0;
-    perspective-origin: 458.203px 26.3906px;
-    transform-origin: 458.203px 26.3906px;
-    width: 916.406px
+    /* width: 916.406px */
 }
 
 .gen-style-334 {
     height: 25.5938px;
     margin-bottom: 1.6px;
-    transform-origin: 458.203px 12.7969px
 }
 
 .gen-style-336 {
@@ -3267,9 +2934,7 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    perspective-origin: 0 0;
-    transform-origin: 0 0;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-344 {
@@ -3279,9 +2944,7 @@
     margin-top: 2px;
     padding-left: 4px;
     padding-right: 8px;
-    perspective-origin: 53.1484px 10px;
-    transform-origin: 53.1484px 10px;
-    width: 94.2969px
+    /* width: 94.2969px */
 }
 
 .gen-style-345 {
@@ -3310,29 +2973,21 @@
     margin-top: 2px;
     padding-left: 8px;
     padding-right: 8px;
-    perspective-origin: 113.883px 10px;
-    transform-origin: 113.883px 10px;
-    width: 210.766px
+    /* width: 210.766px */
 }
 
 .gen-style-347,
 .gen-style-348 {
-    perspective-origin: 92.9688px 10px;
-    transform-origin: 92.9727px 10px;
-    width: 168.945px
+    /* width: 168.945px */
 }
 
 .gen-style-348 {
-    perspective-origin: 125px 10px;
-    transform-origin: 125px 10px;
-    width: 233px
+    /* width: 233px */
 }
 
 .gen-style-349 {
     border-left: 1px solid #a2a9b1;
-    perspective-origin: 124.547px 10px;
-    transform-origin: 124.551px 10px;
-    width: 232.102px
+    /* width: 232.102px */
 }
 
 .gen-style-349,
@@ -3361,48 +3016,36 @@
 .gen-style-354,
 .gen-style-355 {
     border-left: 1px solid #a2a9b1;
-    perspective-origin: 96.9844px 10px;
-    transform-origin: 96.9883px 10px;
-    width: 176.977px
+    /* width: 176.977px */
 }
 
 .gen-style-352,
 .gen-style-353,
 .gen-style-354,
 .gen-style-355 {
-    perspective-origin: 227.281px 10px;
-    transform-origin: 227.281px 10px;
-    width: 437.562px
+    /* width: 437.562px */
 }
 
 .gen-style-353,
 .gen-style-354,
 .gen-style-355 {
-    perspective-origin: 100.102px 10px;
-    transform-origin: 100.102px 10px;
-    width: 183.203px
+    /* width: 183.203px */
 }
 
 .gen-style-354,
 .gen-style-355 {
-    perspective-origin: 136.57px 10px;
-    transform-origin: 136.57px 10px;
-    width: 256.141px
+    /* width: 256.141px */
 }
 
 .gen-style-355 {
-    perspective-origin: 151.242px 10px;
-    transform-origin: 151.242px 10px;
-    width: 285.484px
+    /* width: 285.484px */
 }
 
 .gen-style-356 {
     display: none;
     height: auto;
     inline-size: auto;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-357 {
@@ -3452,16 +3095,13 @@
     grid-area: footer;
     padding-bottom: 82px;
     padding-top: 50px;
-    perspective-origin: 691px 137.695px;
-    width: 1382px
+    /* width: 1382px */
 }
 
 .gen-style-362 {
     border-top: 1px solid #a2a9b1;
     padding-bottom: 12px;
     padding-top: 12px;
-    perspective-origin: 691px 49.6953px;
-    transform-origin: 691px 49.6953px
 }
 
 .gen-style-363 {
@@ -3470,9 +3110,7 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    perspective-origin: 691px 37.1953px;
-    transform-origin: 691px 37.1953px;
-    width: 1382px
+    /* width: 1382px */
 }
 
 .gen-style-364,
@@ -3482,14 +3120,10 @@
     line-height: 16.8px;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 691px 14.3984px;
-    transform-origin: 691px 14.3984px
 }
 
 .gen-style-366 {
     height: 33.5938px;
-    perspective-origin: 691px 22.7969px;
-    transform-origin: 691px 22.7969px
 }
 
 .gen-style-367 {
@@ -3513,9 +3147,7 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    perspective-origin: 691px 0;
-    transform-origin: 691px0px;
-    width: 1382px
+    /* width: 1382px */
 }
 
 .gen-style-369 {
@@ -3526,9 +3158,7 @@
     margin-right: 12px;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 36.6797px 18px;
-    transform-origin: 36.6797px 18px;
-    width: 73.3594px
+    /* width: 73.3594px */
 }
 
 .gen-style-370 {
@@ -3555,9 +3185,7 @@
     margin-right: 12px;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 43.3594px 18px;
-    transform-origin: 43.3594px 18px;
-    width: 86.7188px
+    /* width: 86.7188px */
 }
 
 .gen-style-372,
@@ -3575,9 +3203,7 @@
     margin-right: 12px;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 31px 18px;
-    transform-origin: 31.0039px 18px;
-    width: 62.0078px
+    /* width: 62.0078px */
 }
 
 .gen-style-373,
@@ -3587,9 +3213,7 @@
 .gen-style-377,
 .gen-style-378,
 .gen-style-379 {
-    perspective-origin: 48.3516px 18px;
-    transform-origin: 48.3555px 18px;
-    width: 96.7109px
+    /* width: 96.7109px */
 }
 
 .gen-style-374,
@@ -3598,9 +3222,7 @@
 .gen-style-377,
 .gen-style-378,
 .gen-style-379 {
-    perspective-origin: 45.0312px 18px;
-    transform-origin: 45.0312px 18px;
-    width: 90.0625px
+    /* width: 90.0625px */
 }
 
 .gen-style-375,
@@ -3608,42 +3230,32 @@
 .gen-style-377,
 .gen-style-378,
 .gen-style-379 {
-    perspective-origin: 30.3516px 18px;
-    transform-origin: 30.3516px 18px;
-    width: 60.7031px
+    /* width: 60.7031px */
 }
 
 .gen-style-376,
 .gen-style-377,
 .gen-style-378,
 .gen-style-379 {
-    perspective-origin: 24.0078px 18px;
-    transform-origin: 24.0078px 18px;
-    width: 48.0156px
+    /* width: 48.0156px */
 }
 
 .gen-style-377,
 .gen-style-378,
 .gen-style-379 {
-    perspective-origin: 46.6875px 18px;
-    transform-origin: 46.6914px 18px;
-    width: 93.3828px
+    /* width: 93.3828px */
 }
 
 .gen-style-378,
 .gen-style-379 {
-    perspective-origin: 31.3438px 18px;
-    transform-origin: 31.3477px 18px;
-    width: 62.6953px
+    /* width: 62.6953px */
 }
 
 .gen-style-379 {
     display: none;
     height: auto;
     inline-size: auto;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-380 {
@@ -3669,9 +3281,7 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-    perspective-origin: 110px28px;
-    transform-origin: 110px 28px;
-    width: 220px
+    /* width: 220px */
 }
 
 .gen-style-382 {
@@ -3681,10 +3291,8 @@
     margin-left: 6px;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 51px 28px;
     text-align: right;
-    transform-origin: 51px 28px;
-    width: 102px
+    /* width: 102px */
 }
 
 .gen-style-383,
@@ -3708,19 +3316,17 @@
     font-weight: 700;
     height: 44px;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 44px;
     overflow: hidden;
     padding-left: 8px;
     padding-right: 8px;
-    perspective-origin: 51px 22px;
     text-decoration-line: none;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transform-origin: 51px 22px;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 102px;
+    /* width: 102px; */
     -webkit-text-decorations-in-effect: none
 }
 
@@ -3740,10 +3346,8 @@
     margin-left: 6px;
     padding-bottom: 6px;
     padding-top: 6px;
-    perspective-origin: 53px 28px;
     text-align: right;
-    transform-origin: 53px 28px;
-    width: 106px
+    /* width: 106px */
 }
 
 .gen-style-388,
@@ -3767,19 +3371,17 @@
     font-weight: 700;
     height: 44px;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 44px;
     overflow: hidden;
     padding-left: 8px;
     padding-right: 8px;
-    perspective-origin: 53px 22px;
     text-decoration-line: none;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transform-origin: 53px 22px;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 106px;
+    /* width: 106px; */
     -webkit-text-decorations-in-effect: none
 }
 
@@ -3810,7 +3412,7 @@
     transition-duration: .25s;
     transition-property: transform;
     transition-timing-function: linear;
-    width: 1470px;
+    /* width: 1470px; */
     z-index: 3;
     -webkit-text-fill-color: #202122;
     -webkit-text-stroke-color: #202122
@@ -3828,12 +3430,12 @@
     box-sizing: border-box;
     inline-size: 1470px;
     justify-content: space-between;
-    max-width: 1596px;
+    /* max-width: 1596px; */
     min-height: 50px;
     min-width: 300px;
     padding-left: 44px;
     padding-right: 44px;
-    width: 1470px
+    /* width: 1470px */
 }
 
 .gen-style-393 {
@@ -3841,9 +3443,7 @@
     height: 32px;
     inline-size: 825.531px;
     min-width: 0;
-    perspective-origin: 412.766px16px;
-    transform-origin: 412.766px 16px;
-    width: 825.531px
+    /* width: 825.531px */
 }
 
 .gen-style-394 {
@@ -3872,20 +3472,18 @@
     font-size: 16px;
     font-weight: 700;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     min-width: 32px;
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
-    perspective-origin: 16px 16px;
     text-decoration-color: #202122;
     text-overflow: ellipsis;
     text-wrap-mode: nowrap;
-    transform-origin: 16px 16px;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 32px
+    /* width: 32px */
 }
 
 .gen-style-396,
@@ -3902,11 +3500,9 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solid #202122;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-397 {
@@ -3915,14 +3511,12 @@
     inset-block-end: 26px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 1416.5px;
     text-decoration-color: #202122;
     top: 25px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-398 {
@@ -3933,14 +3527,12 @@
     inline-size: auto;
     min-height: 0;
     min-width: 0;
-    perspective-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: auto
+    /* width: auto */
 }
 
 .gen-style-399 {
     margin-right: 12px;
-    max-width: 500px
+    /* max-width: 500px */
 }
 
 .gen-style-401 {
@@ -3988,7 +3580,7 @@
     text-decoration-color: #202122;
     transition-duration: .25s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 100%
+    /* width: 100% */
 }
 
 .gen-style-405 {
@@ -4006,7 +3598,7 @@
     transition-duration: .1s;
     transition-property: color;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-406,
@@ -4033,7 +3625,7 @@
     margin-bottom: -1px;
     margin-right: -1px;
     margin-top: -1px;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     outline-color: #202122;
     overflow: hidden;
@@ -4051,18 +3643,14 @@
     margin-left: 30px;
     min-width: 0;
     padding-left: 30px;
-    perspective-origin: 125.898px 13.75px;
-    transform-origin: 125.898px 13.75px
 }
 
 .gen-style-408 {
-    font-family: "Linux Libertine", Georgia, Times, "Source Se
- rif Pro", serif;
- font-size: 24px;
+    font-family: "Linux Libertine", Georgia, Times, "Source Serif Pro", serif;
+    font-size: 24px;
     overflow: hidden;
-    perspective-origin: 110 .398px 13.75px;
     text-overflow: ellipsis;
-    text-wrap-mode: nowrap
+    text-wrap-mode: nowrap;
 }
 
 .gen-style-410,
@@ -4073,17 +3661,13 @@
 }
 
 .gen-style-410 {
-    perspective-origin: 278.234px 16px;
     text-wrap-mode: nowrap;
-    transform-origin: 278.234px 16px;
-    width: 556.469px
+    /* width: 556.469px */
 }
 
 .gen-style-411 {
     column-gap: 8px;
-    perspective-origin: 136px 16px;
-    transform-origin: 136px 16px;
-    width: 272px
+    /* width: 272px */
 }
 
 .gen-style-412,
@@ -4106,20 +3690,18 @@
     display: flex;
     font-weight: 700;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     min-width: 32px;
     overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
-    perspective-origin: 16px 16px;
     text-decoration-color: #202122;
     text-decoration-line: none;
     text-overflow: ellipsis;
-    transform-origin: 16px 16px;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 32px;
+    /* width: 32px; */
     -webkit-text-decorations-in-effect: none
 }
 
@@ -4137,11 +3719,9 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solid #202122;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-414 {
@@ -4150,14 +3730,12 @@
     inset-block-end: 26px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 584.969px;
     text-decoration-color: #202122;
     top: 25px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-415 {
@@ -4169,11 +3747,9 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solid #202122;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-415,
@@ -4190,14 +3766,12 @@
     inset-block-end: 26px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 544.969px;
     text-decoration-color: #202122;
     top: 25px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-417 {
@@ -4209,11 +3783,9 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solid #202122;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-418 {
@@ -4222,14 +3794,12 @@
     inset-block-end: 26px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 504.969px;
     text-decoration-color: #202122;
     top: 25px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-418,
@@ -4249,13 +3819,11 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solid #202122;
-    transform-origin: 10px 10px;
     transition-duration: .5s;
     transition-property: transform;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-420 {
@@ -4264,14 +3832,12 @@
     inset-block-end: 26px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 464.969px;
     text-decoration-color: #202122;
     top: 25px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-421 {
@@ -4283,11 +3849,9 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solid #202122;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-421,
@@ -4304,14 +3868,12 @@
     inset-block-end: 26px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 424.969px;
     text-decoration-color: #202122;
     top: 25px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-423 {
@@ -4323,11 +3885,9 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solid #202122;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-424 {
@@ -4336,14 +3896,12 @@
     inset-block-end: 26px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 384.969px;
     text-decoration-color: #202122;
     top: 25px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-424,
@@ -4363,11 +3921,9 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solid #202122;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-426 {
@@ -4376,14 +3932,12 @@
     inset-block-end: 26px;
     margin: -1px;
     overflow: hidden;
-    perspective-origin: .5px .5px;
     position: absolute;
     right: 344.969px;
     text-decoration-color: #202122;
     top: 25px;
-    transform-origin: .5px .5px;
     user-select: none;
-    width: 1px
+    /* width: 1px */
 }
 
 .gen-style-427 {
@@ -4392,9 +3946,7 @@
     display: flex;
     font-size: 14px;
     height: 32px;
-    perspective-origin: 142.234px 16px;
-    transform-origin: 142.234px 16px;
-    width: 284.469px
+    /* width: 284.469px */
 }
 
 .gen-style-428,
@@ -4419,18 +3971,16 @@
     font-weight: 700;
     height: 32px;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     overflow: hidden;
     padding-left: 11px;
     padding-right: 11px;
-    perspective-origin: 78.9609px 16px;
     text-decoration-color: #202122;
     text-overflow: ellipsis;
-    transform-origin: 78.9609px 16px;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 157.922px
+    /* width: 157.922px */
 }
 
 .gen-style-429,
@@ -4448,15 +3998,12 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solid #202122;
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-430 {
-    perspective-origin: 40.4609px 8px;
     text-decoration-color: #202122
 }
 
@@ -4476,21 +4023,19 @@
     height: 32px;
     inline-size: 118.547px;
     justify-content: center;
-    max-width: 448px;
+    /* max-width: 448px; */
     min-height: 32px;
     outline-color: #36c;
     overflow: hidden;
     padding-left: 11px;
     padding-right: 11px;
-    perspective-origin: 59.2734px 16px;
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
     text-overflow: ellipsis;
-    transform-origin: 59.2734px 16px;
     transition-duration: .1s;
     transition-property: background-color, color, border-color, box-shadow;
-    width: 118.547px;
+    /* width: 118.547px; */
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
     -webkit-text-stroke-color: #36c
@@ -4513,15 +4058,12 @@
     min-height: 20px;
     min-inline-size: 20px;
     min-width: 20px;
-    perspective-origin: 10px 10px;
     text-decoration: none solidrgb(51, 102, 204);
-    transform-origin: 10px 10px;
     vertical-align: text-bottom;
-    width: 20px
+    /* width: 20px */
 }
 
 .gen-style-433 {
-    perspective-origin: 32.2734px 8px;
     text-decoration-color: #36c
 }
 
@@ -4547,8 +4089,7 @@
     text-decoration-color: #202122;
     text-emphasis-color: #202122;
     top: 785.203px;
-    transform-origin: 12.7969px 2.39844px;
-    width: 25.5938px;
+    /* width: 25.5938px; */
     z-index: 1;
     -webkit-text-fill-color: #202122;
     -webkit-text-stroke-color: #202122
@@ -4564,8 +4105,6 @@
     margin-left: 25.6px;
     margin-top: 4.8px;
     padding-left: 0;
-    perspective-origin: 0 0;
-    transform-origin: 0 0
 }
 
 .gen-style-438,
@@ -4590,7 +4129,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 1470px;
+    /* width: 1470px; */
     z-index: 800
 }
 
@@ -4600,7 +4139,7 @@
     line-height: 22.4px;
     right: 1470px;
     top: 2469px;
-    width: 0;
+    /* width: 0; */
     z-index: 450
 }
 
@@ -4614,11 +4153,9 @@
     display: none;
     font-family: sans-serif;
     outline-color: #36c;
-    perspective-origin: 50% 50%;
     text-decoration-color: #36c;
     text-decoration-line: none;
     text-emphasis-color: #36c;
-    transform-origin: 50% 50%;
     -webkit-text-decorations-in-effect: none;
     -webkit-text-fill-color: #36c;
     -webkit-text-stroke-color: #36c
