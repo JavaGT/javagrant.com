@@ -103,8 +103,10 @@ header {
     align-items: center;
     justify-content: center;
     /* margin: 10rem; */
-    max-height: 70vw;
-    height: calc(100vh - var(--nav-height));
+    /* max-height: 70vw; */
+    height: 60vw;
+    min-height: 30rem;
+    max-height: calc(90vh - var(--nav-height));
     text-align: center;
     color: #d6f1ff;
     /* background-image: url('/background.svg'); */
@@ -211,6 +213,15 @@ h2 {
     justify-content: center; */
     margin: 0 auto;
     box-shadow: 0 0 2px 1px #00000042;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    scroll-margin-top: 4em;
 }
 
 .highlight-green {
