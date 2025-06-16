@@ -4164,7 +4164,7 @@ h3,
 }
 
 .wikitable {
-    max-height: 80vh;
+    max-height: 75vh;
     overflow: scroll;
     display: block;
     position: relative;

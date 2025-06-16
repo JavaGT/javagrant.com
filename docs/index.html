@@ -121,21 +121,22 @@
             <li>
                 <strong>Table of Contents</strong>
             </li>
-            <li>
-                <a href="#Early_life">
-                    <span>Early life</span>
-                </a>
-            </li>
-            <li>
-                <a href="#Early_life">
-                    <span>Early life</span>
-                </a>
-            </li>
-            <li>
-                <a href="#Early_life">
-                    <span>Early life</span>
-                </a>
-            </li>
+            <script>
+                setTimeout(() => {
+                    // Generate the table of contents dynamically based on h1-h6 elements with an id
+                    document.querySelectorAll('h1').forEach((heading) => {
+                        if (heading.id) {
+                            const li = document.createElement('li');
+                            const a = document.createElement('a');
+                            a.href = `#${heading.id}`;
+                            a.textContent = heading.id.replace(/_-/g, ' ');
+                            console.log(heading)
+                            li.appendChild(a);
+                            document.querySelector('.wikinav ul').appendChild(li);
+                        }
+                    });
+                }, 10);
+            </script>
         </ul>
     </section>
 
@@ -240,7 +241,7 @@
 
 
 
-            <h2>Education</h2>
+            <h2 id="Education">Education</h2>
             <p>Java, a first-generation university student, graduated from <a
                     href="https://www.kerikerihigh.ac.nz/">Kerikeri High School</a> in 2018.</p>
             <p>Java pursued a Bachelor of Arts at the University of Auckland, majoring
@@ -538,7 +539,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h1 id="assignments" tabindex="-1"><span class="header-anchor"
+            <h1 id="Assignments" tabindex="-1"><span class="header-anchor"
                     href="https://javagrant.com/resume/#assignments">📄 </span>Assignments</h1>
             <div>
                 <div>In the spirit of open education, Java's best work is made public as well as the
@@ -1184,11 +1185,11 @@
                             </tbody>
                         </table>
                     </div>
-                    <h1 id="assignments" tabindex="-1"><span class="header-anchor"
-                            href="https://javagrant.com/resume/#assignments">📖 Dissertation: Contradiction in
-                            the Neoliberal Academe: A Critical Case Study of the University of Auckland
-                            Administration</span></h1>
-                    <div><a href="https://bit.ly/uoalies">Read the dissertation</a> | Grade: A+</div>
+                    <h1 id="Hons-Dissertation">Contradiction in
+                        the Neoliberal Academe: A Critical Case Study of the University of Auckland
+                        Administration (Honours Dissertation)
+                </span></h1>
+                <div><a href="https://bit.ly/uoalies">Read the dissertation</a> | Grade: A+</div>
                 </span>
                 <p>
                 </p>
