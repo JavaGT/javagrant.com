@@ -47,60 +47,58 @@
         }
 
         table.wikipedia th {
-    </style>
-    <style>
-        border-bottom-color: rgb(162, 169, 177);
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        border-collapse: collapse;
-        border-image-outset: 0;
-        border-image-repeat: stretch;
-        border-image-slice: 100%;
-        border-image-source: none;
-        border-image-width: 1;
-        border-left-color: rgb(162, 169, 177);
-        border-left-style: solid;
-        border-left-width: 1px;
-        border-right-color: rgb(162, 169, 177);
-        border-right-style: solid;
-        border-right-width: 1px;
-        border-top-color: rgb(162, 169, 177);
-        border-top-style: solid;
-        border-top-width: 1px;
-        color: rgb(32, 33, 34);
-        padding-bottom: 3.2px;
-        padding-left: 6.4px;
-        padding-right: 6.4px;
-        padding-top: 3.2px;
-        text-align: center;
-        text-indent: 0px;
-        unicode-bidi: isolate;
-        vertical-align: middle;
+            border-bottom-color: rgb(162, 169, 177);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-collapse: collapse;
+            border-image-outset: 0;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-left-color: rgb(162, 169, 177);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-color: rgb(162, 169, 177);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-color: rgb(162, 169, 177);
+            border-top-style: solid;
+            border-top-width: 1px;
+            color: rgb(32, 33, 34);
+            padding-bottom: 3.2px;
+            padding-left: 6.4px;
+            padding-right: 6.4px;
+            padding-top: 3.2px;
+            text-align: center;
+            text-indent: 0px;
+            unicode-bidi: isolate;
+            vertical-align: middle;
         }
     </style>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="#about">
-                    about
-                </a>
-            </li>
-            <li>
-                <a href="#projects">
-                    projects
-                </a>
-            </li>
-            <li>
-                <a href="#biblography">biblography</a>
-            </li>
-            <li>
-                <a href="#contact">
-                    contact</a>
-            </li>
-        </ul>
-    </nav>
     <header>
+        <nav class="mainnav">
+            <ul>
+                <li>
+                    <a href="#About">
+                        about
+                    </a>
+                </li>
+                <li>
+                    <a href="#Projects">
+                        projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#Biblography">biblography</a>
+                </li>
+                <li>
+                    <a href="#Contact">
+                        contact</a>
+                </li>
+            </ul>
+        </nav>
         <div class="information">
             <!-- <h1 class="center-title">Java Grant</h1>                                                                               
  <p class="center-subtitle">PhD Student @ The University of Auckland</p> -->
@@ -124,13 +122,12 @@
             <script>
                 setTimeout(() => {
                     // Generate the table of contents dynamically based on h1-h6 elements with an id
-                    document.querySelectorAll('h1').forEach((heading) => {
+                    document.querySelectorAll('h2').forEach((heading) => {
                         if (heading.id) {
                             const li = document.createElement('li');
                             const a = document.createElement('a');
                             a.href = `#${heading.id}`;
-                            a.textContent = heading.id.replace(/_-/g, ' ');
-                            console.log(heading)
+                            a.textContent = heading.id.replaceAll(/_-–/g, ' ');
                             li.appendChild(a);
                             document.querySelector('.wikinav ul').appendChild(li);
                         }
@@ -140,7 +137,7 @@
         </ul>
     </section>
 
-    <section id="about">
+    <section id="About">
 
         <main>
             <h1 class="gen-style-141 gen-style-142">Java Grant</h1>
@@ -1185,11 +1182,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <h1 id="Hons-Dissertation">Contradiction in
+                    <h2 id="Hons-Dissertation">Contradiction in
                         the Neoliberal Academe: A Critical Case Study of the University of Auckland
-                        Administration (Honours Dissertation)
-                </span></h1>
-                <div><a href="https://bit.ly/uoalies">Read the dissertation</a> | Grade: A+</div>
+                        Administration (Honours Dissertation)</h2>
+                    <div><a href="https://bit.ly/uoalies">Read the dissertation</a> | Grade: A+</div>
                 </span>
                 <p>
                 </p>
@@ -1487,8 +1483,8 @@
                     </ul>
                 </div>
                 <div>
-                    <div class="mw-heading mw-heading2">
-                        <h2 id="Early_life_and_education">Sporting</h2>
+                    <div>
+                        <h2 id="Sporting">Sporting</h2>
                     </div>
                 </div>
                 <p class="asbox-body">This section about a Java's sporting achievements is a <a
@@ -1496,7 +1492,7 @@
                     can help Java by <a class="external text"
                         href="https://en.wikipedia.org/w/index.php?title=May_1_Stadium_(Slatina)&amp;action=edit">expanding
                         it</a>.</p>
-                <h2 id="biblography">Publications &amp; Interviews</h2>
+                <h2 id="Biblography">Publications &amp; Interviews</h2>
                 <div class="gen-style-309">
                     <div>
                         <ul>
@@ -1722,7 +1718,7 @@
                                 </ol> -->
                     </div>
                 </div>
-                <h2>External links</h2>
+                <h2 id="Contact">External links</h2>
                 <ul class="gen-style-333">
                     <li><a rel="nofollow" href="https://www.javagrant.com">Official website</a></li>
                     <li><a rel="nofollow" href="https://bsky.app/profile/javagrant.com">Bluesky Account</a></li>

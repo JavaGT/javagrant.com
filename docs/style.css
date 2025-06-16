@@ -40,20 +40,20 @@ body {
     font-family: 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif;
 }
 
-body>nav {
+nav.mainnav {
     z-index: 10001;
     /* position: fixed; */
-    top: 0;
+    /* top: 0; */
     height: var(--nav-height);
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
+    /* position: sticky; */
     background-color: #7cc9fa;
 
 }
 
-body>nav ul {
+nav.mainnav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -65,7 +65,7 @@ body>nav ul {
     justify-content: space-evenly;
 }
 
-body>nav ul li a {
+nav.mainnav ul li a {
     font-size: 20px;
     line-height: 1.6;
     text-align: center;
@@ -87,7 +87,7 @@ body>nav ul li a {
     /* padding: 0 min(1rem, 2vw); */
 }
 
-body>nav ul li a:hover {
+nav.mainnav ul li a:hover {
     text-decoration: underline;
     text-underline-offset: 16px;
     text-decoration-thickness: 4px;
@@ -115,7 +115,7 @@ header {
     /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
-    padding: 1rem;
+    padding: 0;
 }
 
 header .information {
@@ -253,7 +253,8 @@ table img {
 
 .wikinav {
     position: sticky;
-    top: var(--nav-height);
+    /* top: var(--nav-height); */
+    top: 0;
     z-index: 1000;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
