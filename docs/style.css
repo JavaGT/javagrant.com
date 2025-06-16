@@ -22,7 +22,7 @@ body {
     /* background-color: #1a72b7; */
     background: #1A72B7;
     background: linear-gradient(90deg, rgba(26, 114, 183, 1) 0%, rgba(26, 114, 183, 1) 49%, #c2a366 51%, #c2a366 100%);
-    --nav-height: 4rem;
+    --nav-height: 2.5rem;
 
     /* CSS HSL */
     --blue-gray: hsla(211, 46%, 59%, 1);
