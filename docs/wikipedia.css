@@ -4163,6 +4163,18 @@ h3,
     -webkit-text-stroke-color: #36c
 }
 
+.wikitable {
+    max-height: 80vh;
+    overflow: scroll;
+    display: block;
+    position: relative;
+}
+
+.wikitable thead {
+    position: sticky;
+    top: 0;
+}
+
 .wikitable th {
     background-color: var(--background-color-neutral, #eaecf0);
     text-align: center
