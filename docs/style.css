@@ -7,7 +7,7 @@ body {
     scroll-behavior: smooth;
 }
 
-* {
+*:not(ul, ol) {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
