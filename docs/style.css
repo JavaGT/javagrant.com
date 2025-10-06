@@ -52,8 +52,9 @@ nav.mainnav {
     /* position: sticky; */
     background-color: #7cc9fa;
 
-    /* ensure nav type uses the header serif stack for consistency */
-    font-family: var(--font-serif, 'Linux Libertine', Georgia, Times, 'Source Serif Pro', serif);
+    /* sans-serif font stack for nav */
+    font-family: var(--font-sans, 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif);
+    
 }
 
 nav.mainnav ul {
@@ -112,8 +113,8 @@ header {
     max-height: calc(90vh - var(--nav-height));
     text-align: center;
     color: #d6f1ff;
-    /* background-image: url('/background.svg'); */
-    background-image: url(background/background.svg);
+    /* Prefer the repo SVG in docs/assets as the header background */
+    background-image: url('/assets/background.svg');
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-position: center;
