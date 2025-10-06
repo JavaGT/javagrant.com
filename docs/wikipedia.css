@@ -23,19 +23,23 @@
   --bg: #ffffff;
   --page-bg: #f6f7f9;
   --border: #e6e9ee;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+   /* Centralized font stacks */
+   --font-sans: "Avenir Next", "Segoe UI", Ubuntu, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+   --font-serif: "Linux Libertine", Georgia, Times, "Source Serif Pro", serif;
+   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
 }
 
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
-  margin:0;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color:var(--text);
-  background:var(--page-bg);
-  line-height:1.55;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+   margin:0;
+   /* Body font stack (centralized) */
+   font-family: var(--font-sans);
+   color:var(--text);
+   background:var(--page-bg);
+   line-height:1.55;
+   -webkit-font-smoothing:antialiased;
+   -moz-osx-font-smoothing:grayscale;
 }
 
 a{color:var(--accent); text-decoration:none}
@@ -49,7 +53,8 @@ img{max-width:100%;height:auto;display:block}
 /* ------------------------------------------------------------------
    Header and navigation
    ------------------------------------------------------------------ */
-header{background:var(--bg);box-shadow:0 1px 0 var(--border);}
+/* Header font stack requested */
+header{background:var(--bg);box-shadow:0 1px 0 var(--border);font-family:var(--font-serif)}
 .container header{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
 
 .mainnav{flex:1}

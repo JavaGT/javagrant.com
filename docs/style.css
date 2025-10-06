@@ -37,7 +37,8 @@ body {
     background-size: cover;
 
 
-    font-family: 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif;
+    /* Use the site's centralized sans-serif stack where available */
+    font-family: var(--font-sans, 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif);
 }
 
 nav.mainnav {
@@ -51,6 +52,8 @@ nav.mainnav {
     /* position: sticky; */
     background-color: #7cc9fa;
 
+    /* ensure nav type uses the header serif stack for consistency */
+    font-family: var(--font-serif, 'Linux Libertine', Georgia, Times, 'Source Serif Pro', serif);
 }
 
 nav.mainnav ul {
@@ -70,7 +73,7 @@ nav.mainnav ul li a {
     line-height: 1.6;
     text-align: center;
     color: #023047;
-    font-family: 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif;
+    font-family: inherit;
     font-weight: bold;
     display: inline-block;
     /* padding-bottom: 10px; */
