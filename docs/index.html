@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Define core font stacks early so linked stylesheets can use them reliably */
+            :root{
+                --font-sans: "Avenir Next", "Segoe UI", Ubuntu, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+                --font-serif: "Linux Libertine", Georgia, Times, "Source Serif Pro", serif;
+                --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+            }
+        </style>
     <title>Java Grant</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/wikipedia.css">
+
+    <!-- SEO and social previews -->
+    <meta name="description" content="Java Grant — student, researcher and community organiser researching the future of universities in Aotearoa.">
+    <link rel="canonical" href="https://javagrant.com/">
+    <meta property="og:title" content="Java Grant">
+    <meta property="og:description" content="Student, researcher and community organiser researching the future of universities in Aotearoa.">
+    <meta property="og:url" content="https://javagrant.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
 </head>
 
 <body>
 
-    <!-- javascript which saves the whole html body to local storage every 10s -->
-    <script>
-        // if localhost
-        if (window.location.hostname === 'localhost' && confirm('Use local storage copy?')) {
-
-            // make body contents editable
-            document.body.contentEditable = true;
-            setInterval(() => {
-                localStorage.setItem('html', document.documentElement.innerHTML);
-                console.log('saved');
-            }, 10000);
-            // load the html from local storage when the page loads
-            window.onload = () => {
-                const html = localStorage.getItem('html');
-                if (html) {
-                    document.documentElement.innerHTML = html;
-                }
-            }
-        }
-    </script>
+    <!-- removed a developer-only autosave script for local editing -->
     <style>
         table.wikipedia {
             width: 100%;
@@ -140,7 +139,7 @@
     <section id="About">
 
         <main>
-            <h1 class="gen-style-141 gen-style-142">Java Grant</h1>
+            <h2 class="gen-style-141 gen-style-142">Java Grant</h2>
 
             <div>
                 <div class="gen-style-255">Parodying Wikipedia, the free encyclopedia</div>
@@ -880,9 +879,9 @@
                                                 particularly charming." </span><span>–Tutor
                                     </td>
                                     <td>
-                                        <p dir="ltr"><span></span><img src="/assets/gifs/FTheWorld.gif"
-                                                alt="F*** the World, Boy Film"><img src="/assets/gifs/flappy.gif"
-                                                alt="Flappybird Paper Animation">
+                    <p dir="ltr"><span></span><img src="/assets/gifs/FTheWorld.gif"
+                        alt="F*** the World, Boy Film" loading="lazy"><img src="/assets/gifs/flappy.gif"
+                        alt="Flappybird Paper Animation" loading="lazy">
                                         </p>[todo link reflection]
                                     </td>
                                 </tr>
