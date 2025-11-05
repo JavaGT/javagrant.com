@@ -334,13 +334,17 @@ header{
 
 .information{padding:18px 0;}
 .information h1{margin:0 0 8px;font-size:1.8rem}
-.information p{margin:0;color:var(--muted)}
+.information p{margin:0;}
+.accent-text{color:var(--accent)}
+.muted-text{color:var(--muted)}
 
-/* ------------------------------------------------------------------
-   Page layout for index.html: main + sidebar/infobox
-   The HTML uses a two-column-ish infobox (table with class right-data)
-   We'll style the table to look like an infobox.
-   ------------------------------------------------------------------ */
+hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
 main{padding:18px 0}
 
 .right-data{float:right;margin-left:18px;border-collapse:collapse;background:var(--bg);border:1px solid var(--border);max-width:320px;width:100%;}
