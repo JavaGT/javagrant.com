@@ -17,9 +17,54 @@
         h1 {
             text-align: center;
         }
+        .controls {
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #0052a3;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .copy-feedback {
+            font-size: 0.9rem;
+            color: #0066cc;
+            font-weight: bold;
+            min-height: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        li input[type="checkbox"] {
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+        li label {
+            cursor: pointer;
+        }
     </style>
 <h1>Library – Audiobooks</h1>
-    <ul>
+    <div class="controls">
+        <button onclick="selectAll()">Select All</button>
+        <button onclick="clearAll()">Clear All</button>
+        <button onclick="copySelections()">Copy Selections</button>
+        <div class="copy-feedback" id="feedback"></div>
+    </div>
+    <ul id="bookList">
     <li>Achille Mbembe - Necropolitics</li>
 <li>Adam Aleksic - Algospeak</li>
 <li>Adam Kahane - Collaborating with the Enemy</li>
@@ -275,5 +320,324 @@
 <li>Yanis Varoufakis - Technofeudalism</li>
 <li>Yuval Noah Harari - 21 Lessons for the 21st Century</li>
 <li>Yuval Noah Harari - Sapiens</li></ul>
+
+    <script>
+        // Book list data
+        const bookData = [
+            "Achille Mbembe - Necropolitics",
+            "Adam Aleksic - Algospeak",
+            "Adam Kahane - Collaborating with the Enemy",
+            "Ai-jen Poo - The Age of Dignity",
+            "Amanda Montell - Cultish",
+            "Amanda Ripley - High Conflict",
+            "Amber Massie-Blomfield - Acts of Resistance",
+            "Anand Giridharadas - Winners Take All",
+            "Andrea Long Chu - Authority",
+            "Andrew Boyd - I Want a Better Catastrophe",
+            "Angela Duckworth - Grit",
+            "Angela Y. Davis - Are Prisons Obsolete_",
+            "Angela Y. Davis - Freedom is a Constant Struggle",
+            "Angus Deaton, Anne Case, Angus Deaton, Anne Case - Deaths of Despair and the Future of Capitalism",
+            "Ann Dowsett Johnston - Drink",
+            "Anne Applebaum - Autocracy, Inc.",
+            "Anne Applebaum - Twilight of Democracy",
+            "Anne Curzan - Says Who_",
+            "Anne-Marie Slaughter - The Chessboard and the Web",
+            "Ayana Elizabeth Johnson - What If We Get It Right_",
+            "Barry Glassner - The Culture of Fear",
+            "Bell Hooks - Ain't I a Woman",
+            "bell hooks - All About Love",
+            "Bell Hooks - Belonging",
+            "Bell Hooks - Black Looks",
+            "bell hooks - Feminism Is for Everybody",
+            "Bell Hooks - Outlaw Culture",
+            "Bell Hooks - Reel to Real",
+            "Bell Hooks - Sisters of the Yam",
+            "Bell Hooks - Talking Back",
+            "bell hooks - Teaching to Transgress",
+            "bell hooks - The Will to Change",
+            "Ben Guttmann - Simply Put",
+            "Ben Smith - Traffic",
+            "Ben Wilson - Metropolis",
+            "Bernie Sanders - It's OK to Be Angry About Capitalism",
+            "Bettina L. Love - We Want to Do More Than Survive",
+            "Bina Venkataraman - The Optimist's Telescope",
+            "Brendan Ballou - Plunder",
+            "Brian Clegg - Game Theory",
+            "Brian Lowery - Selfless",
+            "Brian Merchant - Blood in the Machine",
+            "Brittney Cooper - Eloquent Rage",
+            "Byung-Chul Han - The Burnout Society",
+            "Cal Newport - A World Without Email",
+            "Carol Roth - You Will Own Nothing",
+            "Cass R. Sunstein - Conformity",
+            "Cathy O'Neil - Weapons of Math Destruction",
+            "Charles Duhigg - Supercommunicators",
+            "Charles Pépin - Self-Confidence",
+            "Chris Guillebeau - Time Anxiety",
+            "Chris Voss, Tahl Raz - Never Split the Difference",
+            "Chris Wiggins, Matthew L. Jones - How Data Happened",
+            "Christine Rosen - The Extinction of Experience",
+            "Chuck Wisner - The Art of Conscious Conversations",
+            "Cinzia Arruzza, Tithi Bhattacharya, Nancy Fraser - Feminism for the 99_",
+            "Claire Cohen - BFF_",
+            "Cory Doctorow - Attack Surface",
+            "Cory Doctorow - Down and Out in the Magic Kingdom",
+            "Cory Doctorow - Enshittification",
+            "Cory Doctorow - Homeland",
+            "Cory Doctorow - Pirate Cinema",
+            "Cory Doctorow - Radicalized",
+            "Cory Doctorow - Walkaway",
+            "Dan Ariely - Payoff",
+            "Dan Heath - Upstream",
+            "Daniel Kahneman, Olivier Sibony, Cass R. Sunstein - Noise",
+            "Daniel Susskind - A World Without Work",
+            "Danielle Keats Citron - The Fight for Privacy",
+            "Darren McGarvey - Trauma Industrial Complex",
+            "David Graeber - Bullshit Jobs",
+            "David Graeber - Debt--Updated and Expanded",
+            "David Graeber - Pirate Enlightenment, or the Real Libertalia",
+            "David Graeber - The Ultimate Hidden Truth of the World",
+            "David Graeber, David Wengrow - The Dawn of Everything",
+            "David Graeber, Sulaiman Hakemy - A Macat Analysis of Debt",
+            "David Johnston - Trust",
+            "David Johnston, Brian Hanington - Empathy",
+            "David M. Henkin - The Week",
+            "David McAdams - Game-Changer",
+            "Dean Spade - Mutual Aid",
+            "Donald A. Barclay - Disinformation",
+            "Dr Emily Musgrove - Unstuck",
+            "Dr. Henry Cloud - Trust",
+            "E F Schumacher - Small Is Beautiful",
+            "Eddie S. Glaude Jr. - We Are the Leaders We Have Been Looking For",
+            "Emilie Wapnick - How to Be Everything",
+            "Emily Guendelsberger - On the Clock",
+            "Emily M. Bender, Alex Hanna - The AI Con",
+            "Emma Holten - Deficit",
+            "Eoin Higgins - Owned",
+            "Eric Klinenberg - 2020",
+            "Eric Klinenberg - Fighting for Air",
+            "Erving Goffman - The Presentation of Self in Everyday Life",
+            "Evie Sage - Me, You, Them",
+            "Extinction Rebellion - This Is Not a Drill",
+            "Faith G. Harper PhD - Unf_ck Your Anxiety",
+            "Frank Herbert - Dune",
+            "Frank Martela - Stop Chasing Happiness",
+            "Fredrik deBoer - How Elites Ate the Social Justice Movement",
+            "Gary Stevenson - The Trading Game",
+            "George Monbiot, Peter Hutchison - The Invisible Doctrine",
+            "Grace Blakeley - Vulture Capitalism",
+            "Grayson Perry - The Descent of Man",
+            "Greg Lukianoff, Rikki Schlott - The Canceling of the American Mind",
+            "Gregory Claeys - Marx and Marxism",
+            "Ha-Joon Chang - Economics--The User's Guide",
+            "Hamilton Nolan - The Hammer",
+            "Helen Lewis - The Genius Myth",
+            "Howard J. Ross, JonRobert Tartaglione - Our Search for Belonging",
+            "Ibram X. Kendi - How to Be an Antiracist",
+            "Ijeoma Oluo - Be a Revolution",
+            "Ilana Redstone - The Certainty Trap",
+            "Jacinda Ardern - A Different Kind of Power",
+            "Jacqueline Mroz - Girl Talk",
+            "James Ball - The Other Pandemic",
+            "James C. Scott - Seeing Like a State",
+            "James Fox - The World According to Colour",
+            "Jamia Wilson - Make Good Trouble",
+            "Jaron Lanier - Ten Arguments For Deleting Your Social Media Accounts Right Now",
+            "Javier Blas, Jack Farchy - The World for Sale",
+            "Jennifer Carlson - Merchants of the Right",
+            "Jennifer Taub - Big Dirty Money",
+            "Jess Joy, Charlotte Mia - How Not to Fit In",
+            "Jill Filipovic - Ok Boomer, Let's Talk",
+            "Joanne McNeil - Lurking",
+            "Joe Earle, Cahal Moran, Zach Ward-Perkins - The Econocracy",
+            "John Cassidy - Capitalism and Its Critics",
+            "John Eliot, Jim Guinn - How to Get Along with Anyone",
+            "John Green - Everything Is Tuberculosis",
+            "Jonathan Haidt - The Anxious Generation",
+            "Judith Butler - Gender Trouble",
+            "Judith Butler - Who's Afraid of Gender_",
+            "Judson Brewer - Unwinding Anxiety",
+            "Julian Treasure - How to Be Heard",
+            "Julio Vincent Gambuto - Please Unsubscribe, Thanks!",
+            "Justin Hempson-Jones - Influence",
+            "Kari Leibowitz - How to Winter",
+            "Katharina Pistor - The Code of Capital",
+            "Keith Ferrazzi - Leading Without Authority",
+            "Kelly Weill - Off the Edge",
+            "Kelsey McKinney - You Didn't Hear This From Me",
+            "Kohei Saito - Slow Down",
+            "Kristen Ghodsee - Why Women Have Better Sex Under Socialism",
+            "Kurt Gray - Outraged",
+            "L. David Marquet, Michael Gillespie - Distancing",
+            "Laurence Rees - The Nazi Mind",
+            "Lea Noring, PhD - The Highly Sensitive Teen",
+            "Leah Lakshmi Piepzna-Samarasinha - Care Work",
+            "Lee Hartley Carter - Persuasion",
+            "Leidy Klotz - Subtract",
+            "Leigh Phillips, Michal Rozworski - The People's Republic of Walmart",
+            "Linda Tuhiwai Smith - Decolonizing Methodologies",
+            "Madeleine Albright - Fascism",
+            "Malaika Jabali - It's Not You, It's Capitalism",
+            "Malcolm Gladwell - Outliers",
+            "Malcolm Gladwell - Talking to Strangers",
+            "Malcolm Gladwell - The Bomber Mafia",
+            "Malcolm Harris - Kids These Days",
+            "Marc Lamont Hill - Nobody",
+            "Mariana Mazzucato - The Value of Everything",
+            "Marianne Schnall - What Will It Take to Make a Woman President?",
+            "Mark Manson - Everything Is F_cked",
+            "Mark Manson - The Subtle Art of Not Giving a F_ck",
+            "Mark R. Levin - On Power",
+            "Matthew C. MacWilliams - On Fascism",
+            "Melanie Joy - Powerarchy",
+            "Melanie Mitchell - Artificial Intelligence",
+            "Michael J. Sandel - The Tyranny of Merit",
+            "Michael J. Sandel - What Money Can't Buy",
+            "Michael Pollan - How to Change Your Mind",
+            "Michael Steinberger - The Philosopher in the Valley",
+            "Michiko Kakutani - The Death of Truth",
+            "Mike McRoberts - Speaking My Language Te Kōrero i Tōku Reo",
+            "Milton Mayer - They Thought They Were Free",
+            "Naga Munchetty - It's Probably Nothing",
+            "Naomi Klein - Doppelganger",
+            "Naomi Klein - No Is Not Enough",
+            "Naomi Klein - No Logo",
+            "Naomi Klein - On Fire",
+            "Naomi Klein - The Battle for Paradise",
+            "Naomi Klein - The Shock Doctrine",
+            "Naomi Klein - This Changes Everything",
+            "Nathan J. Robinson - Why You Should Be a Socialist",
+            "Nicholas Carr - Superbloom",
+            "Nicole Aschoff - The Smartphone Society",
+            "Noam Chomsky - Power Systems",
+            "Noam Chomsky - Who Rules the World_",
+            "Noam Chomsky, C J Polychroniou - Optimism Over Despair",
+            "Noam Chomsky, David Barsamian - Global Discontents",
+            "Noam Chomsky, Marv Waterstone - Consequences of Capitalism",
+            "Noam Chomsky, Nathan J. Robinson - The Myth of American Idealism",
+            "Paul Mason - Clear Bright Future",
+            "Paul Mason - PostCapitalism",
+            "Paulo Coelho - The Alchemist",
+            "Paulo Freire - Pedagogy of the Oppressed",
+            "Peter Frase - Four Futures",
+            "Peter Joseph - The New Human Rights Movement",
+            "Peter McIndoe, Connor Gaydos - Birds Aren't Real",
+            "Peter Zeihan - The End of the World is Just the Beginning",
+            "Philip Houston, Michael Floyd, Susan Carnicero - Get the Truth",
+            "Quinn Slobodian - Crack-Up Capitalism",
+            "Quinn Slobodian - Hayek's Bastards",
+            "R. Derek Black - The Klansman's Son",
+            "Rachel Samson, Jessie Stern - Beyond Difficult",
+            "Renee DiResta - Invisible Rulers",
+            "Richard D. Wolff - Democracy at Work",
+            "Richard D. Wolff - Understanding Socialism",
+            "Richard Roberts, Roger Kreuz - Becoming Fluent",
+            "Rick Wartzman - The End of Loyalty",
+            "Robert Macfarlane - Is a River Alive_",
+            "Robert O. Paxton - The Anatomy of Fascism",
+            "Ross Douthat - The Decadent Society",
+            "Ryszard Legutko - The Demon in Democracy",
+            "Sally Mackinnon - Styled",
+            "Salman Khan - Brave New Words",
+            "Samuel Moyn - Not Enough",
+            "Sara Ahmed - The Feminist Killjoy Handbook",
+            "Satya Doyle Byock - Quarterlife",
+            "Scott Warren - Generation Citizen",
+            "Sheila Liming - Hanging Out",
+            "Sherry Turkle - Reclaiming Conversation",
+            "Simon Sinek - Leaders Eat Last",
+            "Simon Sinek - The Infinite Game",
+            "Slavoj Žižek - Like a Thief In Broad Daylight",
+            "Sophie Lewis - Enemy Feminisms",
+            "Stanley McChrystal, Jeff Eggers, Jason Mangone - Leaders",
+            "Steve Benen - Ministry of Truth",
+            "Steven M. Teles, Brink Lindsey - The Captured Economy",
+            "Sue Scheff - Shame Nation",
+            "Suzanne Collins - Sunrise on the Reaping",
+            "Suzanne Collins - The Ballad of Songbirds and Snakes",
+            "Tal Ben-Shahar - Happier - Learn the Secrets to Daily Joy and Lasting Fulfillment",
+            "Terence Real - Fierce Intimacy",
+            "Terry Eagleton - Humour",
+            "Terry Eagleton - Why Marx Was Right",
+            "Thomas Piketty - A Brief History of Equality",
+            "Thomas Piketty - Capital and Ideology",
+            "Thomas Piketty - Chronicles",
+            "Thomas Piketty, Nick Broten - A Macat Analysis of Capital in the Twenty-First Century",
+            "Tim Urban - What's Our Problem_",
+            "Timothy P. Carney - Alienated America",
+            "Timothy Snyder - Our Malady",
+            "Vanessa Van Edwards - Cues",
+            "Verity Harding - AI Needs You",
+            "W. David Marx - Status and Culture",
+            "Will Storr - The Status Game",
+            "William Isaacs - Dialogue",
+            "William von Hippel - The Social Paradox",
+            "Yanis Varoufakis - Adults In the Room",
+            "Yanis Varoufakis - And the Weak Suffer What They Must_",
+            "Yanis Varoufakis - Talking to My Daughter About the Economy",
+            "Yanis Varoufakis - Technofeudalism",
+            "Yuval Noah Harari - 21 Lessons for the 21st Century",
+            "Yuval Noah Harari - Sapiens"
+        ];
+
+        // Initialize the page
+        function initializeList() {
+            const bookList = document.getElementById('bookList');
+            bookList.innerHTML = '';
+            bookData.forEach((book, index) => {
+                const li = document.createElement('li');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = 'book-' + index;
+                checkbox.className = 'book-checkbox';
+                
+                const label = document.createElement('label');
+                label.htmlFor = 'book-' + index;
+                label.textContent = book;
+                
+                li.appendChild(checkbox);
+                li.appendChild(label);
+                bookList.appendChild(li);
+            });
+        }
+
+        // Select all checkboxes
+        function selectAll() {
+            document.querySelectorAll('.book-checkbox').forEach(cb => cb.checked = true);
+        }
+
+        // Clear all checkboxes
+        function clearAll() {
+            document.querySelectorAll('.book-checkbox').forEach(cb => cb.checked = false);
+            document.getElementById('feedback').textContent = '';
+        }
+
+        // Copy selected books to clipboard
+        function copySelections() {
+            const selected = [];
+            document.querySelectorAll('.book-checkbox:checked').forEach(cb => {
+                const label = document.querySelector('label[for="' + cb.id + '"]');
+                if (label) selected.push(label.textContent);
+            });
+
+            if (selected.length === 0) {
+                document.getElementById('feedback').textContent = 'No books selected.';
+                return;
+            }
+
+            const text = selected.join('\n');
+            navigator.clipboard.writeText(text).then(() => {
+                const feedback = document.getElementById('feedback');
+                feedback.textContent = 'Copied ' + selected.length + ' book(s) to clipboard!';
+                setTimeout(() => { feedback.textContent = ''; }, 3000);
+            }).catch(err => {
+                document.getElementById('feedback').textContent = 'Failed to copy: ' + err;
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', initializeList);
+    </script>
 </body>
 </html>
