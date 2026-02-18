@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Paste Inspector</title>
+    <style>
+        body { font-family: system-ui, sans-serif; line-height: 1.5; max-width: 800px; margin: 2rem auto; padding: 0 1rem; background: #f4f4f9; }
+        #drop-zone { border: 3px dashed #ccc; padding: 2rem; text-align: center; color: #666; background: white; border-radius: 8px; transition: 0.3s; }
+        #drop-zone:focus { border-color: #007bff; outline: none; background: #f0f7ff; }
+        .section { margin-top: 2rem; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h3 { border-bottom: 2px solid #eee; padding-bottom: 0.5rem; margin-top: 0; }
+        pre { background: #272822; color: #f8f8f2; padding: 1rem; overflow-x: auto; border-radius: 4px; font-size: 0.9rem; }
+        .type-tag { display: inline-block; background: #e0e0e0; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>📋 The Paste Inspector</h1>
+    <p>Click the box below and paste anything (**text, images, HTML from a website**) to see the raw clipboard data.</p>
+
+    <div id="drop-zone" tabindex="0">
+        Click here and press <strong>Ctrl + V</strong> (or Cmd + V)
+    </div>
+
+    <div id="output-container" style="display: none;">
+        <div class="section">
+            <h3>Available MIME Types</h3>
+            <div id="types-list"></div>
+        </div>
+
+        <div id="content-sections"></div>
+    </div>
+
+    <script>
+        const dropZone = document.getElementById('drop-zone');
+        const outputContainer = document.getElementById('output-container');
+        const typesList = document.getElementById('types-list');
+        const contentSections = document.getElementById('content-sections');
+
+        dropZone.addEventListener('paste', (e) => {
+            // Prevent default if you don't want the browser to actually "input" the text
+            // e.preventDefault(); 
+
+            const clipboardData = e.clipboardData || window.clipboardData;
+            const items = clipboardData.items;
+            
+            // Clear previous results
+            typesList.innerHTML = '';
+            contentSections.innerHTML = '';
+            outputContainer.style.display = 'block';
+
+            // 1. List all available types
+            if (clipboardData.types.length === 0) {
+                typesList.innerHTML = '<em>No data types found.</em>';
+            }
+            clipboardData.types.forEach(type => {
+                const span = document.createElement('span');
+                span.className = 'type-tag';
+                span.textContent = type;
+                typesList.appendChild(span);
+            });
+
+            // 2. Iterate through "items" to get the actual content
+            for (let i = 0; i < items.length; i++) {
+                const item = items[i];
+                const section = document.createElement('div');
+                section.className = 'section';
+                
+                const title = document.createElement('h3');
+                title.textContent = `Item #${i}: ${item.type} (${item.kind})`;
+                section.appendChild(title);
+
+                // Handle Text-based data (text/plain, text/html, etc.)
+                if (item.kind === 'string') {
+                    item.getAsString((text) => {
+                        const pre = document.createElement('pre');
+                        pre.textContent = text;
+                        section.appendChild(pre);
+                    });
+                } 
+                // Handle Files (images, etc.)
+                else if (item.kind === 'file') {
+                    const file = item.getAsFile();
+                    const info = document.createElement('p');
+                    info.textContent = `File Name: ${file.name}, Size: ${file.size} bytes`;
+                    section.appendChild(info);
+
+                    if (file.type.startsWith('image/')) {
+                        const img = document.createElement('img');
+                        img.src = URL.createObjectURL(file);
+                        img.style.maxWidth = '100%';
+                        img.style.marginTop = '10px';
+                        section.appendChild(img);
+                    }
+                }
+
+                contentSections.appendChild(section);
+            }
+        });
+    </script>
+</body>
+</html>
