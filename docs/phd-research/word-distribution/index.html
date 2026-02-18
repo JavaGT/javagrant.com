@@ -361,62 +361,6 @@ body {
 </div>
 
 <script>
-// const TOTAL = 69350;
-
-// const data = [
-//   { label:'Abstract', words:250, color:'#4a8fa0', desc:'Opening summary of the thesis.', sections:[] },
-//   { label:'Ch 0 · Preface', words:1000, color:'#5a7fa0', desc:'Setting the scene for the project.', sections:[] },
-//   { label:'Ch 1 · Introduction', words:7500, color:'#c0614a', desc:'The hook, research questions, positionality, and roadmap.', sections:[
-//     { label:'The Hook', words:2500, desc:'Auto-ethnographic vignette: contextualisation of the larger story of this project and how I came to write this text.' },
-//     { label:'Research Questions & Scope', words:2500, desc:'Primary/secondary queries — Who, What, Why & How of grassroots university futures. Boundaries of the study: grassroots focus, inward university & radical imagination.' },
-//     { label:'Positionality', words:1500, desc:'Java as a researcher — situating the author within the study.' },
-//     { label:'Roadmap', words:1000, desc:'Guide to the following chapters.' },
-//   ]},
-//   { label:'Ch 2 · Lit & Theory', words:14000, color:'#b87a30', desc:'Literature review spanning imagination, agency, theory, and alternatives.', sections:[
-//     { label:'Limiting Imagination', words:2800, desc:'Neoliberal contexts, capitalist realism, end of history. Denaturalising the university and recognising its designed features.' },
-//     { label:'Limiting Agency', words:2800, desc:'Decision-making, leadership, values, bureaucracy, gamification (C. Thi Nguyen). Culture and the university.' },
-//     { label:'Finding Hope', words:2800, desc:'Bourdieu field theory, complex systems analysis, prefigurative politics — 2–3 core theorists situated in the NZ context.' },
-//     { label:'Imagining Alternatives', words:2800, desc:'Utopias, the ecological university, futures thinking.' },
-//     { label:'Prefiguring Futures', words:2800, desc:'Synthesising theory into conceptual tools: Cognitive Liberation, Tactical Repertoires, Interstitial Agency.' },
-//   ]},
-//   { label:'Ch 3 · Methodology', words:7600, color:'#7b6fa0', desc:'Epistemology, interviews, auto-ethnography, data analysis, ethics.', sections:[
-//     { label:'Introduction', words:1000, desc:'Chapter framing.' },
-//     { label:'Epistemology', words:1400, desc:'Constructivism, interpretivist/qualitative grounding.' },
-//     { label:'Interviews', words:1400, desc:'Recruitment, demographics, process.' },
-//     { label:'Auto-ethnography', words:1000, desc:'Defining the Self-as-Subject method — an eye to enrich the data.' },
-//     { label:'Data Analysis', words:1400, desc:'Coding strategy across interviews and personal documentation/journals.' },
-//     { label:'Ethics & Reflexivity', words:1400, desc:'Risk, insider status, extractivism, reciprocity, power of representation, reflexivity on doing this kind of research.' },
-//   ]},
-//   { label:'Ch 4 · Substantive I', words:7000, color:'#4a8a6a', desc:'Activist motivations, values & participation.', sections:[
-//     { label:'Introduction', words:1000, desc:'What were people\'s main motivations? What worldviews did they hold? What does participation look like across the data?' },
-//     { label:'Stories', words:3000, desc:'Personal vignettes illustrating structure.' },
-//     { label:'Analysis / Theory', words:3000, desc:'Connecting to culture and affect.' },
-//   ]},
-//   { label:'Ch 5 · Substantive II', words:10000, color:'#7a5a8a', desc:'Culture, governance and leadership.', sections:[
-//     { label:'Introduction', words:1000, desc:'Chapter framing.' },
-//     { label:'Auto-ethnography', words:5000, desc:'Reflective memory work, examination of UoA culture and leadership.' },
-//     { label:'Interview Data', words:2000, desc:'Teamwork, empowerment, affect across participants.' },
-//     { label:'Synthesis', words:2000, desc:'Chapter conclusions and connections.' },
-//   ]},
-//   { label:'Ch 6 · Substantive III', words:10000, color:'#a05a40', desc:'Agency & Resistance.', sections:[
-//     { label:'Introduction', words:1000, desc:'Chapter framing.' },
-//     { label:'Resistance', words:5000, desc:'How participants and the author resist structural constraints.' },
-//     { label:'Conclusions', words:4000, desc:'Chapter conclusions.' },
-//   ]},
-//   { label:'Ch 7 · Discussion', words:9000, color:'#4a6a8a', desc:'Cross-chapter synthesis, contribution, and broader impact.', sections:[
-//     { label:'Cross-Chapter Synthesis', words:3500, desc:'Answering the research questions across all substantive chapters.' },
-//     { label:'Contribution', words:3500, desc:'Relation to and advancement of sociology theory/literature.' },
-//     { label:'Broader Impact', words:2000, desc:'Implications for organisers, changemakers, and progressive power holders.' },
-//   ]},
-//   { label:'Ch 8 · Conclusion', words:4000, color:'#5a8a7a', desc:'Summary, limitations, future directions, coda.', sections:[
-//     { label:'Summary', words:1500, desc:'Key takeaways of the research.' },
-//     { label:'Limitations', words:1000, desc:'Considering methodology and findings.' },
-//     { label:'Future Directions', words:1000, desc:'Where the research could go next.' },
-//     { label:'Coda', words:500, desc:'Thematic reflection.' },
-//   ]},
-// ];
-// const TOTAL = data.reduce((sum, ch) => sum + ch.words, 0);
-// const TICKS = TOTAL / 5000;
 let data = [
   { label:'Preamble', color:'#4a8fa0', desc:'Opening summary of the thesis.', sections:[
     {
@@ -446,19 +390,19 @@ let data = [
     { label:'Data Analysis', words:1400, desc:'Coding strategy across interviews and personal documentation/journals.' },
     { label:'Ethics & Reflexivity', words:1400, desc:'Risk, insider status, extractivism, reciprocity, power of representation, reflexivity on doing this kind of research.' },
   ]},
-  { label:'Ch 4 · Substantive I', color:'#7a5a8a', desc:'Culture, governance and leadership.', sections:[
+  { label:'Ch 4 · Power in the University', color:'#7a5a8a', desc:'Culture, governance and leadership.', sections:[
     { label:'Introduction', words:1000, desc:'Chapter framing.' },
     { label:'Auto-ethnography', words:3600, desc:'Reflective memory work, examination of UoA culture and leadership. What the conditions of the \'game\' are in universities for politics.' },
     { label:'Interview Data', words:2400, desc:'Teamwork, empowerment, affect across participants.' },
     { label:'Synthesis', words:1500, desc:'Chapter conclusions and connections.' },
   ]},
-  { label:'Ch 5 · Substantive II', color:'#4a8a6a', desc:'Activist motivations, values.', sections:[
+  { label:'Ch 5 · University Activists', color:'#4a8a6a', desc:'Activist motivations, values.', sections:[
     { label:'Introduction', words:1000, desc:'What were people\'s main motivations? What worldviews did they hold? What does participation look like across the data?' },
     { label:'Sources of Values', words:2400, desc:'Where did participants say their values came from? What were the most influential sources of values?' },
     { label:'Motivations', words:2400, desc:'What were people\'s main motivations? What worldviews did they hold?' },
     { label:'Analysis / Theory', words:2000, desc:'Connecting to culture and affect.' },
   ]},
-  { label:'Ch 6 · Substantive III', color:'#a05a40', desc:'Agency & Resistance.', sections:[
+  { label:'Ch 6 · Resistance', color:'#a05a40', desc:'Agency & Resistance.', sections:[
     { label:'Introduction', words:1000, desc:'Chapter framing.' },
     { label:'Resistance', words:4000, desc:'How participants and the author resist structural constraints.' },
     { label:'Learnings – Limitations', words:2000, desc:'Identification of the limitations of actions taken, as well as the structural constraints that persist.' },
