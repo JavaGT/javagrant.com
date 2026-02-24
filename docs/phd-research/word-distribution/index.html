@@ -1,606 +1,777 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thesis — Flame Graph</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thesis — Flame Graph</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
-:root {
-  --bg: #1a1a1e;
-  --panel: #111113;
-  --border: #2a2a32;
-  --track-bg: #1e1e24;
-  --text: #d4cfc8;
-  --text-dim: #6a6670;
-  --text-bright: #f0ece4;
-  --label-w: 220px;
-  --row-h: 28px;
-  --header-h: 36px;
-}
+    :root {
+      --bg: #1a1a1e;
+      --panel: #111113;
+      --border: #2a2a32;
+      --track-bg: #1e1e24;
+      --text: #d4cfc8;
+      --text-dim: #6a6670;
+      --text-bright: #f0ece4;
+      --label-w: 220px;
+      --row-h: 28px;
+      --header-h: 36px;
+    }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 13px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 13px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-.topbar {
-  background: var(--panel);
-  border-bottom: 1px solid var(--border);
-  padding: 0 20px;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-}
+    .topbar {
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
 
-.topbar-title {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-bright);
-  letter-spacing: 0.04em;
-}
+    .topbar-title {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-bright);
+      letter-spacing: 0.04em;
+    }
 
-.topbar-title span { color: #6a8caf; margin-right: 8px; }
+    .topbar-title span {
+      color: #6a8caf;
+      margin-right: 8px;
+    }
 
-.topbar-stats {
-  display: flex;
-  gap: 28px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
-}
+    .topbar-stats {
+      display: flex;
+      gap: 28px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+    }
 
-.stat { color: var(--text-dim); }
-.stat strong { color: var(--text-bright); font-weight: 500; }
+    .stat {
+      color: var(--text-dim);
+    }
 
-.flame-panel {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  min-height: 0;
-}
+    .stat strong {
+      color: var(--text-bright);
+      font-weight: 500;
+    }
 
-.axis-header {
-  height: var(--header-h);
-  background: var(--panel);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  flex-shrink: 0;
-}
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
 
-.axis-label-spacer {
-  width: var(--label-w);
-  flex-shrink: 0;
-  border-right: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  padding: 0 14px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 9px;
-  color: var(--text-dim);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
+    .topbar-actions {
+      display: flex;
+      gap: 8px;
+    }
 
-.axis-ticks-wrap {
-  flex: 1;
-  position: relative;
-}
+    .topbar-actions button {
+      background: transparent;
+      color: var(--text-dim);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      cursor: pointer;
+      transition: all 0.15s;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
 
-.flame-scroll {
-  flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
+    .topbar-actions button:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-bright);
+      border-color: #4a4a58;
+    }
 
-.flame-scroll::-webkit-scrollbar { width: 8px; }
-.flame-scroll::-webkit-scrollbar-track { background: var(--panel); }
-.flame-scroll::-webkit-scrollbar-thumb { background: #3a3a48; border-radius: 4px; }
+    .flame-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      min-height: 0;
+    }
 
-.flame-row {
-  display: flex;
-  height: var(--row-h);
-  border-bottom: 1px solid var(--border);
-}
+    .axis-header {
+      height: var(--header-h);
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-shrink: 0;
+    }
 
-.flame-row:hover { background: rgba(255,255,255,0.018); }
+    .axis-label-spacer {
+      width: var(--label-w);
+      flex-shrink: 0;
+      border-right: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9px;
+      color: var(--text-dim);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
 
-.flame-row.chapter-row { height: 36px; background: rgba(255,255,255,0.012); }
+    .axis-ticks-wrap {
+      flex: 1;
+      position: relative;
+    }
 
-.row-label {
-  width: var(--label-w);
-  flex-shrink: 0;
-  border-right: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  padding: 0 10px 0 14px;
-  gap: 7px;
-  overflow: hidden;
-}
+    .flame-scroll {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
 
-.row-label.indented { padding-left: 32px; }
+    .flame-scroll::-webkit-scrollbar {
+      width: 8px;
+    }
 
-.bullet {
-  width: 7px;
-  height: 7px;
-  border-radius: 1px;
-  flex-shrink: 0;
-}
+    .flame-scroll::-webkit-scrollbar-track {
+      background: var(--panel);
+    }
 
-.name {
-  font-size: 11px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--text);
-  font-weight: 500;
-  flex: 1;
-}
+    .flame-scroll::-webkit-scrollbar-thumb {
+      background: #3a3a48;
+      border-radius: 4px;
+    }
 
-.chapter-row .name {
-  font-weight: 600;
-  font-size: 11.5px;
-  color: var(--text-bright);
-}
+    .flame-row {
+      display: flex;
+      height: var(--row-h);
+      border-bottom: 1px solid var(--border);
+    }
 
-.wc {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 9.5px;
-  color: var(--text-dim);
-  flex-shrink: 0;
-  margin-left: auto;
-}
+    .flame-row:hover {
+      background: rgba(255, 255, 255, 0.018);
+    }
 
-.row-track {
-  flex: 1;
-  position: relative;
-  background: var(--track-bg);
-  overflow: hidden;
-}
+    .flame-row.chapter-row {
+      height: 36px;
+      background: rgba(255, 255, 255, 0.012);
+    }
 
-.grid-line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: #222230;
-  pointer-events: none;
-}
+    .row-label {
+      width: var(--label-w);
+      flex-shrink: 0;
+      border-right: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 10px 0 14px;
+      gap: 7px;
+      overflow: hidden;
+    }
 
-.flame-bar {
-  position: absolute;
-  top: 3px;
-  bottom: 3px;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  padding: 0 7px;
-  cursor: pointer;
-  overflow: hidden;
-  min-width: 2px;
-  transition: filter 0.1s;
-}
+    .row-label.indented {
+      padding-left: 32px;
+    }
 
-.chapter-row .flame-bar { top: 4px; bottom: 4px; border-radius: 4px; }
+    .bullet {
+      width: 7px;
+      height: 7px;
+      border-radius: 1px;
+      flex-shrink: 0;
+    }
 
-.flame-bar:hover { filter: brightness(1.3) !important; }
+    .name {
+      font-size: 11px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: var(--text);
+      font-weight: 500;
+      flex: 1;
+    }
 
-.bar-text {
-  font-size: 10.5px;
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: rgba(255,255,255,0.92);
-  pointer-events: none;
-  letter-spacing: 0.01em;
-}
+    .chapter-row .name {
+      font-weight: 600;
+      font-size: 11.5px;
+      color: var(--text-bright);
+    }
 
-.section-divider {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: rgba(0,0,0,0.4);
-  pointer-events: none;
-}
+    .wc {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9.5px;
+      color: var(--text-dim);
+      flex-shrink: 0;
+      margin-left: auto;
+    }
 
-.group-sep {
-  height: 20px;
-  display: flex;
-  background: var(--panel);
-  border-bottom: 1px solid var(--border);
-}
+    .row-track {
+      flex: 1;
+      position: relative;
+      background: var(--track-bg);
+      overflow: hidden;
+    }
 
-.group-sep .gs-label {
-  width: var(--label-w);
-  flex-shrink: 0;
-  border-right: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  padding: 0 14px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 9px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-}
+    .grid-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #222230;
+      pointer-events: none;
+    }
 
-.group-sep .gs-track { flex: 1; }
+    .flame-bar {
+      position: absolute;
+      top: 3px;
+      bottom: 3px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      padding: 0 7px;
+      cursor: pointer;
+      overflow: hidden;
+      min-width: 2px;
+      transition: filter 0.1s;
+    }
 
-#tip {
-  position: fixed;
-  z-index: 999;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.08s;
-  background: #0f0f13;
-  border: 1px solid #333340;
-  border-left: 3px solid #888;
-  border-radius: 6px;
-  padding: 12px 15px;
-  min-width: 230px;
-  max-width: 300px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
-  font-family: 'IBM Plex Sans', sans-serif;
-}
+    .chapter-row .flame-bar {
+      top: 4px;
+      bottom: 4px;
+      border-radius: 4px;
+    }
 
-.tip-chapter {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 9px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  margin-bottom: 4px;
-}
+    .flame-bar:hover {
+      filter: brightness(1.3) !important;
+    }
 
-.tip-name {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-bright);
-  margin-bottom: 9px;
-  line-height: 1.3;
-}
+    .bar-text {
+      font-size: 10.5px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: rgba(255, 255, 255, 0.92);
+      pointer-events: none;
+      letter-spacing: 0.01em;
+    }
 
-.tip-row {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
-  color: var(--text-dim);
-  margin-bottom: 3px;
-}
+    .section-divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: rgba(0, 0, 0, 0.4);
+      pointer-events: none;
+    }
 
-.tip-row strong { color: var(--text-bright); font-weight: 500; }
+    .group-sep {
+      height: 20px;
+      display: flex;
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+    }
 
-.tip-progress {
-  margin-top: 10px;
-  height: 4px;
-  background: #2a2a38;
-  border-radius: 2px;
-  overflow: hidden;
-}
+    .group-sep .gs-label {
+      width: var(--label-w);
+      flex-shrink: 0;
+      border-right: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
 
-.tip-progress-fill {
-  height: 100%;
-  border-radius: 2px;
-}
+    .group-sep .gs-track {
+      flex: 1;
+    }
 
-.tip-desc {
-  margin-top: 9px;
-  font-size: 11px;
-  color: var(--text-dim);
-  line-height: 1.55;
-  border-top: 1px solid #222230;
-  padding-top: 8px;
-}
+    #tip {
+      position: fixed;
+      z-index: 999;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.08s;
+      background: #0f0f13;
+      border: 1px solid #333340;
+      border-left: 3px solid #888;
+      border-radius: 6px;
+      padding: 12px 15px;
+      min-width: 230px;
+      max-width: 300px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
 
-.footer {
-  background: var(--panel);
-  border-top: 1px solid var(--border);
-  height: 32px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  gap: 20px;
-  flex-shrink: 0;
-  overflow: hidden;
-}
+    .tip-chapter {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 4px;
+    }
 
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 10px;
-  color: var(--text-dim);
-  white-space: nowrap;
-}
+    .tip-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-bright);
+      margin-bottom: 9px;
+      line-height: 1.3;
+    }
 
-.legend-dot { width: 9px; height: 9px; border-radius: 2px; }
-</style>
+    .tip-row {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-bottom: 3px;
+    }
+
+    .tip-row strong {
+      color: var(--text-bright);
+      font-weight: 500;
+    }
+
+    .tip-progress {
+      margin-top: 10px;
+      height: 4px;
+      background: #2a2a38;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .tip-progress-fill {
+      height: 100%;
+      border-radius: 2px;
+    }
+
+    .tip-desc {
+      margin-top: 9px;
+      font-size: 11px;
+      color: var(--text-dim);
+      line-height: 1.55;
+      border-top: 1px solid #222230;
+      padding-top: 8px;
+    }
+
+    .footer {
+      background: var(--panel);
+      border-top: 1px solid var(--border);
+      height: 32px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      gap: 20px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+      color: var(--text-dim);
+      white-space: nowrap;
+    }
+
+    .legend-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 2px;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="topbar">
-  <div class="topbar-title"><span>▶</span> thesis — word count flame graph</div>
-  <div class="topbar-stats">
-    <div class="stat">Total <strong>69,350 words</strong></div>
-    <div class="stat">Chapters <strong>8</strong></div>
-    <div class="stat">Sections <strong>32</strong></div>
+  <div class="topbar">
+    <div class="topbar-title"><span>▶</span> thesis — word count flame graph</div>
+    <div class="topbar-right">
+      <div class="topbar-stats" id="topbarStats"></div>
+      <div class="topbar-actions">
+        <button id="btnExport">Export</button>
+        <button id="btnImport">Import</button>
+        <input type="file" id="fileImport" accept=".json" style="display:none">
+      </div>
+    </div>
   </div>
-</div>
 
-<div class="flame-panel">
-  <div class="axis-header">
-    <div class="axis-label-spacer">Section</div>
-    <div class="axis-ticks-wrap" id="axisTicks"></div>
+  <div class="flame-panel">
+    <div class="axis-header">
+      <div class="axis-label-spacer">Section</div>
+      <div class="axis-ticks-wrap" id="axisTicks"></div>
+    </div>
+    <div class="flame-scroll" id="flameScroll"></div>
   </div>
-  <div class="flame-scroll" id="flameScroll"></div>
-</div>
 
-<div class="footer" id="footer"></div>
-<div id="tip">
-  <div class="tip-chapter" id="tc"></div>
-  <div class="tip-name" id="tn"></div>
-  <div class="tip-row"><span>Words</span><strong id="tw"></strong></div>
-  <div class="tip-row"><span>% of thesis</span><strong id="tp"></strong></div>
-  <div class="tip-row"><span>Starts at word</span><strong id="ts"></strong></div>
-  <div class="tip-progress"><div class="tip-progress-fill" id="tf"></div></div>
-  <div class="tip-desc" id="td"></div>
-</div>
+  <div class="footer" id="footer"></div>
+  <div id="tip">
+    <div class="tip-chapter" id="tc"></div>
+    <div class="tip-name" id="tn"></div>
+    <div class="tip-row"><span>Words</span><strong id="tw"></strong></div>
+    <div class="tip-row"><span>% of thesis</span><strong id="tp"></strong></div>
+    <div class="tip-row"><span>Starts at word</span><strong id="ts"></strong></div>
+    <div class="tip-progress">
+      <div class="tip-progress-fill" id="tf"></div>
+    </div>
+    <div class="tip-desc" id="td"></div>
+  </div>
 
-<script>
-let data = [
-  { label:'Preamble', color:'#4a8fa0', desc:'Bits and bobs.', sections:[
-    {
-        label:'Abstract', words:300, desc:'A concise summary of the research, including the hook, methods, key findings, and implications.'
-    },
-    {
-        label:'Preface', words:1000, desc:'A little bit about the author, the journey of the research, and acknowledgements.'
+  <script>
+    let data = [
+      {
+        label: 'Preamble', color: '#4a8fa0', desc: 'Bits and bobs.', sections: [
+          {
+            label: 'Abstract', words: 300, desc: 'A concise summary of the research, including the hook, methods, key findings, and implications.'
+          },
+          {
+            label: 'Preface', words: 1000, desc: 'A little bit about the author, the journey of the research, and acknowledgements.'
+          }
+        ]
+      },
+      {
+        label: 'Ch 1 · Introduction', words: 7500, color: '#c0614a', desc: 'The hook, research questions, positionality, and roadmap.', sections: [
+          { label: 'The Hook', words: 2500, desc: 'Auto-ethnographic vignette: contextualisation of the larger story of this project and how I came to write this text.' },
+          { label: 'Research Questions & Scope', words: 2500, desc: 'Primary/secondary queries — Who, What, Why & How of grassroots university futures. Boundaries of the study: grassroots focus, inward university & radical imagination.' },
+          { label: 'Positionality', words: 1500, desc: 'Java as a researcher — situating the author within the study.' },
+          { label: 'Roadmap', words: 1400, desc: 'Guide to the arguments within the following chapters.' },
+        ]
+      },
+      {
+        label: 'Ch 2 · Lit & Theory', color: '#b87a30', desc: 'Literature review spanning imagination, agency, theory, and alternatives.', sections: [
+          { label: 'Limiting Imagination', words: 2800, desc: 'Neoliberal contexts, capitalist realism, end of history. Denaturalising the university and recognising its designed features.' },
+          { label: 'Limiting Agency', words: 2800, desc: 'Decision-making, leadership, values, bureaucracy, gamification (C. Thi Nguyen). Culture and the university.' },
+          { label: 'Finding Hope', words: 2800, desc: 'Bourdieu field theory, complex systems analysis, prefigurative politics — 2–3 core theorists situated in the NZ context.' },
+          { label: 'Prefiguring Futures', words: 2800, desc: 'Utopias, the ecological university, futures thinking. Synthesising theory into conceptual tools: Cognitive Liberation, Tactical Repertoires, Interstitial Agency.' },
+        ]
+      },
+      {
+        label: 'Ch 3 · Methodology', color: '#7b6fa0', desc: 'Epistemology, interviews, auto-ethnography, data analysis, ethics.', sections: [
+          { label: 'Introduction', words: 1000, desc: 'Chapter framing.' },
+          { label: 'Epistemology', words: 1400, desc: 'Constructivism, interpretivist/qualitative grounding.' },
+          { label: 'Interviews', words: 1400, desc: 'Recruitment, demographics, process.' },
+          { label: 'Auto-ethnography', words: 1000, desc: 'Defining the Self-as-Subject method — an eye to enrich the data.' },
+          { label: 'Data Analysis', words: 1400, desc: 'Coding strategy across interviews and personal documentation/journals.' },
+          { label: 'Ethics & Reflexivity', words: 1400, desc: 'Risk, insider status, extractivism, reciprocity, power of representation, reflexivity on doing this kind of research.' },
+        ]
+      },
+      {
+        label: 'Ch 4 · Power in the University', color: '#7a5a8a', desc: 'Culture, governance and leadership.', sections: [
+          { label: 'Introduction', words: 1000, desc: 'Chapter framing.' },
+          { label: 'Auto-ethnography', words: 3600, desc: 'Reflective memory work, examination of UoA culture and leadership. What the conditions of the \'game\' are in universities for politics.' },
+          { label: 'Interview Data', words: 2400, desc: 'Teamwork, empowerment, affect across participants.' },
+          { label: 'Synthesis', words: 1500, desc: 'Chapter conclusions and connections.' },
+        ]
+      },
+      {
+        label: 'Ch 5 · University Activists', color: '#4a8a6a', desc: 'Activist motivations, values.', sections: [
+          { label: 'Introduction', words: 1000, desc: 'What were people\'s main motivations? What worldviews did they hold? What does participation look like across the data?' },
+          { label: 'Sources of Values', words: 2400, desc: 'Where did participants say their values came from? What were the most influential sources of values?' },
+          { label: 'Motivations', words: 2400, desc: 'What were people\'s main motivations? What worldviews did they hold?' },
+          { label: 'Analysis / Theory', words: 2000, desc: 'Connecting to culture and affect.' },
+        ]
+      },
+      {
+        label: 'Ch 6 · Resistance', color: '#a05a40', desc: 'Agency & Resistance.', sections: [
+          { label: 'Introduction', words: 1000, desc: 'Chapter framing.' },
+          { label: 'Resistance', words: 4000, desc: 'How participants and the author resist structural constraints.' },
+          { label: 'Learnings – Limitations', words: 2000, desc: 'Identification of the limitations of actions taken, as well as the structural constraints that persist.' },
+          { label: 'Learnings – Opportunities', words: 2000, desc: 'Identification of the opportunities for action, as well as changes in the environment that could enable more transformative change.' },
+          { label: 'Conclusions', words: 1500, desc: 'Chapter conclusions.' },
+        ]
+      },
+      {
+        label: 'Ch 7 · Discussion', color: '#4a6a8a', desc: 'Cross-chapter synthesis, contribution, and broader impact.', sections: [
+          { label: 'Introduction', words: 1000, desc: 'Chapter framing.' },
+          { label: 'Cross-Chapter Synthesis', words: 3500, desc: 'Answering the research questions across all substantive chapters.' },
+          { label: 'Scholarly Contribution', words: 3500, desc: 'Relation to and advancement of sociology theory/literature.' },
+          { label: 'Social Implications', words: 2000, desc: 'Implications for organisers, changemakers, and progressive power holders.' },
+        ]
+      },
+      {
+        label: 'Ch 8 · Conclusion', color: '#5a8a7a', desc: 'Summary, limitations, future directions, coda.', sections: [
+          { label: 'Summary', words: 1500, desc: 'Key takeaways of the research.' },
+          { label: 'Limitations', words: 1000, desc: 'Considering methodology and findings.' },
+          { label: 'Future Directions', words: 1000, desc: 'Where the research could go next.' },
+          { label: 'Coda', words: 500, desc: 'Thematic reflection.' },
+        ]
+      },
+    ];
+    let TOTAL = 0;
+    let TICKS = 0;
+
+    const fmt = n => n.toLocaleString();
+    const pct = n => (n / TOTAL * 100).toFixed(1) + '%';
+    const toL = w => (w / TOTAL * 100).toFixed(4) + '%';
+    const toW = w => Math.max(w / TOTAL * 100, 0.06).toFixed(4) + '%';
+
+    // Tooltip
+    const tip = document.getElementById('tip');
+    function showTip(e, name, ch, words, start, desc, color) {
+      document.getElementById('tc').textContent = ch || '';
+      document.getElementById('tn').textContent = name;
+      document.getElementById('tw').textContent = fmt(words) + ' words';
+      document.getElementById('tp').textContent = pct(words);
+      document.getElementById('ts').textContent = fmt(start);
+      const fill = document.getElementById('tf');
+      fill.style.width = pct(words);
+      fill.style.background = color;
+      tip.style.borderLeftColor = color;
+      document.getElementById('td').textContent = desc || '';
+      tip.style.opacity = '1';
+      posTip(e);
     }
-  ] },
-  { label:'Ch 1 · Introduction', words:7500, color:'#c0614a', desc:'The hook, research questions, positionality, and roadmap.', sections:[
-    { label:'The Hook', words:2500, desc:'Auto-ethnographic vignette: contextualisation of the larger story of this project and how I came to write this text.' },
-    { label:'Research Questions & Scope', words:2500, desc:'Primary/secondary queries — Who, What, Why & How of grassroots university futures. Boundaries of the study: grassroots focus, inward university & radical imagination.' },
-    { label:'Positionality', words:1500, desc:'Java as a researcher — situating the author within the study.' },
-    { label:'Roadmap', words:1400, desc:'Guide to the arguments within the following chapters.' },
-  ]},
-  { label:'Ch 2 · Lit & Theory', color:'#b87a30', desc:'Literature review spanning imagination, agency, theory, and alternatives.', sections:[
-    { label:'Limiting Imagination', words:2800, desc:'Neoliberal contexts, capitalist realism, end of history. Denaturalising the university and recognising its designed features.' },
-    { label:'Limiting Agency', words:2800, desc:'Decision-making, leadership, values, bureaucracy, gamification (C. Thi Nguyen). Culture and the university.' },
-    { label:'Finding Hope', words:2800, desc:'Bourdieu field theory, complex systems analysis, prefigurative politics — 2–3 core theorists situated in the NZ context.' },
-    { label:'Prefiguring Futures', words:2800, desc:'Utopias, the ecological university, futures thinking. Synthesising theory into conceptual tools: Cognitive Liberation, Tactical Repertoires, Interstitial Agency.' },
-  ]},
-  { label:'Ch 3 · Methodology', color:'#7b6fa0', desc:'Epistemology, interviews, auto-ethnography, data analysis, ethics.', sections:[
-    { label:'Introduction', words:1000, desc:'Chapter framing.' },
-    { label:'Epistemology', words:1400, desc:'Constructivism, interpretivist/qualitative grounding.' },
-    { label:'Interviews', words:1400, desc:'Recruitment, demographics, process.' },
-    { label:'Auto-ethnography', words:1000, desc:'Defining the Self-as-Subject method — an eye to enrich the data.' },
-    { label:'Data Analysis', words:1400, desc:'Coding strategy across interviews and personal documentation/journals.' },
-    { label:'Ethics & Reflexivity', words:1400, desc:'Risk, insider status, extractivism, reciprocity, power of representation, reflexivity on doing this kind of research.' },
-  ]},
-  { label:'Ch 4 · Power in the University', color:'#7a5a8a', desc:'Culture, governance and leadership.', sections:[
-    { label:'Introduction', words:1000, desc:'Chapter framing.' },
-    { label:'Auto-ethnography', words:3600, desc:'Reflective memory work, examination of UoA culture and leadership. What the conditions of the \'game\' are in universities for politics.' },
-    { label:'Interview Data', words:2400, desc:'Teamwork, empowerment, affect across participants.' },
-    { label:'Synthesis', words:1500, desc:'Chapter conclusions and connections.' },
-  ]},
-  { label:'Ch 5 · University Activists', color:'#4a8a6a', desc:'Activist motivations, values.', sections:[
-    { label:'Introduction', words:1000, desc:'What were people\'s main motivations? What worldviews did they hold? What does participation look like across the data?' },
-    { label:'Sources of Values', words:2400, desc:'Where did participants say their values came from? What were the most influential sources of values?' },
-    { label:'Motivations', words:2400, desc:'What were people\'s main motivations? What worldviews did they hold?' },
-    { label:'Analysis / Theory', words:2000, desc:'Connecting to culture and affect.' },
-  ]},
-  { label:'Ch 6 · Resistance', color:'#a05a40', desc:'Agency & Resistance.', sections:[
-    { label:'Introduction', words:1000, desc:'Chapter framing.' },
-    { label:'Resistance', words:4000, desc:'How participants and the author resist structural constraints.' },
-    { label:'Learnings – Limitations', words:2000, desc:'Identification of the limitations of actions taken, as well as the structural constraints that persist.' },
-    { label:'Learnings – Opportunities', words:2000, desc:'Identification of the opportunities for action, as well as changes in the environment that could enable more transformative change.' },
-    { label:'Conclusions', words:1500, desc:'Chapter conclusions.' },
-  ]},
-  { label:'Ch 7 · Discussion', color:'#4a6a8a', desc:'Cross-chapter synthesis, contribution, and broader impact.', sections:[
-    { label:'Introduction', words:1000, desc:'Chapter framing.' },
-    { label:'Cross-Chapter Synthesis', words:3500, desc:'Answering the research questions across all substantive chapters.' },
-    { label:'Scholarly Contribution', words:3500, desc:'Relation to and advancement of sociology theory/literature.' },
-    { label:'Social Implications', words:2000, desc:'Implications for organisers, changemakers, and progressive power holders.' },
-  ]},
-  { label:'Ch 8 · Conclusion', color:'#5a8a7a', desc:'Summary, limitations, future directions, coda.', sections:[
-    { label:'Summary', words:1500, desc:'Key takeaways of the research.' },
-    { label:'Limitations', words:1000, desc:'Considering methodology and findings.' },
-    { label:'Future Directions', words:1000, desc:'Where the research could go next.' },
-    { label:'Coda', words:500, desc:'Thematic reflection.' },
-  ]},
-];
-data = data.map(ch => ({ words: ch.sections.reduce((sum, s) => sum + s.words, 0), ...ch }));
-const TOTAL = data.reduce((sum, ch) => sum + ch.words, 0);
-const TICKS = TOTAL / 5000;
+    function posTip(e) {
+      const tw = 260;
+      let x = e.clientX + 16, y = e.clientY + 12;
+      if (x + tw > window.innerWidth - 8) x = e.clientX - tw - 8;
+      if (y + 220 > window.innerHeight - 8) y = e.clientY - 220 - 8;
+      tip.style.left = x + 'px'; tip.style.top = y + 'px';
+    }
+    function hideTip() { tip.style.opacity = '0'; }
+    document.addEventListener('mousemove', e => { if (tip.style.opacity === '1') posTip(e); });
 
+    // Build rows
+    function gridLines(parent) {
+      for (let i = 0; i <= TICKS; i++) {
+        const l = document.createElement('div');
+        l.className = 'grid-line';
+        l.style.left = (i / TICKS * 100) + '%';
+        parent.appendChild(l);
+      }
+    }
 
+    function row(isChapter) {
+      const r = document.createElement('div');
+      r.className = 'flame-row' + (isChapter ? ' chapter-row' : '');
+      return r;
+    }
 
-// Assign absolute start positions
-let cursor = 0;
-data.forEach(ch => {
-  ch.startWord = cursor;
-  cursor += ch.words;
-  let sc = ch.startWord;
-  ch.sections.forEach(s => { s.startWord = sc; sc += s.words; s.color = ch.color; s.chapter = ch.label; });
-});
-
-const fmt = n => n.toLocaleString();
-const pct = n => (n / TOTAL * 100).toFixed(1) + '%';
-const toL = w => (w / TOTAL * 100).toFixed(4) + '%';
-const toW = w => Math.max(w / TOTAL * 100, 0.06).toFixed(4) + '%';
-
-// Axis
-const axisWrap = document.getElementById('axisTicks');
-const axisInner = document.createElement('div');
-axisInner.style.cssText = 'position:relative;width:100%;height:100%;';
-for (let i = 0; i <= TICKS; i++) {
-  const wv = Math.round(TOTAL / TICKS * i);
-  const lp = (i / TICKS * 100) + '%';
-  const ln = document.createElement('div');
-  ln.style.cssText = `position:absolute;top:0;bottom:0;left:${lp};width:1px;background:#28283a;`;
-  axisInner.appendChild(ln);
-  const lb = document.createElement('div');
-  lb.style.cssText = `position:absolute;top:50%;transform:translate(-50%,-50%);left:${lp};
-    font-family:'IBM Plex Mono',monospace;font-size:9px;color:#55556a;white-space:nowrap;letter-spacing:0.04em;`;
-  lb.textContent = wv === 0 ? '0' : (wv >= 1000 ? (wv/1000).toFixed(0)+'k' : wv);
-  axisInner.appendChild(lb);
-}
-axisWrap.appendChild(axisInner);
-
-// Tooltip
-const tip = document.getElementById('tip');
-function showTip(e, name, ch, words, start, desc, color) {
-  document.getElementById('tc').textContent = ch || '';
-  document.getElementById('tn').textContent = name;
-  document.getElementById('tw').textContent = fmt(words) + ' words';
-  document.getElementById('tp').textContent = pct(words);
-  document.getElementById('ts').textContent = fmt(start);
-  const fill = document.getElementById('tf');
-  fill.style.width = pct(words);
-  fill.style.background = color;
-  tip.style.borderLeftColor = color;
-  document.getElementById('td').textContent = desc || '';
-  tip.style.opacity = '1';
-  posTip(e);
-}
-function posTip(e) {
-  const tw = 260;
-  let x = e.clientX + 16, y = e.clientY + 12;
-  if (x + tw > window.innerWidth - 8) x = e.clientX - tw - 8;
-  if (y + 220 > window.innerHeight - 8) y = e.clientY - 220 - 8;
-  tip.style.left = x + 'px'; tip.style.top = y + 'px';
-}
-function hideTip() { tip.style.opacity = '0'; }
-document.addEventListener('mousemove', e => { if (tip.style.opacity === '1') posTip(e); });
-
-// Build rows
-function gridLines(parent) {
-  for (let i = 0; i <= TICKS; i++) {
-    const l = document.createElement('div');
-    l.className = 'grid-line';
-    l.style.left = (i / TICKS * 100) + '%';
-    parent.appendChild(l);
-  }
-}
-
-function row(isChapter) {
-  const r = document.createElement('div');
-  r.className = 'flame-row' + (isChapter ? ' chapter-row' : '');
-  return r;
-}
-
-function label(text, words, color, indent) {
-  const d = document.createElement('div');
-  d.className = 'row-label' + (indent ? ' indented' : '');
-  d.innerHTML = `<div class="bullet" style="background:${color}${indent?';opacity:0.7':''}"></div>
+    function label(text, words, color, indent) {
+      const d = document.createElement('div');
+      d.className = 'row-label' + (indent ? ' indented' : '');
+      d.innerHTML = `<div class="bullet" style="background:${color}${indent ? ';opacity:0.7' : ''}"></div>
     <span class="name">${text}</span><span class="wc">${fmt(words)}</span>`;
-  return d;
-}
+      return d;
+    }
 
-function track() {
-  const t = document.createElement('div');
-  t.className = 'row-track';
-  gridLines(t);
-  return t;
-}
+    function track() {
+      const t = document.createElement('div');
+      t.className = 'row-track';
+      gridLines(t);
+      return t;
+    }
 
-function bar(left, width, color, labelTxt, name, ch, words, start, desc, isChapter, dimmed) {
-  const b = document.createElement('div');
-  b.className = 'flame-bar';
-  b.style.left = left;
-  b.style.width = width;
-  b.style.background = color;
-  if (dimmed) b.style.filter = 'brightness(0.82)';
-  b.addEventListener('mouseenter', () => b.style.filter = 'brightness(1.25)');
-  b.addEventListener('mouseleave', () => b.style.filter = dimmed ? 'brightness(0.82)' : '');
-  b.addEventListener('mousemove', e => showTip(e, name, ch, words, start, desc, color));
-  b.addEventListener('mouseleave', hideTip);
-  const t = document.createElement('span');
-  t.className = 'bar-text';
-  t.textContent = labelTxt;
-  b.appendChild(t);
-  return b;
-}
+    function bar(left, width, color, labelTxt, name, ch, words, start, desc, isChapter, dimmed) {
+      const b = document.createElement('div');
+      b.className = 'flame-bar';
+      b.style.left = left;
+      b.style.width = width;
+      b.style.background = color;
+      if (dimmed) b.style.filter = 'brightness(0.82)';
+      b.addEventListener('mouseenter', () => b.style.filter = 'brightness(1.25)');
+      b.addEventListener('mouseleave', () => b.style.filter = dimmed ? 'brightness(0.82)' : '');
+      b.addEventListener('mousemove', e => showTip(e, name, ch, words, start, desc, color));
+      b.addEventListener('mouseleave', hideTip);
+      const t = document.createElement('span');
+      t.className = 'bar-text';
+      t.textContent = labelTxt;
+      b.appendChild(t);
+      return b;
+    }
 
-function sep(text) {
-  const d = document.createElement('div');
-  d.className = 'group-sep';
-  d.innerHTML = `<div class="gs-label">${text}</div><div class="gs-track"></div>`;
-  return d;
-}
+    function sep(text) {
+      const d = document.createElement('div');
+      d.className = 'group-sep';
+      d.innerHTML = `<div class="gs-label">${text}</div><div class="gs-track"></div>`;
+      return d;
+    }
 
-const scroll = document.getElementById('flameScroll');
+    function renderData() {
+      data = data.map(ch => ({ ...ch, words: ch.sections.reduce((sum, s) => sum + s.words, 0) }));
+      TOTAL = data.reduce((sum, ch) => sum + ch.words, 0);
+      TICKS = TOTAL / 5000;
 
-// ── Row 0: overview ───────────────────────────────────────
-scroll.appendChild(sep('overview'));
-const ovRow = row(true);
-ovRow.appendChild(label('All Chapters', TOTAL, '#888', false));
-const ovTrack = track();
-data.forEach(ch => {
-  ovTrack.appendChild(bar(toL(ch.startWord), toW(ch.words), ch.color,
-    ch.label, ch.label, '', ch.words, ch.startWord, ch.desc, true, false));
-});
-ovRow.appendChild(ovTrack);
-scroll.appendChild(ovRow);
+      // Assign absolute start positions
+      let cursor = 0;
+      data.forEach(ch => {
+        ch.startWord = cursor;
+        cursor += ch.words;
+        let sc = ch.startWord;
+        ch.sections.forEach(s => { s.startWord = sc; sc += s.words; s.color = ch.color; s.chapter = ch.label; });
+      });
 
-// ── Per chapter ───────────────────────────────────────────
-data.forEach(ch => {
-  scroll.appendChild(sep(ch.label));
+      // stats
+      let numSections = 0;
+      data.forEach(ch => numSections += ch.sections.length);
+      document.getElementById('topbarStats').innerHTML = `
+    <div class="stat">Total <strong>${TOTAL.toLocaleString()} words</strong></div>
+    <div class="stat">Chapters <strong>${data.length}</strong></div>
+    <div class="stat">Sections <strong>${numSections}</strong></div>
+  `;
 
-  // Chapter row — full-width bar at absolute position
-  const chRow = row(true);
-  chRow.appendChild(label(ch.label, ch.words, ch.color, false));
-  const chT = track();
+      // Axis
+      const axisWrap = document.getElementById('axisTicks');
+      axisWrap.innerHTML = '';
+      const axisInner = document.createElement('div');
+      axisInner.style.cssText = 'position:relative;width:100%;height:100%;';
+      for (let i = 0; i <= TICKS; i++) {
+        const wv = Math.round(TOTAL / TICKS * i);
+        const lp = (i / TICKS * 100) + '%';
+        const ln = document.createElement('div');
+        ln.style.cssText = `position:absolute;top:0;bottom:0;left:${lp};width:1px;background:#28283a;`;
+        axisInner.appendChild(ln);
+        const lb = document.createElement('div');
+        lb.style.cssText = `position:absolute;top:50%;transform:translate(-50%,-50%);left:${lp};
+      font-family:'IBM Plex Mono',monospace;font-size:9px;color:#55556a;white-space:nowrap;letter-spacing:0.04em;`;
+        lb.textContent = wv === 0 ? '0' : (wv >= 1000 ? (wv / 1000).toFixed(0) + 'k' : wv);
+        axisInner.appendChild(lb);
+      }
+      axisWrap.appendChild(axisInner);
 
-  const chBar = bar(toL(ch.startWord), toW(ch.words), ch.color,
-    ch.label, ch.label, '', ch.words, ch.startWord, ch.desc, true, false);
+      const scroll = document.getElementById('flameScroll');
+      scroll.innerHTML = '';
 
-  // Section dividers painted inside chapter bar
-  ch.sections.forEach((s, i) => {
-    if (i === 0) return;
-    const d = document.createElement('div');
-    d.className = 'section-divider';
-    d.style.left = ((s.startWord - ch.startWord) / ch.words * 100) + '%';
-    chBar.appendChild(d);
-  });
+      // ── Row 0: overview ───────────────────────────────────────
+      scroll.appendChild(sep('overview'));
+      const ovRow = row(true);
+      ovRow.appendChild(label('All Chapters', TOTAL, '#888', false));
+      const ovTrack = track();
+      data.forEach(ch => {
+        ovTrack.appendChild(bar(toL(ch.startWord), toW(ch.words), ch.color,
+          ch.label, ch.label, '', ch.words, ch.startWord, ch.desc, true, false));
+      });
+      ovRow.appendChild(ovTrack);
+      scroll.appendChild(ovRow);
 
-  chT.appendChild(chBar);
-  chRow.appendChild(chT);
-  scroll.appendChild(chRow);
+      // ── Per chapter ───────────────────────────────────────────
+      data.forEach(ch => {
+        scroll.appendChild(sep(ch.label));
 
-  // Section rows — bars at ABSOLUTE positions on full axis
-  ch.sections.forEach(s => {
-    const sRow = row(false);
-    sRow.appendChild(label(s.label, s.words, ch.color, true));
-    const sT = track();
-    sT.appendChild(bar(toL(s.startWord), toW(s.words), ch.color,
-      s.label, s.label, ch.label, s.words, s.startWord, s.desc, false, true));
-    sRow.appendChild(sT);
-    scroll.appendChild(sRow);
-  });
-});
+        // Chapter row — full-width bar at absolute position
+        const chRow = row(true);
+        chRow.appendChild(label(ch.label, ch.words, ch.color, false));
+        const chT = track();
 
-// ── Footer legend ─────────────────────────────────────────
-const footer = document.getElementById('footer');
-data.forEach(ch => {
-  const item = document.createElement('div');
-  item.className = 'legend-item';
-  item.innerHTML = `<div class="legend-dot" style="background:${ch.color}"></div>${ch.label.replace('Ch ','Ch').replace(' · ',' ')}`;
-  footer.appendChild(item);
-});
-</script>
+        const chBar = bar(toL(ch.startWord), toW(ch.words), ch.color,
+          ch.label, ch.label, '', ch.words, ch.startWord, ch.desc, true, false);
+
+        // Section dividers painted inside chapter bar
+        ch.sections.forEach((s, i) => {
+          if (i === 0) return;
+          const d = document.createElement('div');
+          d.className = 'section-divider';
+          d.style.left = ((s.startWord - ch.startWord) / ch.words * 100) + '%';
+          chBar.appendChild(d);
+        });
+
+        chT.appendChild(chBar);
+        chRow.appendChild(chT);
+        scroll.appendChild(chRow);
+
+        // Section rows — bars at ABSOLUTE positions on full axis
+        ch.sections.forEach(s => {
+          const sRow = row(false);
+          sRow.appendChild(label(s.label, s.words, ch.color, true));
+          const sT = track();
+          sT.appendChild(bar(toL(s.startWord), toW(s.words), ch.color,
+            s.label, s.label, ch.label, s.words, s.startWord, s.desc, false, true));
+          sRow.appendChild(sT);
+          scroll.appendChild(sRow);
+        });
+      });
+
+      // ── Footer legend ─────────────────────────────────────────
+      const footer = document.getElementById('footer');
+      footer.innerHTML = '';
+      data.forEach(ch => {
+        const item = document.createElement('div');
+        item.className = 'legend-item';
+        item.innerHTML = `<div class="legend-dot" style="background:${ch.color}"></div>${ch.label.replace('Ch ', 'Ch').replace(' · ', ' ')}`;
+        footer.appendChild(item);
+      });
+    }
+
+    // Initial render
+    renderData();
+
+    // Export / Import functionality
+    document.getElementById('btnExport').addEventListener('click', () => {
+      // Deep clone to strip internal properties
+      const cleanData = JSON.parse(JSON.stringify(data)).map(ch => {
+        delete ch.words;
+        delete ch.startWord;
+        if (ch.sections) {
+          ch.sections = ch.sections.map(s => {
+            delete s.startWord;
+            delete s.color;
+            delete s.chapter;
+            return s;
+          });
+        }
+        return ch;
+      });
+
+      const blob = new Blob([JSON.stringify(cleanData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'word-distribution.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+
+    document.getElementById('btnImport').addEventListener('click', () => {
+      document.getElementById('fileImport').click();
+    });
+
+    document.getElementById('fileImport').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        try {
+          const parsed = JSON.parse(ev.target.result);
+          if (Array.isArray(parsed)) {
+            data = parsed;
+            renderData();
+          } else {
+            alert('Invalid JSON format. Expected an array.');
+          }
+        } catch (err) {
+          alert('Error parsing JSON file.');
+        }
+      };
+      reader.readAsText(file);
+    });
+  </script>
 </body>
+
 </html>
