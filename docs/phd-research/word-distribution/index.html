@@ -108,12 +108,184 @@
       border-color: #4a4a58;
     }
 
+    .main-area {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      min-height: 0;
+    }
+
     .flame-panel {
       flex: 1;
       display: flex;
       flex-direction: column;
       overflow: hidden;
       min-height: 0;
+    }
+
+    .editor-panel {
+      width: 340px;
+      background: var(--bg);
+      border-left: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      flex-shrink: 0;
+      display: none;
+    }
+
+    .editor-panel.open {
+      display: flex;
+    }
+
+    .editor-header {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--panel);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .editor-header h3 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-bright);
+    }
+
+    .editor-ch {
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px;
+    }
+
+    .editor-ch-header {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .editor-input {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-bright);
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 12px;
+      width: 100%;
+    }
+
+    .editor-input:focus {
+      outline: none;
+      border-color: #5a5a6a;
+    }
+
+    .color-input {
+      width: 28px;
+      height: 26px;
+      padding: 0;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .color-input::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    .color-input::-webkit-color-swatch {
+      border: none;
+      border-radius: 3px;
+    }
+
+    textarea.editor-input {
+      resize: vertical;
+      min-height: 48px;
+      line-height: 1.4;
+    }
+
+    .editor-sec {
+      padding: 10px 0 0 10px;
+      border-left: 1px solid #333340;
+      margin-left: 6px;
+      position: relative;
+    }
+
+    .editor-sec-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 6px;
+      align-items: center;
+    }
+
+    .btn-sm {
+      background: transparent;
+      color: var(--text-dim);
+      border: 1px solid var(--border);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 10.5px;
+      cursor: pointer;
+      font-family: 'IBM Plex Mono', monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .btn-sm:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-bright);
+    }
+
+    .btn-icon {
+      padding: 4px 8px;
+      color: #b56a6a;
+      border-color: #503030;
+      font-size: 13px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-icon:hover {
+      background: rgba(181, 106, 106, 0.1);
+      color: #e58a8a;
+      border-color: #704040;
+    }
+
+    .btn-add {
+      width: 100%;
+      margin-top: 12px;
+      padding: 6px;
+      background: transparent;
+      border: 1px dashed #404050;
+      color: var(--text-dim);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 11px;
+      text-align: center;
+      transition: all 0.1s;
+    }
+
+    .btn-add:hover {
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text-bright);
+      border-color: #606070;
+    }
+
+    .btn-add-ch {
+      margin: 16px;
+      width: calc(100% - 32px);
+    }
+
+    .active {
+      background: rgba(255, 255, 255, 0.1) !important;
+      color: var(--text-bright) !important;
+      border-color: #5a5a6a !important;
     }
 
     .axis-header {
@@ -414,19 +586,29 @@
     <div class="topbar-right">
       <div class="topbar-stats" id="topbarStats"></div>
       <div class="topbar-actions">
-        <button id="btnExport">Export</button>
-        <button id="btnImport">Import</button>
+        <button id="btnEdit" style="margin-right:12px;">Edit Data</button>
+        <button id="btnExport">Save</button>
+        <button id="btnImport">Load</button>
         <input type="file" id="fileImport" accept=".json" style="display:none">
       </div>
     </div>
   </div>
 
-  <div class="flame-panel">
-    <div class="axis-header">
-      <div class="axis-label-spacer">Section</div>
-      <div class="axis-ticks-wrap" id="axisTicks"></div>
+  <div class="main-area">
+    <div class="flame-panel">
+      <div class="axis-header">
+        <div class="axis-label-spacer">Section</div>
+        <div class="axis-ticks-wrap" id="axisTicks"></div>
+      </div>
+      <div class="flame-scroll" id="flameScroll"></div>
     </div>
-    <div class="flame-scroll" id="flameScroll"></div>
+    <div class="editor-panel" id="editorPanel">
+      <div class="editor-header">
+        <h3>Data Editor</h3>
+        <button class="btn-sm" id="btnCloseEditor">Close</button>
+      </div>
+      <div id="editorContent"></div>
+    </div>
   </div>
 
   <div class="footer" id="footer"></div>
@@ -615,7 +797,7 @@
     function renderData() {
       data = data.map(ch => ({ ...ch, words: ch.sections.reduce((sum, s) => sum + s.words, 0) }));
       TOTAL = data.reduce((sum, ch) => sum + ch.words, 0);
-      TICKS = TOTAL / 5000;
+      TICKS = TOTAL > 0 ? TOTAL / 5000 : 1;
 
       // Assign absolute start positions
       let cursor = 0;
@@ -717,8 +899,86 @@
       });
     }
 
+    function renderEditor() {
+      const p = document.getElementById('editorContent');
+      p.innerHTML = '';
+
+      const esc = str => (str || '').toString().replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+      data.forEach((ch, ci) => {
+        const cDiv = document.createElement('div');
+        cDiv.className = 'editor-ch';
+
+        cDiv.innerHTML = `
+          <div class="editor-ch-header">
+            <input type="color" class="color-input" value="${esc(ch.color) || '#666666'}" onchange="updateCh(${ci}, 'color', this.value)">
+            <input type="text" class="editor-input" value="${esc(ch.label)}" placeholder="Chapter Label" oninput="updateCh(${ci}, 'label', this.value)">
+            <button class="btn-sm btn-icon" onclick="delCh(${ci})" title="Delete Chapter">×</button>
+          </div>
+          <textarea class="editor-input" placeholder="Chapter Description" style="margin-bottom:8px;" oninput="updateCh(${ci}, 'desc', this.value)">${esc(ch.desc)}</textarea>
+          <div class="editor-sections" id="secs-${ci}"></div>
+          <button class="btn-add" onclick="addSec(${ci})">+ Add Section</button>
+        `;
+        p.appendChild(cDiv);
+
+        const sWrap = cDiv.querySelector(`#secs-${ci}`);
+        ch.sections.forEach((sec, si) => {
+          const sDiv = document.createElement('div');
+          sDiv.className = 'editor-sec';
+          sDiv.innerHTML = `
+            <div class="editor-sec-row">
+              <input type="text" class="editor-input" value="${esc(sec.label)}" placeholder="Section Label" style="flex:1;" oninput="updateSec(${ci}, ${si}, 'label', this.value)">
+              <input type="number" class="editor-input" value="${sec.words || 0}" style="width:70px;" oninput="updateSec(${ci}, ${si}, 'words', this.value)">
+              <button class="btn-sm btn-icon" onclick="delSec(${ci}, ${si})" title="Delete Section">×</button>
+            </div>
+            <textarea class="editor-input" placeholder="Section Description" oninput="updateSec(${ci}, ${si}, 'desc', this.value)">${esc(sec.desc)}</textarea>
+          `;
+          sWrap.appendChild(sDiv);
+        });
+      });
+
+      const addChBtn = document.createElement('button');
+      addChBtn.className = 'btn-add btn-add-ch';
+      addChBtn.textContent = '+ Add Chapter';
+      addChBtn.onclick = addCh;
+      p.appendChild(addChBtn);
+    }
+
+    window.updateCh = (ci, k, v) => { data[ci][k] = v; renderData(); };
+    window.updateSec = (ci, si, k, v) => {
+      if (k === 'words') { v = parseInt(v) || 0; }
+      data[ci].sections[si][k] = v;
+      renderData();
+    };
+    window.addCh = () => {
+      data.push({ label: 'New Chapter', color: '#6a8caf', desc: '', sections: [] });
+      renderEditor(); renderData();
+    };
+    window.delCh = ci => {
+      if (confirm('Delete chapter?')) { data.splice(ci, 1); renderEditor(); renderData(); }
+    };
+    window.addSec = ci => {
+      if (!data[ci].sections) data[ci].sections = [];
+      data[ci].sections.push({ label: 'New Section', words: 0, desc: '' });
+      renderEditor(); renderData();
+    };
+    window.delSec = (ci, si) => {
+      data[ci].sections.splice(si, 1); renderEditor(); renderData();
+    };
+
     // Initial render
     renderData();
+    renderEditor();
+
+    // Editor Toggle
+    const editorPanel = document.getElementById('editorPanel');
+    const btnEdit = document.getElementById('btnEdit');
+    const toggleEditor = () => {
+      editorPanel.classList.toggle('open');
+      btnEdit.classList.toggle('active');
+    };
+    btnEdit.addEventListener('click', toggleEditor);
+    document.getElementById('btnCloseEditor').addEventListener('click', toggleEditor);
 
     // Export / Import functionality
     document.getElementById('btnExport').addEventListener('click', () => {
@@ -762,6 +1022,7 @@
           if (Array.isArray(parsed)) {
             data = parsed;
             renderData();
+            renderEditor();
           } else {
             alert('Invalid JSON format. Expected an array.');
           }
