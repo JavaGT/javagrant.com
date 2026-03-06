@@ -1,0 +1,91 @@
+:root {
+  --bg-color: #0d1117;
+  --bg-muted: #161b22;
+  --panel-bg-color: rgba(22, 27, 34, 0.7);
+  --text-color: #e6edf3;
+  --header-color: #58a6ff;
+  --link-color: #58a6ff;
+  --input-bg-color: rgba(13, 17, 23, 0.8);
+  --input-border-color: rgba(255, 255, 255, 0.1);
+  --input-text-color: #ffffff;
+  --button-bg-color: #21262d;
+  --button-hover-bg-color: #30363d;
+  --border-color: rgba(255, 255, 255, 0.15);
+
+  --glass-bg: rgba(22, 27, 34, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+  /* Matcha overrides */
+  --matcha-bg: #0d1117;
+  --matcha-fg: #e6edf3;
+  --matcha-muted-bg: #161b22;
+  --matcha-muted-fg: #8b949e;
+  --matcha-border: rgba(255, 255, 255, 0.1);
+  --matcha-primary: #58a6ff;
+  --matcha-primary-fg: #0d1117;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.animated-bg {
+  background: linear-gradient(
+    120deg,
+    var(--bg-color) 0%,
+    #131a24 45%,
+    var(--bg-muted) 100%
+  );
+  opacity: 0.9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.flash.variant {
+  background-color: rgba(88, 166, 255, 0.1);
+  border-left-color: var(--header-color);
+  color: #c9d1d9;
+}
+
+.flash.attention {
+  background-color: rgba(210, 153, 34, 0.1);
+  border-left-color: #d29922;
+  color: #e3b341;
+}
+
+/* Base transparent layers */
+.section {
+  background: var(--panel-bg-color);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--glass-shadow);
+}
+
+input, select, textarea {
+  background-color: var(--input-bg-color) !important;
+  color: var(--input-text-color) !important;
+  border-color: var(--input-border-color) !important;
+}
+
+button {
+  background-color: var(--button-bg-color) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color) !important;
+}
+
+dialog {
+  background-color: #161b22 !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-color) !important;
+}
