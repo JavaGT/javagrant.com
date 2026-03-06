@@ -1,0 +1,91 @@
+:root {
+  --bg-color: #f8f1e5;
+  --bg-muted: #efe5d4;
+  --panel-bg-color: rgba(248, 241, 229, 0.85);
+  --text-color: #3e2723;
+  --header-color: #5d4037;
+  --link-color: #8d6e63;
+  --input-bg-color: rgba(255, 253, 245, 0.9);
+  --input-border-color: rgba(93, 64, 55, 0.2);
+  --input-text-color: #3e2723;
+  --button-bg-color: #efe5d4;
+  --button-hover-bg-color: #e4d7c5;
+  --border-color: rgba(93, 64, 55, 0.15);
+
+  --glass-bg: rgba(248, 241, 229, 0.85);
+  --glass-border: rgba(93, 64, 55, 0.15);
+  --glass-shadow: 0 8px 32px 0 rgba(93, 64, 55, 0.08);
+
+  /* Matcha overrides */
+  --matcha-bg: #f8f1e5;
+  --matcha-fg: #3e2723;
+  --matcha-muted-bg: #efe5d4;
+  --matcha-muted-fg: #6d4c41;
+  --matcha-border: rgba(93, 64, 55, 0.2);
+  --matcha-primary: #5d4037;
+  --matcha-primary-fg: #f8f1e5;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.animated-bg {
+  background: linear-gradient(
+    120deg,
+    var(--bg-color) 0%,
+    #faf5ea 45%,
+    var(--bg-muted) 100%
+  );
+  opacity: 0.9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.flash.variant {
+  background-color: rgba(141, 110, 99, 0.1);
+  border-left-color: var(--header-color);
+  color: #5d4037;
+}
+
+.flash.attention {
+  background-color: rgba(215, 204, 200, 0.3);
+  border-left-color: #8d6e63;
+  color: #4e342e;
+}
+
+/* Base transparent layers */
+.section {
+  background: var(--panel-bg-color);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--glass-shadow);
+}
+
+input, select, textarea {
+  background-color: var(--input-bg-color) !important;
+  color: var(--input-text-color) !important;
+  border-color: var(--input-border-color) !important;
+}
+
+button {
+  background-color: var(--button-bg-color) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color) !important;
+}
+
+dialog {
+  background-color: #fbf7f0 !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-color) !important;
+}
