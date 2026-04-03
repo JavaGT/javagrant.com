@@ -1,6 +1,7 @@
 import tracery from "./tracery/main.js";
 
 const STORAGE_KEY = "traceryFocusedStateV2";
+const SHARE_STATE_PARAM = "state";
 const DEFAULT_CONFIG = {
     openLinksInNewTab: true,
     themePreference: "system",
@@ -9,18 +10,18 @@ const DEFAULT_CONFIG = {
     verticalSplitPresetIndex: 2
 };
 const LAYOUT_PRESETS = [
-    { label: "100/0", bodyClass: "layout-e100-p0" },
+    { label: "0/100", bodyClass: "layout-e0-p100" },
     { label: "40/60", bodyClass: "layout-e40-p60" },
     { label: "50/50", bodyClass: "layout-e50-p50" },
     { label: "60/40", bodyClass: "layout-e60-p40" },
-    { label: "0/100", bodyClass: "layout-e0-p100" }
+    { label: "100/0", bodyClass: "layout-e100-p0" }
 ];
 const VERTICAL_SPLIT_PRESETS = [
-    { label: "100/0", bodyClass: "vsplit-t100-c0" },
+    { label: "0/100", bodyClass: "vsplit-t0-c100" },
     { label: "40/60", bodyClass: "vsplit-t40-c60" },
     { label: "50/50", bodyClass: "vsplit-t50-c50" },
     { label: "60/40", bodyClass: "vsplit-t60-c40" },
-    { label: "0/100", bodyClass: "vsplit-t0-c100" }
+    { label: "100/0", bodyClass: "vsplit-t100-c0" }
 ];
 const SAFE_HTML_TAGS = new Set([
     "p", "br", "strong", "em", "b", "i", "u", "s", "span", "div",
@@ -97,6 +98,111 @@ function escapeHtml(value) {
         .replace(/'/g, "&#39;");
 }
 
+function bytesToBase64(bytes) {
+    let binary = "";
+    const chunkSize = 0x8000;
+    for (let index = 0; index < bytes.length; index += chunkSize) {
+        const chunk = bytes.subarray(index, Math.min(index + chunkSize, bytes.length));
+        binary += String.fromCharCode.apply(null, chunk);
+    }
+    return btoa(binary);
+}
+
+function base64ToBytes(base64) {
+    const binary = atob(base64);
+    const bytes = new Uint8Array(binary.length);
+    for (let index = 0; index < binary.length; index += 1) {
+        bytes[index] = binary.charCodeAt(index);
+    }
+    return bytes;
+}
+
+function bytesToBase64Url(bytes) {
+    return bytesToBase64(bytes)
+        .replace(/\+/g, "-")
+        .replace(/\//g, "_")
+        .replace(/=+$/g, "");
+}
+
+function base64UrlToBytes(base64Url) {
+    let base64 = String(base64Url || "")
+        .replace(/-/g, "+")
+        .replace(/_/g, "/");
+    while (base64.length % 4 !== 0) {
+        base64 += "=";
+    }
+    return base64ToBytes(base64);
+}
+
+async function compressTextToBase64Url(text) {
+    if (typeof CompressionStream !== "function") {
+        throw new Error("This browser does not support compressed share URLs.");
+    }
+
+    const input = new Blob([String(text || "")], { type: "text/plain" });
+    const stream = input.stream().pipeThrough(new CompressionStream("gzip"));
+    const buffer = await new Response(stream).arrayBuffer();
+    return bytesToBase64Url(new Uint8Array(buffer));
+}
+
+async function decompressTextFromBase64Url(encodedText) {
+    if (typeof DecompressionStream !== "function") {
+        throw new Error("This browser does not support compressed share URLs.");
+    }
+
+    const input = new Blob([base64UrlToBytes(encodedText)], { type: "application/octet-stream" });
+    const stream = input.stream().pipeThrough(new DecompressionStream("gzip"));
+    return await new Response(stream).text();
+}
+
+function getSavedState() {
+    const grammarText = getEditorText();
+    const outputCssText = getOutputCssText();
+    return {
+        grammarText: getGrammarWithEmbeddedCssText(grammarText, outputCssText),
+        outputCssText: outputCssText,
+        config: appConfig
+    };
+}
+
+function normalizeLoadedState(parsed) {
+    const loadedConfig = parsed && typeof parsed.config === "object" && parsed.config ? parsed.config : {};
+    const themePreference = ["system", "light", "dark"].includes(loadedConfig.themePreference)
+        ? loadedConfig.themePreference
+        : DEFAULT_CONFIG.themePreference;
+    const legacyLayoutIndex = loadedConfig.editorExpanded ? 0 : DEFAULT_CONFIG.layoutPresetIndex;
+    const layoutPresetIndex = Number.isInteger(loadedConfig.layoutPresetIndex)
+        && loadedConfig.layoutPresetIndex >= 0
+        && loadedConfig.layoutPresetIndex < LAYOUT_PRESETS.length
+        ? loadedConfig.layoutPresetIndex
+        : legacyLayoutIndex;
+    const verticalSplitPresetIndex = Number.isInteger(loadedConfig.verticalSplitPresetIndex)
+        && loadedConfig.verticalSplitPresetIndex >= 0
+        && loadedConfig.verticalSplitPresetIndex < VERTICAL_SPLIT_PRESETS.length
+        ? loadedConfig.verticalSplitPresetIndex
+        : DEFAULT_CONFIG.verticalSplitPresetIndex;
+    const extracted = extractEmbeddedCssFromGrammarText(
+        parsed.grammarText || "",
+        parsed.outputCssText || DEFAULT_OUTPUT_CSS
+    );
+
+    return {
+        grammarText: extracted.grammarText,
+        outputCssText: extracted.cssText,
+        config: {
+            openLinksInNewTab: typeof loadedConfig.openLinksInNewTab === "boolean"
+                ? loadedConfig.openLinksInNewTab
+                : DEFAULT_CONFIG.openLinksInNewTab,
+            themePreference: themePreference,
+            autoRerollOnType: typeof loadedConfig.autoRerollOnType === "boolean"
+                ? loadedConfig.autoRerollOnType
+                : DEFAULT_CONFIG.autoRerollOnType,
+            layoutPresetIndex: layoutPresetIndex,
+            verticalSplitPresetIndex: verticalSplitPresetIndex
+        }
+    };
+}
+
 function getEditorElement() {
     return byId("customGrammarInput");
 }
@@ -167,6 +273,52 @@ function getOutputShadowRoot() {
     return host.shadowRoot;
 }
 
+async function loadStateFromUrl() {
+    const searchParams = new URLSearchParams(window.location.search);
+    const encodedState = searchParams.get(SHARE_STATE_PARAM);
+    if (!encodedState) {
+        return null;
+    }
+
+    try {
+        const stateJson = await decompressTextFromBase64Url(encodedState);
+        const parsed = JSON.parse(stateJson);
+        return normalizeLoadedState(parsed);
+    } catch (error) {
+        return null;
+    }
+}
+
+async function loadInitialState() {
+    const sharedState = await loadStateFromUrl();
+    if (sharedState) {
+        return sharedState;
+    }
+    return loadState();
+}
+
+async function saveStateToUrl() {
+    const stateJson = JSON.stringify(getSavedState());
+    const compressedState = await compressTextToBase64Url(stateJson);
+    const url = new URL(window.location.href);
+    url.searchParams.set(SHARE_STATE_PARAM, compressedState);
+    window.history.replaceState(null, "", url.toString());
+
+    let copiedToClipboard = false;
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+        try {
+            await navigator.clipboard.writeText(url.toString());
+            copiedToClipboard = true;
+        } catch (error) {
+            copiedToClipboard = false;
+        }
+    }
+
+    return {
+        url: url.toString(),
+        copiedToClipboard: copiedToClipboard
+    };
+}
 function normalizeEditorText(text) {
     return String(text || "")
         .replace(/\u00a0/g, " ")
@@ -1884,205 +2036,222 @@ function applyVerticalSplitPresetState() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const grammarInput = getEditorElement();
-    const outputCssInput = getOutputCssElement();
-    const dropZone = byId("editorDropZone");
-    const fileInput = byId("jsonFileInput");
-    const openLinksInNewTab = byId("openLinksInNewTab");
-    const themePreference = byId("themePreference");
-    const autoRerollOnType = byId("autoRerollOnType");
+    (async function initializeApp() {
+        const grammarInput = getEditorElement();
+        const outputCssInput = getOutputCssElement();
+        const dropZone = byId("editorDropZone");
+        const fileInput = byId("jsonFileInput");
+        const openLinksInNewTab = byId("openLinksInNewTab");
+        const themePreference = byId("themePreference");
+        const autoRerollOnType = byId("autoRerollOnType");
 
-    const saved = loadState();
-    appConfig = saved.config;
-    openLinksInNewTab.checked = appConfig.openLinksInNewTab;
-    themePreference.value = appConfig.themePreference;
-    autoRerollOnType.checked = appConfig.autoRerollOnType;
-    applyLayoutPresetState();
-    applyVerticalSplitPresetState();
-    applyThemePreference(appConfig.themePreference);
-
-    if (saved.grammarText) {
-        setEditorText(saved.grammarText, false);
-    } else {
-        setEditorText(JSON.stringify(defaultCustomGrammar, null, 2), false);
-    }
-    setCssEditorText(saved.outputCssText || DEFAULT_OUTPUT_CSS, false);
-    resetEditorHistory("json", getEditorText());
-    resetEditorHistory("css", getOutputCssText());
-    updateLineNumbers(0);
-    updateCssLineNumbers(0);
-    updateCssValidationHint();
-
-    byId("applyCustomGrammar").addEventListener("click", applyGrammar);
-    byId("saveWork").addEventListener("click", function () {
-        if (!formatJsonInEditor()) {
-            return;
-        }
-        saveState();
-        setStatus("JSON formatted and saved to localStorage.", false);
-    });
-    byId("formatJson").addEventListener("click", function () {
-        if (!formatJsonInEditor()) {
-            return;
-        }
-        saveState();
-        setStatus("JSON formatted.", false);
-    });
-    byId("formatCss").addEventListener("click", function () {
-        if (!formatCssInEditor()) {
-            return;
-        }
-        saveState();
-        if (!updateRenderedCssOnly()) {
-            renderOne();
-        }
-    });
-    byId("exportJson").addEventListener("click", exportJsonFile);
-    byId("loadJsonButton").addEventListener("click", function () {
-        fileInput.click();
-    });
-    byId("toggleEditorSize").addEventListener("click", function () {
-        appConfig.layoutPresetIndex = (appConfig.layoutPresetIndex + 1) % LAYOUT_PRESETS.length;
+        const saved = await loadInitialState();
+        appConfig = saved.config;
+        openLinksInNewTab.checked = appConfig.openLinksInNewTab;
+        themePreference.value = appConfig.themePreference;
+        autoRerollOnType.checked = appConfig.autoRerollOnType;
         applyLayoutPresetState();
-        saveState();
-    });
-    byId("toggleVerticalSplit").addEventListener("click", function () {
-        appConfig.verticalSplitPresetIndex = (appConfig.verticalSplitPresetIndex + 1) % VERTICAL_SPLIT_PRESETS.length;
         applyVerticalSplitPresetState();
-        saveState();
-    });
-    fileInput.addEventListener("change", function () {
-        const file = fileInput.files && fileInput.files[0];
-        handleJsonFile(file || null);
-        fileInput.value = "";
-    });
-
-    dropZone.addEventListener("dragover", function (event) {
-        event.preventDefault();
-        dropZone.classList.add("dropActive");
-    });
-    dropZone.addEventListener("dragleave", function () {
-        dropZone.classList.remove("dropActive");
-    });
-    dropZone.addEventListener("drop", function (event) {
-        event.preventDefault();
-        dropZone.classList.remove("dropActive");
-        const files = event.dataTransfer && event.dataTransfer.files;
-        if (!files || !files.length) {
-            return;
-        }
-        handleJsonFile(files[0]);
-    });
-
-    byId("openConfig").addEventListener("click", openConfigModal);
-    byId("closeConfig").addEventListener("click", closeConfigModal);
-    byId("configModal").addEventListener("click", function (event) {
-        if (event.target === byId("configModal")) {
-            closeConfigModal();
-        }
-    });
-
-    openLinksInNewTab.addEventListener("change", function () {
-        appConfig.openLinksInNewTab = openLinksInNewTab.checked;
-        saveState();
-        renderOne();
-    });
-
-    themePreference.addEventListener("change", function () {
-        appConfig.themePreference = themePreference.value;
         applyThemePreference(appConfig.themePreference);
-        saveState();
-    });
 
-    autoRerollOnType.addEventListener("change", function () {
-        appConfig.autoRerollOnType = autoRerollOnType.checked;
-        saveState();
-        tryAutoReroll();
-    });
-
-    grammarInput.addEventListener("input", function () {
-        setEditorText(getEditorText(), true);
-        commitEditorMutation();
-    });
-    grammarInput.addEventListener("scroll", function () {
-        const lineNumbers = byId("lineNumbers");
-        if (lineNumbers) {
-            lineNumbers.scrollTop = grammarInput.scrollTop;
+        if (saved.grammarText) {
+            setEditorText(saved.grammarText, false);
+        } else {
+            setEditorText(JSON.stringify(defaultCustomGrammar, null, 2), false);
         }
-    });
-    outputCssInput.addEventListener("input", function () {
-        setCssEditorText(getOutputCssText(), true);
-        commitCssEditorMutation();
-    });
-    outputCssInput.addEventListener("scroll", function () {
-        const lineNumbers = byId("cssLineNumbers");
-        if (lineNumbers) {
-            lineNumbers.scrollTop = outputCssInput.scrollTop;
-        }
-    });
+        setCssEditorText(saved.outputCssText || DEFAULT_OUTPUT_CSS, false);
+        resetEditorHistory("json", getEditorText());
+        resetEditorHistory("css", getOutputCssText());
+        updateLineNumbers(0);
+        updateCssLineNumbers(0);
+        updateCssValidationHint();
 
-    grammarInput.addEventListener("keydown", function (event) {
-        if (isUndoShortcut(event)) {
+        byId("applyCustomGrammar").addEventListener("click", applyGrammar);
+        byId("saveWork").addEventListener("click", function () {
+            if (!formatJsonInEditor()) {
+                return;
+            }
+            saveState();
+            setStatus("JSON formatted and saved to localStorage.", false);
+        });
+        byId("saveToUrl").addEventListener("click", async function () {
+            if (!formatJsonInEditor()) {
+                return;
+            }
+
+            saveState();
+            try {
+                const shareState = await saveStateToUrl();
+                setStatus(shareState.copiedToClipboard
+                    ? "Shareable URL updated and copied to clipboard."
+                    : "Shareable URL updated.", false);
+            } catch (error) {
+                setStatus(error && error.message ? error.message : "Unable to create a shareable URL.", true);
+            }
+        });
+        byId("formatJson").addEventListener("click", function () {
+            if (!formatJsonInEditor()) {
+                return;
+            }
+            saveState();
+            setStatus("JSON formatted.", false);
+        });
+        byId("formatCss").addEventListener("click", function () {
+            if (!formatCssInEditor()) {
+                return;
+            }
+            saveState();
+            if (!updateRenderedCssOnly()) {
+                renderOne();
+            }
+        });
+        byId("exportJson").addEventListener("click", exportJsonFile);
+        byId("loadJsonButton").addEventListener("click", function () {
+            fileInput.click();
+        });
+        byId("toggleEditorSize").addEventListener("click", function () {
+            appConfig.layoutPresetIndex = (appConfig.layoutPresetIndex + 1) % LAYOUT_PRESETS.length;
+            applyLayoutPresetState();
+            saveState();
+        });
+        byId("toggleVerticalSplit").addEventListener("click", function () {
+            appConfig.verticalSplitPresetIndex = (appConfig.verticalSplitPresetIndex + 1) % VERTICAL_SPLIT_PRESETS.length;
+            applyVerticalSplitPresetState();
+            saveState();
+        });
+        fileInput.addEventListener("change", function () {
+            const file = fileInput.files && fileInput.files[0];
+            handleJsonFile(file || null);
+            fileInput.value = "";
+        });
+
+        dropZone.addEventListener("dragover", function (event) {
             event.preventDefault();
-            undoEditor("json", setEditorText, commitEditorMutation, grammarInput);
-            return;
-        }
-
-        if (isRedoShortcut(event)) {
+            dropZone.classList.add("dropActive");
+        });
+        dropZone.addEventListener("dragleave", function () {
+            dropZone.classList.remove("dropActive");
+        });
+        dropZone.addEventListener("drop", function (event) {
             event.preventDefault();
-            redoEditor("json", setEditorText, commitEditorMutation, grammarInput);
-            return;
-        }
+            dropZone.classList.remove("dropActive");
+            const files = event.dataTransfer && event.dataTransfer.files;
+            if (!files || !files.length) {
+                return;
+            }
+            handleJsonFile(files[0]);
+        });
 
-        if (event.key === "Enter" && !event.shiftKey && !event.altKey && !event.ctrlKey && !event.metaKey) {
+        byId("openConfig").addEventListener("click", openConfigModal);
+        byId("closeConfig").addEventListener("click", closeConfigModal);
+        byId("configModal").addEventListener("click", function (event) {
+            if (event.target === byId("configModal")) {
+                closeConfigModal();
+            }
+        });
+
+        openLinksInNewTab.addEventListener("change", function () {
+            appConfig.openLinksInNewTab = openLinksInNewTab.checked;
+            saveState();
+            renderOne();
+        });
+
+        themePreference.addEventListener("change", function () {
+            appConfig.themePreference = themePreference.value;
+            applyThemePreference(appConfig.themePreference);
+            saveState();
+        });
+
+        autoRerollOnType.addEventListener("change", function () {
+            appConfig.autoRerollOnType = autoRerollOnType.checked;
+            saveState();
+            tryAutoReroll();
+        });
+
+        grammarInput.addEventListener("input", function () {
+            setEditorText(getEditorText(), true);
+            commitEditorMutation();
+        });
+        grammarInput.addEventListener("scroll", function () {
+            const lineNumbers = byId("lineNumbers");
+            if (lineNumbers) {
+                lineNumbers.scrollTop = grammarInput.scrollTop;
+            }
+        });
+        outputCssInput.addEventListener("input", function () {
+            setCssEditorText(getOutputCssText(), true);
+            commitCssEditorMutation();
+        });
+        outputCssInput.addEventListener("scroll", function () {
+            const lineNumbers = byId("cssLineNumbers");
+            if (lineNumbers) {
+                lineNumbers.scrollTop = outputCssInput.scrollTop;
+            }
+        });
+
+        grammarInput.addEventListener("keydown", function (event) {
+            if (isUndoShortcut(event)) {
+                event.preventDefault();
+                undoEditor("json", setEditorText, commitEditorMutation, grammarInput);
+                return;
+            }
+
+            if (isRedoShortcut(event)) {
+                event.preventDefault();
+                redoEditor("json", setEditorText, commitEditorMutation, grammarInput);
+                return;
+            }
+
+            if (event.key === "Enter" && !event.shiftKey && !event.altKey && !event.ctrlKey && !event.metaKey) {
+                event.preventDefault();
+                insertNewlineInEditor(grammarInput, getEditorText, setEditorText, commitEditorMutation);
+                return;
+            }
+
+            if (event.key === "Tab") {
+                event.preventDefault();
+                indentSelection(event.shiftKey);
+                return;
+            }
+
+            if (handleEditorWrapShortcut(event)) {
+                event.preventDefault();
+            }
+        });
+
+        outputCssInput.addEventListener("keydown", function (event) {
+            if (isUndoShortcut(event)) {
+                event.preventDefault();
+                undoEditor("css", setCssEditorText, commitCssEditorMutation, outputCssInput);
+                return;
+            }
+
+            if (isRedoShortcut(event)) {
+                event.preventDefault();
+                redoEditor("css", setCssEditorText, commitCssEditorMutation, outputCssInput);
+                return;
+            }
+
+            if (event.key === "Enter" && !event.shiftKey && !event.altKey && !event.ctrlKey && !event.metaKey) {
+                event.preventDefault();
+                insertNewlineInEditor(outputCssInput, getOutputCssText, setCssEditorText, commitCssEditorMutation);
+            }
+        });
+
+        document.addEventListener("keydown", function (event) {
+            const isSaveShortcut = (event.key === "s" || event.key === "S") && (event.metaKey || event.ctrlKey);
+            if (!isSaveShortcut) {
+                return;
+            }
+
             event.preventDefault();
-            insertNewlineInEditor(grammarInput, getEditorText, setEditorText, commitEditorMutation);
-            return;
-        }
+            if (!formatJsonInEditor()) {
+                return;
+            }
+            saveState();
+            exportJsonFile();
+        });
 
-        if (event.key === "Tab") {
-            event.preventDefault();
-            indentSelection(event.shiftKey);
-            return;
-        }
-
-        if (handleEditorWrapShortcut(event)) {
-            event.preventDefault();
-        }
-    });
-
-    outputCssInput.addEventListener("keydown", function (event) {
-        if (isUndoShortcut(event)) {
-            event.preventDefault();
-            undoEditor("css", setCssEditorText, commitCssEditorMutation, outputCssInput);
-            return;
-        }
-
-        if (isRedoShortcut(event)) {
-            event.preventDefault();
-            redoEditor("css", setCssEditorText, commitCssEditorMutation, outputCssInput);
-            return;
-        }
-
-        if (event.key === "Enter" && !event.shiftKey && !event.altKey && !event.ctrlKey && !event.metaKey) {
-            event.preventDefault();
-            insertNewlineInEditor(outputCssInput, getOutputCssText, setCssEditorText, commitCssEditorMutation);
-        }
-    });
-
-    document.addEventListener("keydown", function (event) {
-        const isSaveShortcut = (event.key === "s" || event.key === "S") && (event.metaKey || event.ctrlKey);
-        if (!isSaveShortcut) {
-            return;
-        }
-
-        event.preventDefault();
-        if (!formatJsonInEditor()) {
-            return;
-        }
-        saveState();
-        exportJsonFile();
-    });
-
-    applyGrammar();
+        applyGrammar();
+    })();
 });
