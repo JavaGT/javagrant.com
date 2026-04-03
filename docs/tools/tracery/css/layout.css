@@ -464,6 +464,7 @@ body.layout-e0-p100 .editorPane {
 
 body.layout-e0-p100 .previewPane {
 	display: flex;
+	grid-column: 2;
 	border-left: 0;
 }
 
@@ -497,6 +498,7 @@ body.vsplit-t0-c100 .traceryEditorBlock {
 
 body.vsplit-t0-c100 .cssEditorBlock {
 	display: flex;
+	grid-row: 2;
 	border-top: 0;
 }
 
@@ -699,6 +701,7 @@ body.vsplit-t0-c100 .cssEditorBlock {
 
 	body.layout-e0-p100 .previewPane {
 		border-left: 3px solid var(--line);
+		grid-column: auto;
 	}
 
 	body.vsplit-t100-c0 .editorStack,
@@ -719,6 +722,7 @@ body.vsplit-t0-c100 .cssEditorBlock {
 
 	body.vsplit-t0-c100 .cssEditorBlock {
 		border-top: 3px solid var(--line);
+		grid-row: auto;
 	}
 
 	#app {
