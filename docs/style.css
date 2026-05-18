@@ -174,7 +174,7 @@ section {
 
 h2 {
     width: 100%;
-    margin: 0 auto;
+    margin: 1.1rem auto 0.5rem;
 }
 
 .landscape__all {
@@ -217,6 +217,10 @@ h2 {
     justify-content: center; */
     margin: 0 auto;
     box-shadow: 0 0 2px 1px #00000042;
+}
+
+h1, h3, h4, h5, h6 {
+    margin: 1.1rem 0 0.5rem;
 }
 
 h1,
@@ -295,6 +299,8 @@ a{color:var(--accent); text-decoration:none}
 a:hover{text-decoration:underline}
 
 img{max-width:100%;height:auto;display:block}
+
+p{margin:0.6em 0}
 
 .mono{font-family:var(--mono);font-size:.95rem;color:var(--muted)}
 .center{text-align:center}
