@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -34,7 +35,34 @@
     <meta property="og:description" content="Student, researcher and community organiser researching the future of universities in Aotearoa.">
     <meta property="og:url" content="https://javagrant.com/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://javagrant.com/assets/java.webp">
+    <meta property="og:image:alt" content="Java Grant">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://javagrant.com/assets/java.webp">
+
+    <!-- Structured data: Person -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Java Grant",
+        "url": "https://javagrant.com",
+        "image": "https://javagrant.com/assets/java.webp",
+        "description": "New Zealand student, researcher, teacher, and community organiser.",
+        "jobTitle": "PhD Student",
+        "worksFor": { "@type": "CollegeOrUniversity", "name": "University of Auckland" },
+        "alumniOf": "University of Auckland",
+        "sameAs": [
+            "https://bsky.app/profile/javagrant.com",
+            "https://twitter.com/thatdudejava",
+            "https://www.linkedin.com/in/javagrant/",
+            "https://github.com/JavaGT",
+            "https://profiles.auckland.ac.nz/java-grant",
+            "https://www.researchgate.net/profile/Java-Grant",
+            "https://wearetheuniversity.org"
+        ]
+    }
+    </script>
 
 </head>
 
@@ -84,21 +112,13 @@
             <li>
                 <strong>Table of Contents</strong>
             </li>
-            <script>
-                setTimeout(() => {
-                    // Generate the table of contents dynamically based on h1-h6 elements with an id
-                    document.querySelectorAll('h2').forEach((heading) => {
-                        if (heading.id) {
-                            const li = document.createElement('li');
-                            const a = document.createElement('a');
-                            a.href = `#${heading.id}`;
-                            a.textContent = heading.id.replaceAll(/_-–/g, ' ');
-                            li.appendChild(a);
-                            document.querySelector('.wikinav ul').appendChild(li);
-                        }
-                    });
-                }, 10);
-            </script>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Community-Organising">Community Organising & Leadership</a></li>
+            <li><a href="#Career">Career and Professional Experience</a></li>
+            <li><a href="#Sporting">Sporting</a></li>
+            <li><a href="#Bibliography">Bibliography</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </section>
 
@@ -456,7 +476,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h1 id="Assignments" tabindex="-1"><span class="header-anchor" href="https://javagrant.com/resume/#assignments" aria-hidden="true">📄 </span>Assignments</h1>
+            <h2 id="Assignments"><span class="header-anchor" href="https://javagrant.com/resume/#assignments" aria-hidden="true">📄 </span>Assignments</h2>
             <div>
                 <div>In the spirit of open education, Java's best work is made public as well as the
                     feedback each received. Derived from feedback from tutors and lecturers, Java is
@@ -512,8 +532,8 @@
                                                 <p dir="ltr"><span>"Ahhhhh facelist is amazing!!" -Lecurer
                                     </td>
                                     <td>
-                                        <p dir="ltr"><a href="https://javagrant.com/static/facelist"><span>Explore
-                                                    Facelist</span></a></p>
+                                        <p dir="ltr"><span>Explore
+                                                    Facelist</span></p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -1138,7 +1158,7 @@
                     constituent features of its ongoing operation, while senior management enjoy ever-inflated
                     salaries seemingly unconnected to any obvious performance metrics.</p>
                 <div>
-                    <h2>Projects</h2>
+                    <h2 id="Projects">Projects</h2>
                     <h3>Computer
                         Programming</h3>
                     Java’s work spans creative, academic, and
@@ -1168,7 +1188,7 @@
                         </div>
                     </div>
                 </div>
-                <h2>Community Organising &amp; Leadership</h2>
+                <h2 id="Community-Organising">Community Organising &amp; Leadership</h2>
                 <h3>Social Science Symposium 2022[?]</h3>
                 <h3>Social Science Student Showcase 2025</h3>
                 <p>
@@ -1255,7 +1275,7 @@
                     international students with Kiwi culture. Their high school accolades include the Elite
                     Honours Award, Top Scholar (2013–2016), and notable results in ICAS Competitions (e.g. 3rd
                     percentile in Computer Skills, 7th in English).</p>
-                <h2>Career and Professional Experience</h2>
+                <h2 id="Career">Career and Professional Experience</h2>
                 <h3>Academic</h3>
                 <!-- Paper review for (I want to say) philosophy of education journal
                 In collaboration with Barbara Grant -->
@@ -1326,7 +1346,7 @@
                 </div>
                 <p class="asbox-body">This section about a Java's sporting achievements is a <a href="https://en.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub" target="_blank" rel="noopener noreferrer">stub</a>. You
                     can help Java by <a class="external text">expanding it</a>.</p>
-                <h2 id="Bibliography">Publications &amp; Interviews</h2>
+                <h2 id="Bibliography">Bibliography</h2>
                 <p><a href="https://bit.ly/uoalies" target="_blank" rel="noopener noreferrer">Contradiction in the Neoliberal Academe: A Critical Case Study of the University of Auckland Administration</a> (Honours Dissertation, 2022)</p>
 
                 <div>
